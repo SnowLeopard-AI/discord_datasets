@@ -1,6 +1,6 @@
 [![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
 
-# IMDB Dataset
+# IMDb Dataset
 
 This dataset contains comprehensive movie and TV show information from the Internet Movie Database (IMDB), one of the world's most popular and authoritative sources for movie, TV, and celebrity content.
 
