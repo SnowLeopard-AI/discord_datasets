@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
+
 # Stack Overflow Dataset
 
 This dataset contains comprehensive data from Stack Overflow, the world's largest community-driven programming Q&A platform. It includes questions, answers, user interactions, and community data from millions of developers worldwide.

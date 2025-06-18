@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
+
 # Discord Datasets
 
 Welcome to Snow Leopard's public Discord datasets! You can try out `Snowy` through Snow Leopard's public Discord Server.
