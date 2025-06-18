@@ -12,37 +12,65 @@ The Stack Overflow dataset includes:
 - **Badges and Achievements**: Recognition system for community contributions
 - **Timeline Data**: Question and answer timestamps for trend analysis
 
-## Sample Questions
-
-Try asking Snow Leopard questions like:
-
-### Programming Languages and Technologies
-- "What are the most popular programming languages based on question volume?"
-- "Show me the fastest-growing technologies in the last year"
-- "Which programming languages have the highest-rated answers?"
-
-### Community and Users
-- "Who are the top contributors in Python-related questions?"
-- "What are the most common types of programming questions?"
-- "Which users have the highest reputation scores?"
-
-### Trends and Patterns
-- "How has interest in JavaScript frameworks changed over time?"
-- "What are the most difficult programming topics based on answer quality?"
-- "Show me trending topics in machine learning discussions"
-
-### Problem-Solving Insights
-- "What are the most commonly asked beginner programming questions?"
-- "Which technologies have the most unanswered questions?"
-- "What time of day sees the most Stack Overflow activity?"
-
-### Comparative Analysis
-- "Compare the popularity of React vs Vue vs Angular"
-- "Which programming languages have the most active communities?"
-- "How do mobile development frameworks compare in terms of discussion volume?"
-
 ## Getting Started
 
-Join our Discord server and start exploring the Stack Overflow dataset! Whether you're curious about programming trends, want to understand developer communities, or need insights into technology adoption, Snow Leopard's natural language interface makes it easy to discover patterns in this rich developer data.
+1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX)
+2. Enter the `stack-overflow` channel to ask snowy about the imdb datasets
+3. Ask you dev-related questions!
 
-**Note**: This is a public dataset provided for demonstration and learning purposes. The data represents a comprehensive view of programming discussions and community interactions on Stack Overflow.
+🤔 Not sure what to ask? Here are a few sample questions.
+
+### Programming Languages and Technologies
+```
+@snowy, what are the most popular programming languages based on question volume?
+```
+```
+@snowy, show me the fastest-growing technologies in the last year
+```
+```
+@snowy, which programming languages have the highest-rated answers?
+```
+
+### Community and Users
+```
+@snowy, who are the top contributors in Python-related questions?
+```
+```
+@snowy, what are the most common types of programming questions?
+```
+```
+@snowy, which users have the highest reputation scores?
+```
+
+### Trends and Patterns
+```
+@snowy, how has interest in JavaScript frameworks changed over time?
+```
+```
+@snowy, what are the most difficult programming topics based on answer quality?
+```
+```
+@snowy, show me trending topics in machine learning discussions
+```
+
+### Problem-Solving Insights
+```
+@snowy, what are the most commonly asked beginner programming questions?
+```
+```
+@snowy, which technologies have the most unanswered questions?
+```
+```
+@snowy, what time of day sees the most Stack Overflow activity?
+```
+
+### Comparative Analysis
+```
+@snowy, compare the popularity of React vs Vue vs Angular
+```
+```
+@snowy, which programming languages have the most active communities?
+```
+```
+@snowy, how do mobile development frameworks compare in terms of discussion volume?
+```
