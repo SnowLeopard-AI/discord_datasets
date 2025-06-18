@@ -4,6 +4,10 @@
 
 This dataset contains comprehensive movie and TV show information from the Internet Movie Database (IMDB), one of the world's most popular and authoritative sources for movie, TV, and celebrity content.
 
+More information, and the raw data, can be found at [imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/).
+
+For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb/data_tops) 
+
 ## Dataset Overview
 
 The IMDB dataset includes information about:
