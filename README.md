@@ -4,7 +4,7 @@
 
 Welcome to Snow Leopard's public Discord datasets!
 
-This repository contains information on how to try Snow Leopard through our public [Discord server](https://discord.gg/WGAyr8NpEX).
+This repository contains information on how to try Snow Leopard using our public [Discord server](https://discord.gg/WGAyr8NpEX).
 
 
 ## About Snow Leopard
