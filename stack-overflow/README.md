@@ -6,7 +6,7 @@ This dataset contains comprehensive Stack Overflow content from the world's larg
 
 This public dataset is hosted in Google BigQuery and is included in BigQuery's 1TB/mo of free tier processing. The dataset is updated to mirror the Stack Overflow content on the Internet Archive, and is also available through the Stack Exchange Data Explorer.
 
-For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) 
+For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops). You can also query the full dataset directly using [BigQuery's free tier](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow). 
 
 ## Dataset Overview
 

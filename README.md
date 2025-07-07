@@ -31,6 +31,6 @@ Snow Leopard is an LLM-powered data tool that allows you to ask questions and ge
 Explore these public datasets through our Discord server:
 
 - **[IMDB Dataset](./imdb/)** - Movie and TV show information from the Internet Movie Database
-- **[Stack Overflow Dataset](./stackoverflow/)** - Programming questions, answers, and community data
+- **[Stack Overflow Dataset](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset
 
 Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions.

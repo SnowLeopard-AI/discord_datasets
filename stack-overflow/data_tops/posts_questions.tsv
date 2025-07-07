@@ -1,5 +1,5 @@
-id,title,body,accepted_answer_id,answer_count,comment_count,community_owned_date,creation_date,favorite_count,last_activity_date,last_edit_date,last_editor_display_name,last_editor_user_id,owner_display_name,owner_user_id,parent_id,post_type_id,score,tags,view_count
-73210679,az acr login raises DOCKER_COMMAND_ERROR with message docker daemon not running,"<p>Windows 11 with wsl2 ubuntu-22.04.</p>
+id	title	body	accepted_answer_id	answer_count	comment_count	community_owned_date	creation_date	favorite_count	last_activity_date	last_edit_date	last_editor_display_name	last_editor_user_id	owner_display_name	owner_user_id	parent_id	post_type_id	score	tags	view_count
+73210679	az acr login raises DOCKER_COMMAND_ERROR with message docker daemon not running	"<p>Windows 11 with wsl2 ubuntu-22.04.</p>
 <p>In Windows Terminal I open a PowerShell window and start <code>wsl</code> with command:</p>
 <pre><code>wsl
 </code></pre>
@@ -22,8 +22,8 @@ open //./pipe/docker_engine: The system cannot find the file specified.
 <p>The error suggests the daemon is not running, but since I can run a container I assume the deamon is running - otherwise I would not be able to run a container either, right? What can I do to narrow down or resolve this issue?</p>
 <p>Docker version info using <code>docker -v</code> command:</p>
 <pre><code>Docker version 20.10.12, build 20.10.12-0ubuntu4
-</code></pre>",73247188,1,0,,2022-08-02 16:16:31.810000 UTC,,2022-08-05 09:00:14.693000 UTC,2022-08-02 16:32:13.700000 UTC,,11226740,,11226740,,1,0,azure-container-registry|docker-daemon,256
-73284406,Run Azure log query from the command line with Azure CLI (az monitor),"<p>I am trying to get the Azure log query data from the CLI because we want to get the log message automatically.
+</code></pre>"	73247188	1	0		2022-08-02 16:16:31.810000 UTC		2022-08-05 09:00:14.693000 UTC	2022-08-02 16:32:13.700000 UTC		11226740		11226740		1	0	azure-container-registry|docker-daemon	256
+73284406	Run Azure log query from the command line with Azure CLI (az monitor)	"<p>I am trying to get the Azure log query data from the CLI because we want to get the log message automatically.
 For example, when we want to get exceptions message, we will got to Azure log and run the query like this</p>
 <p><img src=""https://i.stack.imgur.com/jhpLn.png"" alt=""1"" /></p>
 <p>However, in powershell, when I run <code>az monitor log-analytics query -w 0000000000000 --analytics-query &quot;exceptions&quot;</code>
@@ -31,8 +31,8 @@ For example, when we want to get exceptions message, we will got to Azure log an
 then I got an error message <code>BadArgumentError: The request had some invalid properties</code>.
 But I did not get the error message when I use Azure Dashboard.</p>
 <p>How would I modify my query? Or should I use a different function?</p>
-<p>Thanks in advance</p>",,2,0,,2022-08-08 21:53:16.703000 UTC,,2022-08-10 04:49:20.527000 UTC,2022-08-09 08:12:13.920000 UTC,,2395282,,19123691,,1,0,azure|azure-devops|azure-application-insights|azure-log-analytics|azure-log-analytics-workspace,256
-73250763,Error CS0246: The type or namespace name 'StreamingContext' could not be found (are you missing a using directive or an assembly reference?),"<p>I have these errors when trying to write this script for save and load in my game.</p>
+<p>Thanks in advance</p>"		2	0		2022-08-08 21:53:16.703000 UTC		2022-08-10 04:49:20.527000 UTC	2022-08-09 08:12:13.920000 UTC		2395282		19123691		1	0	azure|azure-devops|azure-application-insights|azure-log-analytics|azure-log-analytics-workspace	256
+73250763	Error CS0246: The type or namespace name 'StreamingContext' could not be found (are you missing a using directive or an assembly reference?)	"<p>I have these errors when trying to write this script for save and load in my game.</p>
 <blockquote>
 <p>Assets\Scripts\Save System\SaveData.cs(62,40): error CS0246: The type
 or namespace name 'StreamingContext' could not be found (are you
@@ -173,8 +173,8 @@ name 'JsonConvert' does not exist in the current context</p>
 <p>Assets\Scripts\Save System\SaveSystem.cs(47,61): error CS0246: The
 type or namespace name 'saveData' could not be found (are you missing
 a using directive or an assembly reference?)</p>
-</blockquote>",73251390,1,0,,2022-08-05 13:43:25.850000 UTC,,2022-08-05 16:40:00.610000 UTC,2022-08-05 16:40:00.610000 UTC,,17654458,,17654458,,1,3,c#|unity3d,512
-73406942,Google workspace account has been suspended with no recovery method,"<p>Many years ago I set up my domain so Google would manage my domain's email.  Today, possibly because I was accessing from another state, Google decides to suspend the service:</p>
+</blockquote>"	73251390	1	0		2022-08-05 13:43:25.850000 UTC		2022-08-05 16:40:00.610000 UTC	2022-08-05 16:40:00.610000 UTC		17654458		17654458		1	3	c#|unity3d	512
+73406942	Google workspace account has been suspended with no recovery method	"<p>Many years ago I set up my domain so Google would manage my domain's email.  Today, possibly because I was accessing from another state, Google decides to suspend the service:</p>
 <blockquote>
 <p>Your organization's Google workspace account has been suspended. Please contact your Google workspace organization administrator to re-activate your organization.</p>
 </blockquote>
@@ -232,10 +232,10 @@ You can verify your TXT record here.
 In order for us to help you with the sign-up process, please follow this link and submit your request.
 Best regards,
 Google Workspace Support</p>
-</blockquote>",73419827,1,0,,2022-08-18 17:05:12.950000 UTC,,2022-08-19 16:43:13.243000 UTC,2022-08-19 16:43:13.243000 UTC,,897007,,897007,,1,0,google-workspace,512
-73200968,Mac Unity package manager error resolving packages: one or more packages could not be added to local file system,"<p>I use unity 2021.3.7f1, I was creating a new game on unity hub when i got this error message:
-<a href=""https://i.stack.imgur.com/zTnk3.png"" rel=""nofollow noreferrer"">one or more packages could not be added to local file system com.unity.collab-proxy: ENOENT no such file or directory</a></p>",,1,0,,2022-08-02 01:00:36.200000 UTC,,2022-08-17 00:40:54.303000 UTC,,,,,19502695,,1,0,unity3d,257
-73210586,Get list of all compartments in OCI Tenancy,"<p>I am trying to get the list of all <code>compartments</code> (including child compartments) in <code>OCI Tenancy</code> using <code>Python SDK</code>.</p>
+</blockquote>"	73419827	1	0		2022-08-18 17:05:12.950000 UTC		2022-08-19 16:43:13.243000 UTC	2022-08-19 16:43:13.243000 UTC		897007		897007		1	0	google-workspace	512
+73200968	Mac Unity package manager error resolving packages: one or more packages could not be added to local file system	"<p>I use unity 2021.3.7f1, I was creating a new game on unity hub when i got this error message:
+<a href=""https://i.stack.imgur.com/zTnk3.png"" rel=""nofollow noreferrer"">one or more packages could not be added to local file system com.unity.collab-proxy: ENOENT no such file or directory</a></p>"		1	0		2022-08-02 01:00:36.200000 UTC		2022-08-17 00:40:54.303000 UTC					19502695		1	0	unity3d	257
+73210586	Get list of all compartments in OCI Tenancy	"<p>I am trying to get the list of all <code>compartments</code> (including child compartments) in <code>OCI Tenancy</code> using <code>Python SDK</code>.</p>
 <p>But the below <code>OCI API</code> does not give the <code>root compartment</code> details.</p>
 <p>Is there a way to get <code>root compartment</code> details via any API directly?</p>
 <p>Below is my code:</p>
@@ -258,8 +258,8 @@ compartmentlist = list_compartments_response.data
 <p><code>compartmentlist</code> dict does not contain the <code>root compartment</code> details.</p>
 <p>Please help.</p>
 <p>Edit 1:</p>
-<p><code>COMPARTMENT_ID</code> given above in the code is the <code>root compartment ID</code>. I need the details of even this <code>root compartment</code> in the final response of API.</p>",73211582,1,0,,2022-08-02 16:07:41.327000 UTC,1,2022-08-02 17:38:46.370000 UTC,2022-08-02 16:13:57.297000 UTC,,19675989,,19675989,,1,2,oracle-cloud-infrastructure|oci-python-sdk,257
-73241368,VSCode Meaning of : ptyhost warning Shell integration cannot be enabled for executable,"<p>In VSCode I connect from Windows to Ubuntu via the Remote SSH extension. I can open the VSCode Terminal window for 'bash' and I get to shell in the remote server.</p>
+<p><code>COMPARTMENT_ID</code> given above in the code is the <code>root compartment ID</code>. I need the details of even this <code>root compartment</code> in the final response of API.</p>"	73211582	1	0		2022-08-02 16:07:41.327000 UTC	1	2022-08-02 17:38:46.370000 UTC	2022-08-02 16:13:57.297000 UTC		19675989		19675989		1	2	oracle-cloud-infrastructure|oci-python-sdk	257
+73241368	VSCode Meaning of : ptyhost warning Shell integration cannot be enabled for executable	"<p>In VSCode I connect from Windows to Ubuntu via the Remote SSH extension. I can open the VSCode Terminal window for 'bash' and I get to shell in the remote server.</p>
 <p>But this message shows in the Log for Remote Pty Host:<br />
 <code>[ptyhost] [warning] Shell integration cannot be enabled for executable &quot;/bin/sh&quot; and args ...</code></p>
 <p>The args for /bin/sh have a script for wget and fallback to curl to call :<br />
@@ -270,8 +270,8 @@ compartmentlist = list_compartments_response.data
 <p>What are these ptyhost errors?<br />
 What are they telling us?<br />
 What should we do to fix the problem being reported?<br />
-Might this affect other operations from VSCode?</p>",,0,0,,2022-08-04 19:30:47.050000 UTC,,2022-08-04 19:30:47.050000 UTC,,,,,190955,,1,0,visual-studio-code|pty|vscode-remote-ssh,257
-73276629,How to preload library with ld_preload to wine(windows game)?,"<p>I want to learn how to preload and hook functions in wine running windows apps.
+Might this affect other operations from VSCode?</p>"		0	0		2022-08-04 19:30:47.050000 UTC		2022-08-04 19:30:47.050000 UTC					190955		1	0	visual-studio-code|pty|vscode-remote-ssh	257
+73276629	How to preload library with ld_preload to wine(windows game)?	"<p>I want to learn how to preload and hook functions in wine running windows apps.
 I'm trying to preload a library with <code>ld_preload</code> to wine(windows game(32-bit)) on Arch Linux (64-bit but I think I installed 32-bit support). I get the error <code>wrong ELF class: ELFCLASS32</code> and the same for <code>ELFCLASS64</code>.</p>
 <p>Full error text:</p>
 <blockquote>
@@ -297,23 +297,23 @@ I'm trying to preload a library with <code>ld_preload</code> to wine(windows gam
 </blockquote>
 <p>But don't know how to run it with wine running the app.</p>
 <p>I want to learn how to preload and hook functions in wine running windows apps. I saw this guide:
-<a href=""https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/wow-memory-editing/276206-linux-simple-injection-ld_preload.html"" rel=""nofollow noreferrer"">https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/wow-memory-editing/276206-linux-simple-injection-ld_preload.html</a></p>",,1,0,,2022-08-08 10:43:51.060000 UTC,1,2022-08-18 05:14:00.740000 UTC,2022-08-18 05:14:00.740000 UTC,,1888143,,1888143,,1,3,c|hook|ld|wine|ld-preload,257
-73321062,How to install specific SDK (I need 6.0.300),"<p>I'm running WSL-Ubuntu 20.04 on windows and need to have dotnet 6.0.300.</p>
-<p>I have 5.0.480 and 6.0.400 installed, but I can't figure out how to get the specific one (dotnet 6.0.300).</p>",,1,0,,2022-08-11 12:58:42.827000 UTC,,2022-08-11 22:04:07.210000 UTC,,,,,19312689,,1,0,.net|sdk|windows-subsystem-for-linux,257
-73199602,Need a way to hide soft keyboard in MAUI's Editor / Entry fields,"<p>I found what seems to be useful in this link:</p>
+<a href=""https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/wow-memory-editing/276206-linux-simple-injection-ld_preload.html"" rel=""nofollow noreferrer"">https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/wow-memory-editing/276206-linux-simple-injection-ld_preload.html</a></p>"		1	0		2022-08-08 10:43:51.060000 UTC	1	2022-08-18 05:14:00.740000 UTC	2022-08-18 05:14:00.740000 UTC		1888143		1888143		1	3	c|hook|ld|wine|ld-preload	257
+73321062	How to install specific SDK (I need 6.0.300)	"<p>I'm running WSL-Ubuntu 20.04 on windows and need to have dotnet 6.0.300.</p>
+<p>I have 5.0.480 and 6.0.400 installed, but I can't figure out how to get the specific one (dotnet 6.0.300).</p>"		1	0		2022-08-11 12:58:42.827000 UTC		2022-08-11 22:04:07.210000 UTC					19312689		1	0	.net|sdk|windows-subsystem-for-linux	257
+73199602	Need a way to hide soft keyboard in MAUI's Editor / Entry fields	"<p>I found what seems to be useful in this link:</p>
 <p><a href=""https://theconfuzedsourcecode.wordpress.com/2017/05/19/a-keyboard-disabled-entry-control-in-xamarin-forms/"" rel=""nofollow noreferrer"">A Keyboard disabled Entry control in Xamarin Forms</a></p>
 <p>But it seems that it only works in Xamarin Forms. I even used it in my MAUI app, but it simply has no effect !</p>
 <p>The reason I am looking to do this is because I want to enable focus on the Editor field but without triggering the soft keyboard (for a barcode scanner field)</p>
-<p>Thanks.</p>",,3,0,,2022-08-01 21:04:19.373000 UTC,,2022-08-22 12:05:35.783000 UTC,,,,,10420838,,1,2,maui|.net-maui,513
-73296164,"Activating, then deactivating, then re-activating the primary context - can I keep the handle?","<p>Suppose that, for a device without an activated primary context, I:</p>
+<p>Thanks.</p>"		3	0		2022-08-01 21:04:19.373000 UTC		2022-08-22 12:05:35.783000 UTC					10420838		1	2	maui|.net-maui	513
+73296164	Activating, then deactivating, then re-activating the primary context - can I keep the handle?	"<p>Suppose that, for a device without an activated primary context, I:</p>
 <ol>
 <li>Call <code>cuDevicePrimaryCtxRetain()</code> and get a <code>CUcontext</code> value.</li>
 <li>Call <code>cuDevicePrimaryCtxRelease()</code>; the context gets deactivated.</li>
 <li>Call <code>cuDevicePrimaryCtxRetain()</code> and get another <code>CUcontext</code> value.</li>
 </ol>
 <p>In my (limited and anecdotal) experience, I get the same handle from both calls.</p>
-<p>Are we guaranteed this behavior? That is, will all subsequent calls to <code>cuDevicePrimaryCtxRetain()</code> (in the same process) always use the same handle, even though the primary context may have been disactivated and other work done?</p>",,0,0,,2022-08-09 17:52:48.033000 UTC,,2022-08-09 17:52:48.033000 UTC,,,,,1593077,,1,0,stability|cuda-context|cuda-driver,2
-73406095,Metamask confirm transation not popping out,"<p>Cant figure out why when I call for handleMinta metamask is not popping up. Thanks in advance</p>
+<p>Are we guaranteed this behavior? That is, will all subsequent calls to <code>cuDevicePrimaryCtxRetain()</code> (in the same process) always use the same handle, even though the primary context may have been disactivated and other work done?</p>"		0	0		2022-08-09 17:52:48.033000 UTC		2022-08-09 17:52:48.033000 UTC					1593077		1	0	stability|cuda-context|cuda-driver	2
+73406095	Metamask confirm transation not popping out	"<p>Cant figure out why when I call for handleMinta metamask is not popping up. Thanks in advance</p>
 <pre><code>async function handleMint(){
     if(window.ethereum){
         const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -334,18 +334,18 @@ I'm trying to preload a library with <code>ld_preload</code> to wine(windows gam
         }
     }
 }
-</code></pre>",,0,0,,2022-08-18 15:51:11.380000 UTC,,2022-08-18 15:51:11.380000 UTC,,,,,19787734,,1,0,ethers.js,2
-73447780,Calculating timestamp from SCTS,"<p>I'm writing an api to an SMS receiving device and one of the fields I see is SCTS - Service Center Timestamp. I've sent an SMS to it at 15:26 UTC and I have the following SCTS: <code>22082211263196</code>, so the time in this string is <code>11:26:31</code>, i.e. <code>UTC-4</code>.</p>
-<p>I can't make sense of the timezone offset - 96. It's supposed to be the number of quarter-hours + the sign. In binary this value translates to <code>1100000</code> so if the first <code>1</code> means minus, what remains is <code>100000</code> or 32 in decimal, i.e. <code>32/4 = 8</code>, so <code>UTC-8</code>? Am I missing something? How do I get the correct timezone from SCTS?</p>",,0,0,,2022-08-22 15:45:14.833000 UTC,,2022-08-22 15:45:14.833000 UTC,,,,,15275032,,1,0,sms,2
-73489350,Testing significance of rate of change in nutrient ratios against compound y,"<p>I have been working out the rate of change in nutrient ratios against a compound (Y).</p>
+</code></pre>"		0	0		2022-08-18 15:51:11.380000 UTC		2022-08-18 15:51:11.380000 UTC					19787734		1	0	ethers.js	2
+73447780	Calculating timestamp from SCTS	"<p>I'm writing an api to an SMS receiving device and one of the fields I see is SCTS - Service Center Timestamp. I've sent an SMS to it at 15:26 UTC and I have the following SCTS: <code>22082211263196</code>, so the time in this string is <code>11:26:31</code>, i.e. <code>UTC-4</code>.</p>
+<p>I can't make sense of the timezone offset - 96. It's supposed to be the number of quarter-hours + the sign. In binary this value translates to <code>1100000</code> so if the first <code>1</code> means minus, what remains is <code>100000</code> or 32 in decimal, i.e. <code>32/4 = 8</code>, so <code>UTC-8</code>? Am I missing something? How do I get the correct timezone from SCTS?</p>"		0	0		2022-08-22 15:45:14.833000 UTC		2022-08-22 15:45:14.833000 UTC					15275032		1	0	sms	2
+73489350	Testing significance of rate of change in nutrient ratios against compound y	"<p>I have been working out the rate of change in nutrient ratios against a compound (Y).</p>
 <p>I can see that the rate of nutrient change decreases as the compound Y rate of change increases graphically.</p>
 <p>Just wondering what are the best tests to prove the significance please? I was using GLMs but I have both negative and positive values so it is hard to find an appropriate family.</p>
 <p>Here is one of my graphs:</p>
 <p><a href=""https://i.stack.imgur.com/PlN8Q.png"" rel=""nofollow noreferrer"">Nutrient ratio rate of change against Compound Y rate of change</a></p>
 <p>Any help you can give would be highly appreciated.</p>
 <p>Kind regards,</p>
-<p>A</p>",,0,0,,2022-08-25 14:29:40.247000 UTC,,2022-08-25 14:29:40.247000 UTC,,,,,14675855,,1,0,glm|rate|significance,2
-73511481,Graphql Permessions for Ticket Only And Admins Group,"<p>I have a Data Model on Aws Amplify
+<p>A</p>"		0	0		2022-08-25 14:29:40.247000 UTC		2022-08-25 14:29:40.247000 UTC					14675855		1	0	glm|rate|significance	2
+73511481	Graphql Permessions for Ticket Only And Admins Group	"<p>I have a Data Model on Aws Amplify
 I wanna change something but it's about four days I can't do it and always fails
 I hope someone can help me</p>
 <p>there is a screenshot of my Model
@@ -359,8 +359,8 @@ I want user and Admins can add Messages to a Ticket (user for owned tickets only
 Only Ticket Owner can see Ticket Messages ether its owner's message or message from admin</p>
 <p>there is a built-in Owner-based Scope
 but when I use it user can see messages from Admin
-Thanks</p>",,0,0,,2022-08-27 13:42:09.123000 UTC,,2022-08-27 13:42:09.123000 UTC,,,,,16517653,,1,0,amazon-web-services|graphql|amplify,2
-73519558,Divi custom header on phone not matching others,"<p>I am using this divi tutorial from Elegant Themes: <a href=""https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-custom-global-header-with-divis-theme-builder"" rel=""nofollow noreferrer"">https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-custom-global-header-with-divis-theme-builder</a></p>
+Thanks</p>"		0	0		2022-08-27 13:42:09.123000 UTC		2022-08-27 13:42:09.123000 UTC					16517653		1	0	amazon-web-services|graphql|amplify	2
+73519558	Divi custom header on phone not matching others	"<p>I am using this divi tutorial from Elegant Themes: <a href=""https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-custom-global-header-with-divis-theme-builder"" rel=""nofollow noreferrer"">https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-custom-global-header-with-divis-theme-builder</a></p>
 <p>My Divi is up-to-date.</p>
 <p>I have one section containing two rows each with one column. The first row has an image module with a logo and the second has a menu module. The section has a bottom border with rounded corners.</p>
 <p>All of my sizing and spacing setting are the same for desktop, tablet, and phone.</p>
@@ -372,8 +372,8 @@ Thanks</p>",,0,0,,2022-08-27 13:42:09.123000 UTC,,2022-08-27 13:42:09.123000 UTC
 <p>Phone</p>
 <p><a href=""https://i.stack.imgur.com/5V014.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/5V014.png"" alt=""Phone"" /></a></p>
 <p>Any ideas what could be causing this?</p>
-<p>Thanks.</p>",,0,0,,2022-08-28 14:31:09.600000 UTC,,2022-08-28 14:31:09.600000 UTC,,,,,1873217,,1,0,header|divi,2
-73206525,Keycloak 19.0 behind nginx (https) admin console does not load,"<p>I have to use keycloak 19.0 dockerized behind reverse proxy nginx</p>
+<p>Thanks.</p>"		0	0		2022-08-28 14:31:09.600000 UTC		2022-08-28 14:31:09.600000 UTC					1873217		1	0	header|divi	2
+73206525	Keycloak 19.0 behind nginx (https) admin console does not load	"<p>I have to use keycloak 19.0 dockerized behind reverse proxy nginx</p>
 <ul>
 <li>request --&gt; https (nginx) ---&gt; http keycloak</li>
 </ul>
@@ -560,8 +560,8 @@ server {
 }
 
 
-</code></pre>",,1,0,,2022-08-02 11:07:41.960000 UTC,,2022-08-19 04:56:18.627000 UTC,2022-08-02 12:06:26.603000 UTC,,7362744,,7362744,,1,1,docker|nginx|keycloak|reverse-proxy,258
-73277461,"Transforming const to the configured target environment (""es5"") is not supported yet when using vite","<p>this is my tsconfig for a react project built without create-react-app</p>
+</code></pre>"		1	0		2022-08-02 11:07:41.960000 UTC		2022-08-19 04:56:18.627000 UTC	2022-08-02 12:06:26.603000 UTC		7362744		7362744		1	1	docker|nginx|keycloak|reverse-proxy	258
+73277461	"Transforming const to the configured target environment (""es5"") is not supported yet when using vite"	"<p>this is my tsconfig for a react project built without create-react-app</p>
 <pre><code>{
   &quot;compilerOptions&quot;: {
     &quot;target&quot;: &quot;es5&quot;,
@@ -587,13 +587,13 @@ server {
   &quot;references&quot;: [{ &quot;path&quot;: &quot;./tsconfig.vite.json&quot; }]
 }
 </code></pre>
-<p>I am getting above error while running command <code>vite</code> which is supposed to spin up a dev server</p>",,1,0,,2022-08-08 11:52:30.327000 UTC,,2022-08-11 13:58:13.170000 UTC,2022-08-11 13:58:13.170000 UTC,,2761641,,2761641,,1,0,reactjs|vite|tsconfig|devserver,258
-73360276,"I cannot access nor edit an Azure CDN endpoint due to an error ""s.@odata.type is not a function""","<p>I cannot access nor edit a CDN endpoint due to an error &quot;s.@odata.type is not a function&quot; (see attached screenshot).</p>
+<p>I am getting above error while running command <code>vite</code> which is supposed to spin up a dev server</p>"		1	0		2022-08-08 11:52:30.327000 UTC		2022-08-11 13:58:13.170000 UTC	2022-08-11 13:58:13.170000 UTC		2761641		2761641		1	0	reactjs|vite|tsconfig|devserver	258
+73360276	"I cannot access nor edit an Azure CDN endpoint due to an error ""s.@odata.type is not a function"""	"<p>I cannot access nor edit a CDN endpoint due to an error &quot;s.@odata.type is not a function&quot; (see attached screenshot).</p>
 <p><img src=""https://i.stack.imgur.com/HDwX8.png"" alt=""enter image description here"" /></p>
-<p>Your help is much appreciated. Thank you.</p>",,0,0,,2022-08-15 11:18:52.510000 UTC,,2022-08-15 18:29:55.857000 UTC,2022-08-15 11:19:15.503000 UTC,,6886501,,4635396,,1,1,azure|cdn,258
-73222121,How to set base folder which should be opened in created new window,<p>I want to open a new window and there is have to be opened specified folder in vs code. How could I accomplish this?</p>,,0,0,,2022-08-03 12:55:02.820000 UTC,,2022-08-03 12:55:02.820000 UTC,,,,,17569967,,1,0,visual-studio-code,3
-73224811,How to find Channel ID / Application ID for a .Net Service,<p>We are looking to connect to a vendor service to retrieve data.  The vendor is asking us to supply them with the Application ID and Channel ID of our service to prior to providing us access to their service.  How can I find this information in our .Net Service source code?</p>,,0,0,,2022-08-03 16:36:06.293000 UTC,,2022-08-03 16:36:06.293000 UTC,,,,,3285003,,1,0,.net|rest|web-services,3
-73234748,OpenXML not replacing FieldCode which having more than 41characters as display text not with result values,"<p>While a Field Code has more than 40 characters then OpenXML does not replace FieldCode with result values also Formating is not getting applied for the same. The below is working fine filed codes which have up to 40 characters but failed for more than 40 characters.</p>
+<p>Your help is much appreciated. Thank you.</p>"		0	0		2022-08-15 11:18:52.510000 UTC		2022-08-15 18:29:55.857000 UTC	2022-08-15 11:19:15.503000 UTC		6886501		4635396		1	1	azure|cdn	258
+73222121	How to set base folder which should be opened in created new window	<p>I want to open a new window and there is have to be opened specified folder in vs code. How could I accomplish this?</p>		0	0		2022-08-03 12:55:02.820000 UTC		2022-08-03 12:55:02.820000 UTC					17569967		1	0	visual-studio-code	3
+73224811	How to find Channel ID / Application ID for a .Net Service	<p>We are looking to connect to a vendor service to retrieve data.  The vendor is asking us to supply them with the Application ID and Channel ID of our service to prior to providing us access to their service.  How can I find this information in our .Net Service source code?</p>		0	0		2022-08-03 16:36:06.293000 UTC		2022-08-03 16:36:06.293000 UTC					3285003		1	0	.net|rest|web-services	3
+73234748	OpenXML not replacing FieldCode which having more than 41characters as display text not with result values	"<p>While a Field Code has more than 40 characters then OpenXML does not replace FieldCode with result values also Formating is not getting applied for the same. The below is working fine filed codes which have up to 40 characters but failed for more than 40 characters.</p>
 <p>var format = &quot;&quot;;
 foreach (var paragraph in wordDocument.MainDocumentPart.RootElement.Descendants())
 {
@@ -648,14 +648,14 @@ if (!String.IsNullOrEmpty(fieldCode.InnerText) &amp;&amp; fieldCode.InnerText.Tr
                 }
             }
         }
-</code></pre>",,0,0,,2022-08-04 11:01:15.207000 UTC,,2022-08-04 11:01:15.207000 UTC,,,,,19690685,,1,0,openxml-sdk,3
-73282909,How can I find an old API Google Maps Address I've used for my online shopify store?,<p>I am currently redoing my online store and had an API address for my store on my old theme. I want to put the same API google maps address on my new theme but lost the API address and don't want to register a new one.</p>,,0,0,,2022-08-08 19:11:09.300000 UTC,,2022-08-08 19:11:09.300000 UTC,,,,,19720907,,1,0,api,3
-73304497,ANN - Constraints - Independence,"<p>I try to model time-series of plant biophysiological responses to various ecosystem drivers using ANN. During the night, I would like to remove some variables' influences, because science has proved that they should not have an influence on the processes I model, while their influence is important during the day. I thought about modifying my loss function by adding penalties targeting these variables during the night potentially with independent statistical tests.</p>
+</code></pre>"		0	0		2022-08-04 11:01:15.207000 UTC		2022-08-04 11:01:15.207000 UTC					19690685		1	0	openxml-sdk	3
+73282909	How can I find an old API Google Maps Address I've used for my online shopify store?	<p>I am currently redoing my online store and had an API address for my store on my old theme. I want to put the same API google maps address on my new theme but lost the API address and don't want to register a new one.</p>		0	0		2022-08-08 19:11:09.300000 UTC		2022-08-08 19:11:09.300000 UTC					19720907		1	0	api	3
+73304497	ANN - Constraints - Independence	"<p>I try to model time-series of plant biophysiological responses to various ecosystem drivers using ANN. During the night, I would like to remove some variables' influences, because science has proved that they should not have an influence on the processes I model, while their influence is important during the day. I thought about modifying my loss function by adding penalties targeting these variables during the night potentially with independent statistical tests.</p>
 <p>Is this a legit way to solve this problem? Is there a more conventional way to impose independence at given parameter subspaces in Machine Learning?</p>
-<p>Thanks in advance</p>",,0,0,,2022-08-10 10:16:32.840000 UTC,,2022-08-10 10:16:32.840000 UTC,,,,,19120775,,1,0,constraints|loss-function|piecewise|statistical-test,3
-73352281,How Can I triangulate a Position using two DMEs,"<p>Is there a MATLAB Solution for the following link or can it be implemented in MATLAB of the following link?
-<a href=""https://aviation.stackexchange.com/questions/46135/how-can-i-triangulate-a-position-using-two-dmes"">https://aviation.stackexchange.com/questions/46135/how-can-i-triangulate-a-position-using-two-dmes</a></p>",,0,0,,2022-08-14 14:04:43.420000 UTC,,2022-08-14 14:04:43.420000 UTC,,,,,19762327,,1,0,navigation,3
-73390536,How to make phone number field a unique identifier like email in OSclass,"<p>I dont want users to register thesame phone number more than once just like email in OSclass registration page. I tried to duplicate and tweak the code for email like the one below but after clicking the submit button i got an error, thanks in advance i dont mind a github plugin for this</p>
+<p>Thanks in advance</p>"		0	0		2022-08-10 10:16:32.840000 UTC		2022-08-10 10:16:32.840000 UTC					19120775		1	0	constraints|loss-function|piecewise|statistical-test	3
+73352281	How Can I triangulate a Position using two DMEs	"<p>Is there a MATLAB Solution for the following link or can it be implemented in MATLAB of the following link?
+<a href=""https://aviation.stackexchange.com/questions/46135/how-can-i-triangulate-a-position-using-two-dmes"">https://aviation.stackexchange.com/questions/46135/how-can-i-triangulate-a-position-using-two-dmes</a></p>"		0	0		2022-08-14 14:04:43.420000 UTC		2022-08-14 14:04:43.420000 UTC					19762327		1	0	navigation	3
+73390536	How to make phone number field a unique identifier like email in OSclass	"<p>I dont want users to register thesame phone number more than once just like email in OSclass registration page. I tried to duplicate and tweak the code for email like the one below but after clicking the submit button i got an error, thanks in advance i dont mind a github plugin for this</p>
 <pre><code>if( !osc_validate_email($input['s_email']) ) {
   $flash_error .= _m('The email is not valid') . PHP_EOL;
   $error[] = 5;
@@ -673,8 +673,8 @@ if($input['s_username']!='') {
   if( !$error &amp;&amp; $username_taken != false ) {
     $flash_error .= _m( 'Username is already taken' ) . PHP_EOL;
     $error[] = 8;
-</code></pre>",,0,0,,2022-08-17 14:47:26.477000 UTC,,2022-08-17 14:47:26.477000 UTC,,,,,19267611,,1,0,plugins|numbers|registration|osclass,3
-73398967,WPF MVVM Toolkit library doesn't send the registered values,"<pre><code>    I am registering the events using MVVM Toolkit library (Microsoft.Toolkit.Mvvm.Messaging) as below.
+</code></pre>"		0	0		2022-08-17 14:47:26.477000 UTC		2022-08-17 14:47:26.477000 UTC					19267611		1	0	plugins|numbers|registration|osclass	3
+73398967	WPF MVVM Toolkit library doesn't send the registered values	"<pre><code>    I am registering the events using MVVM Toolkit library (Microsoft.Toolkit.Mvvm.Messaging) as below.
     //code
      messenger.Register&lt;EventHandler, MessengerRequestMessage&lt;(string loadpointId, System.Windows.Point doubleClickLocation, IPartInfo partInfo)&gt;,string&gt; 
                     (this, &quot;MouseDoubleClick&quot; ,DoubleClickedHandler);
@@ -758,9 +758,9 @@ bool isReg = messenger.IsRegistered&lt;MessengerRequestMessage&lt;(string loadpo
                     _messenger.Send&lt;MessengerRequestMessage&lt;(string loadpointId, System.Windows.Point doubleClickLocation, IPartInfo partInfo)&gt;, string&gt;
                        (tuple1, &quot;MouseDoubleClick&quot;);
 </code></pre>
-<p>I have registered the event and passing the relevant parameters as above code snippet which is expected. after send messege the event is not getting invoked. can someone guide what's wrong?</p>",,0,0,,2022-08-18 07:24:37.353000 UTC,,2022-08-18 07:24:37.353000 UTC,,,,,19791324,,1,0,eventhandler|mvvm-toolkit,3
-73402102,Unable to decrypt backup files of Mail-in-a-box stored in S3 or locally,"<p>I set up backups on Amazon S3. I have received three backup files. I also have access to the secret_key in my /home/user-data/backups directory. In my local windows system, I tried to open the file with gpg4win software. After trying to open the file, it asks me for the passphrase. I pasted the key from secret_key.txt file to there. This does not work as it gives error of Bad Passphrase. Am I doing something wrong?</p>",,0,0,,2022-08-18 11:14:18.043000 UTC,,2022-08-18 11:14:18.043000 UTC,,,,,16650996,,1,0,mailinabox,3
-73422627,List<models.object1> updates every time an instance of Object1 is changed,"<p>I'm working on a wpf app. visual studio 2022
+<p>I have registered the event and passing the relevant parameters as above code snippet which is expected. after send messege the event is not getting invoked. can someone guide what's wrong?</p>"		0	0		2022-08-18 07:24:37.353000 UTC		2022-08-18 07:24:37.353000 UTC					19791324		1	0	eventhandler|mvvm-toolkit	3
+73402102	Unable to decrypt backup files of Mail-in-a-box stored in S3 or locally	<p>I set up backups on Amazon S3. I have received three backup files. I also have access to the secret_key in my /home/user-data/backups directory. In my local windows system, I tried to open the file with gpg4win software. After trying to open the file, it asks me for the passphrase. I pasted the key from secret_key.txt file to there. This does not work as it gives error of Bad Passphrase. Am I doing something wrong?</p>		0	0		2022-08-18 11:14:18.043000 UTC		2022-08-18 11:14:18.043000 UTC					16650996		1	0	mailinabox	3
+73422627	List<models.object1> updates every time an instance of Object1 is changed	"<p>I'm working on a wpf app. visual studio 2022
 I have the following code in a file for testing and have set a button click event to run WriteWorkOrderList(). nothing gets passed to it: there are no other methods or anything:</p>
 <pre><code>     private  List&lt;Models.WorkOrder&gt; _workOrderList = new List&lt;Models.WorkOrder&gt;();
     public List&lt;Models.WorkOrder&gt; WorkOrderList
@@ -816,10 +816,10 @@ CurrentWorkOrder.Customer.Name= &quot;joe&quot;.</li>
 <li>I'll Step through the code</li>
 <li>as soon as the line CurrentWorkorder.Customer.Name = &quot;Billy&quot;; gets processed the record in WorkOrderList updates to the new name</li>
 </ol>
-<p>I can't figure out how they are connecting to each other. All I'm trying to do is add a new WorkOrder to the Workorderlist but I haven't Even gotten that far</p>",,0,0,,2022-08-19 21:59:58.397000 UTC,,2022-08-19 21:59:58.397000 UTC,,,,,1627879,,1,0,list|object,3
-73424104,"Why there is ""tag"" Showing in my ULR, I want to remove it","<p>This is <a href=""https://www.theblogarticle.com/tag/best-greenhouse-kits"" rel=""nofollow noreferrer"">https://www.theblogarticle.com/tag/best-greenhouse-kits</a>, I have written a post on <a href=""https://www.theblogarticle.com/tag/best-greenhouse-kits/"" rel=""nofollow noreferrer"">Greenhouse gasses effect</a>.
-so please let me know how I can make it like <a href=""https://www.theblogarticle.com/best-greenhouse-kits"" rel=""nofollow noreferrer"">https://www.theblogarticle.com/best-greenhouse-kits</a></p>",,0,0,,2022-08-20 04:30:31.710000 UTC,,2022-08-20 04:30:31.710000 UTC,,,,,19358030,,1,0,tags|categories,3
-73456433,flutter_local_notification groupkey not working on same value,"<p>i'm working on firebase FCM . i searched alot about groupkey  and seen the code about that...
+<p>I can't figure out how they are connecting to each other. All I'm trying to do is add a new WorkOrder to the Workorderlist but I haven't Even gotten that far</p>"		0	0		2022-08-19 21:59:58.397000 UTC		2022-08-19 21:59:58.397000 UTC					1627879		1	0	list|object	3
+73424104	"Why there is ""tag"" Showing in my ULR, I want to remove it"	"<p>This is <a href=""https://www.theblogarticle.com/tag/best-greenhouse-kits"" rel=""nofollow noreferrer"">https://www.theblogarticle.com/tag/best-greenhouse-kits</a>, I have written a post on <a href=""https://www.theblogarticle.com/tag/best-greenhouse-kits/"" rel=""nofollow noreferrer"">Greenhouse gasses effect</a>.
+so please let me know how I can make it like <a href=""https://www.theblogarticle.com/best-greenhouse-kits"" rel=""nofollow noreferrer"">https://www.theblogarticle.com/best-greenhouse-kits</a></p>"		0	0		2022-08-20 04:30:31.710000 UTC		2022-08-20 04:30:31.710000 UTC					19358030		1	0	tags|categories	3
+73456433	flutter_local_notification groupkey not working on same value	"<p>i'm working on firebase FCM . i searched alot about groupkey  and seen the code about that...
 but there is a problem on my code ... i cant find that. so i did the solved code but its not working yet . anyone can help me ?</p>
 <p>its my code for onmessaging firebase :</p>
 <p><div class=""snippet"" data-lang=""js"" data-hide=""false"" data-console=""true"" data-babel=""false"">
@@ -913,9 +913,9 @@ but there is a problem on my code ... i cant find that. so i did the solved code
 </p>
 <p>the cods i put for you working like this. i shared the image :
 <a href=""https://i.stack.imgur.com/URNih.png"" rel=""nofollow noreferrer"">enter image description here</a></p>
-<p>the same notification from 1 user who's comming from firebase messaging  not working what im want ! please help me if you are solved this problem.</p>",,0,0,,2022-08-23 09:42:11.613000 UTC,,2022-08-23 09:42:11.613000 UTC,,,,,19465559,,1,0,javascript|html,3
-73459586,Flutter customize Date picker Time Picker,"<p><a href=""https://i.stack.imgur.com/W16kT.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/W16kT.png"" alt=""enter image description here"" /></a><strong>Hello everyone, hope you all are doing well. actually, I want to develop a  Date Time picker. the image of the design  below</strong></p>",,0,0,,2022-08-23 13:24:43.360000 UTC,,2022-08-23 13:24:43.360000 UTC,,,,,10450848,,1,0,flutter-datetime-picker,3
-73460205,JS M2M OAuth2 client_secret protection,"<p>I have a node application running as an azure app service, with authentication enabled against the Microsoft IdP.</p>
+<p>the same notification from 1 user who's comming from firebase messaging  not working what im want ! please help me if you are solved this problem.</p>"		0	0		2022-08-23 09:42:11.613000 UTC		2022-08-23 09:42:11.613000 UTC					19465559		1	0	javascript|html	3
+73459586	Flutter customize Date picker Time Picker	"<p><a href=""https://i.stack.imgur.com/W16kT.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/W16kT.png"" alt=""enter image description here"" /></a><strong>Hello everyone, hope you all are doing well. actually, I want to develop a  Date Time picker. the image of the design  below</strong></p>"		0	0		2022-08-23 13:24:43.360000 UTC		2022-08-23 13:24:43.360000 UTC					10450848		1	0	flutter-datetime-picker	3
+73460205	JS M2M OAuth2 client_secret protection	"<p>I have a node application running as an azure app service, with authentication enabled against the Microsoft IdP.</p>
 <p>The node service has been exposed through an SPA API.</p>
 <p>There is an other JS client application in the form of a browser extension that needs to communicate with the node server, without any prior user interaction (hence no auth. code flow or else)</p>
 <p>The way it's handled now looks something like :</p>
@@ -943,19 +943,19 @@ but there is a problem on my code ... i cant find that. so i did the solved code
 </code></pre>
 <p>I would expect this kind of service to service authentication flow to be quite common by nowadays standard, however i could not find in any of the docs i went through so far, how to properly secure the client_secret in order to get the access token.</p>
 <p>If this is not the correct way to go then how are we supposed to make M2M authentication secure, without any user intervention ?</p>
-<p>I'm open to any technology / platform to achieve this purpose.</p>",,0,0,,2022-08-23 14:04:42.663000 UTC,,2022-08-23 14:04:42.663000 UTC,,,,,14429780,,1,0,javascript,3
-73462626,Advanced Editor Tools non funziona più nel wordpress 6.0.1- Envo eCommerce 1.1.1,"<p>I have a serious problem.my website, written in WordPress with theme = Envo eCommerce 1.1.1, no longer works although I have not made any changes. In July the website has undergone automatic updates to version 6.0.1.
+<p>I'm open to any technology / platform to achieve this purpose.</p>"		0	0		2022-08-23 14:04:42.663000 UTC		2022-08-23 14:04:42.663000 UTC					14429780		1	0	javascript	3
+73462626	Advanced Editor Tools non funziona più nel wordpress 6.0.1- Envo eCommerce 1.1.1	"<p>I have a serious problem.my website, written in WordPress with theme = Envo eCommerce 1.1.1, no longer works although I have not made any changes. In July the website has undergone automatic updates to version 6.0.1.
 Since that time the block editor (classic paragraph) hasn't worked anymore. Unknown error.
 The strange thing is that I have two websites structured in the same way. One works and the other does not.
 Is there anyone who has encountered the same problem and solved it?
 In that case I would like to ask him for help.
 I thank those who are reading me in the hope of finding a solution.
 Good job everyone.
-RenatoDerik</p>",,0,0,,2022-08-23 17:05:36.230000 UTC,,2022-08-23 17:05:36.230000 UTC,,,,,19830693,,1,0,wordpress,3
-73476354,How do I create hyperlinks with a formula or rollup?,"<p>I have a table of items, each has a Name and a URL.</p>
+RenatoDerik</p>"		0	0		2022-08-23 17:05:36.230000 UTC		2022-08-23 17:05:36.230000 UTC					19830693		1	0	wordpress	3
+73476354	How do I create hyperlinks with a formula or rollup?	"<p>I have a table of items, each has a Name and a URL.</p>
 <p>How can I combine the two and create a field that stores the hyperlinked Name, linking to its respective URL?</p>
-<p>Furthermore, would it be possible to do the same with not just a formula field, but a rollup field?</p>",,0,0,,2022-08-24 16:03:38.720000 UTC,,2022-08-24 16:03:38.720000 UTC,,,,,16956566,,1,0,airtable,3
-73480479,speech_recognition is printing more information I need,"<p>I am using speech recognition to send OSC messages. Actually, the code works fine sometimes, I had some errors, but I could solve them with</p>
+<p>Furthermore, would it be possible to do the same with not just a formula field, but a rollup field?</p>"		0	0		2022-08-24 16:03:38.720000 UTC		2022-08-24 16:03:38.720000 UTC					16956566		1	0	airtable	3
+73480479	speech_recognition is printing more information I need	"<p>I am using speech recognition to send OSC messages. Actually, the code works fine sometimes, I had some errors, but I could solve them with</p>
 <p>r.recognize_google(audio, language = &quot;es_ES&quot;, show_all = True)</p>
 <p>my problem now is that before show_all, I just got the word or phrases I was saying, and I could use that as information, but now I am getting this:</p>
 <p>{'alternative': [{'transcript': 'vida', 'confidence': 0.96399021}], 'final': True}</p>
@@ -965,8 +965,8 @@ msg01 = oscbuildparse.OSCMessage(&quot;/alturas&quot;, &quot;,ii&quot;, argument
 osc_send(msg01, &quot;supercollider&quot;)
 osc_process()</p>
 <p>thanks and have a great day</p>
-<p>WM</p>",,0,0,,2022-08-24 23:38:53.667000 UTC,,2022-08-24 23:38:53.667000 UTC,,,,,19763836,,1,0,speech-recognition|osc,3
-73482396,Fragment Call Issue With Multiple Clicks,"<p>I have created this design to display in <strong>Stories Fragments.</strong> The design <strong>XML</strong> coding.</p>
+<p>WM</p>"		0	0		2022-08-24 23:38:53.667000 UTC		2022-08-24 23:38:53.667000 UTC					19763836		1	0	speech-recognition|osc	3
+73482396	Fragment Call Issue With Multiple Clicks	"<p>I have created this design to display in <strong>Stories Fragments.</strong> The design <strong>XML</strong> coding.</p>
 <p>stories_fragment_sample_layout.<strong>XML</strong> code.
 When I click on the stories fragment it works fine with just one click as I click for second or multiple times it calls fragment on the fragment. This means that its overwrite</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -1146,11 +1146,11 @@ savedInstanceState) {
 <p><a href=""https://i.stack.imgur.com/JRznO.jpg"" rel=""nofollow noreferrer"">enter image description here</a></p>
 <p>This is the one-time click of the image</p>
 <p><a href=""https://i.stack.imgur.com/3WTeZ.jpg"" rel=""nofollow noreferrer"">enter image description here</a></p>
-<p>This is the second or multiple-time click of the image</p>",,0,0,,2022-08-25 05:41:48.253000 UTC,,2022-08-25 05:41:48.253000 UTC,,,,,18390690,,1,0,android-fragments|fragment|android-fragmentactivity|android-listfragment|fragment-lifecycle,3
-73483907,Popover AJAX response with script / function not working,"<p>I have no issue retrieving data for Bootstrap 5 Popover via AJAX. The issue comes, if that response contains script / function. It seems it is not allowing function inside popover object to work as it should be. Even I reinitiate jquery inside that ajax response.</p>
+<p>This is the second or multiple-time click of the image</p>"		0	0		2022-08-25 05:41:48.253000 UTC		2022-08-25 05:41:48.253000 UTC					18390690		1	0	android-fragments|fragment|android-fragmentactivity|android-listfragment|fragment-lifecycle	3
+73483907	Popover AJAX response with script / function not working	"<p>I have no issue retrieving data for Bootstrap 5 Popover via AJAX. The issue comes, if that response contains script / function. It seems it is not allowing function inside popover object to work as it should be. Even I reinitiate jquery inside that ajax response.</p>
 <p>For instance, I have lines of checkbox inside that ajax response, and I want to select all by clicking an object like &quot;Check All&quot;.</p>
-<p>Do you guys have that same issue?</p>",,0,0,,2022-08-25 07:59:50.517000 UTC,,2022-08-25 07:59:50.517000 UTC,,,,,1713639,,1,0,tooltip|bootstrap-5|popover,3
-73191692,"Test error:MyActivity has already set content. If you have populated the Activity with a ComposeView, make sure to call setContent on that ComposeView","<p>When running Robolectric unit tests with the latest version of Compose 1.2.0, then the tests using <code>createAndroidComposeRule</code> fail with the following error:</p>
+<p>Do you guys have that same issue?</p>"		0	0		2022-08-25 07:59:50.517000 UTC		2022-08-25 07:59:50.517000 UTC					1713639		1	0	tooltip|bootstrap-5|popover	3
+73191692	Test error:MyActivity has already set content. If you have populated the Activity with a ComposeView, make sure to call setContent on that ComposeView	"<p>When running Robolectric unit tests with the latest version of Compose 1.2.0, then the tests using <code>createAndroidComposeRule</code> fail with the following error:</p>
 <blockquote>
 <p>MyActivity has already set content. If you have populated the Activity with a ComposeView, make sure to call setContent on that ComposeView instead of on the test rule; and make sure that that call to <code>setContent {}</code> is done after the ComposeTestRule has run</p>
 </blockquote>
@@ -1161,10 +1161,10 @@ savedInstanceState) {
         DemoScopedInjectedViewModelComposable()
     }
 }
-</code></pre>",73456791,3,0,,2022-08-01 09:32:42.913000 UTC,,2022-08-23 10:06:34.280000 UTC,,,,,5250468,,1,2,android|android-jetpack-compose|android-testing,259
-73215417,CMake Treat Warnings as Errors,"<p>How can I configure CMake to treat compiler warnings as errors during the build?</p>
-<p>I am aware of the possibility to manually configure command line options for the compiler like <code>-Werror</code> through commands like <code>target_compile_options</code>, but I would prefer a portable solution that does not require fiddling with tool-dependent options.</p>",73215418,2,0,,2022-08-03 01:34:15.973000 UTC,,2022-08-05 14:40:10.100000 UTC,,,,,577603,,1,2,c++|cmake|compiler-warnings,259
-73228010,i have proplem in oxmysql fivem,"<p>This is the error message</p>
+</code></pre>"	73456791	3	0		2022-08-01 09:32:42.913000 UTC		2022-08-23 10:06:34.280000 UTC					5250468		1	2	android|android-jetpack-compose|android-testing	259
+73215417	CMake Treat Warnings as Errors	"<p>How can I configure CMake to treat compiler warnings as errors during the build?</p>
+<p>I am aware of the possibility to manually configure command line options for the compiler like <code>-Werror</code> through commands like <code>target_compile_options</code>, but I would prefer a portable solution that does not require fiddling with tool-dependent options.</p>"	73215418	2	0		2022-08-03 01:34:15.973000 UTC		2022-08-05 14:40:10.100000 UTC					577603		1	2	c++|cmake|compiler-warnings	259
+73228010	i have proplem in oxmysql fivem	"<p>This is the error message</p>
 <p><a href=""https://i.stack.imgur.com/mcAco.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/mcAco.png"" alt=""1"" /></a></p>
 <p>Here is the code</p>
 <pre><code>QBCore.Functions.CreateCallback(&quot;qb-multicharacter:server:SetupNewCharacter&quot;, function(source, cb)
@@ -1185,8 +1185,8 @@ end)
             plyChars[k] = {result[1].model, result[1].skin, v.cid, json.decode(v.charinfo), v}
 </code></pre>
 <p>the code</p>
-<p><a href=""https://i.stack.imgur.com/Y5T3u.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/Y5T3u.png"" alt=""2"" /></a></p>",,1,0,,2022-08-03 21:29:18.843000 UTC,,2022-08-04 06:04:32.617000 UTC,2022-08-03 23:47:21.950000 UTC,,1847592,,19333203,,1,-1,sql|lua|fivem,259
-73246265,UICollectionView crash when moving items on iOS 16 beta,"<p>I have a <code>UICollectionView</code> in which user can long tap and then move the items. I have implemented <code>func invalidationContext(forInteractivelyMovingItems</code> and <code>func invalidationContextForEndingInteractiveMovementOfItems</code> methods to handle this.</p>
+<p><a href=""https://i.stack.imgur.com/Y5T3u.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/Y5T3u.png"" alt=""2"" /></a></p>"		1	0		2022-08-03 21:29:18.843000 UTC		2022-08-04 06:04:32.617000 UTC	2022-08-03 23:47:21.950000 UTC		1847592		19333203		1	-1	sql|lua|fivem	259
+73246265	UICollectionView crash when moving items on iOS 16 beta	"<p>I have a <code>UICollectionView</code> in which user can long tap and then move the items. I have implemented <code>func invalidationContext(forInteractivelyMovingItems</code> and <code>func invalidationContextForEndingInteractiveMovementOfItems</code> methods to handle this.</p>
 <p>While testing on iOS 16 beta, app crashes when move an item.
 Root cause is <code>previousIndexPaths</code> and <code>targetIndexPaths</code> both are become nil in below code. Any idea why this happens? On &lt; iOS16 working fine.</p>
 <pre><code>open override func invalidationContext(forInteractivelyMovingItems targetIndexPaths: [IndexPath], withTargetPosition targetPosition: CGPoint, previousIndexPaths: [IndexPath], previousPosition: CGPoint) -&gt; UICollectionViewLayoutInvalidationContext {
@@ -1221,8 +1221,8 @@ open override func invalidationContextForEndingInteractiveMovementOfItems(toFina
 <p>On iOS 16 <code>previousIndexPaths</code> and <code>targetIndexPaths</code> are nil
 <a href=""https://i.stack.imgur.com/BUPqP.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/BUPqP.png"" alt=""enter image description here"" /></a></p>
 <p>On iOS 15 <code>previousIndexPaths</code> and <code>targetIndexPaths</code> are have values
-<a href=""https://i.stack.imgur.com/9NRaF.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/9NRaF.png"" alt=""enter image description here"" /></a></p>",,0,0,,2022-08-05 07:37:39.863000 UTC,,2022-08-08 02:39:04.870000 UTC,2022-08-08 02:39:04.870000 UTC,,627667,,627667,,1,1,ios|swift|uicollectionview|uicollectionviewflowlayout,259
-73370728,Firebase doesn't work on Android Studio Emulator,"<p>I was working on a project for my studies and everything was working fine, but I changed my OS to win11 while wiping all previous data.<br>
+<a href=""https://i.stack.imgur.com/9NRaF.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/9NRaF.png"" alt=""enter image description here"" /></a></p>"		0	0		2022-08-05 07:37:39.863000 UTC		2022-08-08 02:39:04.870000 UTC	2022-08-08 02:39:04.870000 UTC		627667		627667		1	1	ios|swift|uicollectionview|uicollectionviewflowlayout	259
+73370728	Firebase doesn't work on Android Studio Emulator	"<p>I was working on a project for my studies and everything was working fine, but I changed my OS to win11 while wiping all previous data.<br>
 Now Firebase is stuck on &quot;loading&quot; after using any type of sign in. Real time database data is not showing as well. After around 5-10 of waiting auth will sometimes work continuously (can sign in, sign out multiple times, until running app again) but database never.<br>
 Everything works well when i use physical device. Apps without firebase work fine on emulator. Internet connection works. Example app that doesn't work:<br> <a href=""https://github.com/firebase/quickstart-android"" rel=""noreferrer"">https://github.com/firebase/quickstart-android</a><br>
 <br>I have:<br></p>
@@ -1243,11 +1243,11 @@ Everything works well when i use physical device. Apps without firebase work fin
 <br>E/FA: Uploading is not possible. App measurement disabled</strong>
 <br>
 For me it looks like something is blocking(or really slowing down) connection between android studio emulator and firebase.
-<br> I would be very grateful for any kind of help, its really important for my studies.</p>",,5,0,,2022-08-16 08:08:02.597000 UTC,2,2022-09-18 10:41:04.500000 UTC,2022-08-16 08:31:14.753000 UTC,,19773659,,19773659,,1,7,android|firebase|firebase-authentication|android-emulator,1283
-73244760,.net MDI forms blended drawing issue,"<p>I have a weird drawing issue where 2 forms in .net MDI Windows application 4.8 are mixed each other where I click to each form to activate it. I have tried to call all Invalidate, Update or Refresh but they did not help at all. Have anyone used to see this issue before?
+<br> I would be very grateful for any kind of help, its really important for my studies.</p>"		5	0		2022-08-16 08:08:02.597000 UTC	2	2022-09-18 10:41:04.500000 UTC	2022-08-16 08:31:14.753000 UTC		19773659		19773659		1	7	android|firebase|firebase-authentication|android-emulator	1283
+73244760	.net MDI forms blended drawing issue	"<p>I have a weird drawing issue where 2 forms in .net MDI Windows application 4.8 are mixed each other where I click to each form to activate it. I have tried to call all Invalidate, Update or Refresh but they did not help at all. Have anyone used to see this issue before?
 Thank you very much.</p>
-<p><a href=""https://i.stack.imgur.com/3cJoz.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/3cJoz.png"" alt=""one form image is on other form"" /></a></p>",,0,0,,2022-08-05 04:42:00.163000 UTC,,2022-08-05 04:42:00.163000 UTC,,,,,6348346,,1,0,.net|windows|forms|drawing|refresh,4
-73269912,Deploying a FMX project to another computer with pserver,"<p>I am trying to deploy my FMX C++ application to another computer using pserver. I'm starting with the debugging version I have running perfectly on my dev computer. Both screens are the same resolution. I have a Windows desktop view working on my dev computer. When I deploy to another windows 10 computer. The layout, buttons and images are all wrong. I have 10 enabled and visible buttons at the bottom missing and a Timage that is no longer centred on the page. But it's start position is now the centre of the page. I even have hidden and disabled video frames on the right, that are visible now. It doesn't even look like my master view.</p>
+<p><a href=""https://i.stack.imgur.com/3cJoz.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/3cJoz.png"" alt=""one form image is on other form"" /></a></p>"		0	0		2022-08-05 04:42:00.163000 UTC		2022-08-05 04:42:00.163000 UTC					6348346		1	0	.net|windows|forms|drawing|refresh	4
+73269912	Deploying a FMX project to another computer with pserver	"<p>I am trying to deploy my FMX C++ application to another computer using pserver. I'm starting with the debugging version I have running perfectly on my dev computer. Both screens are the same resolution. I have a Windows desktop view working on my dev computer. When I deploy to another windows 10 computer. The layout, buttons and images are all wrong. I have 10 enabled and visible buttons at the bottom missing and a Timage that is no longer centred on the page. But it's start position is now the centre of the page. I even have hidden and disabled video frames on the right, that are visible now. It doesn't even look like my master view.</p>
 <p>I have: C++ Builder Indy 10.6.2.0
 Update: 10.4 Update 2
 on Windows 10.0 Build 19044 64 bit</p>
@@ -1258,23 +1258,23 @@ Broken deployed version:
 <p>I even tried just coping the Bin from my local computer to the new computer and them copy over any missing files from the broken deployed version. The result was still broken.</p>
 <p>Question: What is the name of the layout file(corrupted) that is being copied with the project. Even my dev Master view doesn't look like the broken one.</p>
 <p>I have made another utility from a sample tabbed FMX multi platform, that works/deploys fine. This was a new project, built from a &quot;New&quot; blank template FMX multi platform. Now I have not tried the new one on any other platforms. The Utility, I tried on Android and it's layout is off a little. But the windows version looks good.</p>
-<p>Thanks for any HELP.</p>",,0,0,,2022-08-07 18:10:42.860000 UTC,,2022-08-07 18:10:42.860000 UTC,,,,,3842403,,1,0,deployment,4
-73295260,How Would I Make a Custom Multipage Setup for a bunch of items on my React App,"<p>So im in the process of making a social media web app, and Im kind of stumped. The idea is that I want a page unique to every post, like amazon has thousands of pages for its individual products, not completely unique, but just have differences in the actual text and stuff. Any suggestions ?</p>",,0,0,,2022-08-09 16:33:31.520000 UTC,,2022-08-09 16:33:31.520000 UTC,,,,,17743981,,1,0,reactjs,4
-73306108,DIsplay content of URL_B in URL_A,"<p>I need to shor in URL_A (https://domain_a/BI) the content of URL_B (http://domain_b:8080/Micro) but keeping URL_A or the same domain because we need to display https:// for security reasons</p>
+<p>Thanks for any HELP.</p>"		0	0		2022-08-07 18:10:42.860000 UTC		2022-08-07 18:10:42.860000 UTC					3842403		1	0	deployment	4
+73295260	How Would I Make a Custom Multipage Setup for a bunch of items on my React App	<p>So im in the process of making a social media web app, and Im kind of stumped. The idea is that I want a page unique to every post, like amazon has thousands of pages for its individual products, not completely unique, but just have differences in the actual text and stuff. Any suggestions ?</p>		0	0		2022-08-09 16:33:31.520000 UTC		2022-08-09 16:33:31.520000 UTC					17743981		1	0	reactjs	4
+73306108	DIsplay content of URL_B in URL_A	"<p>I need to shor in URL_A (https://domain_a/BI) the content of URL_B (http://domain_b:8080/Micro) but keeping URL_A or the same domain because we need to display https:// for security reasons</p>
 <p>I know that the easiest method is proxypass but it is incompatible with the configuration that we have in apache because it blocks other redirects</p>
 <p>Currently we have the redirection done, but without the masking that allows us to show URL_A</p>
 <p>&lt;Location /BI&gt; Order deny,allow Deny from all Allow from all Redirect /BI http://domain_b:8080/Micro</p>
 <p>I've tried rewrite, but it doesn't work.</p>
 <p>RewriteCond %{HTTP_HOST} ^https://domain_a/BI$ RewriteRule ^(.*) http://domain_b:8080/Micro$1 [P]</p>
-<p>Can you help me? thanks a lot</p>",,0,0,,2022-08-10 12:11:41.920000 UTC,,2022-08-10 12:11:41.920000 UTC,,,,,18047808,,1,0,apache|url-rewriting,4
-73320526,Azure Test Plans Test Case Results History,"<p>I'am trying to report test cases that failed at least once but I couldn't find a way to do it.</p>
+<p>Can you help me? thanks a lot</p>"		0	0		2022-08-10 12:11:41.920000 UTC		2022-08-10 12:11:41.920000 UTC					18047808		1	0	apache|url-rewriting	4
+73320526	Azure Test Plans Test Case Results History	"<p>I'am trying to report test cases that failed at least once but I couldn't find a way to do it.</p>
 <p>As you can see in the screenshoot I have one test case and it failed first try. After development team fixed the bug test case passed. I need to catch those type situation in my report.How can I find Test Case Results in queries? Do you have any suggestions?</p>
-<p><a href=""https://i.stack.imgur.com/kjGHD.png"" rel=""nofollow noreferrer"">Test Case Results</a></p>",,0,0,,2022-08-11 12:17:34.237000 UTC,,2022-08-11 12:17:34.237000 UTC,,,,,19742973,,1,0,test-plan,4
-73325358,Tell Pycharm that a function exits the program,"<p>I have a function which exits the program in a managed way. However, pycharm has been driving me crazy by giving &quot;may be referenced before assignment&quot; warnings everywhere. Because In a few locations I try to read in a variable and use program exit if that fails; pycharm cannot tell that program exit exits the program and therefore gives the warning thinking the variable may be unassigned when the code is reached despite that being impossible.</p>
+<p><a href=""https://i.stack.imgur.com/kjGHD.png"" rel=""nofollow noreferrer"">Test Case Results</a></p>"		0	0		2022-08-11 12:17:34.237000 UTC		2022-08-11 12:17:34.237000 UTC					19742973		1	0	test-plan	4
+73325358	Tell Pycharm that a function exits the program	"<p>I have a function which exits the program in a managed way. However, pycharm has been driving me crazy by giving &quot;may be referenced before assignment&quot; warnings everywhere. Because In a few locations I try to read in a variable and use program exit if that fails; pycharm cannot tell that program exit exits the program and therefore gives the warning thinking the variable may be unassigned when the code is reached despite that being impossible.</p>
 <p>Is there some way of telling pycharm that program exit exits the program/function so that it will stop giving these errors.</p>
-<p>Thanks</p>",,0,0,,2022-08-11 18:29:26.617000 UTC,,2022-08-11 18:29:26.617000 UTC,,,,,16895246,,1,0,pycharm,4
-73368055,Does grouping aggregation query in Apache IoTDB provides features to check the changed data values?,"<p>I updated Apache IoTDB to the newest preview version 0.14 and find the grouping aggregation query very useful. I want to know if the library of IoTDB has queries that feature seeing the changes in data values? For example, can I get the time series name and the values that have changed from the last time in a specified time period?</p>",,0,0,,2022-08-16 02:05:33.307000 UTC,,2022-08-16 02:05:33.307000 UTC,,,,,19405520,,1,0,apache-iotdb|iotdb,4
-73388077,How to join a table using both id and a subjoin property in typeorm?,"<p>I have three tables:</p>
+<p>Thanks</p>"		0	0		2022-08-11 18:29:26.617000 UTC		2022-08-11 18:29:26.617000 UTC					16895246		1	0	pycharm	4
+73368055	Does grouping aggregation query in Apache IoTDB provides features to check the changed data values?	<p>I updated Apache IoTDB to the newest preview version 0.14 and find the grouping aggregation query very useful. I want to know if the library of IoTDB has queries that feature seeing the changes in data values? For example, can I get the time series name and the values that have changed from the last time in a specified time period?</p>		0	0		2022-08-16 02:05:33.307000 UTC		2022-08-16 02:05:33.307000 UTC					19405520		1	0	apache-iotdb|iotdb	4
+73388077	How to join a table using both id and a subjoin property in typeorm?	"<p>I have three tables:</p>
 <pre><code>Parent {
    @PrimaryGeneratedColumn({ type: 'bigint' })
    id: string
@@ -1316,8 +1316,8 @@ Child {
 <p>The Parent table has a one to many relationship with Child.
 Child has a many to one relationship with ChildConfig.</p>
 <p>I have a requirement that Parent only joins to Child where Child.parentId = Parent.id AND Child.config.type = ChildType.Good.</p>
-<p>How do I do this?</p>",,0,0,,2022-08-17 11:56:46.690000 UTC,,2022-08-17 11:56:46.690000 UTC,,,,,2362852,,1,0,typeorm|node.js-typeorm,4
-73401406,Solution for bottleneck of sub query in select statement,"<p>please, can you give me advice how to make my final query better performing? This 2 subqueries are bottleneck in query. Result is giving 2 lines and that's why i tried with 'FETCH FIRST 1 ROWS ONLY' to show first creator and after second creator (split by id number of creation).
+<p>How do I do this?</p>"		0	0		2022-08-17 11:56:46.690000 UTC		2022-08-17 11:56:46.690000 UTC					2362852		1	0	typeorm|node.js-typeorm	4
+73401406	Solution for bottleneck of sub query in select statement	"<p>please, can you give me advice how to make my final query better performing? This 2 subqueries are bottleneck in query. Result is giving 2 lines and that's why i tried with 'FETCH FIRST 1 ROWS ONLY' to show first creator and after second creator (split by id number of creation).
 Can you help me how to write this differently?</p>
 <p>SELECT
 REL_U_S.USER_NAME
@@ -1337,18 +1337,18 @@ WHERE D_R.RELATIONSHIP = '1' and D_CASE.ID=12121212
 ORDER BY D_R.ID DESC
 FETCH FIRST 1 ROWS ONLY
 ) SECOND_CREATOR</p>
-<p>Thank you a lot</p>",,0,0,,2022-08-18 10:25:14.207000 UTC,,2022-08-18 10:25:14.207000 UTC,,,,,7905754,,1,0,performance|subquery,4
-73449672,Group_by results in duplicate rows,"<p>I am grouping monthly data from individual to team level using the following code</p>
+<p>Thank you a lot</p>"		0	0		2022-08-18 10:25:14.207000 UTC		2022-08-18 10:25:14.207000 UTC					7905754		1	0	performance|subquery	4
+73449672	Group_by results in duplicate rows	"<p>I am grouping monthly data from individual to team level using the following code</p>
 <pre><code>teamdata &lt;-individualdata %&gt;%
   group_by(team_month) %&gt;%
   summarise(individual_count = sum(is_teammember))
 </code></pre>
 <p>Unfortunately, this produces numerous duplicate rows for each team_month with similar entries. How can I avoid this happening?</p>
-<p>Thanks for helping me.</p>",,0,0,,2022-08-22 18:40:10.503000 UTC,,2022-08-22 18:40:10.503000 UTC,,,,,18824406,,1,0,duplicates|grouping,4
-73457355,Adding user state to auth tokens vuex,"<p>How am i able to put the auth tokens i have created into a user state using vuex?</p>
-<p>I already am able to place the token into a cookie however need them in user states for individual log ins.</p>",,0,0,,2022-08-23 10:47:35.780000 UTC,,2022-08-23 10:47:35.780000 UTC,,,,,19827357,,1,1,cookies|vuex|token,4
-73462871,"How to clear AIDE logcat without adb, rooting, or restarting phone","<p>Title says it all, I'm trying to clear the AIDE logcat on my android phone because I keep getting old errors that are fixed already, making it hard to find the new problems. From what I read it's stored in temporary memory, so the only ways to clear it would be to restart the phone, have root access, or use adb. My phone isn't rooted, and I dont have a PC at the moment so I cant use adb, so that just leaves restarting my phone, which worked, but is kind of a pain. Is there any other way to clear it without using adb, rooting, or restarting the phone</p>",,0,0,,2022-08-23 17:27:37.097000 UTC,,2022-08-23 17:27:37.097000 UTC,,,,,11117353,,1,0,logcat|aide,4
-73474311,when I copy the data from one macro to another why does it not run,"<p>I have a piece of code that works in one macro.  when I copy it to a second blank macro, it is not working.  it looks identical but not sure why not working. it is arguing with the select slide step.</p>
+<p>Thanks for helping me.</p>"		0	0		2022-08-22 18:40:10.503000 UTC		2022-08-22 18:40:10.503000 UTC					18824406		1	0	duplicates|grouping	4
+73457355	Adding user state to auth tokens vuex	"<p>How am i able to put the auth tokens i have created into a user state using vuex?</p>
+<p>I already am able to place the token into a cookie however need them in user states for individual log ins.</p>"		0	0		2022-08-23 10:47:35.780000 UTC		2022-08-23 10:47:35.780000 UTC					19827357		1	1	cookies|vuex|token	4
+73462871	How to clear AIDE logcat without adb, rooting, or restarting phone	<p>Title says it all, I'm trying to clear the AIDE logcat on my android phone because I keep getting old errors that are fixed already, making it hard to find the new problems. From what I read it's stored in temporary memory, so the only ways to clear it would be to restart the phone, have root access, or use adb. My phone isn't rooted, and I dont have a PC at the moment so I cant use adb, so that just leaves restarting my phone, which worked, but is kind of a pain. Is there any other way to clear it without using adb, rooting, or restarting the phone</p>		0	0		2022-08-23 17:27:37.097000 UTC		2022-08-23 17:27:37.097000 UTC					11117353		1	0	logcat|aide	4
+73474311	when I copy the data from one macro to another why does it not run	"<p>I have a piece of code that works in one macro.  when I copy it to a second blank macro, it is not working.  it looks identical but not sure why not working. it is arguing with the select slide step.</p>
 <p>what am I doing wrong</p>
 <pre><code>Dim Pres As Presentation
 Dim SLD As Slide
@@ -1364,8 +1364,8 @@ For D = SLD.Shapes.Count To 1 Step -1
     End If
 
 Next
-</code></pre>",,0,0,,2022-08-24 13:45:48.543000 UTC,,2022-08-24 13:45:48.543000 UTC,,,,,19588598,,1,0,duplicates|copy,4
-73479797,Error with predict - incorrect number of dimensions,"<p>I'm currently having an error replicating code from <a href=""https://static1.squarespace.com/static/5bf34064c3c16a648f15d85b/t/5bf3d37503ce64eaeba7bab2/1542706045258/Hino+Benami+Brooks+2018+Machine+learning+for+environmental+monitoring.pdf"" rel=""nofollow noreferrer"">a project</a> designed to use machine learning to predict risk scores (risk of non-compliance) for facilities with clean water act permits. I've made a good deal of progress implementing the code but am running into a problem and because my background is environmental science and my r knowledge is extremely rudimentary I can't understand what's going wrong. The code is directly from the project and can be found <a href=""https://purl.stanford.edu/hr919hp5420"" rel=""nofollow noreferrer"">here</a>. I run into an error 533 lines into the referenced code. The error is with the code block below and states,</p>
+</code></pre>"		0	0		2022-08-24 13:45:48.543000 UTC		2022-08-24 13:45:48.543000 UTC					19588598		1	0	duplicates|copy	4
+73479797	Error with predict - incorrect number of dimensions	"<p>I'm currently having an error replicating code from <a href=""https://static1.squarespace.com/static/5bf34064c3c16a648f15d85b/t/5bf3d37503ce64eaeba7bab2/1542706045258/Hino+Benami+Brooks+2018+Machine+learning+for+environmental+monitoring.pdf"" rel=""nofollow noreferrer"">a project</a> designed to use machine learning to predict risk scores (risk of non-compliance) for facilities with clean water act permits. I've made a good deal of progress implementing the code but am running into a problem and because my background is environmental science and my r knowledge is extremely rudimentary I can't understand what's going wrong. The code is directly from the project and can be found <a href=""https://purl.stanford.edu/hr919hp5420"" rel=""nofollow noreferrer"">here</a>. I run into an error 533 lines into the referenced code. The error is with the code block below and states,</p>
 <blockquote>
 <p>Error in predict(propensity.scores$forest, newdata = propensity.model.matrix.test,  :<br />
 incorrect number of dimensions</p>
@@ -1374,12 +1374,12 @@ incorrect number of dimensions</p>
                                         newdata = propensity.model.matrix.test,
                                         estimate.variance = TRUE)$predictions[,1]
 </code></pre>
-<p>Any help would be much appreciated!</p>",,0,0,,2022-08-24 21:44:37.310000 UTC,,2022-08-24 21:44:37.310000 UTC,,,,,19572829,,1,0,r|predict,4
-73506479,Word VBA: how to pull data from multiple text controls into one body text in the same document?,"<p>How to pull text from multiple text controls into a single body text in the same document?
+<p>Any help would be much appreciated!</p>"		0	0		2022-08-24 21:44:37.310000 UTC		2022-08-24 21:44:37.310000 UTC					19572829		1	0	r|predict	4
+73506479	Word VBA: how to pull data from multiple text controls into one body text in the same document?	"<p>How to pull text from multiple text controls into a single body text in the same document?
 Document contains multiple (about 30) text controls, I need to pull data (if data is there) from all of them onto one body of text.
 Please help!
-Thanks!</p>",,0,0,,2022-08-26 21:06:46.630000 UTC,,2022-08-26 21:06:46.630000 UTC,,,,,19854605,,1,0,controls,4
-73510342,in select2 icant bind a value to dropdown,"<pre><code>$.ajax({
+Thanks!</p>"		0	0		2022-08-26 21:06:46.630000 UTC		2022-08-26 21:06:46.630000 UTC					19854605		1	0	controls	4
+73510342	in select2 icant bind a value to dropdown	"<pre><code>$.ajax({
             url: leadEnquiryContextPath + &quot;/&quot; + id,
             method: 'GET',
             success: function(data) {
@@ -1387,14 +1387,14 @@ Thanks!</p>",,0,0,,2022-08-26 21:06:46.630000 UTC,,2022-08-26 21:06:46.630000 UT
                  $('#field_lead').val(data.leadId).attr('selected', 'selected');
 </code></pre>
 <p>I have used the code like this ..but the dropdown is showing default value not the selected value. But in the options section the value is showing selected...</p>
-<p><a href=""https://i.stack.imgur.com/Bq4s6.png"" rel=""nofollow noreferrer"">enter image description here</a></p>",,0,0,,2022-08-27 10:50:34.547000 UTC,,2022-08-27 10:50:34.547000 UTC,,,,,18306256,,1,0,jsp|jquery-select2,4
-73513412,The most optimal way to determine a communications outage and a true inverter outage,"<p>As a performance engineer, I have formulated many ways to determine a inverter outage and calculate the losses from there. But, my biggest obstacle I face right now is determining a true inverter outage. I’m finding it difficult to come up with an algorithm to determine if the inverter outage is true or if the inverter outage is just an occurrence of the data logger dropping comms, which leads to inaccurate data. Just wanting to see what people have come up with to help alleviate such cases with communication outages?</p>",,0,0,,2022-08-27 18:22:13.443000 UTC,,2022-08-27 18:22:13.443000 UTC,,,,,15684230,,1,0,solar|pv,4
-73520353,Multiple reads of secure data from storage vs read once store i memory,"<p>I am keen to hear ideas on best practice.</p>
+<p><a href=""https://i.stack.imgur.com/Bq4s6.png"" rel=""nofollow noreferrer"">enter image description here</a></p>"		0	0		2022-08-27 10:50:34.547000 UTC		2022-08-27 10:50:34.547000 UTC					18306256		1	0	jsp|jquery-select2	4
+73513412	The most optimal way to determine a communications outage and a true inverter outage	<p>As a performance engineer, I have formulated many ways to determine a inverter outage and calculate the losses from there. But, my biggest obstacle I face right now is determining a true inverter outage. I’m finding it difficult to come up with an algorithm to determine if the inverter outage is true or if the inverter outage is just an occurrence of the data logger dropping comms, which leads to inaccurate data. Just wanting to see what people have come up with to help alleviate such cases with communication outages?</p>		0	0		2022-08-27 18:22:13.443000 UTC		2022-08-27 18:22:13.443000 UTC					15684230		1	0	solar|pv	4
+73520353	Multiple reads of secure data from storage vs read once store i memory	"<p>I am keen to hear ideas on best practice.</p>
 <p>In my flutter app (for ios and android ) I have an encryption key stored in secure storage using flutter_secure_storage. The key is required whenever http access to system backend is required.</p>
 <p>I can either read from secure storage once on startup and store in provider or I can perform async read each and every time http access is required to access backend servers.</p>
 <p>I would say that reading each time from secure storage would appear more secure (at higher cost of access time) but if someone hacked the app and was debugging it would just take a little more work to access the keys if they were read from secure storage each time.</p>
-<p>Keen to hear and learn from those who have experience.</p>",,0,0,,2022-08-28 16:24:27.657000 UTC,,2022-08-28 16:24:27.657000 UTC,,,,,3469664,,1,0,flutter-secure-storage,4
-73240528,Access to Sibling element in Playwright,"<p>I have two sibling spans in my DIV. I am doing E2E testing in Blazor and I want to access the second Span content (<code>@Status</code>).</p>
+<p>Keen to hear and learn from those who have experience.</p>"		0	0		2022-08-28 16:24:27.657000 UTC		2022-08-28 16:24:27.657000 UTC					3469664		1	0	flutter-secure-storage	4
+73240528	Access to Sibling element in Playwright	"<p>I have two sibling spans in my DIV. I am doing E2E testing in Blazor and I want to access the second Span content (<code>@Status</code>).</p>
 <pre><code>&lt;div&gt;
      &lt;span&gt; Status:&lt;/span&gt;
      &lt;span&gt; @Status&lt;/span&gt;
@@ -1405,8 +1405,8 @@ Thanks!</p>",,0,0,,2022-08-26 21:06:46.630000 UTC,,2022-08-26 21:06:46.630000 UT
 </code></pre>
 <p>However, I am not sure how to do the same for C# syntax. I have access to the first span but not next one.</p>
 <pre><code>var firstSpan = Page.Locator(&quot;text= Status :&quot;);
-</code></pre>",,2,0,,2022-08-04 18:09:31.583000 UTC,,2022-08-05 00:19:33.937000 UTC,2022-08-05 00:19:33.937000 UTC,,62576,,4205481,,1,2,c#|blazor|e2e-testing|playwright|playwright-dotnet,260
-73408082,Cordova splashscreen is restricted to a small circle with Cordova 11.0 and Android 12 API?,"<p>I'm doing the migration from Cordova 10.x to 11.x, and followed this <a href=""https://ionic.zendesk.com/hc/en-us/articles/7891143965975-Migrating-to-Cordova-Android-11"" rel=""nofollow noreferrer"">article</a>. On the former versions, user must provide the full images for all resolutions and define then using the <code>&lt;splash&gt;</code> tag; now, there's no <code>&lt;splash&gt;</code> tag anymore, but only one image.</p>
+</code></pre>"		2	0		2022-08-04 18:09:31.583000 UTC		2022-08-05 00:19:33.937000 UTC	2022-08-05 00:19:33.937000 UTC		62576		4205481		1	2	c#|blazor|e2e-testing|playwright|playwright-dotnet	260
+73408082	Cordova splashscreen is restricted to a small circle with Cordova 11.0 and Android 12 API?	"<p>I'm doing the migration from Cordova 10.x to 11.x, and followed this <a href=""https://ionic.zendesk.com/hc/en-us/articles/7891143965975-Migrating-to-Cordova-Android-11"" rel=""nofollow noreferrer"">article</a>. On the former versions, user must provide the full images for all resolutions and define then using the <code>&lt;splash&gt;</code> tag; now, there's no <code>&lt;splash&gt;</code> tag anymore, but only one image.</p>
 <p>The result is that the <em>splashscreen is smaller and restricted to a circle</em>, with radius of 1/3 of the width of the device.</p>
 <p>The provided image has no borders, and my config.xml is as follow:</p>
 <pre><code>&lt;?xml version='1.0' encoding='utf-8'?&gt;
@@ -1423,8 +1423,8 @@ Thanks!</p>",,0,0,,2022-08-26 21:06:46.630000 UTC,,2022-08-26 21:06:46.630000 UT
 <p>Here goes two printscreens from my mobile device:</p>
 <p>Image of <a href=""https://i.stack.imgur.com/E7iRU.png"" rel=""nofollow noreferrer"">Cordova 10 version (desired)</a></p>
 <p>Image of <a href=""https://i.stack.imgur.com/wAvS5.png"" rel=""nofollow noreferrer"">Cordova 11 version (cropped into a circle)</a></p>
-<p>Any ideas ? Thanks in advance!</p>",73416997,1,0,,2022-08-18 18:48:30.410000 UTC,,2022-08-19 12:45:49.700000 UTC,,,,,18882941,,1,1,android|cordova|android-splashscreen,260
-73430845,React native push notification not shown when app is closed,"<p>I have a react native app. I am using <code>react-native-push-notification</code> npm module for push notifications (mainly local notifications). This is working fine.</p>
+<p>Any ideas ? Thanks in advance!</p>"	73416997	1	0		2022-08-18 18:48:30.410000 UTC		2022-08-19 12:45:49.700000 UTC					18882941		1	1	android|cordova|android-splashscreen	260
+73430845	React native push notification not shown when app is closed	"<p>I have a react native app. I am using <code>react-native-push-notification</code> npm module for push notifications (mainly local notifications). This is working fine.</p>
 <p>I use <code>OneSignal</code> service for remote notifications which works fine as well.</p>
 <p>However, now I am trying to use <code>react-native-freshchat-sdk</code> (third party tool) to provide chat functionality within the app.</p>
 <p>I have the following code</p>
@@ -1473,10 +1473,10 @@ Chat remote notification looks like the following</p>
 </code></pre>
 <p>I have been scratching my head to understand why I am not getting remote notifications when the app is closed. What's confusing me even more is that I get <code>OneSignal</code> remote notifications even when the app is closed. I would like to see similar behaviour with the remote notification sent by <code>FreshChat</code></p>
 <p>Any help pointers would be really handy. I have been stuck with these for days now and have no clue what's going wrong.
-Thanks in advance</p>",,0,0,,2022-08-20 23:58:10.220000 UTC,,2022-08-21 00:14:51.107000 UTC,2022-08-21 00:14:51.107000 UTC,,3340573,,3340573,,1,0,react-native|push-notification|react-native-push-notification|freshworks,260
-73202833,how to see Execution process for pt-online-schema-change with celery task,"<p>I use celery task run pt-online-schema-change, pt-archiver and more.
-this program in processing will print many message, how to know / see the processing message with celery task?</p>",,0,0,,2022-08-02 06:22:38.747000 UTC,,2022-08-02 06:22:38.747000 UTC,,,,,15450380,,1,0,celery,5
-73206292,Replay one cassette VCR specific times,"<p>How to config <code>use_cassette</code> to replay a specific times? Such as 2 times or 3 times?</p>
+Thanks in advance</p>"		0	0		2022-08-20 23:58:10.220000 UTC		2022-08-21 00:14:51.107000 UTC	2022-08-21 00:14:51.107000 UTC		3340573		3340573		1	0	react-native|push-notification|react-native-push-notification|freshworks	260
+73202833	how to see Execution process for pt-online-schema-change with celery task	"<p>I use celery task run pt-online-schema-change, pt-archiver and more.
+this program in processing will print many message, how to know / see the processing message with celery task?</p>"		0	0		2022-08-02 06:22:38.747000 UTC		2022-08-02 06:22:38.747000 UTC					15450380		1	0	celery	5
+73206292	Replay one cassette VCR specific times	"<p>How to config <code>use_cassette</code> to replay a specific times? Such as 2 times or 3 times?</p>
 <pre><code>it 'failed twice and then success' do
   VCR.use_cassette('success_request') do
     VCR.use_cassette('failed_request') do # need to fail exactly twice
@@ -1484,10 +1484,10 @@ this program in processing will print many message, how to know / see the proces
     end
   end
 end
-</code></pre>",,0,0,,2022-08-02 10:52:32.963000 UTC,,2022-08-02 10:52:32.963000 UTC,,,,,2251303,,1,0,vcr,5
-73225408,Better way of labelling data than KNN?,"<p>I am designing an auto labeller to annotate objects in a given image. Say I have n objects in an image, i have the label and estimated location then separately points estimated using a multibox detector. I need to then assign the points, is there a better way than just using knn to assign points. Each label can only be once, so n labels to n objects.</p>
-<p>TLDR: have n objects in an image with est_pixel/label and ground_truth_pixel data. Is there a better way to assign labels rather than using knn?</p>",,0,0,,2022-08-03 17:22:50.437000 UTC,,2022-08-03 17:22:50.437000 UTC,,,,,19620199,,1,0,dataset|knn|training-data,5
-73236728,"How to show/hide data labels of a certain y-axis for a line graph (using multiple y-axis, one on the left, another on the right)","<p>I am using chartjs 2.9.4. I am trying to add the second y-axis on the right. As you can see below, I added the second y-axis 'B' that is positioned on the right.</p>
+</code></pre>"		0	0		2022-08-02 10:52:32.963000 UTC		2022-08-02 10:52:32.963000 UTC					2251303		1	0	vcr	5
+73225408	Better way of labelling data than KNN?	"<p>I am designing an auto labeller to annotate objects in a given image. Say I have n objects in an image, i have the label and estimated location then separately points estimated using a multibox detector. I need to then assign the points, is there a better way than just using knn to assign points. Each label can only be once, so n labels to n objects.</p>
+<p>TLDR: have n objects in an image with est_pixel/label and ground_truth_pixel data. Is there a better way to assign labels rather than using knn?</p>"		0	0		2022-08-03 17:22:50.437000 UTC		2022-08-03 17:22:50.437000 UTC					19620199		1	0	dataset|knn|training-data	5
+73236728	How to show/hide data labels of a certain y-axis for a line graph (using multiple y-axis, one on the left, another on the right)	"<p>I am using chartjs 2.9.4. I am trying to add the second y-axis on the right. As you can see below, I added the second y-axis 'B' that is positioned on the right.</p>
 <pre><code>var myDataSets = [
         {% for key, value in mean_matrix_dic.items %}
             {
@@ -1581,8 +1581,8 @@ end
 }
 </code></pre>
 <p>However, when I use it, all data labels disappears. I only want to show the data labels of the left y-axis 'A' and hide the data labels of the second one (the right y-axis 'B').</p>
-<p>Any suggestions?</p>",,1,0,,2022-08-04 13:19:57.287000 UTC,,2022-08-04 14:17:58.107000 UTC,,,,,3288051,,1,0,charts,5
-73249709,Can't change font attributes - Fusion Charts,"<p>Not working changing font attributes on my Fusion Chart. The chart is being loaded correctly but the font hasn't changed.</p>
+<p>Any suggestions?</p>"		1	0		2022-08-04 13:19:57.287000 UTC		2022-08-04 14:17:58.107000 UTC					3288051		1	0	charts	5
+73249709	Can't change font attributes - Fusion Charts	"<p>Not working changing font attributes on my Fusion Chart. The chart is being loaded correctly but the font hasn't changed.</p>
 <p>Here, the full JS code:</p>
 <pre><code>function renderiza_dividendos_por_classe(url) {
 fetch(url, {
@@ -1624,13 +1624,13 @@ fetch(url, {
   });
 </code></pre>
 <p>Any help?</p>
-<p>Thanks in advance!</p>",,0,0,,2022-08-05 12:23:10.077000 UTC,,2022-08-05 12:23:10.077000 UTC,,,,,11260440,,1,0,javascript|fusioncharts,5
-73277788,"Is it possible to chat to a particular agent in tawk.to live chat, as I have this requirement in my application",<p><strong>Is it possible to pick one particular agent and chat in tawk.to live application.</strong></p>,,0,0,,2022-08-08 12:19:43.973000 UTC,,2022-08-08 12:19:43.973000 UTC,,,,,19717977,,1,0,tawk.to,5
-73293049,How can I get npx sequelize-cli db:seed:all not to stop on errors?,"<p>I have a large number of seeds. I don't always know which should be run on a given env or not. It would be useful to be able to run them all without exiting. So in other words, stop trying a particular seed if there's an error but don't stop the whole queue.</p>
+<p>Thanks in advance!</p>"		0	0		2022-08-05 12:23:10.077000 UTC		2022-08-05 12:23:10.077000 UTC					11260440		1	0	javascript|fusioncharts	5
+73277788	Is it possible to chat to a particular agent in tawk.to live chat, as I have this requirement in my application	<p><strong>Is it possible to pick one particular agent and chat in tawk.to live application.</strong></p>		0	0		2022-08-08 12:19:43.973000 UTC		2022-08-08 12:19:43.973000 UTC					19717977		1	0	tawk.to	5
+73293049	How can I get npx sequelize-cli db:seed:all not to stop on errors?	"<p>I have a large number of seeds. I don't always know which should be run on a given env or not. It would be useful to be able to run them all without exiting. So in other words, stop trying a particular seed if there's an error but don't stop the whole queue.</p>
 <p>Here's the command I use:</p>
 <pre><code>npx sequelize-cli db:seed:all --env:local
-</code></pre>",,0,0,,2022-08-09 13:53:22.527000 UTC,,2022-08-09 13:53:22.527000 UTC,,,,,2448430,,1,0,sequelize.js,5
-73300930,"Signal generation from ""custom"" fft","<p>I am looking for a way to specify the shape of a frequency/amplitude plot (the result of an fft) by hand, so that I could use that to create a signal. I would think this would be a good way to generate a signal with multiple frequencies without having to superposition a number of sine/cosine curves. Is this possible?</p>
+</code></pre>"		0	0		2022-08-09 13:53:22.527000 UTC		2022-08-09 13:53:22.527000 UTC					2448430		1	0	sequelize.js	5
+73300930	"Signal generation from ""custom"" fft"	"<p>I am looking for a way to specify the shape of a frequency/amplitude plot (the result of an fft) by hand, so that I could use that to create a signal. I would think this would be a good way to generate a signal with multiple frequencies without having to superposition a number of sine/cosine curves. Is this possible?</p>
 <p>I have tried working with ffts and iffts in scipy, in the case of a simple sine curve with a frequency of 50Hz I can plot the fft like:</p>
 <pre><code>from scipy.fft import fft, fftfreq, ifft
 # Number of sample points
@@ -1651,11 +1651,11 @@ plt.show()
 <pre><code>f_inv = ifft(yf)
 </code></pre>
 <p>However, yf in looks like this:
-<a href=""https://i.stack.imgur.com/FpqWt.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/FpqWt.png"" alt=""enter image description here"" /></a></p>",,0,0,,2022-08-10 05:15:16.443000 UTC,,2022-08-10 05:15:16.443000 UTC,,,,,14835783,,1,0,python|fft,5
-73306799,"Cache terminology - generalization of a ""cache line""?","<p>When discussion CPU hardware cache, the atomic unit of cached data is a &quot;cache line&quot; - a sequence of the (byte) values at consecutive memory addresses, starting from some base address. This likely named after the geometric arrangement of the cache, with consecutive bytes located along a &quot;line&quot;.</p>
+<a href=""https://i.stack.imgur.com/FpqWt.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/FpqWt.png"" alt=""enter image description here"" /></a></p>"		0	0		2022-08-10 05:15:16.443000 UTC		2022-08-10 05:15:16.443000 UTC					14835783		1	0	python|fft	5
+73306799	"Cache terminology - generalization of a ""cache line""?"	"<p>When discussion CPU hardware cache, the atomic unit of cached data is a &quot;cache line&quot; - a sequence of the (byte) values at consecutive memory addresses, starting from some base address. This likely named after the geometric arrangement of the cache, with consecutive bytes located along a &quot;line&quot;.</p>
 <p>A CPU cache has a certain number of &quot;lines&quot; - that's its capacity. But - the memory, i.e. the pool of data that gets cached - is not made up of &quot;cache lines&quot;. One cannot even say it is made up of &quot;lines&quot; at all (or if you will - it's a huge single &quot;line&quot;).</p>
-<p>Now, suppose I have an abstract cache of objects which are not lines of anything; call the Foo's. What term would I use for the parts of the cache which correspond to cache lines? i.e. what do I call the component of the cache which can hold a single Foo? It's not a &quot;line&quot;, since Foo is not necessarily something linear like memory cells. Is there a commonly-used term for that?</p>",,0,0,,2022-08-10 13:00:18.113000 UTC,,2022-08-10 13:00:18.113000 UTC,,,,,1593077,,1,0,caching|terminology,5
-73322413,Unable to Get Data from Secondary Collection MERN,"<p>I have a user Full stack tool, and i've separated the users into 'users' and 'companyusers' respectively within my backend.</p>
+<p>Now, suppose I have an abstract cache of objects which are not lines of anything; call the Foo's. What term would I use for the parts of the cache which correspond to cache lines? i.e. what do I call the component of the cache which can hold a single Foo? It's not a &quot;line&quot;, since Foo is not necessarily something linear like memory cells. Is there a commonly-used term for that?</p>"		0	0		2022-08-10 13:00:18.113000 UTC		2022-08-10 13:00:18.113000 UTC					1593077		1	0	caching|terminology	5
+73322413	Unable to Get Data from Secondary Collection MERN	"<p>I have a user Full stack tool, and i've separated the users into 'users' and 'companyusers' respectively within my backend.</p>
 <p>Within this, I have a fully fuctioning GET for users, which looks like this:</p>
 <pre><code>router.get(&quot;/findUser/:id&quot;,  async (req,res)=&gt;{
   try{
@@ -1729,9 +1729,9 @@ localhost:5000/api/companyprofile/findCompany/61f2980a7d4bb550edf8ec7e</p>
     &quot;centralEmail&quot;: &quot;natia1@bank.com.au&quot;
 }
 </code></pre>
-<p>Any ideas?</p>",,0,0,,2022-08-11 14:28:36.373000 UTC,,2022-08-11 14:28:36.373000 UTC,,,,,16298490,,1,0,node.js|mongodb|mongoose,5
-73330716,"Bootstrap 4 multi collapse is toggling to class=""multi-collapse collapse in"" and not displaying correctly","<p>I want the 4 icons on this page <a href=""https://communityloaves.org/donation-highlights/"" rel=""nofollow noreferrer"">https://communityloaves.org/donation-highlights/</a> to function similarly to the state boxes on the bottom of this page: <a href=""https://communityloaves.org/food-banks/"" rel=""nofollow noreferrer"">https://communityloaves.org/food-banks/</a>. I even went as far as copying the exact code from the food bank page. However, the multi-collapse sections on the first page do not stay down and when the icons are clicked they change to class=&quot;multi-collapse collapse in,&quot; while on the foodbanks page they toggle to class=&quot;multi-collapse collapse show&quot; which results in the correct behavior on click. I cannot tell what is causing the toggle to be class=&quot;multi-collapse collapse in&quot; rather than &quot;show.&quot; How do I get the collapse sections to stay visible like on the Food Bank page?</p>",,0,0,,2022-08-12 07:35:59.667000 UTC,,2022-08-12 07:35:59.667000 UTC,,,,,9277699,,1,0,wordpress|twitter-bootstrap|bootstrap-4,5
-73334907,https://learnforge.autodesk.io/#/environment/setup/php - step by step tutorial of forge.autodesk - unable to execute,"<p>My objective**: Rendering 3D model (dwg file) in chrome web browser using autodesk WebGL-
+<p>Any ideas?</p>"		0	0		2022-08-11 14:28:36.373000 UTC		2022-08-11 14:28:36.373000 UTC					16298490		1	0	node.js|mongodb|mongoose	5
+73330716	"Bootstrap 4 multi collapse is toggling to class=""multi-collapse collapse in"" and not displaying correctly"	"<p>I want the 4 icons on this page <a href=""https://communityloaves.org/donation-highlights/"" rel=""nofollow noreferrer"">https://communityloaves.org/donation-highlights/</a> to function similarly to the state boxes on the bottom of this page: <a href=""https://communityloaves.org/food-banks/"" rel=""nofollow noreferrer"">https://communityloaves.org/food-banks/</a>. I even went as far as copying the exact code from the food bank page. However, the multi-collapse sections on the first page do not stay down and when the icons are clicked they change to class=&quot;multi-collapse collapse in,&quot; while on the foodbanks page they toggle to class=&quot;multi-collapse collapse show&quot; which results in the correct behavior on click. I cannot tell what is causing the toggle to be class=&quot;multi-collapse collapse in&quot; rather than &quot;show.&quot; How do I get the collapse sections to stay visible like on the Food Bank page?</p>"		0	0		2022-08-12 07:35:59.667000 UTC		2022-08-12 07:35:59.667000 UTC					9277699		1	0	wordpress|twitter-bootstrap|bootstrap-4	5
+73334907	https://learnforge.autodesk.io/#/environment/setup/php - step by step tutorial of forge.autodesk - unable to execute	"<p>My objective**: Rendering 3D model (dwg file) in chrome web browser using autodesk WebGL-
 based viewer using javascript library
 What I've done: explored a step by step tutorial of forge.autodesk.com as below</p>
 <ol>
@@ -1757,8 +1757,8 @@ when I said &quot;serve project&quot; in php server command pallette, it has thr
 [Fri Aug 12 17:32:59 2022] [::1]:54723 Closing</p>
 </li>
 </ol>
-<p>Appreciate guidance</p>",,0,0,,2022-08-12 13:24:17.073000 UTC,,2022-08-12 13:24:17.073000 UTC,,,,,19750314,,1,0,php|autodesk|forge,5
-73336878,Is row level access control for Mongo DB using LDAP or AD groups possible?,"<p>Have only found collection level access control on the interwebs. Any ideas about row level on Mongo?</p>
+<p>Appreciate guidance</p>"		0	0		2022-08-12 13:24:17.073000 UTC		2022-08-12 13:24:17.073000 UTC					19750314		1	0	php|autodesk|forge	5
+73336878	Is row level access control for Mongo DB using LDAP or AD groups possible?	"<p>Have only found collection level access control on the interwebs. Any ideas about row level on Mongo?</p>
 <p>Example Document:</p>
 <pre><code>{
    id: “thisismyid”,
@@ -1766,10 +1766,10 @@ when I said &quot;serve project&quot; in php server command pallette, it has thr
    securityGroup: “stopInTheNameOfLove”
 </code></pre>
 <p>}</p>
-<p>If an LDAP or AD group was not allowed access to any record with stopInTheNameOfLove value in the securityGroup field, Mongo would not return the record in it’s result set. (Therefore, not breaking anyone’s heart)</p>",,0,0,,2022-08-12 15:59:35.877000 UTC,,2022-08-12 15:59:35.877000 UTC,,,,,986003,,1,0,database|mongodb|security|data-security,5
-73373906,No Compatible Android Device in play console,"<p><a href=""https://i.stack.imgur.com/OTX2E.jpg"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/OTX2E.jpg"" alt=""enter image description here"" /></a></p>
-<p>is there a solution to this problem? thank you</p>",,0,0,,2022-08-16 12:20:51.983000 UTC,,2022-08-16 12:20:51.983000 UTC,,,,,17723390,,1,0,deployment|google-play-console,5
-73377881,Adding a formula to a range based on final row,"<p>I am attempting to add a formula to a range starting from the last row of data.</p>
+<p>If an LDAP or AD group was not allowed access to any record with stopInTheNameOfLove value in the securityGroup field, Mongo would not return the record in it’s result set. (Therefore, not breaking anyone’s heart)</p>"		0	0		2022-08-12 15:59:35.877000 UTC		2022-08-12 15:59:35.877000 UTC					986003		1	0	database|mongodb|security|data-security	5
+73373906	No Compatible Android Device in play console	"<p><a href=""https://i.stack.imgur.com/OTX2E.jpg"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/OTX2E.jpg"" alt=""enter image description here"" /></a></p>
+<p>is there a solution to this problem? thank you</p>"		0	0		2022-08-16 12:20:51.983000 UTC		2022-08-16 12:20:51.983000 UTC					17723390		1	0	deployment|google-play-console	5
+73377881	Adding a formula to a range based on final row	"<p>I am attempting to add a formula to a range starting from the last row of data.</p>
 <ol>
 <li>Establishing the last row</li>
 <li>Going to a cell address with column and last row</li>
@@ -1784,8 +1784,8 @@ Range(Cells((I), 18)).Formula = &quot;=IF Cells((I),9)=&quot;&quot;C&quot;&quot;
 Next I</p>
 <p>I'm getting the following error</p>
 <p>Run-time error '1004'
-Method'range' of object'_Global' failed</p>",,0,0,,2022-08-16 17:19:03.430000 UTC,,2022-08-16 17:19:03.430000 UTC,,,,,19718406,,1,0,count|row|formula,5
-73378228,EXTEND_ESLINT guidance from Fluent UI documentation causes error,"<p>I got the following error when I run the <strong>npm start</strong> command:</p>
+Method'range' of object'_Global' failed</p>"		0	0		2022-08-16 17:19:03.430000 UTC		2022-08-16 17:19:03.430000 UTC					19718406		1	0	count|row|formula	5
+73378228	EXTEND_ESLINT guidance from Fluent UI documentation causes error	"<p>I got the following error when I run the <strong>npm start</strong> command:</p>
 <blockquote>
 <p>'EXTEND_ESLINT' is not recognized as an internal or external command,
 operable program or batch file</p>
@@ -1803,11 +1803,11 @@ operable program or batch file</p>
 </blockquote>
 <p>Here's my environment:</p>
 <p>npm version: 8.11.0<br>
-vscode: 1.17</p>",,0,0,,2022-08-16 17:50:26.730000 UTC,,2022-08-16 17:50:26.730000 UTC,,,,,2792747,,1,0,fluent-ui|fluentui-react,5
-73387478,Trigger a build for an arbitrary file in a vcxproj project,"<p>I have a <code>.vcxproj</code> where I need to trigger the build when a 'text' file is changed.</p>
+vscode: 1.17</p>"		0	0		2022-08-16 17:50:26.730000 UTC		2022-08-16 17:50:26.730000 UTC					2792747		1	0	fluent-ui|fluentui-react	5
+73387478	Trigger a build for an arbitrary file in a vcxproj project	"<p>I have a <code>.vcxproj</code> where I need to trigger the build when a 'text' file is changed.</p>
 <p>The background is that I'm trying to use MASM, I'm including a second file which cannot be marked as a MASM file within the project. (Included files are considered part of the original file, so cannot be assembled directly.)</p>
-<p>So is it possible to mark the project as requiring a build when one of these files changes?</p>",,0,0,,2022-08-17 11:13:35.013000 UTC,,2022-08-17 11:13:35.013000 UTC,,,,,1209198,,1,0,visual-studio-2022|vcxproj,5
-73404435,Problem by adjusting x-axis in GaussianMixture Plot,"<p>I want to ask if anyone could support me in adjusting the x-axis of a gaussian mixture analysis plot using the ax.hist function.
+<p>So is it possible to mark the project as requiring a build when one of these files changes?</p>"		0	0		2022-08-17 11:13:35.013000 UTC		2022-08-17 11:13:35.013000 UTC					1209198		1	0	visual-studio-2022|vcxproj	5
+73404435	Problem by adjusting x-axis in GaussianMixture Plot	"<p>I want to ask if anyone could support me in adjusting the x-axis of a gaussian mixture analysis plot using the ax.hist function.
 I tried to adjust the x-axis using: range=[0, 1500000], but this does not work for in changing the bins of different datasets</p>
 <p>Following you could find the code:</p>
 <pre><code>   print(x[np.argmax(pdf_individual[:,i])])
@@ -1843,30 +1843,30 @@ ax.set_ylabel('probability')
 
 #plt.savefig('Gaussian P_TH_3_2.png')
 plt.show()`
-</code></pre>",,0,0,,2022-08-18 14:02:48.303000 UTC,,2022-08-18 14:02:48.303000 UTC,,,,,13082263,,1,0,histogram|visualization|gaussian|gaussian-mixture-model,5
-73408104,"In Flask, how to add Access-Control-Allow-Origin field to a group of methods (so a group of routes) at the same time?","<p>I have several routes, and I want to add:</p>
+</code></pre>"		0	0		2022-08-18 14:02:48.303000 UTC		2022-08-18 14:02:48.303000 UTC					13082263		1	0	histogram|visualization|gaussian|gaussian-mixture-model	5
+73408104	In Flask, how to add Access-Control-Allow-Origin field to a group of methods (so a group of routes) at the same time?	"<p>I have several routes, and I want to add:</p>
 <pre><code>response.headers.add(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;)
 </code></pre>
-<p>to all of them. Right now I am adding this line at the end of each of these routes methods. But I want to find a way to do for all at the same time. I tried to add it in <code>after_request</code> but it is not triggered it seems. It seems it is triggered only after the response is already sent back to client. Any suggestions?</p>",,0,0,,2022-08-18 18:51:13.287000 UTC,,2022-08-18 18:51:13.287000 UTC,,,,,2066895,,1,0,flask|routes,5
-73408523,amCharts 4: How to get series tooltip to show between samples,"<p>We've recently upgraded our amCharts library from version 2 to version 4. In version 2, when the user hovered over the chart, the tooltips on the step line series showed up between the samples; whereas, in version 4, they only show up when the cursor is hovering exactly over one of the value points. (See screen shot.) We haven't changed our code in any appreciable way (other than what we had to do to get it to work with version 4), and we'd really like to get that old behaviour back, as it's difficult to get the cursor exactly over a data point in order to see what the value is. (Note: It's often the case in our charts that some series may have more data points than others in a given time/date range, as is the case in the screen shot, where the line series has more data points than the other two series.)</p>
+<p>to all of them. Right now I am adding this line at the end of each of these routes methods. But I want to find a way to do for all at the same time. I tried to add it in <code>after_request</code> but it is not triggered it seems. It seems it is triggered only after the response is already sent back to client. Any suggestions?</p>"		0	0		2022-08-18 18:51:13.287000 UTC		2022-08-18 18:51:13.287000 UTC					2066895		1	0	flask|routes	5
+73408523	amCharts 4: How to get series tooltip to show between samples	"<p>We've recently upgraded our amCharts library from version 2 to version 4. In version 2, when the user hovered over the chart, the tooltips on the step line series showed up between the samples; whereas, in version 4, they only show up when the cursor is hovering exactly over one of the value points. (See screen shot.) We haven't changed our code in any appreciable way (other than what we had to do to get it to work with version 4), and we'd really like to get that old behaviour back, as it's difficult to get the cursor exactly over a data point in order to see what the value is. (Note: It's often the case in our charts that some series may have more data points than others in a given time/date range, as is the case in the screen shot, where the line series has more data points than the other two series.)</p>
 <p>What can we do to get the tooltips on the various series in the chart to show up when the cursor is between data points? (It doesn't necessarily need to follow the cursor exactly as long as it shows up somewhere (e.g., on one or the other data point to either side of the cursor).)</p>
-<p><a href=""https://i.stack.imgur.com/xnC9b.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/xnC9b.png"" alt=""Series tooltip in amCharts 2 vs. amCharts 4"" /></a></p>",,0,0,,2022-08-18 19:31:32.400000 UTC,,2022-08-18 19:31:32.400000 UTC,,,,,21255,,1,0,tooltip|amcharts4,5
-73414448,Why is the shape of original dataframe changing after copying into another dataframe?,"<h1>X is the original dataframe of shape MxN</h1>
+<p><a href=""https://i.stack.imgur.com/xnC9b.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/xnC9b.png"" alt=""Series tooltip in amCharts 2 vs. amCharts 4"" /></a></p>"		0	0		2022-08-18 19:31:32.400000 UTC		2022-08-18 19:31:32.400000 UTC					21255		1	0	tooltip|amcharts4	5
+73414448	Why is the shape of original dataframe changing after copying into another dataframe?	"<h1>X is the original dataframe of shape MxN</h1>
 <p><code>X_PCA = X</code></p>
 <h1>X_PCA is of shape MxN</h1>
 <h1>Adding a new column in X_PCA</h1>
 <p><code>X_PCA['cluster'] = cluster</code></p>
 <h1>X_PCA is of shape MxN+1</h1>
-<h1>If check the shape of X, it also shows as MxN+1, why?</h1>",,0,0,,2022-08-19 09:11:57.387000 UTC,,2022-08-19 09:12:58.157000 UTC,2022-08-19 09:12:58.157000 UTC,,19554738,,19554738,,1,0,pandas|dataframe|copy,5
-73415067,Any method to 'jitter' face identity with GAN exists?,"<p>Is there any way to 'jitter' rather than completely change the or create identity?</p>
+<h1>If check the shape of X, it also shows as MxN+1, why?</h1>"		0	0		2022-08-19 09:11:57.387000 UTC		2022-08-19 09:12:58.157000 UTC	2022-08-19 09:12:58.157000 UTC		19554738		19554738		1	0	pandas|dataframe|copy	5
+73415067	Any method to 'jitter' face identity with GAN exists?	"<p>Is there any way to 'jitter' rather than completely change the or create identity?</p>
 <p>i.e. in the photo of caucasian Male laughing, change his identity to another caucasian male with similar age, just slightly different face.</p>
-<p>There are several methods to change hair color, skin, even ethnicity, but cannot find one 'jittering' the face.</p>",,0,0,,2022-08-19 10:02:12.373000 UTC,,2022-08-19 10:02:12.373000 UTC,,,,,8600644,,1,0,generative-adversarial-network|deep-fake,5
-73423580,Unity Link to Xbox store show all apps from a publisher,"<p>I am trying to link a button that user press to get them to all my apps in the Xbox store. I am able to do in windows but Xbox is not doing it, it just send the to home of the store.  <br/>
+<p>There are several methods to change hair color, skin, even ethnicity, but cannot find one 'jittering' the face.</p>"		0	0		2022-08-19 10:02:12.373000 UTC		2022-08-19 10:02:12.373000 UTC					8600644		1	0	generative-adversarial-network|deep-fake	5
+73423580	Unity Link to Xbox store show all apps from a publisher	"<p>I am trying to link a button that user press to get them to all my apps in the Xbox store. I am able to do in windows but Xbox is not doing it, it just send the to home of the store.  <br/>
 in windows I use:  <br/>
 <strong>ms-windows-store://publisher/?name={Publisher Name}</strong>  <br/>
 And it works for windows but for Xbox it does not work.
-Does any one know what I can use to get user to see all my apps in the Xbox store.</p>",,0,0,,2022-08-20 01:47:33.413000 UTC,,2022-08-20 01:47:33.413000 UTC,,,,,8370710,,1,0,hyperlink|store|xbox|publisher,5
-73449233,Can we define hystrix fallback in other module / directory,"<p>I was working on a task and when I make a call to external client. It looks like :</p>
+Does any one know what I can use to get user to see all my apps in the Xbox store.</p>"		0	0		2022-08-20 01:47:33.413000 UTC		2022-08-20 01:47:33.413000 UTC					8370710		1	0	hyperlink|store|xbox|publisher	5
+73449233	Can we define hystrix fallback in other module / directory	"<p>I was working on a task and when I make a call to external client. It looks like :</p>
 <pre><code>  @HystrixCommand(fallbackMethod = &quot;abc&quot;, commandKey = &quot;abcCommandKey&quot;)
     public &lt;T, U&gt; RestResponse&lt;T&gt; post(String url, String restTemplateType, Class&lt;T&gt; responseType, Map&lt;String, String&gt; paramMap, Map&lt;String, String&gt; headerMap, U body) {
         return execute(url, restTemplateType, HttpMethod.POST, responseType, paramMap, headerMap, body);
@@ -1874,24 +1874,24 @@ Does any one know what I can use to get user to see all my apps in the Xbox stor
 </code></pre>
 <p>I want to define the fallback method in let's say other directory or class. Since my fallback method is public , is there a way to do so with something like :</p>
 <pre><code>@HystrixCommand(fallbackMethod = anotherFile.methodA , commandKey = &quot;abcCommandKey&quot;)
-</code></pre>",,0,0,,2022-08-22 17:57:57.907000 UTC,,2022-08-22 17:57:57.907000 UTC,,,,,19525195,,1,0,java|spring|spring-boot|hystrix,5
-73459669,Analyze in Excel in SSAS Tabular does not work,"<p>I created an SSAS tabular project in Visual Studio 2019. I used the integration mode for the workspace database. I have no probelm connecting to this worksapce space model from Excel, SSMS, Power BI and DAX studio. However, when I clicked the 'Analyze in Excel' button in the model, it just did nothing. Nothing happened. This is realy annoying, because I want to use it for testing roles, perspectives and translations features etc. Can anyone please be able to help me? Thanks in advance.</p>
+</code></pre>"		0	0		2022-08-22 17:57:57.907000 UTC		2022-08-22 17:57:57.907000 UTC					19525195		1	0	java|spring|spring-boot|hystrix	5
+73459669	Analyze in Excel in SSAS Tabular does not work	"<p>I created an SSAS tabular project in Visual Studio 2019. I used the integration mode for the workspace database. I have no probelm connecting to this worksapce space model from Excel, SSMS, Power BI and DAX studio. However, when I clicked the 'Analyze in Excel' button in the model, it just did nothing. Nothing happened. This is realy annoying, because I want to use it for testing roles, perspectives and translations features etc. Can anyone please be able to help me? Thanks in advance.</p>
 <p>Thanks,
-Marcus</p>",,0,0,,2022-08-23 13:29:32.280000 UTC,,2022-08-23 13:29:32.280000 UTC,,,,,10427462,,1,0,ssas|tabular,5
-73462612,How to identify the number of users authentication per day on siteminder Solution?,"<p>I would like to find a way to identify how many users are authenticating thru siteminder policy serveur each day.</p>
+Marcus</p>"		0	0		2022-08-23 13:29:32.280000 UTC		2022-08-23 13:29:32.280000 UTC					10427462		1	0	ssas|tabular	5
+73462612	How to identify the number of users authentication per day on siteminder Solution?	"<p>I would like to find a way to identify how many users are authenticating thru siteminder policy serveur each day.</p>
 <p>Is there away ?
 Should I use an LDAP request ?
 Is there a way I can get this information thru siteminder report ?</p>
-<p>Thank you for your help.</p>",,0,0,,2022-08-23 17:04:00.370000 UTC,,2022-08-23 17:04:00.370000 UTC,,,,,1274169,,1,0,authentication|server|ldap|siteminder|federation,5
-73462636,Mysql pivot table use column name as new tables value,"<p>I have a table:</p>
+<p>Thank you for your help.</p>"		0	0		2022-08-23 17:04:00.370000 UTC		2022-08-23 17:04:00.370000 UTC					1274169		1	0	authentication|server|ldap|siteminder|federation	5
+73462636	Mysql pivot table use column name as new tables value	"<p>I have a table:</p>
 <p><a href=""https://i.stack.imgur.com/cdNEl.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/cdNEl.png"" alt=""enter image description here"" /></a></p>
 <p>The output of the result is like below:</p>
 <p><a href=""https://i.stack.imgur.com/nYT1v.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/nYT1v.png"" alt=""enter image description here"" /></a></p>
 <p>I think I should use pivot function but not sure how to use the column name property1 and property2 as output table's value?</p>
-<p>Any help is appreciated!</p>",,0,0,,2022-08-23 17:06:49.003000 UTC,,2022-08-23 17:23:16.687000 UTC,2022-08-23 17:23:16.687000 UTC,,14334987,,14334987,,1,0,mysql|pivot-table,5
-73470517,Publish Profile option not showing in VS2017,"<p>I am trying to find publish profile option in VS2017 Enterprise edition .However when i click Publish ,i get only the below option and no option to create a profile.I have a requirement to deploy WPF application to multiple servers ,and so wanted to create a publish profile for each server.</p>
-<p><a href=""https://i.stack.imgur.com/jc3zq.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/jc3zq.png"" alt=""enter image description here"" /></a></p>",,0,0,,2022-08-24 09:16:16.503000 UTC,,2022-08-24 09:16:16.503000 UTC,,,,,5614981,,1,0,visual-studio-2017|publish,5
-73472031,svn patch not restore newly added empty files,"<p>It seems that my svn is not generating correct patch for newly added empty files:</p>
+<p>Any help is appreciated!</p>"		0	0		2022-08-23 17:06:49.003000 UTC		2022-08-23 17:23:16.687000 UTC	2022-08-23 17:23:16.687000 UTC		14334987		14334987		1	0	mysql|pivot-table	5
+73470517	Publish Profile option not showing in VS2017	"<p>I am trying to find publish profile option in VS2017 Enterprise edition .However when i click Publish ,i get only the below option and no option to create a profile.I have a requirement to deploy WPF application to multiple servers ,and so wanted to create a publish profile for each server.</p>
+<p><a href=""https://i.stack.imgur.com/jc3zq.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/jc3zq.png"" alt=""enter image description here"" /></a></p>"		0	0		2022-08-24 09:16:16.503000 UTC		2022-08-24 09:16:16.503000 UTC					5614981		1	0	visual-studio-2017|publish	5
+73472031	svn patch not restore newly added empty files	"<p>It seems that my svn is not generating correct patch for newly added empty files:</p>
 <pre><code>touch newfile
 svn add newfile
 svn diff --depth=files &gt; patchfile
@@ -1906,22 +1906,22 @@ rm newfile
 svn patch patchfile
 </code></pre>
 <p>It does not create newfile for me.</p>
-<p>Is it a feature or is there any way to workaround it?</p>",,0,0,,2022-08-24 11:06:50.000000 UTC,,2022-08-24 11:06:50.000000 UTC,,,,,9386515,,1,0,svn,5
-73485425,How to clear stored prompts in Yeoman?,"<p>Talking about</p>
+<p>Is it a feature or is there any way to workaround it?</p>"		0	0		2022-08-24 11:06:50.000000 UTC		2022-08-24 11:06:50.000000 UTC					9386515		1	0	svn	5
+73485425	How to clear stored prompts in Yeoman?	"<p>Talking about</p>
 <pre><code>this.prompt([{
       name: 'name',
       message: 'your name:',
       store: true,
     }]
 </code></pre>
-<p>How to clear the stored value programmatically? Us this only possible via yo -h -&gt; clear global config?</p>",,0,0,,2022-08-25 09:49:25.987000 UTC,,2022-08-25 09:49:25.987000 UTC,,,,,2297996,,1,0,command-line-interface|generator|yeoman,5
-73485428,How to Revert Storybook AddOns Panel to Bottom?,"<p>My Storybook Addons panel is displaying on the RHS of the page, but I want it at the bottom. How do I do this?</p>
-<p>I hit some keyboard shortcut and inadvertently changed the panel to display on the right hand side, whereas it was at the bottom beforehand.</p>",,1,0,,2022-08-25 09:49:29.447000 UTC,,2022-08-25 09:55:43.960000 UTC,,,,,5134722,,1,0,storybook,5
-73487300,How to make sticky sidebar ads for google adsense like Wiki How and Search Engine Journal?,<p>Can you tell me How Can I Make a sticky sidebar ads for Google Adsense like wiki How and Search Engine Journal.</p>,,0,0,,2022-08-25 12:13:06.030000 UTC,,2022-08-25 12:13:06.030000 UTC,,,,,12183250,,1,0,sidebar|sticky,5
-73489368,Ways to optimize Logstash filter,"<p>I just wondering about ways to optimize Logstash and reduce CPU utilization.</p>
+<p>How to clear the stored value programmatically? Us this only possible via yo -h -&gt; clear global config?</p>"		0	0		2022-08-25 09:49:25.987000 UTC		2022-08-25 09:49:25.987000 UTC					2297996		1	0	command-line-interface|generator|yeoman	5
+73485428	How to Revert Storybook AddOns Panel to Bottom?	"<p>My Storybook Addons panel is displaying on the RHS of the page, but I want it at the bottom. How do I do this?</p>
+<p>I hit some keyboard shortcut and inadvertently changed the panel to display on the right hand side, whereas it was at the bottom beforehand.</p>"		1	0		2022-08-25 09:49:29.447000 UTC		2022-08-25 09:55:43.960000 UTC					5134722		1	0	storybook	5
+73487300	How to make sticky sidebar ads for google adsense like Wiki How and Search Engine Journal?	<p>Can you tell me How Can I Make a sticky sidebar ads for Google Adsense like wiki How and Search Engine Journal.</p>		0	0		2022-08-25 12:13:06.030000 UTC		2022-08-25 12:13:06.030000 UTC					12183250		1	0	sidebar|sticky	5
+73489368	Ways to optimize Logstash filter	"<p>I just wondering about ways to optimize Logstash and reduce CPU utilization.</p>
 <p>A co-worker found that the metadata field continues to exist when using pipeline output, unnecessarily taking up memory until the end of execution of all subsequent pipelines.</p>
-<p>So I wanted ideas on dealing with the metadata field and other ways to optimize the pipeline filter, like &quot;dissect&quot; instead of &quot;grok&quot;.</p>",,0,0,,2022-08-25 14:31:35.883000 UTC,,2022-08-25 14:31:35.883000 UTC,,,,,19313809,,1,0,optimization|memory-management|logstash|logstash-configuration,5
-73493509,what can cause babel to ask for the wrong preset with webpack?,"<pre><code>Couldn't find preset &quot;@babel/preset-env&quot;
+<p>So I wanted ideas on dealing with the metadata field and other ways to optimize the pipeline filter, like &quot;dissect&quot; instead of &quot;grok&quot;.</p>"		0	0		2022-08-25 14:31:35.883000 UTC		2022-08-25 14:31:35.883000 UTC					19313809		1	0	optimization|memory-management|logstash|logstash-configuration	5
+73493509	what can cause babel to ask for the wrong preset with webpack?	"<pre><code>Couldn't find preset &quot;@babel/preset-env&quot;
 </code></pre>
 <p>I have library imports here that include babel-preset-es2015 inside a project that is working. I then attempt to add the same dependencies to package.json, yarn install without errors, and then try to run webpack.</p>
 <pre><code>&quot;webpack&quot;: &quot;^2.0.0&quot;,
@@ -1932,8 +1932,8 @@ svn patch patchfile
 &quot;babel-plugin-styled-components&quot;: &quot;^1.10.0&quot;,
 &quot;html-webpack-plugin&quot;: &quot;^2.16.1&quot;
 </code></pre>
-<p>However, it wants @babel/preset-env. Aren't these the presets for babel 7?</p>",,0,0,,2022-08-25 20:42:42.410000 UTC,,2022-08-25 20:42:42.410000 UTC,,,,,2324576,,1,0,reactjs|webpack|babeljs,5
-73495863,Configuring futuretense.ini in wcs 11gR1,"<p>I have webcenter sites 11gR installed. In the futuretense.ini file I have the following fields blank:</p>
+<p>However, it wants @babel/preset-env. Aren't these the presets for babel 7?</p>"		0	0		2022-08-25 20:42:42.410000 UTC		2022-08-25 20:42:42.410000 UTC					2324576		1	0	reactjs|webpack|babeljs	5
+73495863	Configuring futuretense.ini in wcs 11gR1	"<p>I have webcenter sites 11gR installed. In the futuretense.ini file I have the following fields blank:</p>
 <p>satellite.blob.cachecontrol.default=</p>
 <p>cs.satellitehosts=</p>
 <p>cs.satelliteusers=</p>
@@ -1945,6 +1945,6 @@ svn patch patchfile
 <p>Error code:REMOTE SATELLITE SERVER CONNECTOR ERROR</p>
 <p>Is the furetetense.inio file related to the error?</p>
 <p>Do I need to set the host , user and password?</p>
-<p>Which password should I use?</p>",,0,0,,2022-08-26 03:43:37.143000 UTC,,2022-08-26 03:43:37.143000 UTC,,,,,15767164,,1,0,webcenter-sites,5
-73512418,problem with new dom element actions - junior js,"<p>I have a problem with new dom element actions. I made a task tracker. When I want to delete or check default tasks - the buttons work. But when I want to do it with new tasks - the &quot;delete&quot; and &quot;check&quot; buttons don't work. Can anyone explain what should I do?</p>
-<p>I'm new and don't know how to solve this problem</p>",,0,0,,2022-08-27 15:50:28.433000 UTC,,2022-08-27 15:50:28.433000 UTC,,,,,19858936,,1,0,dom,5
+<p>Which password should I use?</p>"		0	0		2022-08-26 03:43:37.143000 UTC		2022-08-26 03:43:37.143000 UTC					15767164		1	0	webcenter-sites	5
+73512418	problem with new dom element actions - junior js	"<p>I have a problem with new dom element actions. I made a task tracker. When I want to delete or check default tasks - the buttons work. But when I want to do it with new tasks - the &quot;delete&quot; and &quot;check&quot; buttons don't work. Can anyone explain what should I do?</p>
+<p>I'm new and don't know how to solve this problem</p>"		0	0		2022-08-27 15:50:28.433000 UTC		2022-08-27 15:50:28.433000 UTC					19858936		1	0	dom	5

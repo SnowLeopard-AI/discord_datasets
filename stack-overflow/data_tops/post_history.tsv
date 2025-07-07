@@ -1,5 +1,5 @@
-id,creation_date,post_id,post_history_type_id,revision_guid,user_id,text,comment
-146442579,2017-05-23 11:47:28.960000 UTC,44133972,2,6e416897-7721-42c1-9ee6-cff573df91d2,939116,"Actually this process is very well explained in Symfony Documentation: http://symfony.com/doc/current/form/form_dependencies.html
+id	creation_date	post_id	post_history_type_id	revision_guid	user_id	text	comment
+146442579	2017-05-23 11:47:28.960000 UTC	44133972	2	6e416897-7721-42c1-9ee6-cff573df91d2	939116	"Actually this process is very well explained in Symfony Documentation: http://symfony.com/doc/current/form/form_dependencies.html
 
 So I updated the way I was calling my form like that:
 
@@ -35,8 +35,8 @@ Instead:
                 'data_class' => 'FrontendBundle\Entity\Book'
             ))
         ;
-    }",
-146448096,2017-05-23 11:47:39.840000 UTC,44133980,2,af5b1980-1f9b-4232-8d1a-bfc9615530fe,8031137,"<!-- begin snippet: js hide: false console: true babel: false -->
+    }"	
+146448096	2017-05-23 11:47:39.840000 UTC	44133980	2	af5b1980-1f9b-4232-8d1a-bfc9615530fe	8031137	"<!-- begin snippet: js hide: false console: true babel: false -->
 
 <!-- language: lang-js -->
 
@@ -121,10 +121,10 @@ Instead:
     </div>
 
 <!-- end snippet -->
-im trying to do a todo list application i've mostly done all the parts and only problem is the date picker and In date picker date is reduced by 1 and I don't need time followed by the date please help me",
-146448097,2017-05-23 11:47:39.840000 UTC,44133980,1,af5b1980-1f9b-4232-8d1a-bfc9615530fe,8031137,date is reduced by 1 in date picker,
-146448098,2017-05-23 11:47:39.840000 UTC,44133980,3,af5b1980-1f9b-4232-8d1a-bfc9615530fe,8031137,<javascript><html><angularjs>,
-146517697,2017-05-23 11:50:06.357000 UTC,44134030,2,cd25d5f8-b90d-44a5-aa6e-dcf205bcf183,4040913,"I have a class called Board that contains the following
+im trying to do a todo list application i've mostly done all the parts and only problem is the date picker and In date picker date is reduced by 1 and I don't need time followed by the date please help me"	
+146448097	2017-05-23 11:47:39.840000 UTC	44133980	1	af5b1980-1f9b-4232-8d1a-bfc9615530fe	8031137	date is reduced by 1 in date picker	
+146448098	2017-05-23 11:47:39.840000 UTC	44133980	3	af5b1980-1f9b-4232-8d1a-bfc9615530fe	8031137	<javascript><html><angularjs>	
+146517697	2017-05-23 11:50:06.357000 UTC	44134030	2	cd25d5f8-b90d-44a5-aa6e-dcf205bcf183	4040913	"I have a class called Board that contains the following
 
     public class Board  {
 
@@ -164,10 +164,10 @@ What I'm currently doing when creating each new object is this
     Board obj2 = new Board();
     obj2.copy(obj1);
 
-I'm still a sophomore and this is a very small part of my project so I really can't afford to spend more time stuck in this. Thank you a lot:)",
-146517701,2017-05-23 11:50:06.357000 UTC,44134030,1,cd25d5f8-b90d-44a5-aa6e-dcf205bcf183,4040913,Java Deepcloning an object that contains ArrayLists,
-146517702,2017-05-23 11:50:06.357000 UTC,44134030,3,cd25d5f8-b90d-44a5-aa6e-dcf205bcf183,4040913,<java><arraylist><cloning>,
-146565427,2017-05-23 11:51:50.037000 UTC,44134069,2,c53df161-2130-4846-b79c-e888e531c15d,2581625,"Hi i am working on an app that uses Firebase Cloud Messaging and i am trying to show notification when app receives a message using Firebase Cloud Messaging.
+I'm still a sophomore and this is a very small part of my project so I really can't afford to spend more time stuck in this. Thank you a lot:)"	
+146517701	2017-05-23 11:50:06.357000 UTC	44134030	1	cd25d5f8-b90d-44a5-aa6e-dcf205bcf183	4040913	Java Deepcloning an object that contains ArrayLists	
+146517702	2017-05-23 11:50:06.357000 UTC	44134030	3	cd25d5f8-b90d-44a5-aa6e-dcf205bcf183	4040913	<java><arraylist><cloning>	
+146565427	2017-05-23 11:51:50.037000 UTC	44134069	2	c53df161-2130-4846-b79c-e888e531c15d	2581625	"Hi i am working on an app that uses Firebase Cloud Messaging and i am trying to show notification when app receives a message using Firebase Cloud Messaging.
 <br>
  **When App is Running**
 
@@ -280,10 +280,10 @@ Mainfest.xml
             Log.d(GlobalConfig.TAG, GlobalConfig.getRef(this) + "" notificaiton: "" + remoteMessage.getNotification().getBody());
             sendBroadcast(new Intent(""pk.edu.kiu.jobslocatoer.MESSAGING_EVENT""));
         }
-    }",
-146565429,2017-05-23 11:51:50.037000 UTC,44134069,1,c53df161-2130-4846-b79c-e888e531c15d,2581625,Android Notification Intent Not launching the said Activity and Notification Sound Issue,
-146565431,2017-05-23 11:51:50.037000 UTC,44134069,3,c53df161-2130-4846-b79c-e888e531c15d,2581625,<android><android-intent><notifications><android-pendingintent>,
-146513661,2017-05-23 11:49:56.213000 UTC,44134025,2,58f98c0c-8845-4d2c-b7d1-5403e23da729,324584,"If you don't mind the order of the original array being trashed in the process:
+    }"	
+146565429	2017-05-23 11:51:50.037000 UTC	44134069	1	c53df161-2130-4846-b79c-e888e531c15d	2581625	Android Notification Intent Not launching the said Activity and Notification Sound Issue	
+146565431	2017-05-23 11:51:50.037000 UTC	44134069	3	c53df161-2130-4846-b79c-e888e531c15d	2581625	<android><android-intent><notifications><android-pendingintent>	
+146513661	2017-05-23 11:49:56.213000 UTC	44134025	2	58f98c0c-8845-4d2c-b7d1-5403e23da729	324584	"If you don't mind the order of the original array being trashed in the process:
 
     asort($arr);
     $new_array = array_combine(array_keys($arr), range(0,count($arr)-1));
@@ -294,12 +294,12 @@ Not so bad inside a function, because that uses a copy of the original array unl
 Or even more simply:
 
     asort($arr);
-    $new_array = array_keys($arr);",
-146462396,2017-05-23 11:48:08.277000 UTC,44133991,2,2a6fcc64-3e08-4598-9b8b-357b7dfa2715,,"Maybe the asort() function will fit your needs:
+    $new_array = array_keys($arr);"	
+146462396	2017-05-23 11:48:08.277000 UTC	44133991	2	2a6fcc64-3e08-4598-9b8b-357b7dfa2715		"Maybe the asort() function will fit your needs:
 http://php.net/manual/de/function.asort.php
 
-Don't forget to pass your array by reference, so this has to be called as is (without an assignment).",
-146518956,2017-05-23 11:50:09.653000 UTC,44134033,2,c21197bd-25f4-406f-b6e8-fe4c4bd4cbce,4016656,"I am trying to validate to make sure no two users with same email ever register twice (meaning only users with unique email address can register).
+Don't forget to pass your array by reference, so this has to be called as is (without an assignment)."	
+146518956	2017-05-23 11:50:09.653000 UTC	44134033	2	c21197bd-25f4-406f-b6e8-fe4c4bd4cbce	4016656	"I am trying to validate to make sure no two users with same email ever register twice (meaning only users with unique email address can register).
 
 this is my code in Register Controller
 ===
@@ -322,10 +322,10 @@ but when I register new user for the first time and re-register the same user wi
 
 I know its a duplicate entry but I want to redirect user to register page and tell that user already exists with this email. How do I do that? 
 
-I tried adding Redirect to the validator function, tried to create my own validator in create function but no luck.",
-146518958,2017-05-23 11:50:09.653000 UTC,44134033,1,c21197bd-25f4-406f-b6e8-fe4c4bd4cbce,4016656,RegisterController Validator redirect with error message issue in Laravel 5.4,
-146518959,2017-05-23 11:50:09.653000 UTC,44134033,3,c21197bd-25f4-406f-b6e8-fe4c4bd4cbce,4016656,<laravel-5><laravel-5.4>,
-146503336,2017-05-23 11:49:33.813000 UTC,44134018,2,b348f479-f6df-461b-a38f-2673f8d1798e,3779533,"#include <iostream>
+I tried adding Redirect to the validator function, tried to create my own validator in create function but no luck."	
+146518958	2017-05-23 11:50:09.653000 UTC	44134033	1	c21197bd-25f4-406f-b6e8-fe4c4bd4cbce	4016656	RegisterController Validator redirect with error message issue in Laravel 5.4	
+146518959	2017-05-23 11:50:09.653000 UTC	44134033	3	c21197bd-25f4-406f-b6e8-fe4c4bd4cbce	4016656	<laravel-5><laravel-5.4>	
+146503336	2017-05-23 11:49:33.813000 UTC	44134018	2	b348f479-f6df-461b-a38f-2673f8d1798e	3779533	"#include <iostream>
     #include <random>
     #include <algorithm>
 
@@ -340,14 +340,14 @@ I tried adding Redirect to the validator function, tried to create my own valida
     return 0;
     }
 
-You can read more details on http://en.cppreference.com/w/cpp/algorithm/random_shuffle",
-146458478,2017-05-23 11:48:00.373000 UTC,44133988,2,1b853710-ed63-4f8d-8174-a5f54ef3a1b7,5743300,"And(/^I enter ""([^""]*)"" on identifier ""([^""]*)""$/) do |arg1, arg2|
+You can read more details on http://en.cppreference.com/w/cpp/algorithm/random_shuffle"	
+146458478	2017-05-23 11:48:00.373000 UTC	44133988	2	1b853710-ed63-4f8d-8174-a5f54ef3a1b7	5743300	"And(/^I enter ""([^""]*)"" on identifier ""([^""]*)""$/) do |arg1, arg2|
       Input = find_element(id: arg2)
       Input.click
       Input.clear
       Input.send_keys(arg1)
-    end",
-146520565,2017-05-23 11:50:13.290000 UTC,44134036,2,2c9c70b6-8306-49f1-ac39-2340a4aa8c40,2596796,"I am using java [Prettify][1] for syntax highlighting of java code in android app. I followed this example
+    end"	
+146520565	2017-05-23 11:50:13.290000 UTC	44134036	2	2c9c70b6-8306-49f1-ac39-2340a4aa8c40	2596796	"I am using java [Prettify][1] for syntax highlighting of java code in android app. I followed this example
 https://stackoverflow.com/questions/11987660/android-syntax-highlighting/19787125#19787125 
  
 
@@ -425,37 +425,37 @@ as you can see <= is missing from the output, it is just showing **i5 instead of
 Any help is appreciated
 
   [1]: https://code.google.com/p/java-prettify/
-  [2]: https://i.stack.imgur.com/XpzU8.png",
-146520567,2017-05-23 11:50:13.290000 UTC,44134036,1,2c9c70b6-8306-49f1-ac39-2340a4aa8c40,2596796,"Android syntax highlighting using Java prettify, not showing (less than) < or <= sign in textview?",
-146520568,2017-05-23 11:50:13.290000 UTC,44134036,3,2c9c70b6-8306-49f1-ac39-2340a4aa8c40,2596796,<java><android><textview><syntax-highlighting><prettify>,
-146412562,2017-05-23 11:46:21.450000 UTC,44133947,2,c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf,3265718,"I'm making a little app which manages appointments - I need to know if there's a currently supported way to check if an event overlaps within a google calendar.
+  [2]: https://i.stack.imgur.com/XpzU8.png"	
+146520567	2017-05-23 11:50:13.290000 UTC	44134036	1	2c9c70b6-8306-49f1-ac39-2340a4aa8c40	2596796	Android syntax highlighting using Java prettify, not showing (less than) < or <= sign in textview?	
+146520568	2017-05-23 11:50:13.290000 UTC	44134036	3	2c9c70b6-8306-49f1-ac39-2340a4aa8c40	2596796	<java><android><textview><syntax-highlighting><prettify>	
+146412562	2017-05-23 11:46:21.450000 UTC	44133947	2	c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf	3265718	"I'm making a little app which manages appointments - I need to know if there's a currently supported way to check if an event overlaps within a google calendar.
 
 Basically I read a list of events from my app's created calendar, and then populate my application using that. 
 
-Then, I add a calendar event. I need to check if it conflicts with what already exists. Is there a way to do this with their api?",
-146412563,2017-05-23 11:46:21.450000 UTC,44133947,1,c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf,3265718,Google calendar API - check for conflicts,
-146412564,2017-05-23 11:46:21.450000 UTC,44133947,3,c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf,3265718,<google-api><calendar>,
-146383027,2017-05-23 11:45:13.770000 UTC,44133930,2,d64df1aa-cbb7-4fc5-bfaf-17750a95c8f9,6270878,"Updated CSS for `.modal-body` class and set `min-height:300px`
+Then, I add a calendar event. I need to check if it conflicts with what already exists. Is there a way to do this with their api?"	
+146412563	2017-05-23 11:46:21.450000 UTC	44133947	1	c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf	3265718	Google calendar API - check for conflicts	
+146412564	2017-05-23 11:46:21.450000 UTC	44133947	3	c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf	3265718	<google-api><calendar>	
+146383027	2017-05-23 11:45:13.770000 UTC	44133930	2	d64df1aa-cbb7-4fc5-bfaf-17750a95c8f9	6270878	"Updated CSS for `.modal-body` class and set `min-height:300px`
 
     .modal-body {
         margin: 20px 0;
         min-height:300px;
     }
 
-https://jsfiddle.net/pLa63spz/",
-146446293,2017-05-23 11:47:36.863000 UTC,44133979,2,4246908e-7561-4df0-83a1-78a03b33c4bb,3732075,"Give this a try:
+https://jsfiddle.net/pLa63spz/"	
+146446293	2017-05-23 11:47:36.863000 UTC	44133979	2	4246908e-7561-4df0-83a1-78a03b33c4bb	3732075	"Give this a try:
 
 `{{\n\s+(.+)\n.+}}`
 
 It looks for opening double curly braces, then a new line, then any number of characters, followed by a new line, some spaces, any characters followed by a new line, any chars, and then the closing }}. The brackets capture the specific text. 
 
-You can see an example of it here: https://regex101.com/r/pwFNA1/1",
-146533050,2017-05-23 11:50:40.447000 UTC,44134048,2,71fb30f1-8c42-4df7-88ba-66d8097c62c7,3801947,"Add following condition:
+You can see an example of it here: https://regex101.com/r/pwFNA1/1"	
+146533050	2017-05-23 11:50:40.447000 UTC	44134048	2	71fb30f1-8c42-4df7-88ba-66d8097c62c7	3801947	"Add following condition:
 
     if( Number(myResult) === parseInt(myResult) ){
       myResult = myResul.tofixed(2);
-    }",
-146538675,2017-05-23 11:50:52.447000 UTC,44134050,2,6766c7f3-5067-4e00-be0f-6446a3a0412b,2170648,"from Apple Docs:
+    }"	
+146538675	2017-05-23 11:50:52.447000 UTC	44134050	2	6766c7f3-5067-4e00-be0f-6446a3a0412b	2170648	"from Apple Docs:
 
 > ***The system provides each application with four concurrent dispatch
 > queues.*** These queues are global to the application and are
@@ -471,8 +471,8 @@ You can see an example of it here: https://regex101.com/r/pwFNA1/1",
 see more [here][1]
 
 
-  [1]: https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW5",
-146502950,2017-05-23 11:49:32.767000 UTC,44134017,2,202e1764-295c-4035-9aac-7400a3304b90,2775610,"**onCreate()** is called only once at the time of activity crated if you want it to update is when you come from background or from other activity you have to use **onResume()** so put this in **onResume()** 
+  [1]: https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW5"	
+146502950	2017-05-23 11:49:32.767000 UTC	44134017	2	202e1764-295c-4035-9aac-7400a3304b90	2775610	"**onCreate()** is called only once at the time of activity crated if you want it to update is when you come from background or from other activity you have to use **onResume()** so put this in **onResume()** 
 
     @Override
         protected void onResume() {
@@ -486,8 +486,8 @@ see more [here][1]
                 text_view.setText(paste_url);
             }
             
-        }",
-146488668,2017-05-23 11:49:02.623000 UTC,44134008,2,181f04ec-addf-4d21-9428-28497150ad40,8053272,"I am trying to solve Uva-562 - Dividing coins problem.My solution is giving runtime error.Where is the error? This is my code:`package com.example.recursion;
+        }"	
+146488668	2017-05-23 11:49:02.623000 UTC	44134008	2	181f04ec-addf-4d21-9428-28497150ad40	8053272	"I am trying to solve Uva-562 - Dividing coins problem.My solution is giving runtime error.Where is the error? This is my code:`package com.example.recursion;
 
 import java.util.Scanner;
 
@@ -570,10 +570,10 @@ public class main {
  }
 
 }
-`",
-146488669,2017-05-23 11:49:02.623000 UTC,44134008,1,181f04ec-addf-4d21-9428-28497150ad40,8053272,UVa 562 runtime error. What can I do?,
-146488671,2017-05-23 11:49:02.623000 UTC,44134008,3,181f04ec-addf-4d21-9428-28497150ad40,8053272,<java><recursion><dynamic-programming><acm><onlinejudge>,
-146574552,2017-05-23 11:52:11.903000 UTC,44134076,2,17196a77-e997-46a4-b7c9-329dc54efa31,5990066,"I have failed to install this on ubuntu before, now for Windows I don't understand [this documentation](https://atom.io/packages/php-debug) properly.
+`"	
+146488669	2017-05-23 11:49:02.623000 UTC	44134008	1	181f04ec-addf-4d21-9428-28497150ad40	8053272	UVa 562 runtime error. What can I do?	
+146488671	2017-05-23 11:49:02.623000 UTC	44134008	3	181f04ec-addf-4d21-9428-28497150ad40	8053272	<java><recursion><dynamic-programming><acm><onlinejudge>	
+146574552	2017-05-23 11:52:11.903000 UTC	44134076	2	17196a77-e997-46a4-b7c9-329dc54efa31	5990066	"I have failed to install this on ubuntu before, now for Windows I don't understand [this documentation](https://atom.io/packages/php-debug) properly.
 
 
 ----------
@@ -594,10 +594,10 @@ What I have done is:
 >     xdebug.remote_mode=req
 >     xdebug.remote_autostart=true
 
-- PHP Debug console on Atom doesn't allow me to press buttons. Putting breakpoints doesn't affect anything at all. PHP Console on Atom only says this: ```Listening on Port 9000``` ```Closed```",
-146574554,2017-05-23 11:52:11.903000 UTC,44134076,1,17196a77-e997-46a4-b7c9-329dc54efa31,5990066,How to make php-debug extension for Atom work on wampserver,
-146574558,2017-05-23 11:52:11.903000 UTC,44134076,3,17196a77-e997-46a4-b7c9-329dc54efa31,5990066,<php><wamp><wampserver><xdebug><atom-editor>,
-146431460,2017-05-23 11:47:04.020000 UTC,44133963,2,fbe71e5e-3928-41f9-8b11-c8a86760b25c,1300890,"<!-- begin snippet: js hide: false console: true babel: false -->
+- PHP Debug console on Atom doesn't allow me to press buttons. Putting breakpoints doesn't affect anything at all. PHP Console on Atom only says this: ```Listening on Port 9000``` ```Closed```"	
+146574554	2017-05-23 11:52:11.903000 UTC	44134076	1	17196a77-e997-46a4-b7c9-329dc54efa31	5990066	How to make php-debug extension for Atom work on wampserver	
+146574558	2017-05-23 11:52:11.903000 UTC	44134076	3	17196a77-e997-46a4-b7c9-329dc54efa31	5990066	<php><wamp><wampserver><xdebug><atom-editor>	
+146431460	2017-05-23 11:47:04.020000 UTC	44133963	2	fbe71e5e-3928-41f9-8b11-c8a86760b25c	1300890	"<!-- begin snippet: js hide: false console: true babel: false -->
 
 <!-- language: lang-css -->
 
@@ -737,8 +737,8 @@ What I have done is:
     <noscript>Your browser does not support JavaScript!</noscript>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 
-<!-- end snippet -->",
-146436086,2017-05-23 11:47:14.580000 UTC,44133965,2,5b976ac3-423a-4306-8ac5-bf315da5bfa0,5468958,"I have a search bar searching on `index.php` page. But i want to show the result on `coupons.php`. How to do it in AJAX. 
+<!-- end snippet -->"	
+146436086	2017-05-23 11:47:14.580000 UTC	44133965	2	5b976ac3-423a-4306-8ac5-bf315da5bfa0	5468958	"I have a search bar searching on `index.php` page. But i want to show the result on `coupons.php`. How to do it in AJAX. 
 
 **NOTE:**  `#search_result` is a div of coupons.php file where i want to display the result.
 
@@ -762,15 +762,15 @@ What I have done is:
                     });
                 });
             });
-        </script>",
-146436087,2017-05-23 11:47:14.580000 UTC,44133965,1,5b976ac3-423a-4306-8ac5-bf315da5bfa0,5468958,Display searches data on another page <div>,
-146436090,2017-05-23 11:47:14.580000 UTC,44133965,3,5b976ac3-423a-4306-8ac5-bf315da5bfa0,5468958,<javascript><php><jquery><html><ajax>,
-146441127,2017-05-23 11:47:25.620000 UTC,44133968,2,10756aee-0690-44c9-bb41-8c502430721c,8053212,"I have a problem with one of my classes in a project.
+        </script>"	
+146436087	2017-05-23 11:47:14.580000 UTC	44133965	1	5b976ac3-423a-4306-8ac5-bf315da5bfa0	5468958	Display searches data on another page <div>	
+146436090	2017-05-23 11:47:14.580000 UTC	44133965	3	5b976ac3-423a-4306-8ac5-bf315da5bfa0	5468958	<javascript><php><jquery><html><ajax>	
+146441127	2017-05-23 11:47:25.620000 UTC	44133968	2	10756aee-0690-44c9-bb41-8c502430721c	8053212	"I have a problem with one of my classes in a project.
 I tried to read all the lines from a file but when I print that it shows me less than the half lines.
-What can I do for that?",
-146441129,2017-05-23 11:47:25.620000 UTC,44133968,1,10756aee-0690-44c9-bb41-8c502430721c,8053212,Problems from reading file,
-146441130,2017-05-23 11:47:25.620000 UTC,44133968,3,10756aee-0690-44c9-bb41-8c502430721c,8053212,<java><file><arraylist><hashmap>,
-146549131,2017-05-23 11:51:15.540000 UTC,44134059,2,9863bec8-b281-4757-a7d3-72c2e20f01ae,6783328,"In the admin tools in the BE, the check or the update of the reference index can  be found under ""DB Check"". For larger webs, the script is started via CLI so that the runtime does not matter.
+What can I do for that?"	
+146441129	2017-05-23 11:47:25.620000 UTC	44133968	1	10756aee-0690-44c9-bb41-8c502430721c	8053212	Problems from reading file	
+146441130	2017-05-23 11:47:25.620000 UTC	44133968	3	10756aee-0690-44c9-bb41-8c502430721c	8053212	<java><file><arraylist><hashmap>	
+146549131	2017-05-23 11:51:15.540000 UTC	44134059	2	9863bec8-b281-4757-a7d3-72c2e20f01ae	6783328	"In the admin tools in the BE, the check or the update of the reference index can  be found under ""DB Check"". For larger webs, the script is started via CLI so that the runtime does not matter.
 
 But now my questions:
 
@@ -780,18 +780,18 @@ But now my questions:
  - Are there somewhere best pratices to read?
 
 
-I am grateful for every input.",
-146549134,2017-05-23 11:51:15.540000 UTC,44134059,1,9863bec8-b281-4757-a7d3-72c2e20f01ae,6783328,lowlevel_refindex: Best practises?,
-146549137,2017-05-23 11:51:15.540000 UTC,44134059,3,9863bec8-b281-4757-a7d3-72c2e20f01ae,6783328,<typo3><command-line-interface>,
-146378831,2017-05-23 11:45:04.020000 UTC,44133927,2,a22dcb38-cf71-4ae7-bafb-8600ef350463,6863724,"I am getting this exception:
+I am grateful for every input."	
+146549134	2017-05-23 11:51:15.540000 UTC	44134059	1	9863bec8-b281-4757-a7d3-72c2e20f01ae	6783328	lowlevel_refindex: Best practises?	
+146549137	2017-05-23 11:51:15.540000 UTC	44134059	3	9863bec8-b281-4757-a7d3-72c2e20f01ae	6783328	<typo3><command-line-interface>	
+146378831	2017-05-23 11:45:04.020000 UTC	44133927	2	a22dcb38-cf71-4ae7-bafb-8600ef350463	6863724	"I am getting this exception:
 
-    Caused by: java.lang.SecurityException: Permission Denial: opening provider com.sec.android.provider.badge.BadgeProvider from ProcessRecord{ab1124 10588:com.rehq.app/u0a175} (pid=10588, uid=10175) requires com.sec.android.provider.badge.permission.READ or com.sec.android.provider.badge.permission.WRITE",
-146378832,2017-05-23 11:45:04.020000 UTC,44133927,1,a22dcb38-cf71-4ae7-bafb-8600ef350463,6863724,How to give persiomission com.sec.android.provider.badge.permission.READ or WRITE in android 6.0,
-146378833,2017-05-23 11:45:04.020000 UTC,44133927,3,a22dcb38-cf71-4ae7-bafb-8600ef350463,6863724,<android>,
-146422227,2017-05-23 11:46:43.177000 UTC,44133957,2,beed40fe-e8cd-45cf-9c91-249f7801fe44,6787434,"The stacktrace indicates clear there is Nullpointer reference :
+    Caused by: java.lang.SecurityException: Permission Denial: opening provider com.sec.android.provider.badge.BadgeProvider from ProcessRecord{ab1124 10588:com.rehq.app/u0a175} (pid=10588, uid=10175) requires com.sec.android.provider.badge.permission.READ or com.sec.android.provider.badge.permission.WRITE"	
+146378832	2017-05-23 11:45:04.020000 UTC	44133927	1	a22dcb38-cf71-4ae7-bafb-8600ef350463	6863724	How to give persiomission com.sec.android.provider.badge.permission.READ or WRITE in android 6.0	
+146378833	2017-05-23 11:45:04.020000 UTC	44133927	3	a22dcb38-cf71-4ae7-bafb-8600ef350463	6863724	<android>	
+146422227	2017-05-23 11:46:43.177000 UTC	44133957	2	beed40fe-e8cd-45cf-9c91-249f7801fe44	6787434	"The stacktrace indicates clear there is Nullpointer reference :
 
-    java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.view.ViewParent.showContextMenuForChild(android.view.View)' on a null object reference",
-146383097,2017-05-23 11:45:13.833000 UTC,44133931,2,7d256995-92ec-4733-a91f-9e5c3f4bb3c4,4927984,"I would suggest the following regex:
+    java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.view.ViewParent.showContextMenuForChild(android.view.View)' on a null object reference"	
+146383097	2017-05-23 11:45:13.833000 UTC	44133931	2	7d256995-92ec-4733-a91f-9e5c3f4bb3c4	4927984	"I would suggest the following regex:
 
     @if\((\w+)\)
 
@@ -804,9 +804,9 @@ It extracts from your string:
 [**Test it on regex101**][1]
 
 
-  [1]: https://regex101.com/r/ptYfA5/4",
-146540199,2017-05-23 11:50:55.710000 UTC,44134051,2,b764060a-4f05-4952-bc60-ffc5a6c081fb,5320300,"For me Xan's solution also didn't work. What worked for me was to go to chrome://extensions and remove the extension from chrome. Afterwards, I re-added the extension. Then it worked.",
-146493891,2017-05-23 11:49:14.270000 UTC,44134010,2,9e69e08e-4389-4dce-99fe-f2c1f300f84b,4515269,"To download Asynchronous image with Kingfisher library you can follow this step,url :https://github.com/onevcat/Kingfisher: 
+  [1]: https://regex101.com/r/ptYfA5/4"	
+146540199	2017-05-23 11:50:55.710000 UTC	44134051	2	b764060a-4f05-4952-bc60-ffc5a6c081fb	5320300	For me Xan's solution also didn't work. What worked for me was to go to chrome://extensions and remove the extension from chrome. Afterwards, I re-added the extension. Then it worked.	
+146493891	2017-05-23 11:49:14.270000 UTC	44134010	2	9e69e08e-4389-4dce-99fe-f2c1f300f84b	4515269	"To download Asynchronous image with Kingfisher library you can follow this step,url :https://github.com/onevcat/Kingfisher: 
 
      func imageFromUrl(_ urlString: String) {
             if let url = URL(string: urlString) {
@@ -834,11 +834,11 @@ You can also download image with default URLSession.shared.dataTask
                     }
                 }
             }
-        }",
-146528735,2017-05-23 11:50:31.870000 UTC,44134045,2,1ed5b88d-1f91-4b8c-b61a-4279ee991361,5330895,"You should check on which item the mouse is. ListBox has a method to do such a check: IndexFromPoint https://msdn.microsoft.com/en-us/library/kfw3x8dc%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396
+        }"	
+146528735	2017-05-23 11:50:31.870000 UTC	44134045	2	1ed5b88d-1f91-4b8c-b61a-4279ee991361	5330895	"You should check on which item the mouse is. ListBox has a method to do such a check: IndexFromPoint https://msdn.microsoft.com/en-us/library/kfw3x8dc%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396
 
-Now, when you have item index, you can get its rectangle using other method: GetItemRectangle https://msdn.microsoft.com/en-us/library/system.windows.forms.listbox.getitemrectangle(v=vs.110).aspx",
-146524824,2017-05-23 11:50:23.550000 UTC,44134042,2,de9b7656-9f77-44c7-80fe-a10685964a66,3898339,"You should add `css` as 
+Now, when you have item index, you can get its rectangle using other method: GetItemRectangle https://msdn.microsoft.com/en-us/library/system.windows.forms.listbox.getitemrectangle(v=vs.110).aspx"	
+146524824	2017-05-23 11:50:23.550000 UTC	44134042	2	de9b7656-9f77-44c7-80fe-a10685964a66	3898339	"You should add `css` as 
 
     #map {
       height: 400px;
@@ -898,8 +898,8 @@ Now, when you have item index, you can get its rectangle using other method: Get
 
     </html>
 
-<!-- end snippet -->",
-146418003,2017-05-23 11:46:33.470000 UTC,44133953,2,7f9df47c-269d-4551-aaa7-e14cd9b145de,4947488,"In the interest of any beginners out there(like myself) who stumble upon this question; I'd like to explicitly mention that the systemProperty in gradle test task simply passes on system properties to the test jvm. So if you simply use 
+<!-- end snippet -->"	
+146418003	2017-05-23 11:46:33.470000 UTC	44133953	2	7f9df47c-269d-4551-aaa7-e14cd9b145de	4947488	"In the interest of any beginners out there(like myself) who stumble upon this question; I'd like to explicitly mention that the systemProperty in gradle test task simply passes on system properties to the test jvm. So if you simply use 
 
     test{
     systemProperty 'Chrome', 'Browser' }   
@@ -912,8 +912,8 @@ The above case is merely an illustration and it would probably make sense to use
 
 along with 
 
-    gradle test -DBrowser=Chrome",
-146574550,2017-05-23 11:52:12.030000 UTC,44134075,2,8ef621e8-7208-459a-abee-89fbc4451639,1772171,"You could push extra information in `state: {}` like
+    gradle test -DBrowser=Chrome"	
+146574550	2017-05-23 11:52:12.030000 UTC	44134075	2	8ef621e8-7208-459a-abee-89fbc4451639	1772171	"You could push extra information in `state: {}` like
 
     <Link to={{ pathname: '/about', state: { fromHome: true } }}>About</Link>
 
@@ -984,8 +984,8 @@ You can install it from npm
     npm install react-router-last-location --save
 
 - https://www.npmjs.com/package/react-router-last-location
-- https://github.com/hinok/react-router-last-location",
-146487603,2017-05-23 11:49:00.147000 UTC,44134007,2,85317319-d6ff-4a93-99e2-2a09d01e1bee,2232381,"I'm want to let the client download `gzip` compressed file on specific url. I got it almost working - downloading `{fileName}.gz` works, but when it is decompressed it contains plain file name, without any extension. My files are images, so I want `.png` or `.jpg` for example. How should I do that? So far I got this: 
+- https://github.com/hinok/react-router-last-location"	
+146487603	2017-05-23 11:49:00.147000 UTC	44134007	2	85317319-d6ff-4a93-99e2-2a09d01e1bee	2232381	"I'm want to let the client download `gzip` compressed file on specific url. I got it almost working - downloading `{fileName}.gz` works, but when it is decompressed it contains plain file name, without any extension. My files are images, so I want `.png` or `.jpg` for example. How should I do that? So far I got this: 
 
 File is stored on the server, with unique name, generated by `shortid`. On `GET` to the specific `url` I find my product in the database, get the name and set it as filename like so: 
 
@@ -1000,10 +1000,10 @@ then the compression:
       .pipe(gzip)
       .pipe(res);
 
-My problem is that setHeader only sets the name of the original file, which is the compressed `.gz` file. How can I set the name of the file to be decompressed to ""my-image.png`?",
-146487606,2017-05-23 11:49:00.147000 UTC,44134007,1,85317319-d6ff-4a93-99e2-2a09d01e1bee,2232381,Node.js file extensions inside gzip compression,
-146487607,2017-05-23 11:49:00.147000 UTC,44134007,3,85317319-d6ff-4a93-99e2-2a09d01e1bee,2232381,<node.js><http><download><gzip>,
-146552534,2017-05-23 11:51:22.643000 UTC,44134061,2,ffa2393b-7bab-4e99-90b2-bd712b0474b4,265521,"Consider the following program:
+My problem is that setHeader only sets the name of the original file, which is the compressed `.gz` file. How can I set the name of the file to be decompressed to ""my-image.png`?"	
+146487606	2017-05-23 11:49:00.147000 UTC	44134007	1	85317319-d6ff-4a93-99e2-2a09d01e1bee	2232381	Node.js file extensions inside gzip compression	
+146487607	2017-05-23 11:49:00.147000 UTC	44134007	3	85317319-d6ff-4a93-99e2-2a09d01e1bee	2232381	<node.js><http><download><gzip>	
+146552534	2017-05-23 11:51:22.643000 UTC	44134061	2	ffa2393b-7bab-4e99-90b2-bd712b0474b4	265521	"Consider the following program:
 
     #include <iostream>
     #include <cmath>
@@ -1064,10 +1064,10 @@ I suspect this is because of strict aliasing rules or something like that. Can a
 
 Edit: I forgot to mention that if you do `nans = { std::nanf(nullptr), ...` it works fine.
 
-Also looking on [godbolt](https://godbolt.org/) it seems that the behaviour changed between Clang 3.8.1 and Clang 3.9 - the latter removes the `cmdordps` instruction. GCC 7.1 seems to leave it in.",
-146552535,2017-05-23 11:51:22.643000 UTC,44134061,1,ffa2393b-7bab-4e99-90b2-bd712b0474b4,265521,"Strict aliasing, -ffast-math and SSE",
-146552539,2017-05-23 11:51:22.643000 UTC,44134061,3,ffa2393b-7bab-4e99-90b2-bd712b0474b4,265521,<c++><clang><sse><strict-aliasing><fast-math>,
-146519723,2017-05-23 11:50:11.283000 UTC,44134034,2,295c703c-7062-4952-95d2-120b2efd3c37,4503693,"You can use two (or three) separate classes to deserialize or you can use `JObject`.
+Also looking on [godbolt](https://godbolt.org/) it seems that the behaviour changed between Clang 3.8.1 and Clang 3.9 - the latter removes the `cmdordps` instruction. GCC 7.1 seems to leave it in."	
+146552535	2017-05-23 11:51:22.643000 UTC	44134061	1	ffa2393b-7bab-4e99-90b2-bd712b0474b4	265521	Strict aliasing, -ffast-math and SSE	
+146552539	2017-05-23 11:51:22.643000 UTC	44134061	3	ffa2393b-7bab-4e99-90b2-bd712b0474b4	265521	<c++><clang><sse><strict-aliasing><fast-math>	
+146519723	2017-05-23 11:50:11.283000 UTC	44134034	2	295c703c-7062-4952-95d2-120b2efd3c37	4503693	"You can use two (or three) separate classes to deserialize or you can use `JObject`.
 
     public class Data
     {
@@ -1117,15 +1117,15 @@ Also looking on [godbolt](https://godbolt.org/) it seems that the behaviour chan
     foreach (var loData in loDataList)
     {
         Debug.WriteLine(""Name: {0} Age: {1}"", loData.Name, loData.Age);
-    }",
-146579423,2017-05-23 11:52:23.827000 UTC,44134079,2,c0a3457e-4f18-4763-a990-ab6113056649,2216956,"Add `bind(this)` to binding your method into current component, like 
+    }"	
+146579423	2017-05-23 11:52:23.827000 UTC	44134079	2	c0a3457e-4f18-4763-a990-ab6113056649	2216956	"Add `bind(this)` to binding your method into current component, like 
 
     yourMethod(){
         console.log(this.props)
     }    
 
-    <SomeComponent onClick={this.yourMethod.bind(this)} />",
-146547309,2017-05-23 11:51:11.560000 UTC,44134058,2,891f3e12-fb58-4dd0-ac44-305f18c8cb81,1212681,"Indeed, SubGit runs a daemon to check for new SVN changes (once a minute by default). The daemon starts automatically if not started on every Git push, so if Git pushes to your repository occur often enough and you don't care much about having new SVN changes immediately, you can just do nothing and with the first Git push the daemon will start.
+    <SomeComponent onClick={this.yourMethod.bind(this)} />"	
+146547309	2017-05-23 11:51:11.560000 UTC	44134058	2	891f3e12-fb58-4dd0-ac44-305f18c8cb81	1212681	"Indeed, SubGit runs a daemon to check for new SVN changes (once a minute by default). The daemon starts automatically if not started on every Git push, so if Git pushes to your repository occur often enough and you don't care much about having new SVN changes immediately, you can just do nothing and with the first Git push the daemon will start.
 
 But if it's important for you to have Git repository up-to-date, you need to run
 
@@ -1147,8 +1147,8 @@ I'm one of SubGit developers.
 
 
   [1]: https://subgit.com/gitlab.html
-  [2]: https://gist.github.com/naholyr/4275302",
-146554895,2017-05-23 11:51:27.560000 UTC,44134063,2,4beb9857-3281-45b0-9077-9b72405add9a,7962346,"Just copy the clipboard manager lines in to the button click, solves the problem
+  [2]: https://gist.github.com/naholyr/4275302"	
+146554895	2017-05-23 11:51:27.560000 UTC	44134063	2	4beb9857-3281-45b0-9077-9b72405add9a	7962346	"Just copy the clipboard manager lines in to the button click, solves the problem
 
   
 
@@ -1161,8 +1161,8 @@ I'm one of SubGit developers.
                     text_view.setText(paste_url);
                     url = text_view.getText().toString();
                  Log.d(""url"",url);
-    }",
-146424386,2017-05-23 11:46:47.837000 UTC,44133959,2,eba51eb4-06f9-4e2f-b994-2763f9aab0da,2444293,"I am trying to prove the following using the Mathematical Components library:
+    }"	
+146424386	2017-05-23 11:46:47.837000 UTC	44133959	2	eba51eb4-06f9-4e2f-b994-2763f9aab0da	2444293	"I am trying to prove the following using the Mathematical Components library:
 
     Lemma bigsum_aux (i: 'I_q) (j: 'I_q) (F G : 'I_q -> R):
       (forall i0, F i0 <= G i0) /\ (exists j0, F j0 < G j0) ->
@@ -1176,10 +1176,10 @@ Initially, I was trying to find some Lemma equivalent to `bigsum_aux` in the doc
      - move => ? _. exact: Hall.
      - rewrite andbT. (* A: What now? *)
 
-Any help or pointers towards relevant lemmas would be welcome.",
-146424387,2017-05-23 11:46:47.837000 UTC,44133959,1,eba51eb4-06f9-4e2f-b994-2763f9aab0da,2444293,Coq - Proving strict inequality involving bigops in Ssreflect,
-146424389,2017-05-23 11:46:47.837000 UTC,44133959,3,eba51eb4-06f9-4e2f-b994-2763f9aab0da,2444293,<coq><coq-tactic><ssreflect>,
-146415051,2017-05-23 11:46:26.877000 UTC,44133949,2,8fcc9009-12de-4269-9698-218da88c0e33,7273817,"I have a salesforce site with doamin as below :
+Any help or pointers towards relevant lemmas would be welcome."	
+146424387	2017-05-23 11:46:47.837000 UTC	44133959	1	eba51eb4-06f9-4e2f-b994-2763f9aab0da	2444293	Coq - Proving strict inequality involving bigops in Ssreflect	
+146424389	2017-05-23 11:46:47.837000 UTC	44133959	3	eba51eb4-06f9-4e2f-b994-2763f9aab0da	2444293	<coq><coq-tactic><ssreflect>	
+146415051	2017-05-23 11:46:26.877000 UTC	44133949	2	8fcc9009-12de-4269-9698-218da88c0e33	7273817	"I have a salesforce site with doamin as below :
 
 http://loram-ipsum.na15.force.com 
 
@@ -1189,10 +1189,10 @@ http://loram-ipsum.na46.force.com
 
 As per my knowledge ""na15"" stands for server location (north america 15).
 
-Thanks.",
-146415053,2017-05-23 11:46:26.877000 UTC,44133949,1,8fcc9009-12de-4269-9698-218da88c0e33,7273817,Salesforce site domain change?,
-146415054,2017-05-23 11:46:26.877000 UTC,44133949,3,8fcc9009-12de-4269-9698-218da88c0e33,7273817,<salesforce><subdomain><apex>,
-146477903,2017-05-23 11:48:40.573000 UTC,44133999,2,d07c8a28-673c-4894-9eec-02712a8209ff,8053175,"What is better solution for storing just a text in elasticsearch 5.x for a text field no longer then 256 characters, when this field does NOT need to be:
+Thanks."	
+146415053	2017-05-23 11:46:26.877000 UTC	44133949	1	8fcc9009-12de-4269-9698-218da88c0e33	7273817	Salesforce site domain change?	
+146415054	2017-05-23 11:46:26.877000 UTC	44133949	3	8fcc9009-12de-4269-9698-218da88c0e33	7273817	<salesforce><subdomain><apex>	
+146477903	2017-05-23 11:48:40.573000 UTC	44133999	2	d07c8a28-673c-4894-9eec-02712a8209ff	8053175	"What is better solution for storing just a text in elasticsearch 5.x for a text field no longer then 256 characters, when this field does NOT need to be:
 - searchable
 - indexed
 - analyzed
@@ -1206,21 +1206,21 @@ Set mapping to **keyword** with index=false, doc_values=false
 
 What is more space efficient? Or what is the difference between these two mappings whit these settings?
 
-Thank you.",
-146477904,2017-05-23 11:48:40.573000 UTC,44133999,1,d07c8a28-673c-4894-9eec-02712a8209ff,8053175,"Best way to store text in elasticsearch that does not need to be search, analyzed or aggregatable?",
-146477905,2017-05-23 11:48:40.573000 UTC,44133999,3,d07c8a28-673c-4894-9eec-02712a8209ff,8053175,<elasticsearch><elasticsearch-5>,
-146376528,2017-05-23 11:44:58.557000 UTC,44133923,2,521357a8-4e9b-4dfc-9dec-1d4b6d9d11af,4397154,You can do it with **StackView**.set StackView `center horizotal and vertical alignment` and also set in StackView `attributes inspector` set **alignment** center and **distribution** Equal centering. Set both button width fixed.,
-146421154,2017-05-23 11:46:40.797000 UTC,44133955,2,fb797168-0f74-4dbd-bc9c-b4aeefbdcb54,8053288,"The Controller is UIViewController.
+Thank you."	
+146477904	2017-05-23 11:48:40.573000 UTC	44133999	1	d07c8a28-673c-4894-9eec-02712a8209ff	8053175	Best way to store text in elasticsearch that does not need to be search, analyzed or aggregatable?	
+146477905	2017-05-23 11:48:40.573000 UTC	44133999	3	d07c8a28-673c-4894-9eec-02712a8209ff	8053175	<elasticsearch><elasticsearch-5>	
+146376528	2017-05-23 11:44:58.557000 UTC	44133923	2	521357a8-4e9b-4dfc-9dec-1d4b6d9d11af	4397154	You can do it with **StackView**.set StackView `center horizotal and vertical alignment` and also set in StackView `attributes inspector` set **alignment** center and **distribution** Equal centering. Set both button width fixed.	
+146421154	2017-05-23 11:46:40.797000 UTC	44133955	2	fb797168-0f74-4dbd-bc9c-b4aeefbdcb54	8053288	"The Controller is UIViewController.
 
 I have a Scrollview in uiviewcontroller. A Tableview is added as a subview upon the scrollview. The Scroll view content size is bigger than the screen size. There is a footer in the Tableview. When I am reloading the Tableview first time with the data then the Footer is not displaying but when I started the scroll then the footer is displaying properly.
 
 Could you please guide me, how to make this resolve.
 
-Thanks",
-146421155,2017-05-23 11:46:40.797000 UTC,44133955,1,fb797168-0f74-4dbd-bc9c-b4aeefbdcb54,8053288,UITableView Footer is not showing,
-146421157,2017-05-23 11:46:40.797000 UTC,44133955,3,fb797168-0f74-4dbd-bc9c-b4aeefbdcb54,8053288,<ios><objective-c><uitableview><uiscrollview>,
-146453323,2017-05-23 11:47:50.333000 UTC,44133983,2,aedaf300-8dc2-4677-8d02-09a11210bdf0,7504681,"The PictureBox is transparent, you need to use a transparent image (such as a PNG), as already stated.",
-146540339,2017-05-23 11:50:55.933000 UTC,44134052,2,eee2ba24-2e6d-4c32-ac01-5815938d847b,1145666,"I have the following code:
+Thanks"	
+146421155	2017-05-23 11:46:40.797000 UTC	44133955	1	fb797168-0f74-4dbd-bc9c-b4aeefbdcb54	8053288	UITableView Footer is not showing	
+146421157	2017-05-23 11:46:40.797000 UTC	44133955	3	fb797168-0f74-4dbd-bc9c-b4aeefbdcb54	8053288	<ios><objective-c><uitableview><uiscrollview>	
+146453323	2017-05-23 11:47:50.333000 UTC	44133983	2	aedaf300-8dc2-4677-8d02-09a11210bdf0	7504681	The PictureBox is transparent, you need to use a transparent image (such as a PNG), as already stated.	
+146540339	2017-05-23 11:50:55.933000 UTC	44134052	2	eee2ba24-2e6d-4c32-ac01-5815938d847b	1145666	"I have the following code:
 
     <div class=""col-sm-5 content"">
       <h2>Network Configuration</h2>  
@@ -1254,15 +1254,15 @@ But, it isn't layouted very nice. Main problem is, the labels are closer to the 
 How should I correctly layout a form like this?
 
 
-  [1]: https://i.stack.imgur.com/QuPYV.png",
-146540340,2017-05-23 11:50:55.933000 UTC,44134052,1,eee2ba24-2e6d-4c32-ac01-5815938d847b,1145666,Correct way to layout a form,
-146540341,2017-05-23 11:50:55.933000 UTC,44134052,3,eee2ba24-2e6d-4c32-ac01-5815938d847b,1145666,<twitter-bootstrap>,
-146576633,2017-05-23 11:52:17.597000 UTC,44134077,2,6e40eb61-eb67-434f-9033-70e67c146554,4533730,"I found this helpful for my conversion, without string manipulation. https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql
+  [1]: https://i.stack.imgur.com/QuPYV.png"	
+146540340	2017-05-23 11:50:55.933000 UTC	44134052	1	eee2ba24-2e6d-4c32-ac01-5815938d847b	1145666	Correct way to layout a form	
+146540341	2017-05-23 11:50:55.933000 UTC	44134052	3	eee2ba24-2e6d-4c32-ac01-5815938d847b	1145666	<twitter-bootstrap>	
+146576633	2017-05-23 11:52:17.597000 UTC	44134077	2	6e40eb61-eb67-434f-9033-70e67c146554	4533730	"I found this helpful for my conversion, without string manipulation. https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql
 
     CONVERT(VARCHAR(23), @lastUploadEndDate, 121)
 
-yyyy-mm-dd hh:mi:ss.mmm(24h) was the format I needed.",
-146537807,2017-05-23 11:50:50.770000 UTC,44134049,2,560d569e-f66c-476c-a1d7-44436ddc8a4c,4010625,"That's what worked for me:
+yyyy-mm-dd hh:mi:ss.mmm(24h) was the format I needed."	
+146537807	2017-05-23 11:50:50.770000 UTC	44134049	2	560d569e-f66c-476c-a1d7-44436ddc8a4c	4010625	"That's what worked for me:
 
 **1. The Remotes**
 
@@ -1279,8 +1279,8 @@ yyyy-mm-dd hh:mi:ss.mmm(24h) was the format I needed.",
 
     $ ssh-add ~/.ssh/id_rsa_github
 
-**4. Add the new key to the Github repo.**",
-146442085,2017-05-23 11:47:27.687000 UTC,44133971,2,074599bd-b838-401d-a0e9-f55b6851338c,1312400,"Create a shared service to handle stuff between components
+**4. Add the new key to the Github repo.**"	
+146442085	2017-05-23 11:47:27.687000 UTC	44133971	2	074599bd-b838-401d-a0e9-f55b6851338c	1312400	"Create a shared service to handle stuff between components
 
 **storage.service.ts**
 
@@ -1304,11 +1304,11 @@ yyyy-mm-dd hh:mi:ss.mmm(24h) was the format I needed.",
 
     this._subscription = this.storageService.data$.subscribe( data => {
      this.data = data;
-    });",
-146496641,2017-05-23 11:49:20.103000 UTC,44134014,2,6dca1962-693e-499f-b12b-6e1db762732d,462781,"When making forms you can drag items from the ""Data Sources"" panel. In the data sources panel you can a class or table and all the children of it can be dragged to the form and will automatically generate a textbox or in this scenario a radio button with a data binding. In the database or class you will have to make a bit / bool for every option.
+    });"	
+146496641	2017-05-23 11:49:20.103000 UTC	44134014	2	6dca1962-693e-499f-b12b-6e1db762732d	462781	"When making forms you can drag items from the ""Data Sources"" panel. In the data sources panel you can a class or table and all the children of it can be dragged to the form and will automatically generate a textbox or in this scenario a radio button with a data binding. In the database or class you will have to make a bit / bool for every option.
 
-Group the radio buttons and add a radio button without a databinding to keep all bit / bools 0.",
-146418457,2017-05-23 11:46:34.503000 UTC,44133954,2,d2565dd5-a946-45f1-b766-25c997c2a1ae,2236921,"Use `Promise`s.
+Group the radio buttons and add a radio button without a databinding to keep all bit / bools 0."	
+146418457	2017-05-23 11:46:34.503000 UTC	44133954	2	d2565dd5-a946-45f1-b766-25c997c2a1ae	2236921	"Use `Promise`s.
 
 First I suggest you change your functions to return promises instead of taking callbacks:
 
@@ -1345,8 +1345,8 @@ Then you wrap the promises returned from parallell calls to these functions in a
       // results[1] contains the result from User.emailExist
     });
 
-If you do not want to change your functions in the `User` module, you can wrap the calls to those functions in `Promise`s in your index.js file instead.",
-146441790,2017-05-23 11:47:27.143000 UTC,44133970,2,ef3b9019-a4aa-41cf-a3a7-ef8699c0745f,7755976,"I've seen a lot of posts about this sort of topic, but I can't find any specifics to add into my relatively simple JS to get numerical results to appear to 2 decimal places - the answer is probably so simple, but somehow I can't figure it out.
+If you do not want to change your functions in the `User` module, you can wrap the calls to those functions in `Promise`s in your index.js file instead."	
+146441790	2017-05-23 11:47:27.143000 UTC	44133970	2	ef3b9019-a4aa-41cf-a3a7-ef8699c0745f	7755976	"I've seen a lot of posts about this sort of topic, but I can't find any specifics to add into my relatively simple JS to get numerical results to appear to 2 decimal places - the answer is probably so simple, but somehow I can't figure it out.
 
 It is for a calculator, you write two entries into 2 fields, and the 3rd returns the multiplied answer of the 2 numbers - fine.
 
@@ -1360,15 +1360,15 @@ However, if the number is not whole, and requires decimal placings, it shows the
   result.value = myResult;
    }
 
-A simpler fix the better, as I imagine for every entry like that ^, I'd have to make an amendment and right now the code entries are close to 1000 as its a bet calculator with full manual input.",
-146441791,2017-05-23 11:47:27.143000 UTC,44133970,1,ef3b9019-a4aa-41cf-a3a7-ef8699c0745f,7755976,JS input field result to show 2 decimal placings,
-146441792,2017-05-23 11:47:27.143000 UTC,44133970,3,ef3b9019-a4aa-41cf-a3a7-ef8699c0745f,7755976,<javascript><calculator>,
-146374743,2017-05-23 11:44:54.183000 UTC,44133920,2,a4451a24-8ea0-4767-a6f6-5d5b30362f09,4896948,"I want to add show password button to my form. 
+A simpler fix the better, as I imagine for every entry like that ^, I'd have to make an amendment and right now the code entries are close to 1000 as its a bet calculator with full manual input."	
+146441791	2017-05-23 11:47:27.143000 UTC	44133970	1	ef3b9019-a4aa-41cf-a3a7-ef8699c0745f	7755976	JS input field result to show 2 decimal placings	
+146441792	2017-05-23 11:47:27.143000 UTC	44133970	3	ef3b9019-a4aa-41cf-a3a7-ef8699c0745f	7755976	<javascript><calculator>	
+146374743	2017-05-23 11:44:54.183000 UTC	44133920	2	a4451a24-8ea0-4767-a6f6-5d5b30362f09	4896948	"I want to add show password button to my form. 
 Most of the examples that I found are using 2 inputs, one with type text and other with type password. 
-it is simpler to change type of input, so why people use 2 inputs?",
-146374747,2017-05-23 11:44:54.183000 UTC,44133920,1,a4451a24-8ea0-4767-a6f6-5d5b30362f09,4896948,using 2 inputs or change type of input to show password,
-146374750,2017-05-23 11:44:54.183000 UTC,44133920,3,a4451a24-8ea0-4767-a6f6-5d5b30362f09,4896948,<javascript><html>,
-146459324,2017-05-23 11:48:01.820000 UTC,44133989,2,af224904-b623-40d9-a42d-5aafcdbc0f20,750565,"I have been working in a few projects and noticed that as the software is getting developed, the database usually needs to evolve in the same manner. I have seen this handled in different ways, but they all look kind of like this:
+it is simpler to change type of input, so why people use 2 inputs?"	
+146374747	2017-05-23 11:44:54.183000 UTC	44133920	1	a4451a24-8ea0-4767-a6f6-5d5b30362f09	4896948	using 2 inputs or change type of input to show password	
+146374750	2017-05-23 11:44:54.183000 UTC	44133920	3	a4451a24-8ea0-4767-a6f6-5d5b30362f09	4896948	<javascript><html>	
+146459324	2017-05-23 11:48:01.820000 UTC	44133989	2	af224904-b623-40d9-a42d-5aafcdbc0f20	750565	"I have been working in a few projects and noticed that as the software is getting developed, the database usually needs to evolve in the same manner. I have seen this handled in different ways, but they all look kind of like this:
 
  - There is a file called SCRIPTS_TO_DEPLOY. 
  - When you need to do any kind of database change, then create a file called $TASK_$DESCRIPTION_$NUMBER.sql. Put it in a pre-defined folder.
@@ -1377,10 +1377,10 @@ it is simpler to change type of input, so why people use 2 inputs?",
 
 I have two questions. 1) Does this seems like a good idea or do you have any better suggestion? 2) Feels like somewhat overkill to build scripts for this every time I start a new project. Is there some tool that can help me out perhaps?
 
-Help would be appreciated.",
-146459327,2017-05-23 11:48:01.820000 UTC,44133989,1,af224904-b623-40d9-a42d-5aafcdbc0f20,750565,Keeping database in sync with code,
-146459328,2017-05-23 11:48:01.820000 UTC,44133989,3,af224904-b623-40d9-a42d-5aafcdbc0f20,750565,<sql><deployment>,
-146556930,2017-05-23 11:51:31.740000 UTC,44134066,2,334b8773-c505-43e6-80a5-daf031123436,6288940,"After using while loop,I only select first checkbox but  I can't select multiple checkboxes in page. Plz solve this issue.     
+Help would be appreciated."	
+146459327	2017-05-23 11:48:01.820000 UTC	44133989	1	af224904-b623-40d9-a42d-5aafcdbc0f20	750565	Keeping database in sync with code	
+146459328	2017-05-23 11:48:01.820000 UTC	44133989	3	af224904-b623-40d9-a42d-5aafcdbc0f20	750565	<sql><deployment>	
+146556930	2017-05-23 11:51:31.740000 UTC	44134066	2	334b8773-c505-43e6-80a5-daf031123436	6288940	"After using while loop,I only select first checkbox but  I can't select multiple checkboxes in page. Plz solve this issue.     
 
     $get=mysqli_query($con,""select * from subjects where cour_id='$id'"") or die(mysqli_error($con));
   while($data=mysqli_fetch_array($get))
@@ -1391,10 +1391,10 @@ Help would be appreciated.",
             <label for=""check""><?php echo $data['sub_name'];?></label>
             </div>
            <?php
-  }",
-146556932,2017-05-23 11:51:31.740000 UTC,44134066,1,334b8773-c505-43e6-80a5-daf031123436,6288940,Can't select multiple checkboxes in while loop,
-146556934,2017-05-23 11:51:31.740000 UTC,44134066,3,334b8773-c505-43e6-80a5-daf031123436,6288940,<php><checkbox><checkboxlist>,
-146551213,2017-05-23 11:51:19.420000 UTC,44134060,2,ec5fe952-6768-496d-980d-998574e856fe,6291315,"I have a workspace that I want to analyze with my rules configured on the SonarQube server. The code in the workspace is not in any code repository (so far).
+  }"	
+146556932	2017-05-23 11:51:31.740000 UTC	44134066	1	334b8773-c505-43e6-80a5-daf031123436	6288940	Can't select multiple checkboxes in while loop	
+146556934	2017-05-23 11:51:31.740000 UTC	44134066	3	334b8773-c505-43e6-80a5-daf031123436	6288940	<php><checkbox><checkboxlist>	
+146551213	2017-05-23 11:51:19.420000 UTC	44134060	2	ec5fe952-6768-496d-980d-998574e856fe	6291315	"I have a workspace that I want to analyze with my rules configured on the SonarQube server. The code in the workspace is not in any code repository (so far).
 
 So I installed SonarLint(3.1) in Eclipse(neon3 but same issues in neon3), but did not get any reports. In fact when at some point I saw a log, it said for a project with over 50+ Java files, it would check only 8 files. 
 
@@ -1402,4 +1402,4 @@ The java projects are maven projects and the code is stored under src/main/java/
 
 The same result appears whether in unconnected mode, or in connected mode, connected to a server-side project with Java measures (""SonarQube way"" selected). 
 
-So I can't right now use SonarLint at all with Eclipse!",
+So I can't right now use SonarLint at all with Eclipse!"	
