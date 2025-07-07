@@ -1,8 +1,8 @@
 [![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
 
-# IMDB Dataset
+# IMDb Dataset
 
-This dataset contains comprehensive movie and TV show information from the Internet Movie Database (IMDB), one of the world's most popular and authoritative sources for movie, TV, and celebrity content.
+This dataset contains comprehensive movie and TV show information from the Internet Movie Database (IMDb), one of the world's most popular and authoritative sources for movie, TV, and celebrity content.
 
 More information, and the raw data, can be found at [imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/).
 
@@ -10,7 +10,7 @@ For convenience, we have included the first 100 rows of each dataset in [data_to
 
 ## Dataset Overview
 
-The IMDB dataset includes information about:
+The IMDb dataset includes information about:
 - **Movies and TV Shows**: Titles, release dates, genres, ratings, and descriptions
 - **Cast and Crew**: Actors, directors, writers, and other production personnel
 - **Ratings and Reviews**: User ratings, vote counts, and review data
