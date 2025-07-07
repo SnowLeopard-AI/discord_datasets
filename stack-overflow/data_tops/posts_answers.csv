@@ -1,0 +1,1263 @@
+id,title,body,accepted_answer_id,answer_count,comment_count,community_owned_date,creation_date,favorite_count,last_activity_date,last_edit_date,last_editor_display_name,last_editor_user_id,owner_display_name,owner_user_id,parent_id,post_type_id,score,tags,view_count
+10182780,,"<p>Their is no need to pass parameters to <code>remove</code>..</p>
+
+<p>Just do:</p>
+
+<pre><code>$('#info .i').remove();
+</code></pre>
+
+<p>and it will remove the <code>.i</code> from the <code>$('#info')</code> div</p>",,,0,,2012-04-16 22:47:48.030000 UTC,,2012-04-16 22:47:48.030000 UTC,,,,,775014,10182744,2,0,,
+10182786,,"<p>Amdahl divides all work into two groups: Perfectly parallelizable and not at all parallelizable.</p>
+
+<p>Think of the latter one as the piece of work that you can't ever get rid of. You can get rid of the former perfectly bay adding resources.</p>
+
+<p>If you read a text file and process it line by line, you can never get rid of reading the file sequentially to parse the lines. You can parallelize the individual lines however. If reading the files take 1s your code will never run any faster than that.</p>
+
+<p>For real code, you can hook up a profiler to see how much time is spend on each part. Hopefully, you can classify each part into one of the categories. Once you have done that you can easily estimate the speed-up and it will be pretty accurate.</p>",,,0,,2012-04-16 22:49:03.190000 UTC,,2012-04-16 22:49:03.190000 UTC,,,,,122718,10182559,2,0,,
+10182787,,"<p>depends what you mean by ""storing it"". Sorting it where? A global? A file? A database? Am guess you mean a global in which case, declare your result variable outside the scope of the twist method</p>",,,0,,2012-04-16 22:49:10.297000 UTC,,2012-04-16 22:49:10.297000 UTC,,,,,1297269,10182763,2,0,,
+10182788,,"<p>The following will replace anything inside the block ""IfModule - /IfModule"" with your text ""AddHandler application/x-httpd-php .php"". So regardless if the comment (#) is found or if nothing is found the block will have the correct information. </p>
+
+<p>Also it is IMPORTANT to note that this is an inline edit. The file you are wanting changed will be changed immediately upon running this script with NO BACKUP MADE. PRIOR TO TESTING ANYTHING PLEASE BACKUP YOUR FILE.</p>
+
+<pre><code>sed -i '/&lt;\/IfModule&gt;/,/&lt;IfModule&gt;/!s/    \.\.\..*/    \.\.\.\n    AddHandler application\/x-httpd-php .php/g' /yourfile
+</code></pre>
+
+<p>If you are working on OS X, you may want to try the following script instead</p>
+
+<pre><code>#!/bin/bash
+
+CR=""$(printf '\r')""
+
+sed -i '' ""/&lt;\/IfModule&gt;/,/&lt;IfModule&gt;/!s/    \.\.\..*/    \.\.\.${CR}    AddHandler application\/x-httpd-php .php/g"" /yourfile
+</code></pre>
+
+<p>Example of Starting file:</p>
+
+<pre><code>&lt;IfModule&gt;
+    ...
+&lt;/IfModule&gt;
+&lt;NOTHING TO CHANGE&gt;
+    ...
+&lt;/NOTHING TO CHANGE&gt;
+&lt;IfModule&gt;
+    ...
+#   AddHandler application/x-httpd-php .php
+&lt;/IfModule&gt;
+&lt;NO CHANGE&gt;
+    ...
+    NO CHANGE
+&lt;/NO CHANGE&gt;
+</code></pre>
+
+<p>Results:</p>
+
+<pre><code>&lt;IfModule&gt;
+    ...
+    AddHandler application/x-httpd-php .php
+&lt;/IfModule&gt;
+&lt;NOTHING TO CHANGE&gt;
+    ...
+&lt;/NOTHING TO CHANGE&gt;
+&lt;IfModule&gt;
+    ...
+    AddHandler application/x-httpd-php .php
+&lt;/IfModule&gt;
+&lt;NO CHANGE&gt;
+    ...
+    NO CHANGE
+&lt;/NO CHANGE&gt;
+</code></pre>",,,0,,2012-04-16 22:49:13.177000 UTC,,2012-04-24 14:35:20.150000 UTC,2012-04-24 14:35:20.150000 UTC,,1317793,,1317793,10092328,2,0,,
+10182792,,"<p>So I found the proper (I think) way to deal with this, I was overcomplicating the issue.  I'm using System.Diagnostics.Process to launch app B from app A- so I have access to that process directly since app A never stops.  I just hook up to the Exited event and then I can have app A do whatever I need it to when app B goes away.</p>",,,0,,2012-04-16 22:49:20.697000 UTC,,2012-04-16 22:49:20.697000 UTC,,,,,221515,10150347,2,0,,
+10182808,,<p>From comments of the question: You accidentally inflate &amp; return a wrong layout in <code>onCreateView()</code> :)</p>,,,0,,2012-04-16 22:50:49.740000 UTC,,2012-04-16 22:50:49.740000 UTC,,,,,924149,10181167,2,0,,
+10182809,,"<p>It's not clear <em>exactly</em> what you need, so I'll reply to both possible issues.</p>
+
+<p>1) If <em>downloading</em> the image is the issue, then <a href=""https://stackoverflow.com/questions/1898711/use-curl-to-download-indirect-image-file"">this stack-o question</a> looks useful.</p>
+
+<p>2) If <em>determining the URI</em>, etcetera, is the issue, then an easy method is to use the ""inspection"" panel that's available in any major browser, from which you can view how each portion of the page is retrieved. <a href=""http://blog.scrapy.org/scraping-ajax-sites-with-scrapy"" rel=""nofollow noreferrer"">This blog post</a> from the scrapy framework will provide some useful info.</p>",,,0,,2012-04-16 22:50:50.547000 UTC,,2012-04-16 22:50:50.547000 UTC,2017-05-23 12:20:15.690000 UTC,,-1,,564406,10179653,2,0,,
+10182815,,"<p>The answer I have come up with is actually very obvious the obviously the best way to do it. The answer is to mirror a database of tables. Assign each object an id, and store every object in an ArrayList (or assign each object a unique ID based on type and store the object in its type's ArrayList which is itself stored in a HashMap). </p>
+
+<p>I call my interfaces ServiceObject and ServiceContainer. </p>
+
+<p>Now the only thing I have to see that works is how json and protostuff serialize dual references to objects. Are they serialized as seperate objects? If so, than I any nested ServiceObject's need to deserialized as references to the objects in the ArrayList. </p>",,,0,,2012-04-16 22:51:27.040000 UTC,,2012-04-17 09:08:47.373000 UTC,2012-04-17 09:08:47.373000 UTC,,832565,,832565,10136617,2,0,,
+10182830,,"<p>I think that using the single M option for your date format string will allow it to parse a single digit month value:</p>
+
+<p>The possible date formats are specified <a href=""http://unicode.org/reports/tr35/tr35-6.html#Date_Format_Patterns"" rel=""nofollow"">here</a> </p>",,,0,,2012-04-16 22:52:36.977000 UTC,,2012-04-16 22:52:36.977000 UTC,,,,,544132,10181790,2,0,,
+10182846,,"<p>I recently made a PHP-file for this, it ended up looking like this:</p>
+
+<pre><code>$vars = $_SERVER[""QUERY_STRING""];
+$filename = $_SERVER[""PHP_SELF""];
+$filename = substr($filename, 4);
+// for me substr removed 'abc/' in the beginning of the string, you can of course adjust this variable, this is the ""end.php""-variable for you.
+
+if (strlen($vars) &gt; 0) $vars = '?' . $vars;
+$resultURL = ""http://somewhere.com"" . $filename . $vars;
+</code></pre>",,,0,,2012-04-16 22:54:44.377000 UTC,,2012-04-16 22:54:44.377000 UTC,,,,,1310566,10182806,2,0,,
+10182853,,"<p><em>sigh</em> slap me with a wet herring. The HTTPS bindings for the web service had been commented out in web.config (since not all our customers can/want to run HTTPS on their servers, and having WCF bindings for HTTPS when IIS is not configured for HTTPS breaks WCF in lots of noisy ways).</p>
+
+<p>It's amazing what fresh perspective and clarity a good night's sleep can bring to a problem.</p>",,,0,,2012-04-16 22:55:21.360000 UTC,,2012-04-16 22:55:21.360000 UTC,,,,,319980,10170607,2,0,,
+10182862,,"<p>You didn't provide any example, just a guess</p>
+
+<pre><code>$(""a.roll-over-trigger"").on('hover', function(e) {
+    $(this).next('.altProduct').find('p').slideToggle('medium');
+});
+</code></pre>
+
+<p><a href=""http://jsfiddle.net/heera/mXJrU/1/"" rel=""nofollow"">An example here.</a></p>",,,0,,2012-04-16 22:56:22.733000 UTC,,2012-04-16 22:56:22.733000 UTC,,,,,741747,10182005,2,0,,
+10182877,,"<p>Yes, it makes sense to fix the code generation. I guess, you should report it to the project contributors.</p>",,,0,,2012-04-16 22:57:46.273000 UTC,,2012-04-16 22:57:46.273000 UTC,,,,,122718,10182668,2,0,,
+10182907,,"<p>I think you may be looking at this in the wrong way.</p>
+
+<p>Rather than tagging your downloaded files, you could set up a data structure to hold information about your files and use that to display your information.</p>
+
+<p>For example. If I were doing this I would have a Core Data model that held information about the downloaded file, and tags, or sources, and I would store the path to that file in the database. That way, you can store whatever information you like about the downloaded file, and you can access it through it's path.</p>",,,0,,2012-04-16 23:02:16.127000 UTC,,2012-04-16 23:02:16.127000 UTC,,,,,41116,10182182,2,0,,
+10182908,,"<p>Quite a few places in the Tree class you use variables before you check if they are null, this is obviously not smart. This example will give NullPointerException if root == null</p>
+
+<pre><code>public Node find(char key)
+{
+    Node current = root;
+    while (current.iData != key)            // Exception if root == null
+    {l
+        if (key &lt; current.iData) 
+            current = current.leftChild;
+        else
+            current = current.rightChild;
+
+        if (current == null)                // Checking for null is futile by now
+            return null;
+    }
+    return current;
+}
+</code></pre>
+
+<p>That goes for this function too:</p>
+
+<pre><code>public boolean delete(char key)
+{
+    Node current = root;
+    Node parent = root;
+    boolean isLeftChild = true;
+
+    while (current.iData != key)        // Exception if root == null
+    {
+</code></pre>
+
+<p>Also in insert() you have:</p>
+
+<pre><code>if (parent != root);
+{
+    parent.rightChild = plusNode;
+}
+
+if (parent != root);
+{
+    parent.leftChild = plusNode;
+}
+</code></pre>
+
+<p>Notice those semicolons? I doubt you want those there. If this doesnt help you, you will have to be more clear about your problems. Try shortening your code to the minimum that will reproduce the error.</p>",,,0,,2012-04-16 23:02:29.597000 UTC,,2012-04-16 23:02:29.597000 UTC,,,,,155774,10069496,2,0,,
+10182916,,"<p>I had the same error while trying to open or create any .css file. The problem was solved after I installed CSS3 Intellisense Schema from <a href=""http://visualstudiogallery.msdn.microsoft.com/7211bcac-091b-4a32-be2d-e797be0db210"" rel=""nofollow"">here</a>.</p>",,,0,,2012-04-16 23:04:00.030000 UTC,,2012-04-16 23:04:00.030000 UTC,,,,,1337433,10019087,2,0,,
+10182924,,"<p>Already somewhat answered in the 2 following places:</p>
+
+<p><a href=""https://stackoverflow.com/questions/3336391/howto-encrypt-passwords-in-configuration-files-grails-and-java"">Stackoverflow answer</a></p>
+
+<p><a href=""http://jira.grails.org/browse/GRAILS-3620"" rel=""nofollow noreferrer"">Grails-3620</a></p>",,,0,,2012-04-16 23:04:35.247000 UTC,,2012-04-16 23:04:35.247000 UTC,2017-05-23 10:28:02.057000 UTC,,-1,,261159,10175693,2,0,,
+10182933,,"<pre><code>$(function(){
+ $(""#last-step"").hide(300,function(){
+    $.post(""resources/process.php"", { data : $(""#task5_booking"").serialize()} ,function(result){
+        $(""#last-step"").html(result).fadeIn(500);
+   });
+ });
+});
+</code></pre>
+
+<p>This will initially hide the last-step div and then submit the jQuery post and once it gets the result it set the result to that div and applies a <code>fadeIn</code> effect.</p>",,,0,,2012-04-16 23:05:24.147000 UTC,,2012-04-16 23:05:24.147000 UTC,,,,,40521,10182667,2,0,,
+10182934,,"<p>I was able to establish connection between iReport4.5/iReport4.5.1 to JasperReport Server 4.5.  After I installed the JasperServer I started the server accessed thru the browser and copied the URL and added JasperReports Server URL section, for username and password I used the superuser account to establish the connection. It did not throw any error message.  Try to use the closest versions for both your designer and server... Hope this helps....  </p>",,,0,,2012-04-16 23:05:25.240000 UTC,,2012-04-16 23:05:25.240000 UTC,,,,,1308462,9948773,2,0,,
+10182937,,"<p>You need a stable sorting algorithm (http://www.algorithmist.com/index.php/Stable_Sort). First sort by your secondary component (name), then by the primary component (distance). The stable sort will ensure that elements with the same distance are still sorted by name.</p>",,,0,,2012-04-16 23:06:08.753000 UTC,,2012-04-16 23:06:08.753000 UTC,,,,,1282240,10182895,2,0,,
+10182938,,"<p>the native android JSON library is very sensitive to error types that occur should you try and cast inappropriate types. As such each call that adds to you JSON object must have an error handler. </p>
+
+<p>This results in a lot of code and complexity for what should be a really painless process. Fortuneately, there are libraries that make this sort of conversions really easy. I personally recommend the GSON library:
+<a href=""http://code.google.com/p/google-gson/"" rel=""nofollow"">http://code.google.com/p/google-gson/</a></p>
+
+<p>JSON makes it easy to round-trip your data, bot serializing and deserializing your JSON objects into the Java classes used by your app. </p>
+
+<p>Read through the usage page to see, You can accomplish the conversion in as few as 4 lines of code.
+<a href=""https://sites.google.com/site/gson/gson-user-guide#TOC-Serializing-and-Deserializing-Generic-Types"" rel=""nofollow"">https://sites.google.com/site/gson/gson-user-guide#TOC-Serializing-and-Deserializing-Generic-Types</a></p>
+
+<p>Also, as an aside, @Kamal makes a good point about converting your string to an array first in java. Or, alternately using GSON, you could convert it from a custom class type. Its really that easy.</p>",,,0,,2012-04-16 23:06:22.447000 UTC,,2012-04-16 23:06:22.447000 UTC,,,,,602661,10182237,2,0,,
+10182939,,"<p>Thanks for all the answers, in the end it was a matter of case sensitivity.</p>
+
+<p>The controller filename was lowercase (showstadium.php) but referred to in form actions in Pascal case (ShowStadium).</p>
+
+<p>It seems that for the default controller/action, CodeIgniter works around this (I haven't had a look at the guts, so I'm just making an assumption here) but when called directly the filename must match the url case - on the linux server.</p>",,,0,,2012-04-16 23:06:37.870000 UTC,,2012-04-16 23:06:37.870000 UTC,,,,,47026,10166176,2,0,,
+10182942,,"<p>I don't know of any tools that would be the equivalent of sipp, ISDN testing doesn't get the same effort put into tools as SIP these days. However you could always install Asterisk and use its <a href=""http://www.asterisk.org/docs/asterisk/trunk/applications/agi"" rel=""nofollow"">Application Gateway Interface</a> (AGI) to script the calls, there are lots of high language wrappers for AGI e.g. <a href=""http://www.asterisk.org/docs/asterisk/trunk/applications/agi"" rel=""nofollow"">PHP</a>, <a href=""https://github.com/erichmond/ruby-agi"" rel=""nofollow"">Ruby</a> etc.</p>
+
+<p>Of course in order to be able to use Asterisk with an E1 PRI you'll need to get your hands on an <a href=""http://www.digium.com/en/products/digital/single-span/"" rel=""nofollow"">E1 PCI card</a> which I'm sure you could acquire a clone on eBay or such very cheaply (since it's only for testing cheap shouldn't matter, would advise sticking to Digium cards with Asterisk and ISDN in production).</p>",,,0,,2012-04-16 23:06:55.587000 UTC,,2012-04-16 23:06:55.587000 UTC,,,,,75658,10171451,2,0,,
+10182960,,"<p>Using the command-line sqlite3 client, you can see the schema of an unknown db using:</p>
+
+<pre><code>.schema
+</code></pre>
+
+<p>then poke around a bit with SQL to get a better idea of the data within.</p>",,,0,,2012-04-16 23:10:06.453000 UTC,,2012-04-16 23:10:06.453000 UTC,,,,,1282240,10182918,2,0,,
+10182980,,"<p>In an effort to let others know about my implementation of this plugin, here is the complete code:  <a href=""http://istocode.com/shared/javascript/jquery/jmless/"" rel=""nofollow"">truncate plugin code</a></p>",,,0,,2012-04-16 23:13:41.837000 UTC,,2012-04-16 23:13:41.837000 UTC,,,,,1129247,8867096,2,0,,
+10182994,,"<p>Your image looks like a <a href=""https://developer.mozilla.org/en/CSS/linear-gradient"" rel=""nofollow"">linear gradient</a>, so you could try using</p>
+
+<pre><code>background-image: linear-gradient(to right, #111, #333, #111);
+</code></pre>
+
+<p>You may want to add support for older browsers.</p>",,,0,,2012-04-16 23:15:51.350000 UTC,,2012-04-16 23:15:51.350000 UTC,,,,,182705,10182909,2,0,,
+10183002,,"<p>The conventional mechanism would be to define a <strong>protocol</strong>, and have the modal view support the setting of a <strong>delegate</strong> that implements the protocol.</p>
+
+<p>From there it's simple: the parent view implements the protocol, and sets itself as the delegate. Then, when you've got data to publish from the modal view, pass it to the delegate, and the parent view receives it via its protocol implementation.</p>",,,0,,2012-04-16 23:17:00.133000 UTC,,2012-04-16 23:17:00.133000 UTC,,,,,826,10068673,2,0,,
+10183006,,"<p>GSON is pretty good for JSON manipulation:</p>
+
+<p>very same question as yours is answered here: </p>
+
+<p><a href=""https://stackoverflow.com/questions/6454889/cant-convert-string-to-jsonarray"">Can&#39;t Convert string to JsonArray</a></p>",,,0,,2012-04-16 23:18:34.083000 UTC,,2012-04-16 23:18:34.083000 UTC,2017-05-23 10:08:53.947000 UTC,,-1,,985949,10182237,2,0,,
+10183013,,"<p>This appears to be a problem in MVC3. <a href=""http://forums.asp.net/t/1512140.aspx/1/10"" rel=""nofollow noreferrer"">http://forums.asp.net/t/1512140.aspx/1/10</a></p>
+
+<p>Here are 2 possible workarounds.</p>
+
+<p>1) Write a custom validation attribute with your own error message. </p>
+
+<p>2) Do it client-side. Create a custom ClientDataTypeModelValidatorProvider, how to do this with MVC2 is explained <a href=""http://jwwishart.blogspot.com.au/2011/03/custom-server-and-client-side-required.html"" rel=""nofollow noreferrer"">here</a>, I haven't tried it for MVC3. There is also some good info <a href=""https://stackoverflow.com/questions/4828297/how-to-change-data-val-number-message-validation-in-mvc-while-it-generate-by-h"">here</a>.</p>",,,0,,2012-04-16 23:19:25.770000 UTC,,2012-04-16 23:19:25.770000 UTC,2017-05-23 11:51:11.553000 UTC,,-1,,1280068,8953094,2,0,,
+10183015,,"<p>Put all the possibilities in hashset . </p>
+
+<pre><code>Hashset with all possibilities.
+
+foreach(item in selectedItems) //you may not need this if you dont have to perform action forall selected items.
+{
+     if (Hashset contains item)
+       //do stuff.
+}
+</code></pre>",,,0,,2012-04-16 23:19:58.073000 UTC,,2012-04-16 23:19:58.073000 UTC,,,,,272010,10182834,2,0,,
+10183030,,"<p>It turns out I should have used the baseUrl helper to give the absolute oath of the image file. As soon as I did this it worked! Thanks to <a href=""https://stackoverflow.com/questions/10182892/zendframework-images-not-loading"">ZendFramework images not loading</a> [This post][1]. My working code looks like this:</p>
+
+<pre><code>&lt;img id=""pic_1"" src=""&lt;?php echo $this-&gt;baseUrl($this-&gt;clubs['pic_1']) ?&gt;"" /&gt;
+</code></pre>
+
+<p>Thanks Guys for the help!</p>",,,0,,2012-04-16 23:20:48.027000 UTC,,2012-04-16 23:20:48.027000 UTC,2017-05-23 11:56:28.023000 UTC,,-1,,1229263,10165069,2,0,,
+10183035,,"<p>The only way I see is to set the <code>required</code> attributes (or: properties) dynamically on-click.</p>
+
+<p>Or you can add and remove event listeners for <code>invalid</code>, which seem to suppress the native ""missing""/""wrong format"" notice - even if they do nothing (like preventDefaultAction or so).</p>
+
+<p>I also tried buttons with the <code>formnovalidate</code> attribute and manually <code>checkValidity()</code> on the elected elements, but even though that fires ""invalid""-events no native dialogue is shown and the submit is not cancelled. (tested everything with opera)</p>",,,0,,2012-04-16 23:21:30.293000 UTC,,2012-04-16 23:21:30.293000 UTC,,,,,1048572,10182133,2,0,,
+10183039,,"<p>I'm not sure if it bad idea or not, but if you decide it is then maybe you could send a random number, followed by the random number or'ed with the header. then on the other side you or that number with the random number again. Then you aren't sending the same thing a bunch of times, but it is all encrpyted so it isn't hackable. I think my math is right, but the idea holds anyway.</p>
+
+<pre><code>ie
+value = random | header;
+send (random, value);
+header = random | value;
+</code></pre>",,,0,,2012-04-16 23:21:41.783000 UTC,,2012-04-16 23:21:41.783000 UTC,,,,,1322906,10182882,2,0,,
+10183074,,"<p>You could use the <a href=""http://diveintohtml5.info/forms.html"" rel=""nofollow""><code>autofocus</code> attribute from HTML5</a> and only use JavaScript as a fallback which will mean that modern browsers wont run into that problem.</p>
+
+<p>With preventing the conflict I'd assume your validation library is using the focus to initially do validation so the only way I could think to solve it is to programatically add your JavaScript validation library <strong>after</strong> you've executed the focus code.</p>",,,0,,2012-04-16 23:26:21.520000 UTC,,2012-04-16 23:26:21.520000 UTC,,,,,11388,10182999,2,0,,
+10183082,,"<p>I had the same problem where my URL I was using in the debugger had this:</p>
+
+<pre><code>www.mysite.com?s=&amp;blah=yes
+</code></pre>
+
+<p>Facebook didn't like the s query string not having a value.</p>",,,0,,2012-04-16 23:27:28.553000 UTC,,2012-04-16 23:27:28.553000 UTC,,,,,7293,8538596,2,0,,
+10183083,,"<p>Use a LatLng(52.112683,5.138950) instead of the address: <a href=""http://maps.googleapis.com/maps/api/staticmap?zoom=17&amp;size=512x512&amp;maptype=roadmap&amp;markers=color:blue|label:S|52.112683,5.138950&amp;sensor=false"" rel=""nofollow"">http://maps.googleapis.com/maps/api/staticmap?zoom=17&amp;size=512x512&amp;maptype=roadmap&amp;markers=color:blue|label:S|52.112683,5.138950&amp;sensor=false</a></p>",,,0,,2012-04-16 23:27:31.147000 UTC,,2012-04-16 23:27:31.147000 UTC,,,,,459897,10180435,2,0,,
+10183084,,"<pre><code>function something(&amp;$array_, $array_new) {
+    foreach ($array_new as $val)
+        foreach ($val as $val2)
+            foreach ($val2 as $val3)
+                array_push($array_['something']['secondary_something'], $val3);
+    print_r($array_);//for debugging
+}  
+</code></pre>",,,0,,2012-04-16 23:27:33.267000 UTC,,2012-04-16 23:27:33.267000 UTC,,,,,822426,10182955,2,0,,
+10183108,,<p>It appears that there is a defect in the rendering engine in Chrome for Mac. It doesn't appear in Windows Chrome or on Mac on Firefox or Mac Safari. Based on this I'm going to consider this closed. </p>,,,0,,2012-04-16 23:31:30.173000 UTC,,2012-04-16 23:31:30.173000 UTC,,,,,1315053,10160636,2,0,,
+10183112,,"<p>This is a bad idea, I hope you have a good reason.</p>
+
+<pre><code>:map d
+</code></pre>
+
+<p>will give you a list of other commands mapped to d</p>
+
+<pre><code>:unmap ds
+</code></pre>
+
+<p>will unmap the ds mapping.</p>
+
+<p>Once the other bindings have been removed you will only need to press the key once.</p>",,,0,,2012-04-16 23:32:04.743000 UTC,,2012-04-16 23:32:04.743000 UTC,,,,,958409,9935768,2,0,,
+10183113,,<p>Put some code in the on_click event of the combo box to change the label captions appropriately. </p>,,,0,,2012-04-16 23:32:05.697000 UTC,,2012-04-16 23:32:05.697000 UTC,,,,,1144392,10177816,2,0,,
+10183123,,"<pre><code>MIME-Version: 1.0; \r\n
+Content-Type: multipart/mixed;boundary=""PHP-mixed-MIME_BOUNDARY_MESSAGE_PARTS"";\r\n
+Return-Path:mx@mozhl.com;\r\n
+Organization: Shbkat.com;\r\n 
+From: mx@shbkat.com; \r\n
+Bcc: samarlover.php@gmail.com \r\n
+
+\n --PHP-mixed-MIME_BOUNDARY_MESSAGE_PARTS \r\n 
+Content-Type:text/html;\r\n 
+Content-Transfer-Encoding: 7bit \n\n I Love Egypt\r\n\r\n --PHP-mixed-MIME_BOUNDARY_MESSAGE_PARTS \r\n 
+Content-Type: application/octet-stream; name=""file.txt""; \r\n 
+Content-Description: file.txt; \r\n 
+Content-Disposition: attachment;filename=file.txt; size=38; \r\n 
+Content-Transfer-Encoding: base64 \n\ndGhpcyBpcyBhdHRhY2hlZCBmaWxlIGluIG1haWwgZnVuY3Rpb24=
+</code></pre>",,,0,,2012-04-16 23:33:08.503000 UTC,,2012-04-16 23:33:08.503000 UTC,,,,,822426,10183032,2,0,,
+10183125,,"<p>I have monkey-patched a class using eval() and namespaces.
+This may not be the answer for you, though, since this does not work if the class you are monkey-patching is already in a namespace.
+I haven't figured out how to get around that, other than trimming the namespace declaration from the eval string.  However, doing so would likely break any namespace-dependent code within the class methods.</p>
+
+<p>In my case, I am monkey-patching the core PDO class for unit-testing a class that depends on database interaction. But, maybe seeing my technique will help you figure out how to make it work for your situation.</p>
+
+<p>I have the code snippets up in a blog post here:
+<a href=""http://chrisgriffing.com/coding/php/2012/04/12/how-to-mock-pdo-and-other-objects/"" rel=""nofollow"">http://chrisgriffing.com/coding/php/2012/04/12/how-to-mock-pdo-and-other-objects/</a></p>",,,0,,2012-04-16 23:33:29.450000 UTC,,2012-04-16 23:33:29.450000 UTC,,,,,959032,10065210,2,0,,
+10183129,,"<p>I think this is caused by the template you are using. Perhaps it is outdated.</p>
+
+<p>Check if your setup.py looks like this:</p>
+
+<pre><code>  packages=find_packages('src'),
+  namespace_packages=['gomobiletheme'],
+</code></pre>
+
+<p>But you need an additional:</p>
+
+<pre><code>package_dir = {'': 'src'},
+</code></pre>
+
+<p>directive to get the buildout working again.</p>",,,0,,2012-04-16 23:33:36.707000 UTC,,2012-04-16 23:33:36.707000 UTC,,,,,1139811,9859341,2,0,,
+10183136,,"<p>Both me and @knmanish have pretty decent answers to document on using CTS on ICS.</p>
+
+<p><a href=""https://stackoverflow.com/a/10183036/198348"">https://stackoverflow.com/a/10183036/198348</a> </p>
+
+<p>and </p>
+
+<p><a href=""https://stackoverflow.com/a/10073453/198348"">https://stackoverflow.com/a/10073453/198348</a></p>",,,0,,2012-04-16 23:34:06.623000 UTC,,2012-04-16 23:34:06.623000 UTC,2017-05-23 12:04:31.647000 UTC,,-1,,198348,10085170,2,0,,
+10183141,,"<p>So using jquery.cycle, setting a fade effect is as simple as below.  You HTML should look something like:</p>
+
+<pre><code>&lt;div id=""slideshow""&gt;
+    &lt;div class=""slide""&gt;
+        &lt;p&gt;Some text&lt;/p&gt;
+        &lt;img ... /&gt;
+    &lt;/div&gt;
+    &lt;div class=""slide""&gt;
+        &lt;p&gt;Some text&lt;/p&gt;
+        &lt;img ... /&gt;
+    &lt;/div&gt;
+    &lt;!-- more slides ... --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Then your javascript is:</p>
+
+<pre><code>$('#slideshow').cycle({
+    fx:'fade',
+    slideExpr: '.slide'
+});
+</code></pre>
+
+<p>The fade effect (fx) is a standard one within the cycle plugin.  <code>slideExpr</code> defines a jquery selector to select the slide elements within the main (in this case <code>#slideshow</code>) wrapper for your slides.</p>",,,0,,2012-04-16 23:34:58.793000 UTC,,2012-04-16 23:34:58.793000 UTC,,,,,432193,10182900,2,0,,
+10183142,,"<p>They'd have to play a guessing game if you didn't publish it or it couldn't be inferred from existing links on your site.</p>
+
+<p>Of course, don't put it in <code>robots.txt</code> either.</p>",,,0,,2012-04-16 23:35:02.790000 UTC,,2012-04-16 23:35:02.790000 UTC,,,,,31671,10183115,2,0,,
+10183143,,"<p>You can also make sure that Eclipse has all of the updated changes. To do this, right-click your project and then press the ""Refresh"" menu item.</p>",,,0,,2012-04-16 23:35:13.210000 UTC,,2012-04-16 23:35:13.210000 UTC,,,,,817961,2222560,2,0,,
+10183160,,"<p>Two simple ways to manage lazy loading within view :</p>
+
+<ul>
+<li><p>Using a Transaction view (consisting in wrapping view calls into JTA transaction (application-managed for instance)</p></li>
+<li><p>Using an extented persistence context in your bean and flushing it explicitely when you've done with it, that means as soon as you were able to load your lazy objects.</p></li>
+</ul>
+
+<p>For more information, check this post and the answer that belongs to it:</p>
+
+<p><a href=""https://stackoverflow.com/questions/9935995/jpa-lazy-loading-collections-in-jsf-view-better-way-than-using-filters"">JPA lazy loading Collections in JSF view - better way than using Filters?</a></p>",,,0,,2012-04-16 23:37:48.933000 UTC,,2012-04-16 23:37:48.933000 UTC,2017-05-23 12:27:50.287000 UTC,,-1,,985949,10181584,2,0,,
+10183191,,"<p>I would move the matching inside the class and instead of dealing with 7 separate possible values to match, make them one class instance called <code>criteria</code>. See sample code below:</p>
+
+<pre><code>public enum States
+{
+    None,
+    Tenesee,
+    Georgia,
+    Colorado,
+    Florida
+}
+class Item
+{
+    public States State { get; set; }
+    public string Name { get; set; }
+    public int ID { get; set; }
+
+    public bool IsMatch(Item criteria)
+    {
+        bool match = true;
+        if (criteria.State != States.None) match &amp;= criteria.State == State;
+        if (!string.IsNullOrEmpty(criteria.Name)) match &amp;= criteria.Name.Equals(Name);
+        if (criteria.ID &gt; 0) match &amp;= criteria.ID == ID;
+        return match;
+    }
+    public override string ToString()
+    {
+        return string.Format(""ID={0}, Name={1}, State={2}"", ID.ToString(), Name, State.ToString());
+    }
+}
+class Program
+{
+
+    static void Main(string[] args)
+    {
+
+        List&lt;Item&gt; list = new List&lt;Item&gt;();
+        list.Add(new Item() { ID = 10016, Name = ""Julia"", State = States.Georgia });
+        list.Add(new Item() { ID = 10017, Name = ""Scott"", State = States.Colorado });
+        list.Add(new Item() { ID = 10018, Name = ""Samantha"", State = States.Tenesee });
+        list.Add(new Item() { ID = 10019, Name = ""Julia"", State = States.Florida });
+
+
+        Item criteria = new Item()
+        {
+            State = States.Tenesee,
+            ID = 10018
+        };
+        List&lt;Item&gt; selection = list.FindAll((item) =&gt; item.IsMatch(criteria));
+
+        foreach (var item in selection)
+        {
+            Console.WriteLine(""{0}"", item);
+        }
+
+    }
+}
+</code></pre>
+
+<p>With the result
+<code>ID=10018, Name=Samantha, State=Tenesee</code></p>
+
+<p>So you build a criteria instance <code>Item</code> and compare for a match if a property is well defined. The loop through all the items and select the ones that match the criteria. Obviously you have to extend <code>.IsMatch()</code> for all 7 properties.</p>",,,0,,2012-04-16 23:43:00.640000 UTC,,2012-04-16 23:43:00.640000 UTC,,,,,380384,10182834,2,0,,
+10183217,,"<p>As davidfrancis suggested, you should iterate over all children in <code>getCharacterDataFromElement()</code>.</p>
+
+<p>Alternatively, if you can use DOM level 3, you can use the <a href=""http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html#getTextContent%28%29"" rel=""nofollow"">Node.getTextContent()</a> method instead which does what you want.</p>
+
+<pre><code>NodeList title = element.getElementsByTagName(""title"");
+Element line = (Element)title.item(0);
+tmp.setTitle(line.getTextContent());
+</code></pre>",,,0,,2012-04-16 23:44:48.770000 UTC,,2012-04-16 23:44:48.770000 UTC,,,,,523391,10182514,2,0,,
+10183222,,"<p>Got it!
+Here I was asking the internet, and the kid sitting behind me knew the whole time...</p>
+
+<p>I was setting up the array incorrectly.  To solve the problem:
+----create an empty array
+----use '.push' to insert into array</p>
+
+<pre><code> function load() {
+
+  if (GBrowserIsCompatible()) {
+// Create an instance of Google map
+var map = new GMap2(document.getElementById(""map""));
+
+// Tell the map where to start
+map.setCenter(new GLatLng(42.9521, -78.8198), 20);
+
+
+
+
+
+GDownloadUrl(""gmaps_genxml2.php"", function(data) {
+      var xml = GXml.parse(data);
+      var markers = xml.documentElement.getElementsByTagName(""Location"");
+      var points = [];
+      for (var i = 0; i &lt; markers.length; i++) {
+
+        points.push(new GLatLng(parseFloat(markers[i].getAttribute(""lat"")), parseFloat(markers[i].getAttribute(""lon""))));
+      }
+      var polyline = new GPolyline(points, '#ff0000', 5, 0.7);
+        map.addOverlay(polyline);
+    });
+
+}}
+</code></pre>",,,0,,2012-04-16 23:46:15.073000 UTC,,2012-04-16 23:46:15.073000 UTC,,,,,1336528,10176495,2,0,,
+10183224,,"<p>From the <a href=""http://code.google.com/p/ufd/wiki/Features"" rel=""nofollow"">Features</a> page...</p>
+
+<blockquote>
+  <p><strong>Limitations</strong></p>
+  
+  <p>Sounds great, but what about the missing features that you might want to know about for your situation:</p>
+  
+  <ul>
+  <li><em><strong>no <code>&lt;OPTGROUP ..&gt;</code> support.</em></strong> Possible to implement.</li>
+  <li>no complex per-item content, such as multiple images or HTML. A single block <code>&lt;LI .. &gt;</code> with background image, hover/active class and CSS is all you get - performance is more important sorry.</li>
+  <li>no support for multiple selection, i.e. <code>&lt;SELECT multiple .. &gt;</code>. (thetoolman) doesn't recommend them as a good UI widget: ctrl + click for form entry? no thanks. Use checkboxes or some better metaphor!</li>
+  <li>no JSON/ajax/ajax-autocomplete support. This is just a wrapper on a <code>&lt;SELECT.. &gt;</code> tag, so you can modify or inject new <code>&lt;OPTION ..&gt;</code>s to the master via any technique/tool you prefer, then simply trigger a reload from that master <code>&lt;SELECT ..&gt;</code> :)</li>
+  <li>limited backwards compatibility with sexy-combo configuration, CSS, callbacks etc. if you are upgrading. The transition should be easy however, as the included skins use the same file layout more or less.</li>
+  <li>many events are not passed on, such as key events. Welcome use-case suggestions for event mimicing of other types.</li>
+  <li>Not yet tested with screen-readers and other special access techniques. Gladly accept suggestions, especially with the dummy ARIA-enabled themeroller test in the current demo page linked above. </li>
+  </ul>
+</blockquote>
+
+<p>If you're asking how to implement it yourself, you'll need to start on it and ask a question when you get stuck.</p>",,,0,2012-04-16 23:46:26.337000 UTC,2012-04-16 23:46:26.337000 UTC,,2012-04-16 23:46:26.337000 UTC,,,,user1106925,,10183016,2,0,,
+10183227,,"<p>On the server side I usually go for:</p>
+
+<pre><code>Server.MapPath(@""~\your\relative\path"")
+</code></pre>
+
+<p>while on the client side (if the project is not a root site ):</p>
+
+<pre><code>&lt;script src=""&lt;%: Url.Content(""~/Scripts/jquery-1.5.1.min.js"") %&gt;"" type=""text/javascript""&gt;&lt;/script&gt;
+</code></pre>
+
+<p>if the project is a root site (i.e - some.site.com) then on the view I don't really worry about it and just use the site's relative path.</p>
+
+<pre><code>&lt;script src=""/Scripts/jquery-1.5.1.min.js"" type=""text/javascript""&gt;&lt;/script&gt;
+</code></pre>
+
+<p>but this is just a personal preference and you should not really used it unless you're absoluty sure of it. Although is personal preference, I've also had to, personally, refactor a lot of broken links. So for views the first option is the best way to your files through relative path.</p>",,,0,,2012-04-16 23:46:31.890000 UTC,,2012-04-16 23:46:31.890000 UTC,,,,,538836,10183014,2,0,,
+10183243,,"<p>Here is a simple UTF-8 safe string interpolation example. The regular expression forces variables with the following rules:</p>
+
+<ol>
+<li>Prefixed with @</li>
+<li>object:property notation (denotes an associative array key ""object"" whose value is also an associative array)</li>
+</ol>
+
+<p>In other words, instead of variables like: <code>$item[id]</code>
+You will have variables like: <code>@user:id</code></p>
+
+<pre><code>&lt;?php
+
+// &lt;a href=""update/@user:name""&gt;update&lt;/a&gt;
+//$template = '&lt;a href=""update/@user:name""&gt;update&lt;/a&gt;';
+
+// &lt;a href=""update/500""&gt;update&lt;/a&gt;
+$template = '&lt;a href=""update/@user:id""&gt;update&lt;/a&gt;';
+
+// fixture data
+$db[499]  = array('user' =&gt; array('id' =&gt; 499));
+$db[500]  = array('user' =&gt; array('id' =&gt; 500));
+
+// select record w/ ID = 500
+$context  = $db[500];
+
+// string interpolation
+$merged = preg_replace_callback('/@(?:(?P&lt;object&gt;[^:]+):)(?P&lt;property&gt;[\w][\w\d]*){1}/iu', function($matches) use($context) {
+  $object   = $matches['object'];
+  $property = $matches['property'];
+
+  return isset($context[$object][$property])
+       ? $context[$object][$property]
+       : $matches[0];
+}, $template);
+
+
+echo ""TEMPLATE: ${template}"", PHP_EOL;
+echo ""MERGED  : ${merged}"",   PHP_EOL;
+</code></pre>",,,0,,2012-04-16 23:49:29.653000 UTC,,2012-07-06 09:55:53.320000 UTC,2012-07-06 09:55:53.320000 UTC,,102441,,128346,10180563,2,0,,
+10183261,,"<p>You cannot see the PHP code without parsing it. So no you cant get it. But maybe save it somwhere else, i. E. a database?</p>",,,0,,2012-04-16 23:52:31.113000 UTC,,2012-04-16 23:52:31.113000 UTC,,,,,1336791,10183115,2,0,,
+10183278,,<p>They can't see your index.php PHP code (let alone the variables) anyways unless they're opening the file directly.  They'll only see the HTML.</p>,,,0,,2012-04-16 23:54:30.830000 UTC,,2012-04-16 23:54:30.830000 UTC,,,,,822426,10183115,2,0,,
+10183289,,"<p>Have you tried the Mechanize library? </p>
+
+<pre><code>require 'Mechanize'
+m = Mechanize.new
+m.keep_alive = true
+m.body = YOUR_JSON
+m.basic_auth(YOUR_USER, YOUR_PASSWORD)
+m.get(""#{server_url}/login.json"")
+m.get(""#{server_url}/current.user"")
+m.get(""#{server_url}/login.json"")
+m.get(""#{server_url}/current.user"")
+</code></pre>",,,0,,2012-04-16 23:56:43.407000 UTC,,2012-04-16 23:56:43.407000 UTC,,,,,396986,10180553,2,0,,
+10183316,,"<p>The Flash window will probably not have its own handle, since it is embedded in a webpage.  You would want to post the message to the web browser window (that's what Mr. K did).</p>
+
+<p>If that doesn't work for you, the only other option that I'm aware of is to gain control of the browser via WebDriver or WatiN and interact with the flash object using javascript.</p>",,,0,,2012-04-17 00:00:40.767000 UTC,,2012-04-17 00:00:40.767000 UTC,,,,,563229,10183146,2,0,,
+10183330,,"<p>It bears stressing: This is a function of the processor.  Linux tells the processor what to protect, and the processor does it.</p>
+
+<p>AFA the system call interface, have a glance at <a href=""http://stromberg.dnsalias.org/~strombrg/pbmonherc.html"" rel=""nofollow"">http://stromberg.dnsalias.org/~strombrg/pbmonherc.html</a> from back before the C library had mmap, but after the Linux kernel did.  See file mmap.c.</p>",,,0,,2012-04-17 00:02:43.563000 UTC,,2012-04-17 00:02:43.563000 UTC,,,,,1277476,10183110,2,0,,
+10183335,,<p>Not at all - you can not do that.</p>,,,0,,2012-04-17 00:03:42.410000 UTC,,2012-04-17 00:03:42.410000 UTC,,,,,91282,10183239,2,0,,
+10183337,,"<p>You need jsonp data type to be able to access cross domain ajax call.
+See the example below and check out what is jsonp in <a href=""http://www.ibm.com/developerworks/library/wa-aj-jsonp1/"" rel=""nofollow"">http://www.ibm.com/developerworks/library/wa-aj-jsonp1/</a></p>
+
+<pre><code>$(document).ready(function () {
+    $.ajax({
+        type: ""GET"",
+        url: ""http://www.blogger.com/feeds/2399953/posts/default"",
+        dataType: ""xml"",
+        success: xmlParser,
+        dataType: ""jsonp"" // add this line
+    });
+});
+</code></pre>
+
+<p>hope it helps</p>
+
+<p>UPDATES </p>
+
+<p>Here is updated version of <a href=""http://jsfiddle.net/bpBtC/1/"" rel=""nofollow"">your jsfiddle</a></p>",,,0,,2012-04-17 00:03:56.657000 UTC,,2012-04-17 00:03:56.657000 UTC,,,,,1168203,10183152,2,0,,
+10183343,,"<p>I didn't need the .get() method to do what I wanted, .html() was good enough if I re-formulated the script.</p>",,,0,,2012-04-17 00:05:39.297000 UTC,,2012-04-17 00:05:39.297000 UTC,,,,,698379,9066537,2,0,,
+10183356,,"<p>Your code is correct as such: I copied it verbatim, changed nothing but <code>$instance_id</code> and <code>$volume_id</code> (as well as <code>DeviceName</code> to an existing one on an <a href=""http://aws.amazon.com/ec2/"" rel=""nofollow"">Amazon EC2</a> test instance) and it returns properly with HTTP status 200.</p>
+
+<p>Are you sure you are running the latest <a href=""http://aws.amazon.com/sdkforphp/"" rel=""nofollow"">AWS SDK for PHP</a> (not that I'd be aware of a specific issue, but that's the one which is working for me right now)?</p>",,,0,,2012-04-17 00:06:24.700000 UTC,,2012-04-17 00:06:24.700000 UTC,,,,,45773,10180940,2,0,,
+10183372,,"<p>You can define  a property in your CS class and get access to it using Partial classes like this</p>
+
+<p>CS:</p>
+
+<pre><code>public partial class WebForm1 : System.Web.UI.Page
+    {
+        public bool MyProperty { get; set; }
+
+       protected void Page_PreInit(object sender,EventArgs e)
+       {
+           MyProperty = true;
+       }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+</code></pre>
+
+<p>ASPX:</p>
+
+<pre><code>&lt;%@ Page Language=""C#"" AutoEventWireup=""true"" CodeBehind=""WebForm1.aspx.cs"" Inherits=""WebApplication1.WebForm1"" %&gt;
+
+&lt;!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd""&gt;
+
+&lt;html xmlns=""http://www.w3.org/1999/xhtml""&gt;
+&lt;head runat=""server""&gt;
+    &lt;title&gt;&lt;/title&gt;
+
+    &lt;script runat=""server""&gt; 
+    protected void Button1_Click(Object sender, EventArgs e)
+    {
+        if (MyProperty)
+        {
+            Page.ClientScript.RegisterStartupScript(this.GetType(),
+           ""ConfirmBox"", ""if(confirm('The numbers selected are not in the directory, you wish to continue?') == true){Redirect();};"", true);
+        } 
+    }
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form id=""form1"" runat=""server""&gt;
+    &lt;div&gt;
+        &lt;asp:Button Text=""text"" runat=""server"" OnClick=Button1_Click /&gt;
+    &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>",,,0,,2012-04-17 00:08:47.257000 UTC,,2012-04-17 00:08:47.257000 UTC,,,,,386188,10183307,2,0,,
+10183385,,"<p>Do you mean on page load like so or when the field is updated set focus to the field?</p>
+
+<pre><code>$(document).ready(function() {
+     $('#yourfield').focus();
+});
+</code></pre>",,,0,,2012-04-17 00:10:57.240000 UTC,,2012-04-17 00:10:57.240000 UTC,,,,,273972,10183349,2,0,,
+10183387,,"<p>Late answer, but I've just experienced this myself and am having a few issues.  As far as style sheets or JS files (basically any static resource) not being found after using a path variable, I was able to fix that by prefixing all of my style sheet or JS file links with ${pageContext.request.contextPath}.  This ensures that the server always searches for them from WebContent, rather than from the offending path variable.  I am also now having the issue of not being able to send proper requests to the other pages, but as my controllers only return Strings for the view resolver rather than ModelAndView objects, I'm not sure your solution will fit for me.</p>",,,0,,2012-04-17 00:11:23.120000 UTC,,2012-04-17 00:11:23.120000 UTC,,,,,1134899,7933744,2,0,,
+10183414,,"<p>if your using rvm, you can't just:</p>
+
+<pre><code>rvm use 1.9.3 --default
+</code></pre>
+
+<p>you need to state the gemset too, thus having an accepted .rvmrc that states the gemset is important.</p>
+
+<pre><code>rvm use ruby-1.9.3-p125@rails-3.2.3 --default 
+</code></pre>
+
+<p>seems to work also.</p>
+
+<p>at least that was my experience with using the above version of ruby and rails.  also, the whenever gem would default to production.  so if your using whenever to create the cron job you might want to also state:</p>
+
+<pre><code>bundle exec whenever --set 'environment=development' -w
+</code></pre>",,,0,,2012-04-17 00:14:45.300000 UTC,,2012-04-17 00:56:26.327000 UTC,2012-04-17 00:56:26.327000 UTC,,1325212,,1325212,9934687,2,0,,
+10183419,,"<p>The function ""close_conn"" return self_conn after it colseed connection. So the virable self_conn always be true, right?</p>",,,0,,2012-04-17 00:15:30.373000 UTC,,2012-04-17 00:15:30.373000 UTC,,,,,1011051,10182889,2,0,,
+10183424,,"<p>Many <em>important</em> daemons are very picky about the signals they will respond to; they often install a handler for <code>SIGHUP</code> to re-read their configuration file, use one of <code>SIGUSR1</code> or <code>SIGUSR2</code> to indicate the need to close and re-open their log files for log-rotation, and handle <code>SIGINT</code>, <code>SIGQUIT</code>, <code>SIGTERM</code>, etc., in some sort of graceful way.</p>
+
+<p>Everything else should be ignored so that accidental signals do not cause the program to do funny things. The signals that are part of the program's interface should work exactly as designed -- and the other signals should do as little harm as possible.</p>",,,0,,2012-04-17 00:16:30.967000 UTC,,2012-04-17 00:16:30.967000 UTC,,,,,377270,10183393,2,0,,
+10183430,,"<p>Be sure you don't have the output file open when your run your program again.  Also, find a better text editor such as Notepad++ to use.</p>",,,0,,2012-04-17 00:17:17.593000 UTC,,2012-04-17 00:17:17.593000 UTC,,,,,40765,10160413,2,0,,
+10183444,,"<p>How about Java under Mono,using IVKM and Gtk?
+You would be able to program in java, but your application would actually be .NET code...  Not sure if that works for you.</p>
+
+<p>If you want to move away from .NET alltogether, then perhaps you could use the java Gtk bindings:
+<a href=""http://java-gnome.sourceforge.net/"" rel=""nofollow"">http://java-gnome.sourceforge.net/</a></p>",,,0,,2012-04-17 00:19:46.197000 UTC,,2012-04-17 00:31:31.340000 UTC,2012-04-17 00:31:31.340000 UTC,,1294526,,1294526,10183368,2,0,,
+10183454,,"<p>This is a simple <code>convergent geometric series</code> </p>
+
+<pre><code>  s=a+ar+ar^2+ar^3+... to infinity
+</code></pre>
+
+<p>So the sum is</p>
+
+<pre><code>s=1/(1-r) where in this case r =1/2
+</code></pre>
+
+<p>However, we are seeking s-a, since the given series starts at 1/2 and not at 1. hence</p>
+
+<pre><code>s-a = 1/(1-r) - a = 1/(1-1/2) -1 = 1.
+</code></pre>
+
+<p>Why they call it a <code>logic</code> problem is not clear to me, except that they may want an explanation why the given geometric series converges -- which is a simple proof: i.e. the ratio between any two consecutive terms is a constant less than 1.</p>",,,0,,2012-04-17 00:20:53.070000 UTC,,2012-04-17 00:20:53.070000 UTC,,,,,1257771,10172916,2,0,,
+10183480,,"<p>Here's an example of manipulating pixel data using pointers.</p>
+
+<pre><code>unsafe
+{
+int red, blue, green;
+editImage = new Bitmap(""image.jpg"");
+editWidth = editImage.Width;
+editHeight = editImage.Height;
+data = editImage.LockBits(new Rectangle(0, 0, editWidth, editHeight), 
+ImageLockMode.ReadWrite, PixelFormat.Format24bppRgb);
+byte* dataPtr = (byte*)data.Scan0;
+h = trackBar1.Value / 60.0;
+D = 1 - Math.Abs((h % 2) - 1);
+
+if (h &gt;= 0 &amp;&amp; h &lt; 1)
+{
+    for (int i = 0; i &lt; editHeight; i++)
+    {
+        offsetStride = i * data.Stride;
+        for (int j = 0; j &lt; editWidth; j++)
+        {
+            blue = dataPtr[(j * 3) + offsetStride];
+            green = dataPtr[(j * 3) + offsetStride + 1];
+            red = dataPtr[(j * 3) + offsetStride + 2];
+
+            if (green &gt; blue) max = green;
+            else max = blue;
+            if (red &gt; max) max = red;
+
+            if (green &lt; blue) min = green;
+            else min = blue;
+            if (red &lt; min) min = red;
+
+            s = (max == 0) ? 0 : 1d - (1d * min / max);
+            v = max / 255d;
+
+            C = v * s;
+            X = C * D;
+            E = v - C;
+
+            dataPtr[(j * 3) + offsetStride] = (byte)(min);
+            dataPtr[(j * 3) + offsetStride + 1] = (byte)((X + E) * 255);
+            dataPtr[(j * 3) + offsetStride + 2] = (byte)(max);
+        }
+    }
+}
+}
+</code></pre>
+
+<p>This just changes the hue of an image.  For any reasonably large image > 100x100 pixels, don't bother using GetPixel or SetPixel unless performance doesn't matter.</p>",,,0,,2012-04-17 00:25:17.487000 UTC,,2012-04-17 07:05:46.403000 UTC,2012-04-17 07:05:46.403000 UTC,,822426,,822426,10175338,2,0,,
+10183490,,"<p>If application crashes during saving settings file, than that file will not be valid anymore. For a small xml files I am using next code to prevent corruption:</p>
+
+<pre><code>Using ms As New MemoryStream
+   xmlDoc.Save(ms)
+   Using outStream As FileStream = File.Open(filename,
+             FileMode.Create, FileAccess.Write, FileShare.Read)
+      ms.WriteTo(outStream)
+   End Using
+End Using
+</code></pre>
+
+<p>For big files there are different ways to do that:</p>
+
+<ol>
+<li>There are transactional NTFS available under Vista and up, <a href=""https://stackoverflow.com/questions/2222119/atomic-file-copy-under-net"">Atomic file copy under .NET</a>, <a href=""https://stackoverflow.com/questions/774098/atomicity-of-file-move"">Atomicity of File.Move</a></li>
+<li>Use temporary file to save information, then use rename for safe replace of old file</li>
+</ol>",,,0,,2012-04-17 00:25:55.153000 UTC,,2012-04-17 00:25:55.153000 UTC,2017-05-23 10:34:48.517000 UTC,,-1,,848135,9074715,2,0,,
+10183494,,"<p>I've never used the builder, but the basic idea is there are two different approaches.  The builder which would create the Subsonic service dynamically on <em>execution</em>, and commander which would actually generate code files for <em>compilation</em>.  </p>
+
+<ul>
+<li>If you are generating the physical classes, you don't need the buildProvider section - maybe that's confusing it? </li>
+<li>In your code are you using the compiled classes to do the queries? </li>
+<li>Try a more standard connection string?</li>
+</ul>",,,0,,2012-04-17 00:26:21.160000 UTC,,2012-04-17 00:26:21.160000 UTC,,,,,204602,10176734,2,0,,
+10183518,,"<pre><code>if( !$wholikes) echo ""Empty"";
+</code></pre>
+
+<p>That's literally all there is to it.</p>",,,0,,2012-04-17 00:29:54.873000 UTC,,2012-04-17 00:29:54.873000 UTC,,,,,507674,10183497,2,0,,
+10183522,,"<p>In order to get it working you have to do the following:</p>
+
+<ol>
+<li>Imagine that this is an Event Page where user have to login</li>
+</ol>
+
+<p><code>In order to subscribe for the event you have to &lt; a style="" background-color:Black; color:White; font-weight:bold;"" href=""@Url.Content(""~/Account/Login?returnUrl=/Events/Index"")""&gt;Login&lt; /a&gt; or create a New Account.</code> </p>
+
+<ol>
+<li><p>public ActionResult Login(LogOnModel model, string returnUrl)
+{
+  if (ModelState.IsValid)
+  {
+    if (Membership.ValidateUser(model.UserName, model.Password))
+    {
+       MembershipUser user = Membership.GetUser(model.UserName);</p>
+
+<pre><code>   FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
+
+   if (Url.IsLocalUrl(returnUrl) &amp;&amp; returnUrl.Length &gt; 1 &amp;&amp; returnUrl.StartsWith(""/"")
+    &amp;&amp; !returnUrl.StartsWith(""//"") &amp;&amp; !returnUrl.StartsWith(""/\\""))
+  {
+                return Redirect(returnUrl);
+  }
+  else
+  {
+     return RedirectToAction(""Index"", ""Account"");
+  }
+        }
+        else
+        {
+            ModelState.AddModelError("""", ""The user name or password provided is incorrect."");
+        }
+    }
+
+    return View(model);
+</code></pre>
+
+<p>} </p></li>
+</ol>",,,0,,2012-04-17 00:30:02.800000 UTC,,2012-04-17 00:30:02.800000 UTC,,,,,196919,7015599,2,0,,
+10183542,,"<p>The two previous answers will work in that case, but in the more general case of a loop you'd want:</p>
+
+<pre><code>$notEmpty = 0;
+foreach ($wholikes as $key =&gt; $list2){
+    $notEmpty = 1;
+    echo ""is in the list"".$list2['userid'];
+} 
+if(notEmpty) {
+   echo ""Not empty."";
+} else {
+    echo ""Empty"";
+}
+</code></pre>",,,0,,2012-04-17 00:32:35.603000 UTC,,2012-04-17 00:32:35.603000 UTC,,,,,1282240,10183497,2,0,,
+10183547,,"<p>When initializing your class:</p>
+
+<pre><code>NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+NSString *rootPath = [paths objectAtIndex:0];
+
+NSString *logFilePath = [path stringByAppendingPathComponent:@""log.txt""];
+if(![fm fileExistsAtPath:logFilePath]) {
+  unsigned char data = {' '};
+  [fm createFileAtPath:logFilePath contents:[NSData dataWithBytes:&amp;data length:1] attributes:nil];
+}
+
+NSFileHandle *logFile = [NSFileHandle fileHandleForUpdatingAtPath:logFilePath];
+</code></pre>
+
+<p>Then keep a handle to the logFile, and when it's time to log. Assuming the <code>count</code> and `oldCount' variables have your current and previous counts:</p>
+
+<pre><code>NSString *message = [NSString stringWithFormat:@""Number at start: %i - button pressed: [%@], new number: %i\n"", oldCount, count &gt; oldCount ? @""up"" : @""down"", count];
+NSData *dataLog = [message dataUsingEncoding: NSUTF8StringEncoding];
+[logFile seekToEndOfFile];
+[logFile writeData:dataLog];
+</code></pre>",,,0,,2012-04-17 00:33:27.303000 UTC,,2012-04-17 00:33:27.303000 UTC,,,,,1281407,10183200,2,0,,
+10183564,,"<p>You can use CSS animations and transitions with ""dynamic"" values by applying CSS as a new styleSheet or inline style as in this case:</p>
+
+<p><a href=""http://jsfiddle.net/4zD74/"" rel=""nofollow"">http://jsfiddle.net/4zD74/</a></p>",,,0,,2012-04-17 00:36:04.900000 UTC,,2012-04-17 00:36:04.900000 UTC,,,,,265205,10144171,2,0,,
+10183568,,"<p>In order to achieve what I need,I've made a workaround.
+The workaround is based on building a json object and send it to the controller.
+If the user enters new events into the calendar ,I append these events to the previous old saved events.</p>
+
+<p>Note:I've discovered that Stringify changes the date as mentioned and solved here:<a href=""https://stackoverflow.com/questions/1486476/javascript-json-strigify-changes-time-of-date-because-of-utc"">JSON Stringify changes time of date because of UTC</a></p>
+
+<p>Freemarker:</p>
+
+<pre><code>&lt;script type=""text/javascript""&gt;
+    var resourceVacation;
+
+    function censor(censor) {
+        return (function() {
+            var i = 0;
+            return function(key, value) {
+                if (i !== 0 &amp;&amp; typeof(censor) === 'object' &amp;&amp; typeof(value) == 'object' &amp;&amp; censor == value)
+                    return '[Circular]';                   
+
+                ++i; // so we know we aren't using the original object anymore
+
+                return value;
+            }
+        })(censor);
+    }
+
+
+    function doAjax() {
+
+        $.each(resourceVacation, function(index) {
+            var tmpDate = resourceVacation[index].start;
+            tmpDate.setHours(tmpDate.getHours() - tmpDate.getTimezoneOffset() / 60);
+            resourceVacation[index].start=tmpDate;
+
+        });
+//        var arrays = [
+//            {""id"":111,""title"":""event1"",""start"":""2012-04-15T22:00:00.000Z"",""url"":""http://yahoo.com/""}
+//        ];
+//        var objects = {""id"":111,""title"":""event2"",""start"":""2012-04-16T22:00:00.000Z"",""url"":""http://yahoo2.com/""};
+//
+//        arrays.push(objects);
+        var test = JSON.stringify(resourceVacation, censor(resourceVacation));
+        var x = test;
+        $.ajax(
+        {
+            url:""[@spring.url '/vacation/saveResourceVacation'/]"",
+            type: ""POST"",
+            data :x ,
+            dataType: ""json"",
+            contentType: ""application/json""
+        });
+    }
+
+
+    $(document).ready(function() {
+
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+        $.getJSON('[@spring.url '/vacation/loadResourceVacation'/]', function (data) {
+            var calendar = $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                selectable: true,
+                selectHelper: true,
+                select:
+                        function(start, end, allDay) {
+                            var title = prompt('Event Title:');
+
+                            if (title) {
+                                start.setHours(start.getHours() - start.getTimezoneOffset() / 60);
+//                                var dat=$.fullCalendar.formatDate( start, ""yyyy/MM/dd"")
+
+
+                                var newVacation= {id:133,title:'title',start:start,url: 'title'};
+                                resourceVacation.push(newVacation);
+                                calendar.fullCalendar('renderEvent',
+                                {
+                                    title: title,
+                                    start: start,
+                                    end: end,
+                                    allDay: allDay
+                                },
+                                        true // make the event ""stick""
+                                        );
+                            }
+                            calendar.fullCalendar('unselect');
+                        },
+
+                editable: true,
+                events:data
+            });
+            resourceVacation = data;
+        });
+    });
+
+
+&lt;/script&gt;
+</code></pre>
+
+<p>Controller:</p>
+
+<pre><code>     @RequestMapping(value = ""/vacation/loadResourceVacation"", method = RequestMethod.GET)
+        public
+        @ResponseBody
+        String loadResourceVacation(HttpServletResponse response) throws Exception {
+
+
+            //Here I build my vacationFormBean
+            List&lt;VacationFormBean&gt; vacationFormBeanList= buildVacationFormBean();
+            // Convert to JSON string.
+            String json = new Gson().toJson(vacationFormBeanList);
+
+            // Write JSON string.
+            response.setContentType(""application/json"");
+            response.setCharacterEncoding(""UTF-8"");       
+
+        return json;
+    }
+
+    @RequestMapping(value = ""/vacation/saveResourceVacation"", method = RequestMethod.POST)
+    public
+    @ResponseBody
+    void saveResourceVacation(@RequestBody String jsonString, Principal principal) throws Exception {
+        List&lt;String&gt; resourceVacations = extractVacationDatesFromJsonObject(jsonString);
+
+    }
+</code></pre>
+
+<p>VacationFormBean:</p>
+
+<pre><code>public class VacationFormBean {
+    int id; // (With Setter &amp; Getter)
+    String title; // (With Setter &amp; Getter)
+    String start;  // (With Setter &amp; Getter)
+    String url; // (With Setter &amp; Getter)
+}
+</code></pre>",,,0,,2012-04-17 00:36:39.947000 UTC,,2012-04-17 00:36:39.947000 UTC,2017-05-23 11:56:28.023000 UTC,,-1,,657377,10164577,2,0,,
+10183576,,"<p>Store the reloadCount in localStorage</p>
+
+<p><a href=""https://developer.mozilla.org/en/DOM/Storage"" rel=""nofollow"">MDN DOM Storage</a></p>
+
+<pre><code>    var maxReload = 20;
+    var reloadPage = function() {
+        if (typeof a !== ""undefined"" &amp;&amp; a !== null) {
+            console.log(localStorage.reloadCount);
+            localStorage.reloadCount = 0;
+        };
+        var reloadCount = parseInt(localStorage.reloadCount, 10);
+        console.log(reloadCount);
+        if (reloadCount &lt; maxReload) {
+            reloadCount += 1;
+            localStorage.reloadCount = reloadCount;
+
+            // RELOAD CODE HERE
+        };
+    };
+
+    // call reloadPage from your code
+    reloadPage();
+</code></pre>",,,0,,2012-04-17 00:37:56.750000 UTC,,2012-04-17 01:08:17.097000 UTC,2012-04-17 01:08:17.097000 UTC,,958409,,958409,10183329,2,0,,
+10183578,,<p>AutoHyperlinks (https://bitbucket.org/sholt/autohyperlinks2/overview) is a pretty excellent library for this purpose.</p>,,,0,,2012-04-17 00:37:58.567000 UTC,,2012-04-17 00:37:58.567000 UTC,,,,,276622,10181977,2,0,,
+10183586,,"<p>You're misunderstanding the <code>src</code> property.</p>
+
+<p><code>src</code> takes a URL, not an actual image.<br>
+You don't need any AJAX.</p>",,,0,,2012-04-17 00:38:43.177000 UTC,,2012-04-17 00:38:43.177000 UTC,,,,,34397,10182706,2,0,,
+10183587,,<p>I've found that if you compile with gcc (or g++) with flags -v -Q you get a list of flags and defines.  It might help you see what gcc does so maybe you can use the same -D/-U in icpc.  also g++ -E will preprocess without compiling: you can get useful path information from that.</p>,,,0,,2012-04-17 00:38:58.550000 UTC,,2012-04-17 00:38:58.550000 UTC,,,,,680359,10179832,2,0,,
+10183595,,"<p>House is a constant and needs a capital letter like someone else said, look at Rails Guides regarding relationships between Active Record Models. There are many possible realtionships, has many is probably what you are looking for. Since, in reality, a person can have multiple houses.</p>",,,0,,2012-04-17 00:39:36.290000 UTC,,2012-04-17 00:39:36.290000 UTC,,,,,813282,10183373,2,0,,
+10183603,,<p>I think your best best would be to use two separate files -- one being the UserScript template that remains as a javascript file and the other the actual ClojureScript which gets compiled.  Just include the function that executes the desired ClojureScript.</p>,,,0,,2012-04-17 00:40:32.863000 UTC,,2012-04-17 00:40:32.863000 UTC,,,,,183362,10167896,2,0,,
+10183610,,"<p>Something like this? ;)</p>
+
+<pre><code>public class CellTableExample implements EntryPoint, ClickHandler {
+
+    private static class SomeEntity {
+        /* ... */
+    }
+
+
+    private static class ClickableTextHeader extends TextHeader {
+
+        private ClickHandler handler;
+
+        public ClickableTextHeader(String text, ClickHandler handler) {
+            super(text);
+            this.handler = handler;
+        }
+
+        @Override
+        public void onBrowserEvent(Context context, final Element elem,
+                final NativeEvent event) {
+
+            //maybe hijack click event
+            if(handler != null) {
+
+                if(Event.ONCLICK == Event.getTypeInt(event.getType())) {
+
+                    handler.onClick(new ClickEvent() {
+                        {
+                            setNativeEvent(event);
+                            setRelativeElement(elem);
+                            setSource(ClickableTextHeader.this);
+                        }
+                    });
+                }
+            }
+
+            //default dom event handler 
+            super.onBrowserEvent(context, elem, event);
+        }
+    }
+
+    CellTable&lt;SomeEntity&gt; cellTable;
+    TextColumn&lt;SomeEntity&gt; firstColumn;
+    TextColumn&lt;SomeEntity&gt; secondColumn;
+    TextColumn&lt;SomeEntity&gt; thirdColumn;
+
+    @Override
+    public void onModuleLoad() {
+
+        /* somehow init columns - it's not the point for this example */
+
+        cellTable.addColumn(firstColumn, new ClickableTextHeader(""First column header"", this));
+        cellTable.addColumn(secondColumn, new ClickableTextHeader(""Second column header"", this));
+        cellTable.addColumn(thirdColumn, new ClickableTextHeader(""Third column header"", this));
+    }
+
+    @Override
+    public void onClick(ClickEvent event) {
+        ClickableTextHeader source = (ClickableTextHeader) event.getSource();
+        Window.alert(source.getValue());
+    }
+}
+</code></pre>
+
+<p>Hijacking event could look simpler if we used ""simple listener interface"" - i just wanted to be ""semanticaly compliant with out-of-the-box Handlers"" :)</p>",,,0,,2012-04-17 00:41:29.737000 UTC,,2012-04-17 00:41:29.737000 UTC,,,,,1010868,10175410,2,0,,
+10183624,,"<p>The browser does not understand that its an image within the ""div"" where you're echoing.  You'll have to make this PHP script separate and use <code>&lt;div&gt;&lt;img src=""/path/to/script.php""&gt;&lt;/div&gt;</code>.  That would tell the browser that the content is an image.</p>",,,0,,2012-04-17 00:43:03.717000 UTC,,2012-04-17 00:43:03.717000 UTC,,,,,197507,10183601,2,0,,
+10183640,,<p>You mixed up quiet a lot here. First you have a HTML document with wrong content descriptor. Second you cant just send the raw image data to an HTML document. - You'd need to base64 encode it before.</p>,,,0,,2012-04-17 00:45:33.513000 UTC,,2012-04-17 00:45:33.513000 UTC,,,,,963282,10183601,2,0,,
+10183653,,"<p>First of all, I can't say I'd recommend you store images or other large binary files in a database - you're probably much better off to store them in the filesystem and store the path to them in the DB.</p>
+
+<p>Second, you can't just blurt out the image data in to the middle of the page. You need to use an HTML <code>&lt;img&gt;</code> tag. As Kolink says above you can embed the image in the HTML but I wouldn't recommend that as it means it will never be cached. Have the server serve the image at a different URL, and embed it in the page using <code>&lt;img src=""path/to/image"" alt=""Alternate text here"" /&gt;</code></p>",,,0,,2012-04-17 00:47:24.170000 UTC,,2012-04-17 00:47:24.170000 UTC,,,,,1047806,10183601,2,0,,
+10183657,,"<p>Try something like this:</p>
+
+<pre><code>#define MAX_BUFFER_SIZE 256
+/* ... */
+
+char ** lines = malloc(MAX_BUFFER_SIZE + 1);
+char ** p = lines;
+char ** newbuf;
+int len;
+int bytesloaded = 0;  
+int buf_size = MAX_BUFFER_SIZE;  
+assert(lines != NULL);
+//... loop etc.. 
+
+if(i==2 ){
+   len = strlen(word1);
+   bytesloaded += len;
+
+   if(bytesloaded &gt;= buf_size) /* Controls buffer size. For avoid buffer overflow/heap corruption/UB. */
+   {
+      buf_size += MAX_BUFFER_SIZE;
+      newbuf = realloc(lines, buf_size);
+
+      if(!newbuf)  /* return or break. */ 
+      {  
+        printf(""Allocation failed.\n"");
+        free(lines);
+        return 1;
+      }
+
+       lines = newbuf;
+    }
+
+    *p++ = word1; /* store the word in lines */
+    printf(""%s\n"",word1);
+}
+</code></pre>
+
+<p>Note: Don't forget to put the 0-terminator,<code>\0</code>, in array, after end of first loop.</p>
+
+<p>I haven't tested this code,but I believe that it works.</p>
+
+<p>It a simple example how to do: <a href=""http://en.wikipedia.org/wiki/C_dynamic_memory_allocation"" rel=""nofollow""><code>a dynamic memory allocation</code></a>,control the size of it,memory re-allocation and values storage.</p>",,,0,,2012-04-17 00:47:50.893000 UTC,,2012-04-17 00:47:50.893000 UTC,,,,,800123,10180701,2,0,,
+10183711,,"<p>After some more research and experimenting, I was able to actually solve the issue.  I had tried playing with the Date constructor and such, but I didn't have much luck in my initial trials - apparently because I overlooked the fact that the Date object is unique in that it differs in functionality depending on how it is called (as a function or object constructor).  This means that you can't just do <code>Date.prototype.constructor.apply(this, arguments)</code> since all you'll ever get back is a string (the Date object is being called as a function).</p>
+
+<p>After having found <a href=""https://stackoverflow.com/questions/181348/instantiating-a-javascript-object-by-calling-prototype-constructor-apply"">this thread</a> and reading it, I came up with the following code that creates an actual Date object (or string if called as a function) and mimics the built-in Date object perfectly (as far as my tests show anyways).  Every time a new Date object is created, it gets the LCID property which is dynamically generated during object creation which is exactly what I needed.</p>
+
+<pre><code>Date = (function(orig) {
+    var date = function(a, b, c, d, e, f, g) {
+        var object = (this instanceof Object ? (arguments.length &lt; 1 ? new orig() : (arguments.length &lt; 2 ? new orig(a) : (arguments.length &lt; 4 ? new orig(a, b || 0, c || 1) : new orig(a, b, c, d || 0, e || 0, f || 0, g || 0)))) : orig());
+        object.LCID = Response.LCID;
+
+        return object;
+    };
+    date.prototype = orig.prototype;
+
+    return date;
+})(Date);
+</code></pre>
+
+<p>I also created a bunch of test cases to ensure that there is no difference from a built-in Date object, or using this code (comment out this code to see the results using the built-in Date object and compare).</p>
+
+<pre><code>var Response = { 'LCID': 123 };
+
+
+Date = (function(orig) {
+    var date = function(a, b, c, d, e, f, g) {
+        var object = (this instanceof Object ? (arguments.length &lt; 1 ? new orig() : (arguments.length &lt; 2 ? new orig(a) : (arguments.length &lt; 4 ? new orig(a, b || 0, c || 1) : new orig(a, b, c, d || 0, e || 0, f || 0, g || 0)))) : orig());
+        object.LCID = Response.LCID;
+        return object;
+    };
+    date.prototype = orig.prototype;
+    return date;
+})(Date);
+
+
+var x = new Date();
+document.writeln(x);
+document.writeln(x.LCID);
+document.writeln(x.getFullYear());
+document.writeln(typeof x);
+document.writeln(Object.prototype.toString.call(x));
+document.writeln(x instanceof Date);
+document.writeln(""&lt;br/&gt;"");
+
+Response.LCID = 456;
+
+var y = new Date();
+document.writeln(y);
+document.writeln(y.LCID);
+document.writeln(y.getFullYear());
+document.writeln(typeof y);
+document.writeln(Object.prototype.toString.call(y));
+document.writeln(y instanceof Date);
+document.writeln(""&lt;br/&gt;"");
+
+document.writeln(Date());
+document.writeln(new Date());
+document.writeln(new Date(2012));
+document.writeln(new Date(2012, 7));
+document.writeln(new Date(2012, 7, 14));
+document.writeln(new Date(2012, 7, 14, 9));
+document.writeln(new Date(2012, 7, 14, 9, 45));
+document.writeln(new Date(2012, 7, 14, 9, 45, 27));
+document.writeln(new Date(2012, 7, 14, 9, 45, 27, 687));
+</code></pre>
+
+<p>This is also available as an updated fiddle: <a href=""http://jsfiddle.net/tx2fW/9/"" rel=""nofollow noreferrer"">http://jsfiddle.net/tx2fW/9/</a></p>",,,0,,2012-04-17 00:55:51.333000 UTC,,2012-04-17 00:55:51.333000 UTC,2017-05-23 12:12:51.807000 UTC,,-1,,1305761,10160629,2,0,,
+10183743,,"<p>Here's a way to calculate the sum and length in a single pass.</p>
+
+<p>It's not pretty, but it works.</p>
+
+<pre><code>averageTuples ts = let results = calculateSum ts 
+    in (fst results)/(snd results)
+
+calculateSum ts = foldr acc (0,0) $ zip (map snd ts) (repeat 1) where
+    acc (x, y) (x', y') = (x+x', y+y')
+
+main = print $ averageTuples [(""foo"", 1.09), (""bar"", 2.6789), (""baz"", 3.4)]
+</code></pre>
+
+<p>Keep in mind that you might have to use <code>fromIntegral</code> if you have a list of all Ints</p>",,,0,,2012-04-17 01:01:16.700000 UTC,,2012-04-17 02:18:07.350000 UTC,2012-04-17 02:18:07.350000 UTC,,903589,,903589,10182245,2,0,,
+10183759,,"<p>You may be getting some errors but not displaying probably due to following line the spell error with mysql_error as mysql_erorr</p>
+
+<pre><code>   mysql_query(""INSERT INTO users (Email, Username, Password)
+             VALUES ('$email', '$username', '$password')"") or die(mysql_erorr());
+</code></pre>
+
+<p>Just try to fix that and see if you get some database errors so that it will be easy to trace out and fix it.</p>",,,0,,2012-04-17 01:04:12.880000 UTC,,2012-04-17 01:04:12.880000 UTC,,,,,355226,10183526,2,0,,
+10183761,,"<p><a href=""http://jquery.malsup.com/form/"" rel=""nofollow"">http://jquery.malsup.com/form/</a></p>
+
+<p>Here's a good jQuery AJAX form plugin. This will prevent page refresh upon submission.
+Hope this helps.</p>",,,0,,2012-04-17 01:04:56.127000 UTC,,2012-04-17 01:04:56.127000 UTC,,,,,1330504,10183633,2,0,,
+10183766,,"<p>Why are you echoing a JS script to display the error message?  The way you have it written out it won't display a little popup, you just having it filling the <code>span</code>.  A better way to do it is something like this:</p>
+
+<pre><code>if ( $password != $copasswd ) {
+   $display_msg = $messages['usr_pass_notmached']
+}
+</code></pre>
+
+<p>Then in your HTML do this:</p>
+
+<pre><code>&lt;span&gt;&lt;?php echo $display_msg?&gt;&lt;/span&gt;
+</code></pre>
+
+<p>If the variable is empty then nothing is displayed.  If you do this for all the fields, then you can ensure all the information from the form is returned on error, whether the actual field IS the error or not, preventing the user from having to retype all the information again.  Have the form do a <code>$_SERVER['PHP_SELF']</code> to ensure it reloads the same page</p>
+
+<p>I would build the PHP functionality (which can't be turned off by the user) and ensure your form works properly 100% (or close to that) of the time.  Then, once you have that script working, add your JS funcionality to <em>compliment</em> your existing code.</p>
+
+<p>What I do in mine, is I build an extra array, in this case <code>$display_msg</code> and I run a check of all the input fields.  If a field fails, I add that to the array, <code>$display_msg['password']</code> then I move on to the next field.  Once all the fields have been check, I check if the <code>$display_msg</code> variable is <code>empty</code> or not.  If it's not empty, then I have it fill all the <code>span</code> next to the input boxes with red letters explaining the error.  This will print out ALL of the errors at the same time, instead of one at a time while it works it's way down the form.  Next to each input I have a <code>span</code> with the given variable name, in this instance <code>&lt;?php echo $display_msg['password']?&gt;</code>, then next to the username, <code>&lt;?php echo $display_msg['username']?&gt;</code> and so on.  Hope this is clear enough and helps.</p>",,,0,,2012-04-17 01:05:29.423000 UTC,,2012-04-17 01:13:36.707000 UTC,2012-04-17 01:13:36.707000 UTC,,1256200,,1256200,10183633,2,0,,
+10183771,,"<p>Does the entire banner need to be clickable, or just the area not behind the search bar? If the entire thing doesn't need to be, you could always add a transparent layer over that portion of the banner (though this isn't really something I'd suggest and seems like a hack).</p>
+
+<p>From my understanding, a negative z-index always results in an unclickable link, but that doesn't seem to be your issue. Any chance you could post some source code so we could examine it?</p>",,,0,,2012-04-17 01:06:58.670000 UTC,,2012-04-17 01:06:58.670000 UTC,,,,,1336400,10183511,2,0,,
+10183799,,"<p>I have seen this happen quite often and I have not found where google has explained this. I'll try and explain how I have understood it. </p>
+
+<p>When you add an ImageView and provide a source to it, or add the image later programatically, the ImageView resizes itself according to the dimensions of the image. But at times when the source image is larger than the screen size, it is scaled according to the scaleType (if provided) or just scales the image so that the largest side fits the screen completely and the other side is scaled keeping the dimension intact.</p>
+
+<p>But after the image is inserted into the ImageView, the Bounds of the ImageView is not adjusted automatically to the newly scaled image. For this there is another parameter in the ImageView called <code>android:adjustViewBounds</code></p>
+
+<p>So try doing this in your Imageview.</p>
+
+<pre><code>&lt;ImageView
+android:id=""@+id/board""
+android:layout_width=""wrap_content""
+android:layout_height=""wrap_content""
+android:src=""@drawable/boardmask"" 
+android:adjustViewBounds=""true""/&gt;
+</code></pre>",,,0,,2012-04-17 01:14:41.637000 UTC,,2012-04-17 01:14:41.637000 UTC,,,,,1244489,10176420,2,0,,
+10183824,,"<p>Start here:</p>
+
+<p><a href=""http://tinsuke.wordpress.com/2011/02/17/how-to-cross-compiling-libraries-for-ios-armv6armv7i386/"" rel=""nofollow"">http://tinsuke.wordpress.com/2011/02/17/how-to-cross-compiling-libraries-for-ios-armv6armv7i386/</a></p>
+
+<p>and then follow this updated guide:</p>
+
+<p><a href=""http://tinsuke.wordpress.com/2011/11/01/how-to-compile-and-use-tesseract-3-01-on-ios-sdk-5/"" rel=""nofollow"">http://tinsuke.wordpress.com/2011/11/01/how-to-compile-and-use-tesseract-3-01-on-ios-sdk-5/</a></p>
+
+<p>It will help you cross compile and build a universal library that contains the arm6/arm7/i386 all in the one statically linked library so it should work on simulator and device and be suitable for AppStore distribution.</p>
+
+<p>Also if you have XCode 4.3 or higher beware and read the comments about how the developer directory has changed.</p>",,,0,,2012-04-17 01:17:17.410000 UTC,,2012-04-17 01:17:17.410000 UTC,,,,,622276,8969699,2,0,,

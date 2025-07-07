@@ -1,0 +1,1405 @@
+id,creation_date,post_id,post_history_type_id,revision_guid,user_id,text,comment
+146442579,2017-05-23 11:47:28.960000 UTC,44133972,2,6e416897-7721-42c1-9ee6-cff573df91d2,939116,"Actually this process is very well explained in Symfony Documentation: http://symfony.com/doc/current/form/form_dependencies.html
+
+So I updated the way I was calling my form like that:
+
+    $editForm = $this->createForm($form, $item, array(  //WITH SYLIUS
+        'sylius_factory_product' => $this->get('sylius.factory.product')
+    ));
+
+Instead:
+
+    $editForm = $this->createForm($form, $item); //WIHOUT SYLIUS
+
+
+
+
+Plus, I adapted the configureOptions function like that:
+
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver
+            ->setDefaults(array(
+                'data_class' => 'FrontendBundle\Entity\Book'
+            ))
+            ->setRequired('sylius_factory_product')
+        ;
+    }
+
+Instead:
+
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver
+            ->setDefaults(array(
+                'data_class' => 'FrontendBundle\Entity\Book'
+            ))
+        ;
+    }",
+146448096,2017-05-23 11:47:39.840000 UTC,44133980,2,af5b1980-1f9b-4232-8d1a-bfc9615530fe,8031137,"<!-- begin snippet: js hide: false console: true babel: false -->
+
+<!-- language: lang-js -->
+
+    var app = angular.module(""ToDoList"", []);
+    app.controller(""myCtrl"", function($scope) {
+      $scope.todos = [];
+      $scope.addItem = function() {
+        $scope.errortext = """";
+        if (!$scope.todos) {
+          return;
+        }
+        if ($scope.todos.indexOf($scope.todo) == -1) {
+          $scope.todos.push($scope.todo);
+          $scope.todo = {};
+        } else {
+          $scope.errortext = ""This is already in your To Do list list."";
+        }
+
+        var x = document.getElementById(""myDate"").value;
+        document.getElementById(""demo"").innerHTML = x;
+
+
+
+
+      }
+      $scope.removeItem = function(x) {
+        $scope.errortext = """";
+        $scope.todos.splice(x, 1);
+      }
+    });
+
+<!-- language: lang-html -->
+
+    <!DOCTYPE html>
+    <html>
+    <link rel=""stylesheet"" href=""https://www.w3schools.com/w3css/4/w3.css"">
+    <script src=""https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js""></script>
+
+    <body>
+
+      <div ng-app=""ToDoList"" ng-cloak ng-controller=""myCtrl"" class=""w3-card-2 w3-margin"" style=""max-width:400px;"">
+        <header class=""w3-container w3-light-grey w3-padding-16"">
+          <h3>To Do List</h3>
+        </header>
+        <ul class=""w3-ul"">
+
+          <li ng-repeat=""x in todos"" class=""w3-padding-16"">
+            <h3>Task:</h3>{{x.name}}<br>
+            <h3>Content:</h3>{{x.progress}}<br>
+            <h3>Date:</h3>{{x.date}}
+            <span ng-click=""removeItem($index)"" style=""cursor:pointer;"" class=""w3-right w3-margin-right""><button>Del</button></span></li>
+        </ul>
+        <div class=""w3-container w3-light-grey w3-padding-16"">
+          <div class=""w3-row w3-margin-top"">
+            <div class=""w3-col s10"">
+              <input placeholder=""Task!"" ng-model=""todo.name"" class=""w3-input w3-border w3-padding"">
+            </div>
+            <div class=""w3-col s10"">
+
+              <textarea placeholder=""Content Here!"" ng-model=""todo.progress"" class=""w3-input w3-border w3-padding""></textarea>
+              <input type=""date"" id=""myDate"" ng-model=""todo.date"" value=""2012-03-21"">
+            </div>
+            <div class=""w3-col s2"">
+              <br>
+              <br><br>
+              <button ng-click=""addItem()"" class=""w3-btn w3-padding brown-color"">Add</button>
+            </div>
+          </div>
+          <p class=""w3-text-red"">{{errortext}}</p>
+        </div>
+      </div>
+
+      <script type=""text/javascript"" src=""script.js""></script>
+
+    </body>
+
+    </html>
+
+
+    <textarea placeholder=""Content Here!"" ng-model=""todo.progress"" class=""w3-input w3-border w3-padding""></textarea>
+    <input type=""date"" id=""myDate"" ng-model=""todo.date"" value=""2012-03-21"">
+    </div>
+
+<!-- end snippet -->
+im trying to do a todo list application i've mostly done all the parts and only problem is the date picker and In date picker date is reduced by 1 and I don't need time followed by the date please help me",
+146448097,2017-05-23 11:47:39.840000 UTC,44133980,1,af5b1980-1f9b-4232-8d1a-bfc9615530fe,8031137,date is reduced by 1 in date picker,
+146448098,2017-05-23 11:47:39.840000 UTC,44133980,3,af5b1980-1f9b-4232-8d1a-bfc9615530fe,8031137,<javascript><html><angularjs>,
+146517697,2017-05-23 11:50:06.357000 UTC,44134030,2,cd25d5f8-b90d-44a5-aa6e-dcf205bcf183,4040913,"I have a class called Board that contains the following
+
+    public class Board  {
+
+    protected Piece[][] GameBoard = new Piece[8][8];
+    ArrayList<Move> BlackBoardmoves = new ArrayList<Move>();
+    ArrayList <Move> WhiteBoardmoves = new ArrayList<Move>();
+I want to create an entirely new object of Board that has 2 entirely seperate ArrayLists<Moves>
+I am a beginner and I've been reading about how to do this for days and I've tried various methods like implementing cloning or serializable.
+I've read that the clone interface is broken and that using serializable is going to be much slower so I decided to write my own copy method 
+
+    void copy(Board c)
+    {
+    
+
+    for(int i =0; i<8; i++)  
+    {
+    for(int j=0; j<8; j++)
+    {
+        this.GameBoard[i][j] = c.GameBoard[i][j];
+    }
+    }
+
+    for(int i=0 ;i<c.BlackBoardmoves.size(); i++)
+    {
+    this.BlackBoardmoves.add(c.BlackBoardmoves.get(i));
+    }
+
+    for(int i=0 ;i<c.WhiteBoardmoves.size(); i++)
+    {
+    this.WhiteBoardmoves.add(c.WhiteBoardmoves.get(i));
+    }
+    }
+
+
+What I'm currently doing when creating each new object is this
+       
+    Board obj2 = new Board();
+    obj2.copy(obj1);
+
+I'm still a sophomore and this is a very small part of my project so I really can't afford to spend more time stuck in this. Thank you a lot:)",
+146517701,2017-05-23 11:50:06.357000 UTC,44134030,1,cd25d5f8-b90d-44a5-aa6e-dcf205bcf183,4040913,Java Deepcloning an object that contains ArrayLists,
+146517702,2017-05-23 11:50:06.357000 UTC,44134030,3,cd25d5f8-b90d-44a5-aa6e-dcf205bcf183,4040913,<java><arraylist><cloning>,
+146565427,2017-05-23 11:51:50.037000 UTC,44134069,2,c53df161-2130-4846-b79c-e888e531c15d,2581625,"Hi i am working on an app that uses Firebase Cloud Messaging and i am trying to show notification when app receives a message using Firebase Cloud Messaging.
+<br>
+ **When App is Running**
+
+ 1. i can hear notification sound
+ 2. when i tap on notification it gets me to the correct activity in my case **NotificationActivity.java**
+
+**Now when App is closed not running in background (these are the main issues that need to be resolved and need explanation for this unnatural behaviour)**
+
+ 1. I can see the notification but cannot hear notification sound.
+ 2. when i tap on notification it doesn't opens **NotificationActivity.java** but opens **Splash.java** which is default/launcher activity
+
+Below are the Code Snippets.
+
+Mainfest.xml
+
+  
+
+     <application
+            android:allowBackup=""true""
+            android:icon=""@mipmap/ic_launcher""
+            android:label=""@string/app_name""
+            android:roundIcon=""@mipmap/ic_launcher_round""
+            android:supportsRtl=""true""
+            android:theme=""@style/AppTheme"">
+            <activity
+                android:name="".Splash""
+                android:configChanges=""orientation|keyboardHidden|screenSize""
+                android:label=""@string/app_name""
+                android:theme=""@style/Theme.AppCompat.NoActionBar"">
+                <intent-filter>
+                    <action android:name=""android.intent.action.MAIN"" />
+                    <category android:name=""android.intent.category.LAUNCHER"" />
+                </intent-filter>
+            </activity>
+            <activity
+                android:name="".LoginActivity""
+                android:label=""@string/title_activity_login""
+                android:windowSoftInputMode=""stateHidden"" />
+            <activity
+                android:name="".SignupActivity""
+                android:windowSoftInputMode=""stateHidden"" />
+            <activity
+                android:name="".Dashboard""
+                android:label=""@string/title_activity_dashboard"" />
+    
+            <activity android:name=""pk.edu.kiu.jobslocatoer.NotificationActivity""
+                android:launchMode=""singleTask""
+                android:taskAffinity=""""
+                android:excludeFromRecents=""true"">
+                <intent-filter>
+                    <action android:name=""pk.edu.kiu.jobslocatoer.MESSAGING_ACTIVTY"" />
+                    <category android:name=""android.intent.category.DEFAULT"" />
+                </intent-filter>
+            </activity>
+    
+            <receiver android:name="".receivers.NotificationReceiver"">
+                <intent-filter>
+                    <action android:name=""pk.edu.kiu.jobslocatoer.MESSAGING_EVENT"" />
+                    <category android:name=""android.intent.category.DEFAULT"" />
+                </intent-filter>
+            </receiver>
+            <activity android:name="".SettingsActivity""></activity>
+    
+            <service android:name="".services.MessagingService"">
+                <intent-filter>
+                    <action android:name=""com.google.firebase.MESSAGING_EVENT"" />
+                </intent-filter>
+            </service>
+    
+            <service android:name="".services.InstanceIDService"">
+                <intent-filter>
+                    <action android:name=""com.google.firebase.INSTANCE_ID_EVENT"" />
+                </intent-filter>
+            </service>
+    
+    
+        </application>
+
+
+**NotificationReceiver.java**
+
+    public class NotificationReceiver extends BroadcastReceiver {
+    
+        @Override
+        public void onReceive(Context context, Intent intent) {
+    
+            Intent notify = new Intent(context, NotificationActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+    
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, (int) SystemClock.currentThreadTimeMillis(), notify, PendingIntent.FLAG_UPDATE_CURRENT);
+            Notification notification = new Notification.Builder(context)
+                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setContentTitle(""Titile"")
+                    .setContentText(""Text"")
+                    .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
+                    .setContentIntent(pendingIntent)
+                    .setAutoCancel(true)
+                    .build();
+    
+            NotificationManager notificationManager = (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
+            notificationManager.notify((int) SystemClock.currentThreadTimeMillis(), notification);
+        }
+    }
+
+**MessagingService.java**
+
+    public class MessagingService extends FirebaseMessagingService {
+        @Override
+        public void onMessageReceived(RemoteMessage remoteMessage) {
+            Log.d(GlobalConfig.TAG, GlobalConfig.getRef(this) + "" notificaiton: "" + remoteMessage.getNotification().getBody());
+            sendBroadcast(new Intent(""pk.edu.kiu.jobslocatoer.MESSAGING_EVENT""));
+        }
+    }",
+146565429,2017-05-23 11:51:50.037000 UTC,44134069,1,c53df161-2130-4846-b79c-e888e531c15d,2581625,Android Notification Intent Not launching the said Activity and Notification Sound Issue,
+146565431,2017-05-23 11:51:50.037000 UTC,44134069,3,c53df161-2130-4846-b79c-e888e531c15d,2581625,<android><android-intent><notifications><android-pendingintent>,
+146513661,2017-05-23 11:49:56.213000 UTC,44134025,2,58f98c0c-8845-4d2c-b7d1-5403e23da729,324584,"If you don't mind the order of the original array being trashed in the process:
+
+    asort($arr);
+    $new_array = array_combine(array_keys($arr), range(0,count($arr)-1));
+    ksort($new_array);
+
+Not so bad inside a function, because that uses a copy of the original array unless you pass by reference, so only the order of the locally-function-scoped copy gets trashed
+
+Or even more simply:
+
+    asort($arr);
+    $new_array = array_keys($arr);",
+146462396,2017-05-23 11:48:08.277000 UTC,44133991,2,2a6fcc64-3e08-4598-9b8b-357b7dfa2715,,"Maybe the asort() function will fit your needs:
+http://php.net/manual/de/function.asort.php
+
+Don't forget to pass your array by reference, so this has to be called as is (without an assignment).",
+146518956,2017-05-23 11:50:09.653000 UTC,44134033,2,c21197bd-25f4-406f-b6e8-fe4c4bd4cbce,4016656,"I am trying to validate to make sure no two users with same email ever register twice (meaning only users with unique email address can register).
+
+this is my code in Register Controller
+===
+
+    protected function validator(array $data)
+        {
+            return Validator::make($data, [
+                'firstname' => 'required|max:255',
+                'lastname' => 'required|max:255',
+                'email' => 'required|max:255|unique:users',
+                'password' => 'required|min:6|confirmed',
+            ]);
+        }
+
+Here, I say `email unique:users.`
+
+but when I register new user for the first time and re-register the same user with all different info but same email address. I get this error:
+
+    SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@gmail.com' for key 'users_email_unique' (SQL: insert into `users` (...))
+
+I know its a duplicate entry but I want to redirect user to register page and tell that user already exists with this email. How do I do that? 
+
+I tried adding Redirect to the validator function, tried to create my own validator in create function but no luck.",
+146518958,2017-05-23 11:50:09.653000 UTC,44134033,1,c21197bd-25f4-406f-b6e8-fe4c4bd4cbce,4016656,RegisterController Validator redirect with error message issue in Laravel 5.4,
+146518959,2017-05-23 11:50:09.653000 UTC,44134033,3,c21197bd-25f4-406f-b6e8-fe4c4bd4cbce,4016656,<laravel-5><laravel-5.4>,
+146503336,2017-05-23 11:49:33.813000 UTC,44134018,2,b348f479-f6df-461b-a38f-2673f8d1798e,3779533,"#include <iostream>
+    #include <random>
+    #include <algorithm>
+
+    int main()
+    {
+    std::string str = ""StackOverflow"";
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(str.begin(), str.end(), g);
+    std::cout << str.c_str() << std::endl;
+
+    return 0;
+    }
+
+You can read more details on http://en.cppreference.com/w/cpp/algorithm/random_shuffle",
+146458478,2017-05-23 11:48:00.373000 UTC,44133988,2,1b853710-ed63-4f8d-8174-a5f54ef3a1b7,5743300,"And(/^I enter ""([^""]*)"" on identifier ""([^""]*)""$/) do |arg1, arg2|
+      Input = find_element(id: arg2)
+      Input.click
+      Input.clear
+      Input.send_keys(arg1)
+    end",
+146520565,2017-05-23 11:50:13.290000 UTC,44134036,2,2c9c70b6-8306-49f1-ac39-2340a4aa8c40,2596796,"I am using java [Prettify][1] for syntax highlighting of java code in android app. I followed this example
+https://stackoverflow.com/questions/11987660/android-syntax-highlighting/19787125#19787125 
+ 
+
+    public class PrettifyHighlighter {
+        private static final Map<String, String> COLORS = buildColorsMap();
+    
+        private static final String FONT_PATTERN = ""<font color=\""#%s\"">%s</font>"";
+    
+        private final Parser parser = new PrettifyParser();
+    
+        public String highlight(String fileExtension, String sourceCode) {
+            StringBuilder highlighted = new StringBuilder();
+            List<ParseResult> results = parser.parse(fileExtension, sourceCode);
+            for(ParseResult result : results){
+                String type = result.getStyleKeys().get(0);
+                String content = sourceCode.substring(result.getOffset(), result.getOffset() + result.getLength());
+                highlighted.append(String.format(FONT_PATTERN, getColor(type), content));
+            }
+            return highlighted.toString();
+        }
+    
+        private String getColor(String type){
+            return COLORS.containsKey(type) ? COLORS.get(type) : COLORS.get(""pln"");
+        }
+    
+        private static Map<String, String> buildColorsMap() {
+            Map<String, String> map = new HashMap<>();
+            map.put(""typ"", ""000000""); // black
+            map.put(""kwd"", ""760098""); // violet
+            map.put(""lit"", ""001ab7""); // dark blue
+            map.put(""com"", ""999999""); // grey, comments
+            map.put(""str"", ""ff4500""); // dark orange
+            map.put(""pun"", ""333333""); // 90% black
+            map.put(""pln"", ""156f15""); // dark green
+            return map;
+        }
+    }
+
+and using it in the textview as
+
+            PrettifyHighlighter highlighter = new PrettifyHighlighter();
+            String code=""public class Example {  \n"" +
+                    ""public static void main(String args[]) {  \n"" +
+                    ""    for(int i=1; i<=5; i++){  \n"" +
+                    ""        if(i==3){  \n"" +
+                    ""            break;  \n"" +
+                    ""        }  \n"" +
+                    ""        System.out.println(i);  \n"" +
+                    ""    }  \n"" +
+                    ""}  \n"" +
+                    ""}  "";
+            String highlighted = highlighter.highlight(""java"", code);
+            textView.setText(Html.fromHtml(highlighted.replace(""\n"",""<br/>""),Html.FROM_HTML_MODE_COMPACT));
+
+xml
+
+    <TextView
+        android:id=""@+id/textView""
+        android:layout_width=""wrap_content""
+        android:layout_height=""wrap_content""
+        android:layout_alignLeft=""@+id/ivImage3""
+        android:layout_alignStart=""@+id/ivImage3""
+        android:layout_below=""@+id/ivImage3""
+        android:scrollbars = ""vertical""
+        android:layout_marginTop=""@dimen/program_margin_top""
+        android:background=""@drawable/textlines""
+        android:textSize=""16dp""
+        android:text="""" />
+
+OUTPUT: [![enter image description here][2]][2]
+
+as you can see <= is missing from the output, it is just showing **i5 instead of i<=5**
+
+**What is the reason that < is not shown in the textview, how can I display < in the syntax highlighted texview?** 
+Any help is appreciated
+
+  [1]: https://code.google.com/p/java-prettify/
+  [2]: https://i.stack.imgur.com/XpzU8.png",
+146520567,2017-05-23 11:50:13.290000 UTC,44134036,1,2c9c70b6-8306-49f1-ac39-2340a4aa8c40,2596796,"Android syntax highlighting using Java prettify, not showing (less than) < or <= sign in textview?",
+146520568,2017-05-23 11:50:13.290000 UTC,44134036,3,2c9c70b6-8306-49f1-ac39-2340a4aa8c40,2596796,<java><android><textview><syntax-highlighting><prettify>,
+146412562,2017-05-23 11:46:21.450000 UTC,44133947,2,c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf,3265718,"I'm making a little app which manages appointments - I need to know if there's a currently supported way to check if an event overlaps within a google calendar.
+
+Basically I read a list of events from my app's created calendar, and then populate my application using that. 
+
+Then, I add a calendar event. I need to check if it conflicts with what already exists. Is there a way to do this with their api?",
+146412563,2017-05-23 11:46:21.450000 UTC,44133947,1,c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf,3265718,Google calendar API - check for conflicts,
+146412564,2017-05-23 11:46:21.450000 UTC,44133947,3,c48ecca1-ee74-43a1-8d73-39a7b0ad5aaf,3265718,<google-api><calendar>,
+146383027,2017-05-23 11:45:13.770000 UTC,44133930,2,d64df1aa-cbb7-4fc5-bfaf-17750a95c8f9,6270878,"Updated CSS for `.modal-body` class and set `min-height:300px`
+
+    .modal-body {
+        margin: 20px 0;
+        min-height:300px;
+    }
+
+https://jsfiddle.net/pLa63spz/",
+146446293,2017-05-23 11:47:36.863000 UTC,44133979,2,4246908e-7561-4df0-83a1-78a03b33c4bb,3732075,"Give this a try:
+
+`{{\n\s+(.+)\n.+}}`
+
+It looks for opening double curly braces, then a new line, then any number of characters, followed by a new line, some spaces, any characters followed by a new line, any chars, and then the closing }}. The brackets capture the specific text. 
+
+You can see an example of it here: https://regex101.com/r/pwFNA1/1",
+146533050,2017-05-23 11:50:40.447000 UTC,44134048,2,71fb30f1-8c42-4df7-88ba-66d8097c62c7,3801947,"Add following condition:
+
+    if( Number(myResult) === parseInt(myResult) ){
+      myResult = myResul.tofixed(2);
+    }",
+146538675,2017-05-23 11:50:52.447000 UTC,44134050,2,6766c7f3-5067-4e00-be0f-6446a3a0412b,2170648,"from Apple Docs:
+
+> ***The system provides each application with four concurrent dispatch
+> queues.*** These queues are global to the application and are
+> differentiated only by their priority level. ***Because they are global,
+> you do not create them explicitly. Instead, you ask for one of the
+> queues using the dispatch_get_global_queue function***, as shown in the
+> following example:
+> 
+
+    dispatch_queue_t aQueue =
+    *emphasized text*dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+see more [here][1]
+
+
+  [1]: https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW5",
+146502950,2017-05-23 11:49:32.767000 UTC,44134017,2,202e1764-295c-4035-9aac-7400a3304b90,2775610,"**onCreate()** is called only once at the time of activity crated if you want it to update is when you come from background or from other activity you have to use **onResume()** so put this in **onResume()** 
+
+    @Override
+        protected void onResume() {
+            super.onResume();
+            ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+            if(clipboard.getText()!=null)
+            {
+                String paste_url=clipboard.getText().toString();
+                Log.d(""clip"",paste_url);
+    
+                text_view.setText(paste_url);
+            }
+            
+        }",
+146488668,2017-05-23 11:49:02.623000 UTC,44134008,2,181f04ec-addf-4d21-9428-28497150ad40,8053272,"I am trying to solve Uva-562 - Dividing coins problem.My solution is giving runtime error.Where is the error? This is my code:`package com.example.recursion;
+
+import java.util.Scanner;
+
+public class main {
+
+ public static Scanner scanner;
+ public static int[] binary;
+ public static int[] set;
+ public static int m;
+ public static int total;
+ public static int dp[][];
+ 
+ public static void initDp(){
+  
+  dp=new int[101][50001];
+  for(int i=0;i<101;i++)
+   for(int j=0;j<50001;j++)
+    dp[i][j]=-1;
+  
+ }
+
+ public static void readcase() {
+
+  m = scanner.nextInt();
+  int i;
+  total = 0;
+  set=new int[101];
+
+  for (i = 0; i < m; i++) {
+
+   set[i] = scanner.nextInt();
+   total += set[i];
+  }
+  int solution=solve(0,0);
+  print(solution);
+  
+
+ }
+ 
+ public static void print(int solution){
+  
+  System.out.println(solution);
+ }
+
+ public static int solve(int i, int sum1){
+    
+    int left=0,right=0;
+    if(dp[i][sum1] > -1){
+     return dp[i][sum1];
+    }
+    if(i==m){
+          int sum2;
+          sum2=total-sum1;
+          return Math.abs(sum1-sum2);
+    }
+    
+    left=solve(i+1,sum1);
+    right=solve(i+1, sum1+set[i]);
+    
+   
+    if(left<right)
+             return dp[i][sum1]=left;
+    else
+          return dp[i][sum1]=right;
+    
+   }
+
+ public static void main(String args[]) {
+
+  scanner = new Scanner(System.in);
+  int n, i;
+  n = scanner.nextInt();
+
+  for (i = 0; i < n; i++) {
+           
+   initDp(); 
+   readcase();
+  }
+
+ }
+
+}
+`",
+146488669,2017-05-23 11:49:02.623000 UTC,44134008,1,181f04ec-addf-4d21-9428-28497150ad40,8053272,UVa 562 runtime error. What can I do?,
+146488671,2017-05-23 11:49:02.623000 UTC,44134008,3,181f04ec-addf-4d21-9428-28497150ad40,8053272,<java><recursion><dynamic-programming><acm><onlinejudge>,
+146574552,2017-05-23 11:52:11.903000 UTC,44134076,2,17196a77-e997-46a4-b7c9-329dc54efa31,5990066,"I have failed to install this on ubuntu before, now for Windows I don't understand [this documentation](https://atom.io/packages/php-debug) properly.
+
+
+----------
+What I have done is:
+
+- I set up WampServer, upgraded to 3.0.8, installed its own XDebug. When I phpinfo(), I see that XDebug is installed. 
+
+- I installed [php-debug](https://atom.io/packages/php-debug) package for Atom. 
+
+- I couldn't find out where should I put the codes (below) so I put it inside php.ini which is in `C:\wamp64\bin\php\php7.1.5`
+
+
+>     xdebug.remote_enable=1
+>     xdebug.remote_host=127.0.0.1
+>     xdebug.remote_connect_back=1    # Not safe for production servers
+>     xdebug.remote_port=9000
+>     xdebug.remote_handler=dbgp
+>     xdebug.remote_mode=req
+>     xdebug.remote_autostart=true
+
+- PHP Debug console on Atom doesn't allow me to press buttons. Putting breakpoints doesn't affect anything at all. PHP Console on Atom only says this: ```Listening on Port 9000``` ```Closed```",
+146574554,2017-05-23 11:52:11.903000 UTC,44134076,1,17196a77-e997-46a4-b7c9-329dc54efa31,5990066,How to make php-debug extension for Atom work on wampserver,
+146574558,2017-05-23 11:52:11.903000 UTC,44134076,3,17196a77-e997-46a4-b7c9-329dc54efa31,5990066,<php><wamp><wampserver><xdebug><atom-editor>,
+146431460,2017-05-23 11:47:04.020000 UTC,44133963,2,fbe71e5e-3928-41f9-8b11-c8a86760b25c,1300890,"<!-- begin snippet: js hide: false console: true babel: false -->
+
+<!-- language: lang-css -->
+
+    .recent-posts-container {
+      font-family: 'Oswald', sans-serif;
+      font-size: 12px;
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    ul.recent-posts-container:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    ul.recent-posts-container li {
+      list-style-type: none;
+      margin-bottom: 10px;
+      font-size: 12px;
+      float: left;
+      position: relative;
+      box-shadow: 1px 1px 9px #353;
+      margin: 30px;
+      border-radius: 8px 8px;
+    }
+
+    ul.recent-posts-container {
+      counter-reset: countposts;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.recent-posts-container li:before {
+      content: counter(countposts, decimal);
+      counter-increment: countposts;
+      z-index: 1;
+      position: absolute;
+      left: -10px;
+      top: -10px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #fff;
+      background: #69B7E2;
+      line-height: 25px;
+      height: 25px;
+      width: 25px;
+      text-align: center;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+
+    .recent-posts-container a.image-holder {
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      border-radius: 8px 8px;
+    }
+
+    .recent-posts-container a {
+      text-decoration: none;
+    }
+
+    .recent-post-title {
+      margin-bottom: 5px;
+    }
+
+    .recent-post-title a {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #2aace3;
+    }
+
+    .recent-posts-details {
+      font-size: 11px;
+      padding: 2px 10px;
+      background: #e6e6e6;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .recent-posts-details a {
+      color: #777;
+    }
+
+<!-- language: lang-html -->
+
+    <script type=""text/javascript"">
+      function showlatestpostswiththumbs(posts) {
+        document.write('<ul class=""recent-posts-container"">');
+        for (var e = 0; e < posts_no; e++) {
+          var r, post = posts.feed.entry[e],
+            i = post.title.$t;
+          if (e == posts.feed.entry.length)
+            break;
+          for (var o = 0; o < post.link.length; o++) {
+            if (""replies"" == post.link[o].rel && ""text/html"" == post.link[o].type) var l = post.link[o].title,
+              m = post.link[o].href;
+            if (""alternate"" == post.link[o].rel) {
+              r = post.link[o].href;
+              break
+            }
+          }
+          var url;
+          try {
+            url = post.media$thumbnail.url
+          } catch (h) {
+            s = post.content.$t, a = s.indexOf(""<img""), b = s.indexOf('src=""', a), c = s.indexOf('""', b + 5), d = s.substr(b + 5, c - b - 5), url = -1 != a && -1 != b && -1 != c && """" != d ? d : ""https://2.bp.blogspot.com/-C3Mo0iKKiSw/VGdK808U7rI/AAAAAAAAAmI/W7Ae_dsEVAE/s1600/no-thumb.png""
+          }
+          var p = post.published.$t,
+            f = p.substring(0, 4),
+            g = p.substring(5, 7),
+            v = p.substring(8, 10),
+            w = new Array;
+          url = url.replace(""s72"", ""s150"");
+          if (w[1] = ""Jan"", w[2] = ""Feb"", w[3] = ""Mar"", w[4] = ""Apr"", w[5] = ""May"", w[6] = ""Jun"", w[7] = ""Jul"", w[8] = ""Aug"", w[9] = ""Sep"", w[10] = ""Oct"", w[11] = ""Nov"", w[12] = ""Dec"", document.write('<li class=""recent-posts-list"">'), 1 == showpoststhumbs && document.write('<a href=""' + r + '"" style=""background:url(' + url + ') 0 center no-repeat;background-size:cover;"" class=""image-holder"">&nbsp;</a>'), ""content"" in post) var A = post.content.$t;
+          else if (""summary"" in post) var A = post.summary.$t;
+          else var A = """";
+          var k = /<\S[^>]*>/g;
+          var _ = """",
+            $ = 0;
+          document.write('<br><div class=""recent-posts-details"">'), 1 == posts_date && (_ = _ + w[parseInt(g, 10)] + "" "" + v + "" "" + f, $ = 1), 1 == readmorelink && (1 == $ && (_ += ""<br/>""), _ = _ + '<a href=""' + r + '"" class=""url"" target =""_top"">Read more</a>', $ = 1), 1 == showcommentslink && (1 == $ && (_ += "" | ""), ""1 Comments"" == l && (l = ""1 Comment""), ""0 Comments"" == l && (l = ""No Comments""), l = '<a href=""' + m + '"" target= ""_top"" > ' + l + ""</a>"", _ += l, $ = 1), document.write(_), document.write(""</div>""), document.write(""</li>"")
+        }
+        document.write(""</ul>"")
+      }
+    </script>
+    <script type=""text/javascript"">
+      var posts_no = 5;
+      var showpoststhumbs = true;
+      var readmorelink = true;
+      var showcommentslink = true;
+      var posts_date = true;
+      var post_summary = true;
+      var summary_chars = 40;
+    </script>
+    <script src=""https://pdfepaper.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=showlatestpostswiththumbs""></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+
+<!-- end snippet -->",
+146436086,2017-05-23 11:47:14.580000 UTC,44133965,2,5b976ac3-423a-4306-8ac5-bf315da5bfa0,5468958,"I have a search bar searching on `index.php` page. But i want to show the result on `coupons.php`. How to do it in AJAX. 
+
+**NOTE:**  `#search_result` is a div of coupons.php file where i want to display the result.
+
+**AJAX**
+
+ 
+
+    $(""document"").ready(function() {
+                $(""#search_form"").on(""submit"", function (e) {
+                    e.preventDefault();
+                    $.post(""result.php?query="" + encodeURIComponent($(""#list_search"").val()), function (data) {
+                        var res = JSON.parse(data);
+                        if (res.divs) {
+                             $('#search_result').html("""");
+                            for (var i = 0; i < res.divs.length; i++) {
+                                $('#search_result').append(res.divs[i]);
+                           }
+                        } else {
+                            $('#search_result').html(""No matched coupons found !"");
+                        }
+                    });
+                });
+            });
+        </script>",
+146436087,2017-05-23 11:47:14.580000 UTC,44133965,1,5b976ac3-423a-4306-8ac5-bf315da5bfa0,5468958,Display searches data on another page <div>,
+146436090,2017-05-23 11:47:14.580000 UTC,44133965,3,5b976ac3-423a-4306-8ac5-bf315da5bfa0,5468958,<javascript><php><jquery><html><ajax>,
+146441127,2017-05-23 11:47:25.620000 UTC,44133968,2,10756aee-0690-44c9-bb41-8c502430721c,8053212,"I have a problem with one of my classes in a project.
+I tried to read all the lines from a file but when I print that it shows me less than the half lines.
+What can I do for that?",
+146441129,2017-05-23 11:47:25.620000 UTC,44133968,1,10756aee-0690-44c9-bb41-8c502430721c,8053212,Problems from reading file,
+146441130,2017-05-23 11:47:25.620000 UTC,44133968,3,10756aee-0690-44c9-bb41-8c502430721c,8053212,<java><file><arraylist><hashmap>,
+146549131,2017-05-23 11:51:15.540000 UTC,44134059,2,9863bec8-b281-4757-a7d3-72c2e20f01ae,6783328,"In the admin tools in the BE, the check or the update of the reference index can  be found under ""DB Check"". For larger webs, the script is started via CLI so that the runtime does not matter.
+
+But now my questions:
+
+ - Does updating the refindex make any sense or is it really necessary?
+ - How often should it happen?
+ - How do you prevent parallel execution if the previous lowlevel_refindex process is still working?
+ - Are there somewhere best pratices to read?
+
+
+I am grateful for every input.",
+146549134,2017-05-23 11:51:15.540000 UTC,44134059,1,9863bec8-b281-4757-a7d3-72c2e20f01ae,6783328,lowlevel_refindex: Best practises?,
+146549137,2017-05-23 11:51:15.540000 UTC,44134059,3,9863bec8-b281-4757-a7d3-72c2e20f01ae,6783328,<typo3><command-line-interface>,
+146378831,2017-05-23 11:45:04.020000 UTC,44133927,2,a22dcb38-cf71-4ae7-bafb-8600ef350463,6863724,"I am getting this exception:
+
+    Caused by: java.lang.SecurityException: Permission Denial: opening provider com.sec.android.provider.badge.BadgeProvider from ProcessRecord{ab1124 10588:com.rehq.app/u0a175} (pid=10588, uid=10175) requires com.sec.android.provider.badge.permission.READ or com.sec.android.provider.badge.permission.WRITE",
+146378832,2017-05-23 11:45:04.020000 UTC,44133927,1,a22dcb38-cf71-4ae7-bafb-8600ef350463,6863724,How to give persiomission com.sec.android.provider.badge.permission.READ or WRITE in android 6.0,
+146378833,2017-05-23 11:45:04.020000 UTC,44133927,3,a22dcb38-cf71-4ae7-bafb-8600ef350463,6863724,<android>,
+146422227,2017-05-23 11:46:43.177000 UTC,44133957,2,beed40fe-e8cd-45cf-9c91-249f7801fe44,6787434,"The stacktrace indicates clear there is Nullpointer reference :
+
+    java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.view.ViewParent.showContextMenuForChild(android.view.View)' on a null object reference",
+146383097,2017-05-23 11:45:13.833000 UTC,44133931,2,7d256995-92ec-4733-a91f-9e5c3f4bb3c4,4927984,"I would suggest the following regex:
+
+    @if\((\w+)\)
+
+It extracts from your string:
+
+    topLevel
+    bottomLevel
+
+
+[**Test it on regex101**][1]
+
+
+  [1]: https://regex101.com/r/ptYfA5/4",
+146540199,2017-05-23 11:50:55.710000 UTC,44134051,2,b764060a-4f05-4952-bc60-ffc5a6c081fb,5320300,"For me Xan's solution also didn't work. What worked for me was to go to chrome://extensions and remove the extension from chrome. Afterwards, I re-added the extension. Then it worked.",
+146493891,2017-05-23 11:49:14.270000 UTC,44134010,2,9e69e08e-4389-4dce-99fe-f2c1f300f84b,4515269,"To download Asynchronous image with Kingfisher library you can follow this step,url :https://github.com/onevcat/Kingfisher: 
+
+     func imageFromUrl(_ urlString: String) {
+            if let url = URL(string: urlString) {
+                ImageDownloader.default.downloadImage(with: url, options: [], progressBlock: nil) {
+                    (image, error, url, data) in
+                    DispatchQueue.main.async {
+                        self.imageView.image = image
+                    }
+                }
+            }
+        }
+
+You can also download image with default URLSession.shared.dataTask
+
+     func imageFromUrl(_ urlString: String) {
+            if let url = URL(string: urlString) {
+                let request = URLRequest(url: url)
+                URLSession.shared.dataTask(with: request) {(data,response,error) in
+                    if let imageData = data as Data? {
+                        if let img = UIImage(data: imageData){
+                           DispatchQueue.main.async {
+                           self.imageView.image = img
+                           }
+                        }
+                    }
+                }
+            }
+        }",
+146528735,2017-05-23 11:50:31.870000 UTC,44134045,2,1ed5b88d-1f91-4b8c-b61a-4279ee991361,5330895,"You should check on which item the mouse is. ListBox has a method to do such a check: IndexFromPoint https://msdn.microsoft.com/en-us/library/kfw3x8dc%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396
+
+Now, when you have item index, you can get its rectangle using other method: GetItemRectangle https://msdn.microsoft.com/en-us/library/system.windows.forms.listbox.getitemrectangle(v=vs.110).aspx",
+146524824,2017-05-23 11:50:23.550000 UTC,44134042,2,de9b7656-9f77-44c7-80fe-a10685964a66,3898339,"You should add `css` as 
+
+    #map {
+      height: 400px;
+      width: 400px;
+    }
+
+
+<!-- begin snippet: js hide: false console: true babel: false -->
+
+<!-- language: lang-html -->
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+      <title>BART</title>
+      <style>
+        body {
+          height: 100%;
+        }
+        
+        #map {
+          height: 400px;
+          width: 400px;
+        }
+      </style>
+      <script src=""https://maps.googleapis.com/maps/api/js?""></script>
+      <script>
+        var map;
+
+
+        //function to initialize map
+        var initialize = function() {
+          var mapOptions = {
+            center: {
+              lat: 37.775362,
+              lng: -122.417564
+            },
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+
+          map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        }
+
+
+        window.onload = initialize;
+      </script>
+
+    </head>
+
+    <body>
+      <div id=""map"">
+      </div>
+    </body>
+
+    </html>
+
+<!-- end snippet -->",
+146418003,2017-05-23 11:46:33.470000 UTC,44133953,2,7f9df47c-269d-4551-aaa7-e14cd9b145de,4947488,"In the interest of any beginners out there(like myself) who stumble upon this question; I'd like to explicitly mention that the systemProperty in gradle test task simply passes on system properties to the test jvm. So if you simply use 
+
+    test{
+    systemProperty 'Chrome', 'Browser' }   
+You won't be able to access the property in your junit tests via ' System.getProperty(""Browser"") ' . Instead it needs to be coupled with the command gradle test -DBrowser=Chrome
+
+The above case is merely an illustration and it would probably make sense to use - 
+
+    test{
+        systemProperty 'Chrome', System.getProperty('Browser') } 
+
+along with 
+
+    gradle test -DBrowser=Chrome",
+146574550,2017-05-23 11:52:12.030000 UTC,44134075,2,8ef621e8-7208-459a-abee-89fbc4451639,1772171,"You could push extra information in `state: {}` like
+
+    <Link to={{ pathname: '/about', state: { fromHome: true } }}>About</Link>
+
+Then when route has changed, you could access `state` object and check how user has navigated to your route.
+
+Today I created the package `react-router-last-location` which provides:
+
+- `withLastLocation()`, higher order component which pass `lastLocation` as a prop to your component
+- `<LastLocationProvider />` component which should used inside `<Router />`.
+
+Example usage
+
+**An entry point of your app**
+
+    import React from 'react';
+    import { render } from 'react-dom';
+    import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+    import { LastLocationProvider } from 'react-router-last-location';
+    import Home from './pages/Home';
+    import About from './pages/About';
+    import Contact from './pages/Contact';
+    import Logger from './components/Logger';
+     
+    const App = () => (
+      <Router>
+        <LastLocationProvider>
+          <div>
+            <ul>
+              <li><Link to=""/"">Home</Link></li>
+              <li><Link to=""/about"">About</Link></li>
+              <li><Link to=""/contact"">Contact</Link></li>
+            </ul>
+     
+            <hr />
+     
+            <Route exact path=""/"" component={Home} />
+            <Route path=""/about"" component={About} />
+            <Route path=""/contact"" component={Contact} />
+     
+            <hr />
+     
+            <Logger />
+          </div>
+        </LastLocationProvider>
+      </Router>
+    );
+     
+    render(<App />, document.getElementById('root'));
+
+**A component which should have access to the last location**
+
+    import React from 'react';
+    import { withLastLocation } from 'react-router-last-location';
+     
+    const Logger = ({ lastLocation }) => (
+      <div>
+        <h2>Logger!</h2>
+        <pre>
+          {JSON.stringify(lastLocation)}
+        </pre>
+      </div>
+    );
+     
+    export default withLastLocation(Logger);
+
+You can install it from npm
+
+    npm install react-router-last-location --save
+
+- https://www.npmjs.com/package/react-router-last-location
+- https://github.com/hinok/react-router-last-location",
+146487603,2017-05-23 11:49:00.147000 UTC,44134007,2,85317319-d6ff-4a93-99e2-2a09d01e1bee,2232381,"I'm want to let the client download `gzip` compressed file on specific url. I got it almost working - downloading `{fileName}.gz` works, but when it is decompressed it contains plain file name, without any extension. My files are images, so I want `.png` or `.jpg` for example. How should I do that? So far I got this: 
+
+File is stored on the server, with unique name, generated by `shortid`. On `GET` to the specific `url` I find my product in the database, get the name and set it as filename like so: 
+
+    res.setHeader(""Content-Disposition"", ""attachment; filename=test.gz"");
+    res.writeHead(200, {""Content-Type"": `image/png`});
+
+then the compression: 
+
+
+    let gzip = zlib.createGzip();
+    fs.createReadStream(filePath)
+      .pipe(gzip)
+      .pipe(res);
+
+My problem is that setHeader only sets the name of the original file, which is the compressed `.gz` file. How can I set the name of the file to be decompressed to ""my-image.png`?",
+146487606,2017-05-23 11:49:00.147000 UTC,44134007,1,85317319-d6ff-4a93-99e2-2a09d01e1bee,2232381,Node.js file extensions inside gzip compression,
+146487607,2017-05-23 11:49:00.147000 UTC,44134007,3,85317319-d6ff-4a93-99e2-2a09d01e1bee,2232381,<node.js><http><download><gzip>,
+146552534,2017-05-23 11:51:22.643000 UTC,44134061,2,ffa2393b-7bab-4e99-90b2-bd712b0474b4,265521,"Consider the following program:
+
+    #include <iostream>
+    #include <cmath>
+    #include <cstring>
+    #include <xmmintrin.h>
+    
+    using namespace std;
+    
+    int main()
+    {
+     // 4 float32s.
+     __m128 nans;
+     // Set them all to 0xffffffff which should be NaN.
+     memset(&nans, 0xff, 4*4);
+    
+     // cmpord should return a mask of 0xffffffff for any non-NaNs, and 0x00000000 for NaNs.
+     __m128 mask = _mm_cmpord_ps(nans, nans);
+     // AND the mask with nans to zero any of the nans. The result should be 0x00000000 for every component.
+     __m128 z = _mm_and_ps(mask, nans);
+    
+     cout << z[0] << "" "" << z[1] << "" "" << z[2] << "" "" << z[3] << endl;
+    
+     return 0;
+    }
+
+If I compile with Apple Clang 7.0.2 with and without `-ffast-math`, I get the expected output `0 0 0 0`:
+
+    $ clang --version
+    Apple LLVM version 7.0.2 (clang-700.1.81)
+    Target: x86_64-apple-darwin14.5.0
+    Thread model: posix
+
+    $ clang test.cpp -o test
+    $ ./test
+    0 0 0 0 
+
+    $ clang test.cpp -ffast-math -o test
+    $ ./test 
+    0 0 0 0
+
+However after updating to 8.1.0 (sorry I have no idea which actual version of Clang this corresponds to - Apple no longer publish that information), `-ffast-math` seems to break this:
+
+    $ clang --version
+    Apple LLVM version 8.1.0 (clang-802.0.42)
+    Target: x86_64-apple-darwin16.6.0
+    Thread model: posix
+    InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+    $ clang test.cpp -o test
+    $ ./test
+    0 0 0 0 
+
+    $ clang test.cpp -ffast-math -o test
+    $ ./test 
+    nan nan nan nan
+
+I suspect this is because of strict aliasing rules or something like that. Can anyone explain this behaviour?
+
+Edit: I forgot to mention that if you do `nans = { std::nanf(nullptr), ...` it works fine.
+
+Also looking on [godbolt](https://godbolt.org/) it seems that the behaviour changed between Clang 3.8.1 and Clang 3.9 - the latter removes the `cmdordps` instruction. GCC 7.1 seems to leave it in.",
+146552535,2017-05-23 11:51:22.643000 UTC,44134061,1,ffa2393b-7bab-4e99-90b2-bd712b0474b4,265521,"Strict aliasing, -ffast-math and SSE",
+146552539,2017-05-23 11:51:22.643000 UTC,44134061,3,ffa2393b-7bab-4e99-90b2-bd712b0474b4,265521,<c++><clang><sse><strict-aliasing><fast-math>,
+146519723,2017-05-23 11:50:11.283000 UTC,44134034,2,295c703c-7062-4952-95d2-120b2efd3c37,4503693,"You can use two (or three) separate classes to deserialize or you can use `JObject`.
+
+    public class Data
+    {
+        public string Name;
+        public int Age;
+    }
+
+    const string SINGLE = @""{
+      status: 0,
+      data: {name: """"balbala"""",age:12},
+      msg: """"OK""""
+    }"";
+    
+    
+    const string MULTI = @""{
+      status: 0,
+      data: [{name: """"balbala"""",age:12},{name: """"another  balbala"""",age:13}],
+      msg: """"OK""""
+    }"";
+    
+    const string ERROR = @""{
+      status: 1,
+      msg: """"Sorry, internal error""""
+    }"";
+    
+    List<Data> loDataList = new List<Data>();
+    //JObject loJObject = JObject.Parse(ERROR);
+    //JObject loJObject = JObject.Parse(SINGLE);
+    JObject loJObject = JObject.Parse(MULTI);
+    if (loJObject.Value<int>(""status"") != 0)
+    {
+        Debug.WriteLine(loJObject.Value<string>(""msg""));
+        return;
+    }
+    
+    JToken loDataToken = loJObject[""data""];
+    switch (loDataToken.Type)
+    {
+        case JTokenType.Object:
+            loDataList.Add(loJObject[""data""].ToObject<Data>());
+            break;
+        case JTokenType.Array:
+            loDataList = loJObject[""data""].ToObject<List<Data>>();
+            break;
+    }
+    
+    foreach (var loData in loDataList)
+    {
+        Debug.WriteLine(""Name: {0} Age: {1}"", loData.Name, loData.Age);
+    }",
+146579423,2017-05-23 11:52:23.827000 UTC,44134079,2,c0a3457e-4f18-4763-a990-ab6113056649,2216956,"Add `bind(this)` to binding your method into current component, like 
+
+    yourMethod(){
+        console.log(this.props)
+    }    
+
+    <SomeComponent onClick={this.yourMethod.bind(this)} />",
+146547309,2017-05-23 11:51:11.560000 UTC,44134058,2,891f3e12-fb58-4dd0-ac44-305f18c8cb81,1212681,"Indeed, SubGit runs a daemon to check for new SVN changes (once a minute by default). The daemon starts automatically if not started on every Git push, so if Git pushes to your repository occur often enough and you don't care much about having new SVN changes immediately, you can just do nothing and with the first Git push the daemon will start.
+
+But if it's important for you to have Git repository up-to-date, you need to run
+
+    $ subgit fetch --async /path/to/git/repository
+
+when the system starts. The command will start the daemon synchronizing the repository with SVN. Note that it's important to run all SubGit commands including this one on behalf of the same user (it should also be the owner of /path/to/git/repository ; usually, it's ""git"" if you're using [GitLab][1] or ""www-data"" if you're using Apache and git-http-backend ).
+
+One of the approaches would be to create an `init.d` script starting SubGit daemon with
+
+    $ su -u git subgit fetch --async /path/to/git/repository
+
+and stopping it with:
+
+    $ su -u git subgit shutdown /path/to/git/repository
+
+If your system is debian, you can use [this][2] `init.d` script generator.
+
+I'm one of SubGit developers.
+
+
+  [1]: https://subgit.com/gitlab.html
+  [2]: https://gist.github.com/naholyr/4275302",
+146554895,2017-05-23 11:51:27.560000 UTC,44134063,2,4beb9857-3281-45b0-9077-9b72405add9a,7962346,"Just copy the clipboard manager lines in to the button click, solves the problem
+
+  
+
+    get_video.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                     String paste_url=clipboard.getText().toString();
+                    Log.d(""clip"",paste_url);
+                    text_view.setText(paste_url);
+                    url = text_view.getText().toString();
+                 Log.d(""url"",url);
+    }",
+146424386,2017-05-23 11:46:47.837000 UTC,44133959,2,eba51eb4-06f9-4e2f-b994-2763f9aab0da,2444293,"I am trying to prove the following using the Mathematical Components library:
+
+    Lemma bigsum_aux (i: 'I_q) (j: 'I_q) (F G : 'I_q -> R):
+      (forall i0, F i0 <= G i0) /\ (exists j0, F j0 < G j0) ->
+      \sum_(i < q) F i < \sum_(i < q) G i.
+
+Initially, I was trying to find some Lemma equivalent to `bigsum_aux` in the documentation of `ssralg` or `bigop`, but I couldn't find any; so this is what I have been able to do so far:
+
+
+    Proof.
+     move => [Hall Hex]. rewrite ltr_neqAle ler_sum; last first.
+     - move => ? _. exact: Hall.
+     - rewrite andbT. (* A: What now? *)
+
+Any help or pointers towards relevant lemmas would be welcome.",
+146424387,2017-05-23 11:46:47.837000 UTC,44133959,1,eba51eb4-06f9-4e2f-b994-2763f9aab0da,2444293,Coq - Proving strict inequality involving bigops in Ssreflect,
+146424389,2017-05-23 11:46:47.837000 UTC,44133959,3,eba51eb4-06f9-4e2f-b994-2763f9aab0da,2444293,<coq><coq-tactic><ssreflect>,
+146415051,2017-05-23 11:46:26.877000 UTC,44133949,2,8fcc9009-12de-4269-9698-218da88c0e33,7273817,"I have a salesforce site with doamin as below :
+
+http://loram-ipsum.na15.force.com 
+
+and after almost 2 year salesforce change without any notification as below so all my resource stop working b'coz of path.
+
+http://loram-ipsum.na46.force.com
+
+As per my knowledge ""na15"" stands for server location (north america 15).
+
+Thanks.",
+146415053,2017-05-23 11:46:26.877000 UTC,44133949,1,8fcc9009-12de-4269-9698-218da88c0e33,7273817,Salesforce site domain change?,
+146415054,2017-05-23 11:46:26.877000 UTC,44133949,3,8fcc9009-12de-4269-9698-218da88c0e33,7273817,<salesforce><subdomain><apex>,
+146477903,2017-05-23 11:48:40.573000 UTC,44133999,2,d07c8a28-673c-4894-9eec-02712a8209ff,8053175,"What is better solution for storing just a text in elasticsearch 5.x for a text field no longer then 256 characters, when this field does NOT need to be:
+- searchable
+- indexed
+- analyzed
+- sortable...
+
+Option 1)
+Set mapping to **text** with index=false
+
+Option 2)
+Set mapping to **keyword** with index=false, doc_values=false
+
+What is more space efficient? Or what is the difference between these two mappings whit these settings?
+
+Thank you.",
+146477904,2017-05-23 11:48:40.573000 UTC,44133999,1,d07c8a28-673c-4894-9eec-02712a8209ff,8053175,"Best way to store text in elasticsearch that does not need to be search, analyzed or aggregatable?",
+146477905,2017-05-23 11:48:40.573000 UTC,44133999,3,d07c8a28-673c-4894-9eec-02712a8209ff,8053175,<elasticsearch><elasticsearch-5>,
+146376528,2017-05-23 11:44:58.557000 UTC,44133923,2,521357a8-4e9b-4dfc-9dec-1d4b6d9d11af,4397154,You can do it with **StackView**.set StackView `center horizotal and vertical alignment` and also set in StackView `attributes inspector` set **alignment** center and **distribution** Equal centering. Set both button width fixed.,
+146421154,2017-05-23 11:46:40.797000 UTC,44133955,2,fb797168-0f74-4dbd-bc9c-b4aeefbdcb54,8053288,"The Controller is UIViewController.
+
+I have a Scrollview in uiviewcontroller. A Tableview is added as a subview upon the scrollview. The Scroll view content size is bigger than the screen size. There is a footer in the Tableview. When I am reloading the Tableview first time with the data then the Footer is not displaying but when I started the scroll then the footer is displaying properly.
+
+Could you please guide me, how to make this resolve.
+
+Thanks",
+146421155,2017-05-23 11:46:40.797000 UTC,44133955,1,fb797168-0f74-4dbd-bc9c-b4aeefbdcb54,8053288,UITableView Footer is not showing,
+146421157,2017-05-23 11:46:40.797000 UTC,44133955,3,fb797168-0f74-4dbd-bc9c-b4aeefbdcb54,8053288,<ios><objective-c><uitableview><uiscrollview>,
+146453323,2017-05-23 11:47:50.333000 UTC,44133983,2,aedaf300-8dc2-4677-8d02-09a11210bdf0,7504681,"The PictureBox is transparent, you need to use a transparent image (such as a PNG), as already stated.",
+146540339,2017-05-23 11:50:55.933000 UTC,44134052,2,eee2ba24-2e6d-4c32-ac01-5815938d847b,1145666,"I have the following code:
+
+    <div class=""col-sm-5 content"">
+      <h2>Network Configuration</h2>  
+      <div class=""modal-body"">
+       <div class=""checkbox"">
+        <label><input type=""checkbox"" id=""cbDhcp"" value="""">DHCP enabled</label>
+       </div>
+    
+       <p>IP Address</p>
+       <input type=""text"" class=""input"" id=""inpIpAddress"">
+       
+       <p>Netmask</p>
+       <input type=""text"" class=""input"" id=""inpNetmask"">
+    
+       <p>Broadcast</p>
+       <input type=""text"" class=""input"" id=""inpBroadcast"">
+    
+       
+       <p>Gateway</p>
+       <input type=""text"" class=""input"" id=""inpGateway"">
+      </div>
+      <div class=""modal-footer"">  
+       <button class=""btn btn-primary"" onclick=""btnSave_Click()"">Save</button>
+      </div>
+     </div> 
+
+But, it isn't layouted very nice. Main problem is, the labels are closer to the input above them, than they are to the input the 'belong' to:
+
+[![enter image description here][1]][1]
+
+How should I correctly layout a form like this?
+
+
+  [1]: https://i.stack.imgur.com/QuPYV.png",
+146540340,2017-05-23 11:50:55.933000 UTC,44134052,1,eee2ba24-2e6d-4c32-ac01-5815938d847b,1145666,Correct way to layout a form,
+146540341,2017-05-23 11:50:55.933000 UTC,44134052,3,eee2ba24-2e6d-4c32-ac01-5815938d847b,1145666,<twitter-bootstrap>,
+146576633,2017-05-23 11:52:17.597000 UTC,44134077,2,6e40eb61-eb67-434f-9033-70e67c146554,4533730,"I found this helpful for my conversion, without string manipulation. https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql
+
+    CONVERT(VARCHAR(23), @lastUploadEndDate, 121)
+
+yyyy-mm-dd hh:mi:ss.mmm(24h) was the format I needed.",
+146537807,2017-05-23 11:50:50.770000 UTC,44134049,2,560d569e-f66c-476c-a1d7-44436ddc8a4c,4010625,"That's what worked for me:
+
+**1. The Remotes**
+
+    $ git remote rm origin
+    $ git remote add origin git@github.com:<USER>/<REPO>.git
+
+*If your SSH key is already in use on another github rep, you can generate a new one.*
+
+**2. Generating a new SSH key**
+
+    $ ssh -T -ai ~ /.ssh/id_rsa serverName@github.com
+
+**3. Addition of the key at the SSH agent level**
+
+    $ ssh-add ~/.ssh/id_rsa_github
+
+**4. Add the new key to the Github repo.**",
+146442085,2017-05-23 11:47:27.687000 UTC,44133971,2,074599bd-b838-401d-a0e9-f55b6851338c,1312400,"Create a shared service to handle stuff between components
+
+**storage.service.ts**
+
+    import { Injectable } from '@angular/core';
+    import { Subject }    from 'rxjs/Subject';
+
+    @Injectable()
+    export class StorageService {
+
+     data$:Subject<any> = new Subject<any>();
+
+     constructor () { }
+    }
+
+
+**component A (Setter/Sender)**
+
+    this.storageService.data$.next('Message to send, you can pass data');
+
+**component B (Getter/Reciever)**
+
+    this._subscription = this.storageService.data$.subscribe( data => {
+     this.data = data;
+    });",
+146496641,2017-05-23 11:49:20.103000 UTC,44134014,2,6dca1962-693e-499f-b12b-6e1db762732d,462781,"When making forms you can drag items from the ""Data Sources"" panel. In the data sources panel you can a class or table and all the children of it can be dragged to the form and will automatically generate a textbox or in this scenario a radio button with a data binding. In the database or class you will have to make a bit / bool for every option.
+
+Group the radio buttons and add a radio button without a databinding to keep all bit / bools 0.",
+146418457,2017-05-23 11:46:34.503000 UTC,44133954,2,d2565dd5-a946-45f1-b766-25c997c2a1ae,2236921,"Use `Promise`s.
+
+First I suggest you change your functions to return promises instead of taking callbacks:
+
+    module.exports.usernameExist = function (givenUsername) {
+      return new Promise((resolve, reject) =>
+        Users.find({ username: givenUsername }, (err, result) => {
+          if(err){
+            reject(err);
+          } else {
+            resolve(result.length <= 0);
+          }
+        })
+      );
+    }
+    module.exports.emailExist = function (givenEmail) {
+      return new Promise((resolve, reject) =>
+        Users.find({ email: givenEmail }, (err, result) => {
+          if(err){
+            reject(err);
+          } else {
+            resolve(result.length <= 0);
+          }
+        })
+      );
+    }
+
+Then you wrap the promises returned from parallell calls to these functions in a `Promise.all`, which returns a new promise that resolves when the wrapped promises get resolved, and then you do your stuff there:
+
+    Promise.all([
+      User.usernameExist(newUser.username),
+      User.emailExist(newUser.email)
+    ]).then((results) => {
+      // results[0] contains the result from User.usernameExist
+      // results[1] contains the result from User.emailExist
+    });
+
+If you do not want to change your functions in the `User` module, you can wrap the calls to those functions in `Promise`s in your index.js file instead.",
+146441790,2017-05-23 11:47:27.143000 UTC,44133970,2,ef3b9019-a4aa-41cf-a3a7-ef8699c0745f,7755976,"I've seen a lot of posts about this sort of topic, but I can't find any specifics to add into my relatively simple JS to get numerical results to appear to 2 decimal places - the answer is probably so simple, but somehow I can't figure it out.
+
+It is for a calculator, you write two entries into 2 fields, and the 3rd returns the multiplied answer of the 2 numbers - fine.
+
+However, if the number is not whole, and requires decimal placings, it shows the full string, not the 2 decimal place answer which is imperative.
+
+ function calculate() {
+  var no1 = document.getElementById('number1').value; 
+  var no2 = document.getElementById('number2').value;
+  var result = document.getElementById('result'); 
+  var myResult = no1 * no2;
+  result.value = myResult;
+   }
+
+A simpler fix the better, as I imagine for every entry like that ^, I'd have to make an amendment and right now the code entries are close to 1000 as its a bet calculator with full manual input.",
+146441791,2017-05-23 11:47:27.143000 UTC,44133970,1,ef3b9019-a4aa-41cf-a3a7-ef8699c0745f,7755976,JS input field result to show 2 decimal placings,
+146441792,2017-05-23 11:47:27.143000 UTC,44133970,3,ef3b9019-a4aa-41cf-a3a7-ef8699c0745f,7755976,<javascript><calculator>,
+146374743,2017-05-23 11:44:54.183000 UTC,44133920,2,a4451a24-8ea0-4767-a6f6-5d5b30362f09,4896948,"I want to add show password button to my form. 
+Most of the examples that I found are using 2 inputs, one with type text and other with type password. 
+it is simpler to change type of input, so why people use 2 inputs?",
+146374747,2017-05-23 11:44:54.183000 UTC,44133920,1,a4451a24-8ea0-4767-a6f6-5d5b30362f09,4896948,using 2 inputs or change type of input to show password,
+146374750,2017-05-23 11:44:54.183000 UTC,44133920,3,a4451a24-8ea0-4767-a6f6-5d5b30362f09,4896948,<javascript><html>,
+146459324,2017-05-23 11:48:01.820000 UTC,44133989,2,af224904-b623-40d9-a42d-5aafcdbc0f20,750565,"I have been working in a few projects and noticed that as the software is getting developed, the database usually needs to evolve in the same manner. I have seen this handled in different ways, but they all look kind of like this:
+
+ - There is a file called SCRIPTS_TO_DEPLOY. 
+ - When you need to do any kind of database change, then create a file called $TASK_$DESCRIPTION_$NUMBER.sql. Put it in a pre-defined folder.
+ - Add $TASK_$DESCRIPTION to the last line of SCRIPTS_TO_DEPLOY
+ - Execute a script that will apply all scripts to the database in the proper order.
+
+I have two questions. 1) Does this seems like a good idea or do you have any better suggestion? 2) Feels like somewhat overkill to build scripts for this every time I start a new project. Is there some tool that can help me out perhaps?
+
+Help would be appreciated.",
+146459327,2017-05-23 11:48:01.820000 UTC,44133989,1,af224904-b623-40d9-a42d-5aafcdbc0f20,750565,Keeping database in sync with code,
+146459328,2017-05-23 11:48:01.820000 UTC,44133989,3,af224904-b623-40d9-a42d-5aafcdbc0f20,750565,<sql><deployment>,
+146556930,2017-05-23 11:51:31.740000 UTC,44134066,2,334b8773-c505-43e6-80a5-daf031123436,6288940,"After using while loop,I only select first checkbox but  I can't select multiple checkboxes in page. Plz solve this issue.     
+
+    $get=mysqli_query($con,""select * from subjects where cour_id='$id'"") or die(mysqli_error($con));
+  while($data=mysqli_fetch_array($get))
+  {
+   ?>
+            <div class=""be-checkbox"">
+   <input id=""check"" type=""checkbox"" name=""chk[]"" value=""<?php echo $data['sub_name'];?>"">
+            <label for=""check""><?php echo $data['sub_name'];?></label>
+            </div>
+           <?php
+  }",
+146556932,2017-05-23 11:51:31.740000 UTC,44134066,1,334b8773-c505-43e6-80a5-daf031123436,6288940,Can't select multiple checkboxes in while loop,
+146556934,2017-05-23 11:51:31.740000 UTC,44134066,3,334b8773-c505-43e6-80a5-daf031123436,6288940,<php><checkbox><checkboxlist>,
+146551213,2017-05-23 11:51:19.420000 UTC,44134060,2,ec5fe952-6768-496d-980d-998574e856fe,6291315,"I have a workspace that I want to analyze with my rules configured on the SonarQube server. The code in the workspace is not in any code repository (so far).
+
+So I installed SonarLint(3.1) in Eclipse(neon3 but same issues in neon3), but did not get any reports. In fact when at some point I saw a log, it said for a project with over 50+ Java files, it would check only 8 files. 
+
+The java projects are maven projects and the code is stored under src/main/java/com/....some package ... /SomeFile.java
+
+The same result appears whether in unconnected mode, or in connected mode, connected to a server-side project with Java measures (""SonarQube way"" selected). 
+
+So I can't right now use SonarLint at all with Eclipse!",
