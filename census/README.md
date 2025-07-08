@@ -8,19 +8,33 @@ It was downloaded via [US Census Bureau page](https://data.census.gov/table?q=20
 
 ## Dataset Overview
 
-The Census dataset includes information about:
-- **Geographic Information:** 
-  - Unique identifiers for each census area: state, county, and local area names with geographic boundary codes for mapping
+The Census dataset includes 2 tables with the following information:
+
+The Census Bureau produces population estimates for a range of geographic areas, including the nation, states, the District of Columbia, Puerto Rico, counties and equivalents (such as parishes, boroughs, and municipios), incorporated places, minor civil divisions, consolidated cities, census regions and divisions, and core-based statistical areas like metropolitan and micropolitan areas. Each of these geographic area types is defined by specific legal or statistical criteria, with boundaries and designations varying by state and territory to ensure accurate and consistent population data collection and reporting.
+This dataset has information on county and county division levels (050, 060)
+
+- **Unique Identifier in both tables: Geographic Information:**
+  - **geo_id**: see [geo_id at census.gov](https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html): state, county, and local area names with geographic boundary codes for mapping
+      
+    The “GEO_ID” field contains 14-digit codes that identify the summary level of data, the geographic component of the data and FIPS codes that uniquely identify the data.
+    
+    For example, the 14-digit “GEO_ID” for geographic_area_name="Harris County, TX" is “0500000US48201” where
+      - “050” represents the summary level of the data - county
+      - “0000” represents the 2-digit geographic variant and the 2-digit geographic component
+      - “US” represents the United States
+      - “48” represents the state of Texas (state fips)
+      - “201” represents Harris County (county fips)
+
+  - **geographic_area_name**: corresponds with geo_id - see above and [terms&definitions](https://www.census.gov/programs-surveys/popest/guidance-geographies/terms-and-definitions.html)
 - **Demographics Data:** 
   - Population counts by age groups (under 5, 5-9, 10-14, etc.)
   - Gender ratios
   - Median age statistics
-  - Population counts for adults, seniors, and minors
+  - Population counts for adults (18+), seniors (62+, 65+), and minors(under 18)
 - **Language Data:** 
   - Primary languages spoken at home
   - English proficiency levels for non-English speakers
   - Detailed breakdown by language families (Spanish, Chinese, Korean, Arabic, etc.)
-  - Statistics on multilingual households
 
 ## Getting Started
 
