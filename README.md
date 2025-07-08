@@ -34,4 +34,4 @@ Explore these public datasets through our Discord server:
 - **[IMDB Dataset](./imdb/)** - Movie and TV show information from the Internet Movie Database
 - **[Census Dataset](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov
 
-- Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions.
+Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions.
