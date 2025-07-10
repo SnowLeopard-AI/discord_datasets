@@ -1,0 +1,839 @@
+id	title	body	accepted_answer_id	answer_count	comment_count	community_owned_date	creation_date	favorite_count	last_activity_date	last_edit_date	last_editor_display_name	last_editor_user_id	owner_display_name	owner_user_id	parent_id	post_type_id	score	tags	view_count
+5046395		"<p>The Web (short form of ""World Wide Web"") is a collection of usually linked documents that are each accessible on a network. The information on the web is accessible through a web browser, implementing the Hypertext Transport Protocol (HTTP).</p>"			0		2011-02-18 20:47:53.817000 UTC		2011-06-23 21:43:01.793000 UTC	2011-06-23 21:43:01.793000 UTC	user213154		user213154			5	0		
+5062415		<p>Celerity is a JRuby wrapper around HtmlUnit – a headless Java browser with JavaScript support. It provides a simple API for programmatic navigation through web applications. Celerity aims at being API compatible with Watir.</p>			0		2011-02-21 04:49:10.940000 UTC		2011-02-21 04:54:05.740000 UTC	2011-02-21 04:54:05.740000 UTC	user479911		user479911			5	0		
+5130474		"<p>Ramaze is a web application framework created by Michael Fellinger (also known as manveru) for Ruby. The philosophy of it could be expressed in a mix of <a href=""http://en.wikipedia.org/wiki/KISS_principle"" rel=""nofollow"">KISS</a> and <a href=""http://en.wikipedia.org/wiki/Principle_of_least_surprise"" rel=""nofollow"">POLS</a>, trying to make simple things simple and complex things possible. This of course is nothing new to anyone who knows some Ruby, but is often forgotten in a chase for new functionality and features. Ramaze only tries to give you the ultimate tools, but you have to use them yourself to achieve perfect custom-tailored results. </p>
+
+<p>Another one of the goals during development of Ramaze was to make every part as modular and therefore reusable as possible, not only to provide a basic understanding after the first glance, but also to make it as simple as possible to reuse parts of the code. </p>
+
+<p>The original purpose of Ramaze was to act as a kind of framework to build web-frameworks, this was made obsolete by the introduction of rack, which provides this feature at a better level without trying to enforce any structural layout of the resulting framework.</p>
+
+<h2>Basic Example</h2>
+
+<pre><code>require 'ramaze'
+
+class MainController &lt; Ramaze::Controller
+  def index
+    ""Hello, Ramaze!""
+  end
+end
+
+Ramaze.start
+</code></pre>
+
+<h2>Installation</h2>
+
+<p>Installing Ramaze is super easy when using Rubygems:</p>
+
+<pre><code>$ gem install ramaze
+</code></pre>
+
+<p>Once the gem is installed you can create a new application using the ""ramaze"" binary:</p>
+
+<pre><code>$ ramaze create myapp
+</code></pre>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href=""https://github.com/Ramaze/ramaze/"" rel=""nofollow"">GitHub Repository</a></li>
+<li><a href=""http://groups.google.com/group/ramaze"" rel=""nofollow"">Google Groups</a></li>
+<li><a href=""http://ramaze.net/"" rel=""nofollow"">Website</a></li>
+<li><a href=""http://ramaze.net/documentation/index.html"" rel=""nofollow"">User Guide</a></li>
+<li><strong>#ramaze</strong> on Freenode</li>
+</ul>"			0		2011-02-26 23:38:37.057000 UTC		2011-06-04 16:05:46.443000 UTC	2011-06-04 16:05:46.443000 UTC	user290102		user290102			5	0		
+5166749		"<p>OpenWrap is a dependency manager for the .net platform.  It can be found at <a href=""http://openwrap.org"" rel=""nofollow"">http://openwrap.org</a>.</p>"			0		2011-03-02 11:20:56.873000 UTC		2011-09-07 19:07:54.080000 UTC	2011-09-07 19:07:54.080000 UTC	user1228		user1228			5	0		
+5362329		"<p>SmartGWT is based on the powerful and mature SmartClient library. SmartGWT provides a wide-array of rich components that are based on GWT. In addition to SmartGWT LGPL, Pro &amp; Enterprise editions of Smart GWT are available with additional features &amp; tools, as well as commercial support. </p>
+
+<p>SmartGWT is compatible with GWT 1.5.3, GWT 1.6.4, GWT 1.7.x and GWT 2.x </p>
+
+<p>More info at : <a href=""http://www.smartclient.com/smartgwt/"" rel=""nofollow"">www.smartclient.com/smartgwt/</a></p>"			0		2011-03-19 13:21:57.987000 UTC		2012-12-19 20:48:13.273000 UTC	2012-12-19 20:48:13.273000 UTC	user195488		user614868			5	0		
+5399041		<p>Questions in this category contains all aspects of development relating to poker - ie. hand evaluation, game engine, statistics, etc.</p>			0		2011-03-22 23:16:38.970000 UTC		2011-07-26 21:59:32.400000 UTC	2011-07-26 21:59:32.400000 UTC	user806549		user806549			5	0		
+5410995		"<p><a href=""http://msdn.microsoft.com/en-us/library/system.windows.automation.automationelement.aspx"" rel=""nofollow"">AutomationElement</a> represents a UI Automation element in the UI Automation tree, and contains values used as identifiers by UI Automation client applications.  It is found within the <a href=""http://msdn.microsoft.com/en-us/library/ms590934.aspx"" rel=""nofollow"">System.Windows.Automation</a> namespace.</p>"			0		2011-03-23 20:07:53.303000 UTC		2011-03-23 20:07:53.303000 UTC	2011-03-23 20:07:53.303000 UTC	user1228		user1228			5	0		
+5642566		<p>Hpricot is a Ruby library intended for parsing HTML. Until the release of Nokogiri, a competing HTML and css parser, Hpricot was the defacto HTML parser for the ruby community.</p>			0		2011-04-12 22:54:54.283000 UTC		2011-04-12 23:14:38.190000 UTC	2011-04-12 23:14:38.190000 UTC	user131441		user131441			5	0		
+6369460		<p>Because a permalink remains unchanged indefinitely, it is less susceptible to link rot. Most modern weblogging and content-syndication software systems support such links. Other types of websites use the term permanent links, but the term permalink is most common within the blogosphere. Permalink is a portmanteau word made from permanent link. Permalinks are often simply stated so as to be human-readable.</p>			0		2011-06-16 09:08:17.363000 UTC		2011-06-16 09:15:41.840000 UTC	2011-06-16 09:15:41.840000 UTC	user757425		user757425			5	0		
+6526901		<p>Questions in this tag are only for questions related to the PCI Local Bus standard which is a computer bus for attaching hardware devices in a computer.</p>			0		2011-06-29 20:33:46.643000 UTC		2011-06-29 20:39:03.670000 UTC	2011-06-29 20:39:03.670000 UTC	user195488		user195488			5	0		
+6699000		"<p>Preon aims to provide a framework for dealing with binary encoded data; or more specifically, it aims to deal with situations in which bytes are considered to be overkill. The project is named after the ""point-like"" particles, conceived to be subcomponents of quarks and leptons. Let's just say very small particles that you don't see with the naked eye, but you probably rely on them without knowing.</p>"			0		2011-07-14 19:40:11.233000 UTC		2011-07-15 00:34:39.380000 UTC	2011-07-15 00:34:39.380000 UTC	user177800		user177800			5	0		
+7020708		"<p>AVM2 executes programs written in <a href=""/questions/tagged/actionscript-3"" class=""post-tag"" title=""show questions tagged 'actionscript-3'"" rel=""tag"">actionscript-3</a>.</p>"			0		2011-08-11 04:05:08.917000 UTC		2013-02-22 06:22:21.410000 UTC	2013-02-22 06:22:21.410000 UTC	user1901867		user1901867			5	0		
+7206083		"<p>The <a href=""http://msdn.microsoft.com/en-us/library/system.security.principal.iprincipal.aspx"" rel=""nofollow"">System.Security.Principal.IPrincipal</a> interface defines the basic functionality of a security object.  This object represents the security context of the user on whose behalf the code is running, including that user's identity (<a href=""http://msdn.microsoft.com/en-us/library/system.security.principal.iidentity.aspx"" rel=""nofollow"">IIdentity</a>) and any roles to which they belong.</p>"			0		2011-08-26 14:20:21.783000 UTC		2011-08-26 14:20:21.783000 UTC	2011-08-26 14:20:21.783000 UTC	user1228		user1228			5	0		
+7235695		"<p>svnserve allows access to Subversion repositories using Subversion's custom network protocol.</p>
+
+<p>You can run svnserve as a standalone server process, you can have a daemon such as inetd or xinetd launch it for you on demand, or you can have sshd launch it on demand for the svn+ssh:// access method.</p>
+
+<p>For more information, click here: <a href=""http://svnbook.red-bean.com/en/1.5/svn.ref.svnserve.html"" rel=""nofollow"">http://svnbook.red-bean.com</a></p>"			0		2011-08-29 20:38:55.757000 UTC		2011-08-29 20:38:55.757000 UTC	2011-08-29 20:38:55.757000 UTC	user1228		user1228			5	0		
+7273908		<p>CAF (Core Audio Format) is a container audio file format developed by Apple. CAF files can contain audio data of a variety of different formats and, unlike AIFF and WAVE format files, are not limited to a size of 4GB. The format is used by certain Apple products (such as Apple Loops) and is supported on both Mac OS X and iOS platforms.</p>			0		2011-09-01 17:13:13.940000 UTC		2011-09-01 17:37:25.363000 UTC	2011-09-01 17:37:25.363000 UTC	user577537		user577537			5	0		
+7424751		"<blockquote>
+  <p>The Facebook Hacker Cup is an annual worldwide programming competition where hackers compete against each other for fame, fortune, glory and a shot at the coveted Hacker Cup.</p>
+</blockquote>
+
+<p><a href=""http://www.facebook.com/hackercup"" rel=""nofollow"">http://www.facebook.com/hackercup</a></p>"			0		2011-09-15 00:59:20.063000 UTC		2011-09-15 02:49:30.677000 UTC	2011-09-15 02:49:30.677000 UTC	user149341		user149341			5	0		
+7528536		"<p>The <a href=""http://dash.chumby.com/"" rel=""nofollow"">Sony Dash</a> is a ""personal internet device"" featuring a 7"" touchscreen and wireless connectivity.  Applications can be developed for the device using <a href=""http://www.adobe.com/devnet/devices/flashlite.html"" rel=""nofollow"">Adobe Flash Lite</a>.</p>"			0		2011-09-23 11:53:05.153000 UTC		2011-09-23 11:53:05.153000 UTC	2011-09-23 11:53:05.153000 UTC	user1228		user1228			5	0		
+7926032		"<p>Provides the classes and interfaces of the JavaTM 2 platform's core logging facilities. The central goal of the logging APIs is to support maintaining and servicing software at customer sites.</p>
+
+<p>The key elements of this package include:
+Logger: The main entity on which applications make logging calls. A Logger object is used to log messages for a specific system or application component.
+LogRecord: Used to pass logging requests between the logging framework and individual log handlers.</p>
+
+<p>Handler: Exports LogRecord objects to a variety of destinations including memory, output streams, consoles, files, and sockets. A variety of Handler subclasses exist for this purpose. Additional Handlers may be developed by third parties and delivered on top of the core platform.</p>
+
+<p>Level: Defines a set of standard logging levels that can be used to control logging output. Programs can be configured to output logging for some levels while ignoring output for others.</p>
+
+<p>Filter: Provides fine-grained control over what gets logged, beyond the control provided by log levels. The logging APIs support a general-purpose filter mechanism that allows application code to attach arbitrary filters to control logging output.</p>
+
+<p>Formatter: Provides support for formatting LogRecord objects. This package includes two formatters, SimpleFormatter and XMLFormatter, for formatting log records in plain text or XML respectively. As with Handlers, additional Formatters may be developed by third parties.</p>"			0		2011-10-28 06:51:56.820000 UTC		2011-10-28 09:25:50.930000 UTC	2011-10-28 09:25:50.930000 UTC	user177800		user177800			5	0		
+7937341		"<p>GTK+ is written in C, but has bindings to many other popular programming languages such as C++ (<a href=""/questions/tagged/gtkmm"" class=""post-tag"" title=""show questions tagged 'gtkmm'"" rel=""tag"">gtkmm</a>), Python (<a href=""/questions/tagged/pygtk"" class=""post-tag"" title=""show questions tagged 'pygtk'"" rel=""tag"">pygtk</a>), and C# among others. GTK+ is licensed under the GNU LGPL 2.1, allowing development of both free and proprietary software with GTK+ without any license fees or royalties.</p>
+
+<p>""GTK"" stands for <em>GIMP Tool Kit</em>; it was originally developed to serve as the widget set for The GIMP, the GNU Image Manipulation Program. In the intervening years its usage has expanded greatly.</p>
+
+<p>The latest version is GTK+ 3, released in January, 2011.</p>
+
+<p>Reference documentation: <a href=""http://library.gnome.org/devel/gtk3/stable/"" rel=""nofollow"">http://library.gnome.org/devel/gtk3/stable/</a></p>"			0		2011-10-29 06:22:14.073000 UTC		2011-10-29 08:49:00.783000 UTC	2011-10-29 08:49:00.783000 UTC	user266647		user266647			5	0		
+8095719		<p>The SDK is written for C++, C# and VB. Mainly, the <strong>Suprema</strong>´s BioMini allows enrolling fingerprint and the subsequent identification of that fingerprint using the biometric device. The complete documented SDK is on the <strong>BioStar Reference Manual</strong>. This software is proprietary.  </p>			0		2011-11-11 14:56:44.657000 UTC		2011-11-11 14:58:20.490000 UTC	2011-11-11 14:58:20.490000 UTC	user935375		user935375			5	0		
+8732455		"<p>Pascal's triangle - is a triangular array of <a href=""https://stackoverflow.com/tags/binomial-coefficients/info"">binomial coefficients</a> where the elements of the first row and column are equal to one, and all other elements are the sum of the previous element in the row and column.</p>
+<pre><code>T[i][j] = T[i][j-1] + T[i-1][j];
+</code></pre>
+<p>Example:</p>
+<pre><code> 1  1  1  1  1  1  1  1  1 
+ 1  2  3  4  5  6  7  8 
+ 1  3  6 10 15 21 28 
+ 1  4 10 20 35 56 
+ 1  5 15 35 70 
+ 1  6 21 56 
+ 1  7 28 
+ 1  8 
+ 1 
+</code></pre>
+<p>Iterative method of filling an array:</p>
+<pre class=""lang-java prettyprint-override""><code>int n = 9;
+// an array of 'n' rows
+int[][] arr = new int[n][];
+// iterate over the rows of the array
+for (int i = 0; i &lt; n; i++) {
+    // a row of 'n-i' elements
+    arr[i] = new int[n - i];
+    // iterate over the elements of the row
+    for (int j = 0; j &lt; n - i; j++) {
+        if (i == 0 || j == 0) {
+            // elements of the first row
+            // and column are equal to one
+            arr[i][j] = 1;
+        } else {
+            // all other elements are the sum of the
+            // previous element in the row and column
+            arr[i][j] = arr[i][j - 1] + arr[i - 1][j];
+        }
+    }
+}
+</code></pre>"			0		2012-01-04 19:04:03.137000 UTC		2021-02-16 08:59:53.370000 UTC	2021-02-16 08:59:53.370000 UTC	user14940971		user14940971			5	0		
+8782419		"<p>A property declaration begins with the keyword <code>@property</code>. You can decorate a property with attributes by using the form <code>@property(attribute [, attribute2, ...])</code>.</p>
+
+<p>You use the <code>@synthesize</code> directive to tell the compiler that it should synthesize the setter and/or getter methods for a property if you do not supply them within the <code>@implementation</code> block. The <code>@synthesize</code> directive also synthesizes an appropriate instance variable if it is not otherwise declared.</p>
+
+<p>Declared properties provide a useful simplification of the usual requirement to explicitly declare all accessor methods, in the following ways (excerpt from Apple documentation on <a href=""http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html"" rel=""nofollow"">Declared Properties</a>):</p>
+
+<blockquote>
+  <ul>
+  <li>The property declaration provides a clear, explicit specification of how the accessor methods behave.</li>
+  <li>The compiler can synthesize accessor methods for you, according to the specification you provide in the declaration.</li>
+  <li>Properties are represented syntactically as identifiers and are scoped, so the compiler can detect use of undeclared properties.</li>
+  </ul>
+</blockquote>
+
+<p>Questions relating to the proper use of <code>@property</code> declarations, <code>@synthesize</code>, and the use of dot notation to assign values to these properties (<code>object.propertyName = propertyValue;</code>) should use this tag.</p>
+
+<p>Further reading:</p>
+
+<ol>
+<li><a href=""http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html"" rel=""nofollow"">The Objective-C Programming Language: Declared Properties</a></li>
+</ol>"			0		2012-01-08 23:38:03.627000 UTC		2012-01-09 01:12:01.400000 UTC	2012-01-09 01:12:01.400000 UTC	user244343		user244343			5	0		
+9280896		"<p>The open source Moai SDK enables game developers to focus on great gameplay and content, code in the easy-to-use Lua scripting language they already know, use ready-to-roll libraries for animation and physics, and avoid rewriting game code for different devices.</p>
+
+<p>More information at <a href=""http://getmoai.com"" rel=""nofollow"">http://getmoai.com</a></p>"			0		2012-02-14 16:55:57.343000 UTC		2012-02-14 22:57:04.737000 UTC	2012-02-14 22:57:04.737000 UTC	user805687		user805687			5	0		
+9328209		"<p>Gtk2Hs is a GUI library for Haskell based on Gtk+. Gtk+ is an extensive and mature multi-platform toolkit for creating graphical user interfaces.</p>
+
+<p>Gtk2Hs features:</p>
+
+<ul>
+<li>Automatic memory management.</li>
+<li>Nearly complete coverage of the Gtk+ API.</li>
+<li>Unicode support.</li>
+<li>Extensive reference documentation.</li>
+<li>Support for Linux, Windows, MacOS X and Unix platforms.</li>
+<li>Support for several related GtK+ and Gnome modules:
+<ul>
+<li>the Glade visual user interface builder.</li>
+<li>the cairo vector graphics library.</li>
+<li>rendering of SVG images using cairo (via librsvg)</li>
+<li>the Gtk+ OpenGL extension.</li>
+<li>GConf for storing application preferences.</li>
+<li>SourceView, an editor widget with syntax highlighting.</li>
+<li>the Mozilla browser rendering engine in a Gtk+ widget</li>
+</ul></li>
+<li>An implementation of the Graphics.SOE API.</li>
+</ul>
+
+<p>Gtk+ and Gtk2Hs are Free software liscenced under the GNU LGPL.</p>"			0		2012-02-17 12:28:47.623000 UTC		2012-02-17 13:58:00.147000 UTC	2012-02-17 13:58:00.147000 UTC	user266647		user266647			5	0		
+9751012		<p>The ri command can be used to view Ruby documentation generated with RDoc.</p>			0		2012-03-17 15:03:43.303000 UTC		2012-03-18 09:44:28.453000 UTC	2012-03-18 09:44:28.453000 UTC	user522860		user522860			5	0		
+9861409		"<p>Internal Lotus Notes formula language, used for following purposes:</p>
+
+<ol>
+<li>Database replication control (what should be replicated)</li>
+<li>Computed field formula calculation</li>
+<li>Editable field default value calculation, input translation and input validation actions</li>
+<li>Form/View/Page/etc property (window title, ) calculation</li>
+</ol>
+
+<p>And much more.</p>
+
+<p>It was the first language implemented for Lotus Notes by Lotus Software Company (now belongs to IBM Corporation). LotusScript was the second language, with richer functionality. But for some purposes there is only lotus formula available. For instance, calculating text for window title.</p>"			0		2012-03-25 15:36:33.890000 UTC		2012-03-25 19:14:33.473000 UTC	2012-03-25 19:14:33.473000 UTC	user784540		user784540			5	0		
+10441232		<p>CHICKEN is a compiler for the Scheme programming language. CHICKEN produces portable, efficient C, supports almost all of the R5RS Scheme language standard, and includes many enhancements and extensions. CHICKEN runs on Linux, MacOS X, Windows, and many Unix flavours.</p>			0		2012-05-04 00:37:45.510000 UTC		2012-05-04 03:02:14.410000 UTC	2012-05-04 03:02:14.410000 UTC	user849425		user849425			5	0		
+10672963		"<p>FluentMigrator is a migration framework that let's you easily create migrations that fit very nicely into an automated deployment scenario.</p>
+
+<p>The framework allows for forwards and backwards migration using a Fluent API that makes it easy to chain together updates for a database schema.</p>
+
+<p>Additionally Fluent Migrator exposes several Runners to let you run the migrations, including nAnt, MSBuild or Rake (using the Albacore tasks which extends the built-in tasks for Rake)</p>
+
+<p><a href=""https://github.com/schambers/fluentmigrator/wiki"" rel=""nofollow"">Read more about FluentMigrator</a></p>"			0		2012-05-20 11:20:59.810000 UTC		2012-05-20 12:42:49.160000 UTC	2012-05-20 12:42:49.160000 UTC	user191152		user191152			5	0		
+10842478		"<p>Current Location refers to programmatically identifying the GPS location of a device, such as an iPhone app requesting information about its current location to display in a map or find nearby places, for example.</p>
+
+<h3>See also:</h3>
+
+<ul>
+<li><a href=""/questions/tagged/geolocation"" class=""post-tag"" title=""show questions tagged &#39;geolocation&#39;"" rel=""tag"">geolocation</a></li>
+</ul>"			0		2012-05-31 23:10:50.280000 UTC		2016-05-30 04:20:30.293000 UTC	2016-05-30 04:20:30.293000 UTC	user6339740		user6339740			5	0		
+10971294		"<p>The goal is to achieve an user experience like page flipping. The whole currently <code>visible area</code> will be pushed outside the screen until it snaps to the next frame - perfectly aligned after the end of the last frame.<br>
+It is not possible to center the <code>Scroll-View</code> content between two ""pages"". When the user release the touch or click gesture the content will scroll either to the previous or the next page.<br>
+One thing to mention is that a <code>Scroll-View</code> can have paging enabled in one direction or both (<code>horizontal</code> and <code>vertical</code>).</p>"			0		2012-06-10 18:34:36.680000 UTC		2012-06-10 19:01:22.170000 UTC	2012-06-10 19:01:22.170000 UTC	user207616		user207616			5	0		
+10996190		<p>An email attachment is a computer file sent along with an email message. One or more files can be attached to any email message, and be sent along with it to the recipient. This is typically used as a simple method to share documents and images. A paper clip image is the standard image for an attachment in an email client.</p>			0		2012-06-12 11:57:46.240000 UTC		2012-06-12 12:33:28.510000 UTC	2012-06-12 12:33:28.510000 UTC	user207616		user207616			5	0		
+11096024		"<p>WebKitGTK+ is the version of the <a href=""http://www.webkit.org/"" rel=""nofollow"">WebKit</a> open-source web engine that uses GTK+ as its user-facing front-end. It's a powerful system with a rich array of functionality.</p>
+
+<ul>
+<li><a href=""https://live.gnome.org/WebKitGtk"" rel=""nofollow"">Official site</a></li>
+<li><a href=""https://live.gnome.org/action/edit/WebKitGtk/ProgrammingGuide"" rel=""nofollow"">Programmers Guide</a></li>
+<li><a href=""http://trac.webkit.org/wiki/ApplicationsGtk"" rel=""nofollow"">GTK+ applications using WebKit</a></li>
+</ul>"			0		2012-06-19 07:09:44.120000 UTC		2012-06-19 09:20:18.657000 UTC	2012-06-19 09:20:18.657000 UTC	user207616		user207616			5	0		
+11473498		<p>This tag should be used for any questions dealing specifically with negative numbers.</p>			0		2012-07-13 15:24:59.020000 UTC		2013-10-25 00:06:08.590000 UTC	2013-10-25 00:06:08.590000 UTC	user2555451		user2555451			5	0		
+11560009		<p>Use this tag for any questions related to date comparison.</p>			0		2012-07-19 11:35:42.013000 UTC		2013-10-26 21:42:15.507000 UTC	2013-10-26 21:42:15.507000 UTC	user2555451		user2555451			5	0		
+11601767		"<p><a href=""http://www.altera.com/products/software/quartus-ii/subscription-edition/qsys/systems/qts-systems-console.html"" rel=""nofollow"">System Console</a> is a flexible system-level debug tool that helps designers quickly and efficiently debug their design while the design is running at full speed in an FPGA. System Console enables designers to send read and write system-level transactions into their Qsys system to help isolate and identify problems. It also provides a quick and easy way to check system clocks and monitor reset states, which can be particularly helpful during board bring-up. In addition, System Console allows designers to create their own custom verification or demonstration tool using graphical elements, such as buttons, dials, and graphs, to represent many system-level transactions and monitor the processing of data.</p>"			0		2012-07-22 15:57:47.763000 UTC		2012-07-22 16:13:02.467000 UTC	2012-07-22 16:13:02.467000 UTC	user405725		user405725			5	0		
+11612765		"<p>Protocols declare methods that can be implemented by any class. Protocols are useful in at least three situations:</p>
+
+<ul>
+<li>To declare methods that others are expected to implement</li>
+<li>To declare the <strong>interface</strong> to an object while concealing its class</li>
+<li>To capture similarities among classes that are not hierarchically related</li>
+</ul>
+
+<p>Protocols can be made optional specifically, otherwise the implementation is required for compiling successfully.</p>
+
+<p><a href=""https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProtocols.html"" rel=""nofollow"">Developer Documentation</a> for further information and usage</p>"			0		2012-07-23 12:42:15.153000 UTC		2012-07-23 13:00:13.463000 UTC	2012-07-23 13:00:13.463000 UTC	user207616		user207616			5	0		
+11725780		"<p>Viewhelpers are a part of Fluid. Fluid is a templating engine used primarily by <a href=""https://typo3.org"" rel=""nofollow noreferrer"">TYPO3</a> and <a href=""https://www.neos.io/"" rel=""nofollow noreferrer"">Neos</a>. </p>
+
+<p>ViewHelpers are special classes which build on base classes provided by Fluid. These classes can then be imported and used as part of the Fluid language. </p>
+
+<p>More information:</p>
+
+<ul>
+<li><a href=""https://github.com/TYPO3/Fluid/blob/master/doc/FLUID_VIEWHELPERS.md"" rel=""nofollow noreferrer"">ViewHelpers</a></li>
+<li><a href=""https://github.com/TYPO3/Fluid"" rel=""nofollow noreferrer"">Fluid</a></li>
+</ul>"			0		2012-07-30 16:38:05.487000 UTC		2019-02-05 15:54:33.377000 UTC	2019-02-05 15:54:33.377000 UTC	user9073987		user9073987			5	0		
+11864520		"<p>""Adobe® InDesign® CS6 Server software delivers a robust and scalable engine that leverages the design, layout, and typographical capabilities of Adobe InDesign CS6 software to enable you to programmatically create engaging automated documents.""</p>
+
+<p><a href=""http://www.adobe.com/si/products/indesignserver.html"" rel=""nofollow"">Source</a></p>"			0		2012-08-08 12:27:04.490000 UTC		2012-08-08 14:48:41.527000 UTC	2012-08-08 14:48:41.527000 UTC	user1228		user1228			5	0		
+11982176		"<blockquote>
+  <p>Jaql is a query language designed for Javascript Object Notation (JSON), a data format that has become popular because of its simplicity and modeling flexibility. Jaql is primarily used to analyze large-scale semi-structured data. Core features include user extensibility and parallelism. In addition to modeling semi-structured data, JSON simplifies extensibility. Hadoop's Map-Reduce is used for parallelism.</p>
+</blockquote>
+
+<p><a href=""https://code.google.com/p/jaql/"" rel=""nofollow"">https://code.google.com/p/jaql/</a></p>"			0		2012-08-16 07:00:34.310000 UTC		2012-08-16 07:19:23.847000 UTC	2012-08-16 07:19:23.847000 UTC	user647772		user647772			5	0		
+12043469		"<p>JSLint is a ""code quality"" tool for Javascript developed by Douglas Crockford, a well-known developer also responsible for JSON, JSMin, ADSafe and parts of YUI. JSLint is parallel to C's lint.</p>"			0		2012-08-20 18:59:28.830000 UTC		2012-08-20 19:05:50.037000 UTC	2012-08-20 19:05:50.037000 UTC	user207616		user207616			5	0		
+12044886		"<p>From <a href=""http://librocket.com/"" rel=""nofollow"">libRocket.com</a>:</p>
+
+<blockquote>
+  <p>libRocket is the C++ user interface middleware package based on the
+  HTML and CSS standards. It is designed as a complete solution for any
+  project's interface needs.
+  libRocket uses the time-tested open standards XHTML1.0 and CSS2.0
+  (while borrowing features from HTML5 and CSS3), and extends them with
+  features suited towards real-time applications. Because of this, you
+  don't have to learn a whole new proprietary technology like other
+  packages in this middleware space.</p>
+</blockquote>"			0		2012-08-20 20:47:25.180000 UTC		2012-08-20 21:06:35.700000 UTC	2012-08-20 21:06:35.700000 UTC	user195488		user195488			5	0		
+12094967		"<h1>The Jelix Framework</h1>
+
+<h2>A professional framework</h2>
+
+<p>Jelix offers modern solutions for your web site and application projects:</p>
+
+<ul>
+<li>An architecture in reusable modules: capitalize on your development</li>
+<li>An MVC logic and a structured organization of files for easy maintenance</li>
+<li>Plugins to extend jelix components</li>
+<li>Many simple APIs</li>
+<li>A performance core for exigent web sites</li>
+</ul>
+
+<h2>Fast and easy to develop</h2>
+
+<p>Jelix offers components and tools to develop faster:</p>
+
+<ul>
+<li>generic CRUD controller, module of administration interface, dedicated views to (X)HTML, ATOM, RSS, ZIP, PDF, RDF, XUL...</li>
+<li>Scripts for CLI to generate code</li>
+<li>Debug bar to ease debugging.</li>
+</ul>
+
+<h2>Features</h2>
+
+<p>The framework provides several components: an ORM, a form system, a template engine, an event system, an authentication, a rights management...</p>
+
+<p>Without forgetting the multi-language and management of graphic themes.</p>
+
+<p>Easily develop your Web services, whether REST-Full, SOAP, xml-rpc, ajax etc.</p>
+
+<h2>Quality and Strength</h2>
+
+<p>A robustness at all levels:</p>
+
+<ul>
+<li>Security first : in forms, authentication...</li>
+<li>An advanced errors management, and following used protocols</li>
+<li>Thousand unit tests on Jelix components</li>
+<li>PHPUnit or Simpletest integration for your own tests</li>
+</ul>
+
+<h2>Deployment</h2>
+
+<p>A quick and easy deployment thanks to the installation and update system of Jelix.</p>
+
+<p>Some optimized éditions of Jelix, ""Optimized"" or ""Gold"", bring you high performance in your production environments.</p>
+
+<p>Do you release your application to wide audience? Configure the wizard of jelix, and your application is installed and ready to use in few clicks</p>"			0		2012-08-23 15:19:36.147000 UTC		2012-08-23 16:06:16.067000 UTC	2012-08-23 16:06:16.067000 UTC	user1593705		user1593705			5	0		
+12132267		"<p>From <a href=""http://www.emacswiki.org/CuaMode"" rel=""nofollow"">EmacsWiki: Cua Mode</a>:</p>
+
+<blockquote>
+  <p>Cua-mode allows one to use ‘C-v’, ‘C-c’, and ‘C-x’ to paste, copy, and cut the region. Since this conflicts with very important keybindings in Emacs, these CUA bindings are only active when the mark is active. The package does a whole lot more, too: ‘C-z’ to undo, Shift-movement to select, and it includes support for rectangular regions (‘C-RET’ and arrow keys instead of using the <code>C-x r …’ keys) and registers (instead of using the register commands), and it uses</code>’ and `S-’ to indent and outdent the region. As you can see, it is very powerful!</p>
+</blockquote>"			0		2012-08-26 17:21:01.157000 UTC		2012-08-26 17:21:01.157000 UTC	2012-08-26 17:21:01.157000 UTC	user166390		user166390			5	0		
+12158070		<p>Use this tag for questions dealing with already sorted collections (i.e. reordering them, adding elements to them while still preserving the order, etc.).</p>			0		2012-08-28 11:14:02.150000 UTC		2013-10-26 17:31:47.043000 UTC	2013-10-26 17:31:47.043000 UTC	user2555451		user2555451			5	0		
+12958318		"<p>You can find more information about it here: <a href=""http://cedet.sourceforge.net/ede.shtml"" rel=""nofollow"">http://cedet.sourceforge.net/ede.shtml</a> It is included in the Emacs distribution since version 23.</p>"			0		2012-10-18 15:33:33.940000 UTC		2012-10-18 15:36:55.673000 UTC	2012-10-18 15:36:55.673000 UTC	user797257		user797257			5	0		
+13615300		"<p><a href=""http://en.wikipedia.org/wiki/Electric_Fence"" rel=""nofollow"">Electric Fence (or eFence)</a> is a memory debugger written by Bruce Perens. It consists of a library which programmers can link into their code to override the C standard library memory management functions. eFence triggers a program crash when the memory error occurs, so a debugger can be used to inspect the code that caused the error.</p>"			0		2012-11-28 22:11:13.173000 UTC		2012-11-28 22:11:13.173000 UTC	2012-11-28 22:11:13.173000 UTC	user529758		user529758			5	0		
+13826179		"<p><a href=""http://en.wikipedia.org/wiki/Drive_mapping"" rel=""nofollow"">From wikipedia</a>:</p>
+
+<p>Drive mapping is how Microsoft Windows and OS/2 associate a local drive letter (A through Z) with a shared storage area to another computer over a network. </p>"			0		2012-12-11 18:24:01.373000 UTC		2012-12-11 18:24:01.373000 UTC	2012-12-11 18:24:01.373000 UTC	user166390		user166390			5	0		
+14047264		"<p>From <a href=""http://code.google.com/p/anymote-protocol/"" rel=""nofollow"">Anymote Protocol</a>:</p>
+
+<p>The Anymote Protocol is a messaging protocol that applications on a remote device use to communicate with Google TV. This protocol allows developers to write applications that enable mobile phones, tablets, or other devices to interact with Google TV. You can write applications to enable handheld devices to act either as fully-fledged remote TV controllers or to have some part of an application connect to Google TV. For example, you might build an application that runs on a mobile phone, but has the ability to switch to the TV to display a web page.</p>"			0		2012-12-26 22:52:50.453000 UTC		2012-12-26 22:52:50.453000 UTC	2012-12-26 22:52:50.453000 UTC	user166390		user166390			5	0		
+14058700		"<p>For more information, visit <a href=""http://appixia.com"" rel=""nofollow"">appixia.com</a></p>"			0		2012-12-27 17:29:27.667000 UTC		2012-12-27 17:29:27.667000 UTC	2012-12-27 17:29:27.667000 UTC	user1228		user1228			5	0		
+14251731		"<p>Reference from <a href=""http://en.wikipedia.org/wiki/Block_%28programming%29"" rel=""nofollow"">Wikipedia</a> :</p>
+
+<p><strong>Code block</strong> is a section of code which is grouped together. Code blocks consist of one or more declarations and statements.   </p>
+
+<blockquote>
+  <p>The function of code blocks in programming is to enable groups of
+  statements to be treated as if they were one statement, and to narrow
+  the lexical scope of variables, procedures and functions declared in a
+  block so that they do not conflict with variables having the same name
+  used elsewhere in a program for different purposes.</p>
+</blockquote>
+
+<p>The notion of blocks is introduced by different syntax in different languages, but there are two broad families: </p>
+
+<ol>
+<li>The <strong>ALGOL</strong> family in which blocks are delimited by the keywords <code>begin</code> and <code>end</code>, and </li>
+<li>The <strong>C</strong> family in which blocks are delimited by curly braces <code>{</code> and <code>}</code>.</li>
+</ol>
+
+<p>A programming language that permits the creation of blocks, including blocks nested within other blocks, is called a <strong>block-structured programming language</strong>.  </p>
+
+<p>In a block-structured programming language, the names of variables and other objects such as procedures which are declared in outer blocks are visible inside other inner blocks, unless they are shadowed by an object of the same name</p>"			0		2013-01-10 06:03:09.263000 UTC		2013-01-10 06:25:50.873000 UTC	2013-01-10 06:25:50.873000 UTC	user966588		user966588			5	0		
+14371247		"<p><a href=""http://processing.org/"" rel=""nofollow"">Processing</a> refers to the language built on top of Java and the minimal IDE it ships with. It is free and opensource, it runs on Linux, Mac OS X, and Windows, and can output for screens, print, 3D packages and CNC printing.</p>
+
+<p>The language simplifies many complex concepts and eases the entry of designers, artists and non-programmers to the world of programming. </p>
+
+<p>Over the years it was used to produce a number of astonishing projects ranging from <a href=""http://blog.blprnt.com/blog/blprnt/just-landed-processing-twitter-metacarta-hidden-data"" rel=""nofollow"">data visualization</a>, to <a href=""http://www.niklasroy.com/project/88/my-little-piece-of-privacy/"" rel=""nofollow"">physical computing</a> , <a href=""http://benhem.com/games/wayfarer"" rel=""nofollow"">games</a>, <a href=""http://www.michael-hansmeyer.com/projects/project4.html"" rel=""nofollow"">3D</a>, <a href=""http://balldroppings.com/js/"" rel=""nofollow"">sound</a>, <a href=""http://3xw.ole.kristensen.name/works/body-navigation/"" rel=""nofollow"">live perfomance</a>, and <a href=""http://processing.org/exhibition/"" rel=""nofollow"">more</a>.</p>
+
+<p>Due to its vibrant community, Processing not only enjoys a contribution of over 100 libraries, but is also present on major mobile platforms such as <a href=""http://wiki.processing.org/w/Android"" rel=""nofollow"">Android</a> and <a href=""http://www.luckybite.com/iprocessing/"" rel=""nofollow"">iOS</a>. There are online communities for sharing Processing content, like <a href=""http://openprocessing.org/"" rel=""nofollow"">OpenProcessing</a>.</p>
+
+<p>Some websites even allow users to learn and use Processing directly in the browser, like the Flash-driven <a href=""http://www.sketchpatch.net/"" rel=""nofollow"">SketchPatch</a> and the JavaScript-driven <a href=""http://hascanvas.com/"" rel=""nofollow"">HasCanvas</a> and <a href=""http://sketchpad.cc/"" rel=""nofollow"">Sketchpad</a>.</p>
+
+<p>There are also Processing ports to the following languages:</p>
+
+<ul>
+<li><a href=""http://processingjs.org/"" rel=""nofollow"">JavaScript</a></li>
+<li><a href=""http://sketchpatch.net/"" rel=""nofollow"">ActionScript</a></li>
+<li>Python (see <a href=""http://nodebox.net/code/index.php/Home"" rel=""nofollow"">NodeBox</a>, <a href=""http://www.openendedgroup.com/field/wiki/OverviewBanners2"" rel=""nofollow"">Field</a>, <a href=""http://code.google.com/p/pyprocessing/"" rel=""nofollow"">pyProcessing</a>)</li>
+<li><a href=""http://technically.us/spde/About"" rel=""nofollow"">Scala</a></li>
+<li><a href=""https://github.com/rosado/clj-processing"" rel=""nofollow"">Clojure</a></li>
+<li><a href=""http://ashkenas.com/codework/ruby-processing.html"" rel=""nofollow"">Ruby</a></li>
+</ul>
+
+<p>Advanced users are not constrained to the Processing IDE; they can set up <a href=""http://processing.org/learning/eclipse/"" rel=""nofollow"">Processing projects in Eclipse</a> or use <a href=""http://code.google.com/p/proclipsing/"" rel=""nofollow"">proclipsing</a>.</p>"			0		2013-01-17 02:27:06.283000 UTC		2013-01-17 02:38:21.443000 UTC	2013-01-17 02:38:21.443000 UTC	user1131435		user1131435			5	0		
+14523238		"<p><a href=""http://docs.python.org/3/library/functions.html#isinstance"" rel=""nofollow""><code>isinstance</code></a> is a Python built-in function used to test whether or not a specific object is an instance of a particular class or type.  It is available in both versions 2 and 3.  Use this tag for questions explicitly dealing with the isinstance built-in.</p>
+
+<p>The schematics for the function are below:</p>
+
+<pre><code>isinstance(object, class-or-type-or-tuple) -&gt; bool
+</code></pre>
+
+<p>where <code>object</code> is the object to test and <code>class-or-type-or-tuple</code> is a class, type, or tuple of classes and/or types.  </p>
+
+<p>When invoked, and given a single class or type as its second argument, the function will return either <code>True</code> or <code>False</code> depending on whether or not the first argument is an instance of the second.  Below is a demonstration:</p>
+
+<pre><code>&gt;&gt;&gt; isinstance(1, int)
+True
+&gt;&gt;&gt; isinstance(1, str)
+False
+&gt;&gt;&gt;
+</code></pre>
+
+<p>If the function is given a tuple of classes and/or types as its second argument, it will return either <code>True</code> or <code>False</code> depending on whether or not the first argument is an instance of <em>any</em> of the classes/types contained in the tuple. Below is a demonstration:</p>
+
+<pre><code>&gt;&gt;&gt; isinstance('a', (int, str))
+True
+&gt;&gt;&gt; isinstance('a', (int, bool))
+False
+&gt;&gt;&gt;
+</code></pre>
+
+<p>It should also be noted that the following code:</p>
+
+<pre><code>isinstance('a', (int, str))
+</code></pre>
+
+<p>is equivalent to this:</p>
+
+<pre><code>isinstance('a', int) or isinstance('a', str)
+</code></pre>"			0		2013-01-25 13:58:09.043000 UTC		2014-02-01 03:46:52.360000 UTC	2014-02-01 03:46:52.360000 UTC	user2555451		user2555451			5	0		
+14894651		"<p>Aggregation is a relationship between two classes that is best described as a ""has-a"" and ""whole/part"" relationship. It is a more specialized version of the association relationship. The aggregate class contains a reference to another class and is said to have ownership of that class. Each class referenced is considered to be part-of the aggregate class</p>"			0		2013-02-15 12:21:29.733000 UTC		2013-02-15 12:42:45.917000 UTC	2013-02-15 12:42:45.917000 UTC	user2166576		user2166576			5	0		
+14894765		"<p>Using LINQ to XML, you can:</p>
+
+<ul>
+<li>Load XML from files or streams.</li>
+<li>Serialize XML to files or streams.</li>
+<li>Create XML trees from scratch using functional construction.</li>
+<li>Query XML trees using LINQ queries.</li>
+<li>Manipulate in-memory XML trees.</li>
+<li>Validate XML trees using XSD.</li>
+<li>Use a combination of these features to transform XML trees from one shape into another.</li>
+</ul>
+
+<p><a href=""http://msdn.microsoft.com/en-us/library/system.xml.linq.aspx"" rel=""nofollow"">MSDN Link</a></p>"			0		2013-02-15 12:28:45.463000 UTC		2013-02-15 12:56:13.283000 UTC	2013-02-15 12:56:13.283000 UTC	user2166576		user2166576			5	0		
+15017005		"<p>AVM1 executes programs written in <a href=""/questions/tagged/actionscript-1"" class=""post-tag"" title=""show questions tagged 'actionscript-1'"" rel=""tag"">actionscript-1</a> and <a href=""/questions/tagged/actionscript-2"" class=""post-tag"" title=""show questions tagged 'actionscript-2'"" rel=""tag"">actionscript-2</a>.</p>"			0		2013-02-22 04:45:07.763000 UTC		2013-02-22 06:00:23.777000 UTC	2013-02-22 06:00:23.777000 UTC	user1901867		user1901867			5	0		
+15042774		"<p>Use this tag for questions dealing with either of the two following topics:</p>
+
+<ol>
+<li>Addition (however, you might want to use the more descriptive <a href=""/questions/tagged/addition"" class=""post-tag"" title=""show questions tagged &#39;addition&#39;"" rel=""tag"">addition</a> tag).</li>
+<li>The ASCII plus (+) character.</li>
+</ol>"			0		2013-02-23 16:31:06.120000 UTC		2013-10-26 22:31:16.350000 UTC	2013-10-26 22:31:16.350000 UTC	user2555451		user2555451			5	0		
+15142451		"<p>The Gradle Tomcat plugin supports running apps in an embedded Tomcat instance. See <a href=""https://github.com/bmuschko/gradle-tomcat-plugin"" rel=""nofollow"">https://github.com/bmuschko/gradle-tomcat-plugin</a> for the project home.</p>"			0		2013-02-28 18:02:00.743000 UTC		2013-02-28 18:09:38.617000 UTC	2013-02-28 18:09:38.617000 UTC	user41871		user41871			5	0		
+15340161		"<p>The method's schematics are below:</p>
+
+<pre><code>readlines([size:int]) -&gt; list of strings, each a line from the file.
+</code></pre>
+
+<p><a href=""http://docs.python.org/2/library/stdtypes.html#file.readlines"" rel=""nofollow""><code>readlines</code></a> calls the <a href=""http://docs.python.org/2/library/stdtypes.html#file.readline"" rel=""nofollow""><code>readline</code></a> method repeatedly and returns a list of the lines so read.  The <code>size</code> argument, if supplied, sets an approximate bound on the
+total number of bytes in the lines returned.</p>"			0		2013-03-11 13:43:54.340000 UTC		2013-10-24 20:45:14.690000 UTC	2013-10-24 20:45:14.690000 UTC	user2555451		user2555451			5	0		
+15378574		"<p><a href=""http://developer.android.com/reference/android/database/MatrixCursor.html"" rel=""nofollow""><code>MatrixCursor</code></a> is an Android mutable cursor implementation backed by an array of <code>Object</code>s. Use <a href=""http://developer.android.com/reference/android/database/MatrixCursor.html#newRow%28%29"" rel=""nofollow""><code>newRow()</code></a> to add rows. Automatically expands internal capacity as needed.</p>"			0		2013-03-13 06:38:19.507000 UTC		2013-03-13 07:07:48.093000 UTC	2013-03-13 07:07:48.093000 UTC	user1521536		user1521536			5	0		
+15508453		"<p>Do not use this tag.  For more information, please visit <a href=""http://meta.stackoverflow.com"">Meta</a>.</p>"			0		2013-03-19 19:14:43.750000 UTC		2013-03-19 19:14:43.750000 UTC	2013-03-19 19:14:43.750000 UTC	user1228		user1228			5	0		
+15508495		"<p>Do not use this tag.  For more information, please visit <a href=""http://meta.stackoverflow.com"">Meta</a>.</p>"			0		2013-03-19 19:16:58.450000 UTC		2013-03-19 19:16:58.450000 UTC	2013-03-19 19:16:58.450000 UTC	user1228		user1228			5	0		
+15532801		"<p>For more information, please visit <a href=""http://meta.stackoverflow.com/"">Meta</a>.</p>"			0		2013-03-20 19:20:36.897000 UTC		2013-03-20 19:20:36.897000 UTC	2013-03-20 19:20:36.897000 UTC	user1228		user1228			5	0		
+15623017		"<p>The ASDoc tool parses one or more <a href=""/questions/tagged/actionscript-3"" class=""post-tag"" title=""show questions tagged 'actionscript-3'"" rel=""tag"">actionscript-3</a> class definitions and <a href=""/questions/tagged/mxml"" class=""post-tag"" title=""show questions tagged 'mxml'"" rel=""tag"">mxml</a> files, and generates API language reference documentation for all public and protected methods and properties, and for all [Bindable], [DefaultProperty], [Event], [Style], and [Effect] metadata tags.</p>
+
+<p>You can specify a single class, multiple classes, an entire namespace, or a combination of these inputs as inputs to the ASDoc tool.</p>
+
+<p>ASDoc generates its output as a directory structure of HTML files that matches the package structure of the input class files. Also, ASDoc generates an index of all public and protected methods and properties. To view the ASDoc output, you open the index.html file in the top-level directory of the output.</p>"			0		2013-03-25 19:22:53.783000 UTC		2013-03-25 19:40:07.217000 UTC	2013-03-25 19:40:07.217000 UTC	user1901867		user1901867			5	0		
+15678218		"<p>The search framework offers two modes of search input: a search dialog at the top of the screen or a search widget (<a href=""http://developer.android.com/reference/android/widget/SearchView.html"" rel=""nofollow""><code>SearchView</code></a>) that you can embed in your activity layout. In either case, the Android system will assist your search implementation by delivering search queries to a specific activity that performs searchs. You can also enable either the search dialog or widget to provide search suggestions as the user types.</p>
+
+<p>Reference:</p>
+
+<ul>
+<li><a href=""http://developer.android.com/guide/topics/search/index.html"" rel=""nofollow"">Search Overview</a></li>
+</ul>"			0		2013-03-28 09:27:44.753000 UTC		2013-03-28 09:57:18.507000 UTC	2013-03-28 09:57:18.507000 UTC	user1521536		user1521536			5	0		
+15747476					0		2013-04-01 16:42:40.003000 UTC		2013-04-01 16:42:40.003000 UTC	2013-04-01 16:42:40.003000 UTC	user1228		user1228			5	0		
+15747508					0		2013-04-01 16:44:02.633000 UTC		2013-04-01 16:44:02.633000 UTC	2013-04-01 16:44:02.633000 UTC	user1228		user1228			5	0		
+15774683		"<p>In Joomla, an Article is a piece of content that contains text (html), which possibly links to  other resources.</p>
+
+<p><a href=""http://docs.joomla.org/Article"" rel=""nofollow"">Documentation on Articles can be found here.</a></p>"			0		2013-04-02 21:24:44.570000 UTC		2013-04-06 20:32:22.400000 UTC	2013-04-06 20:32:22.400000 UTC	user1228		user1228			5	0		
+15786123		<p>Automating web browsing activities allows us to simulate user operation on a web page thus helping in testing websites.</p>			0		2013-04-03 11:29:16.030000 UTC		2013-04-03 11:51:17.123000 UTC	2013-04-03 11:51:17.123000 UTC	user939768		user939768			5	0		
+15912891					0		2013-04-09 21:28:19.513000 UTC		2013-04-09 21:28:19.513000 UTC	2013-04-09 21:28:19.513000 UTC	user1228		user1228			5	0		
+15912926					0		2013-04-09 21:30:15.660000 UTC		2013-04-09 21:30:15.660000 UTC	2013-04-09 21:30:15.660000 UTC	user1228		user1228			5	0		
+15913146					0		2013-04-09 21:44:26.200000 UTC		2013-04-09 21:44:26.200000 UTC	2013-04-09 21:44:26.200000 UTC	user1228		user1228			5	0		
+15913507					0		2013-04-09 22:11:37.707000 UTC		2013-04-09 22:11:37.707000 UTC	2013-04-09 22:11:37.707000 UTC	user1228		user1228			5	0		
+16192629					0		2013-04-24 12:56:56.967000 UTC		2013-04-24 12:56:56.967000 UTC	2013-04-24 12:56:56.967000 UTC	user1228		user1228			5	0		
+16324510		"<p>Homepage:  <a href=""http://sitemaker.umich.edu/soar/home"" rel=""nofollow"">http://sitemaker.umich.edu/soar/home</a></p>"			0		2013-05-01 18:57:09.697000 UTC		2013-05-01 18:57:09.697000 UTC	2013-05-01 18:57:09.697000 UTC	user1228		user1228			5	0		
+16887054		"<blockquote>
+  <p><strong>Source:</strong> <a href=""http://en.wikipedia.org/wiki/Longest_common_subsequence_problem"" rel=""nofollow noreferrer"">http://en.wikipedia.org/wiki/Longest_common_subsequence_problem</a></p>
+</blockquote>
+
+<p><strong>About</strong><br><br>
+lcs or Longest Common Subsequence is a problem in <strong>search optimization</strong>: Given two strings, find the common subsequence in given strings with maximum length. The problem can be solved in polynomial time using <strong>dynamic programming</strong> approach. The algorithm for solution to this problem is recursive and gives the following <strong>recursive formula</strong>.<br></p>
+
+<p>&nbsp;&nbsp;&nbsp;If i == 0 or j == 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+C[i][j] = 0<br>
+&nbsp;&nbsp;&nbsp;If i,j > 0 and x<sub>i</sub> == y<sub>i</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+C[i][j] = c[i-1,j-1]+1<br>
+&nbsp;&nbsp;&nbsp;If i,j > 0 and x<sub>i</sub> != y<sub>i</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+C[i][j] = max(c[i,j-1],c[i-1,j ])<br></p>
+
+<hr>
+
+<p><strong>Pseudocode</strong></p>
+
+<pre><code> p = A.length
+ q = B.length
+ for i = 1 to p
+     c[i,0] = 0
+ for i = 1 to q
+     c[0,j] = 0
+ for i = 1 to p
+     for j = 1 to q
+          if i ==0 or j == 0
+              c[i][j] = 0
+          else if(A[i] == B[j] ) 
+              c[i][j] = c[i-1][j-1] + 1; 
+          else 
+              if(c[i][j-1]&gt;c[i-1][j])
+                   c[i][j] = c[i][j-1];
+              else
+                   c[i][j] = c[i-1][j];
+  return c
+</code></pre>
+
+<hr>
+
+<p><strong>Application</strong></p>
+
+<p>In Bioinformatics, the comparison of two DNA strands and similarity in these strands is given by this algorithm by computing longest common subsequence .</p>
+
+<hr>
+
+<p><strong>Example</strong></p>
+
+<ul>
+<li>A = A T G C G T C G A T</li>
+<li>B = A T G T G A C T A G</li>
+</ul>
+
+<p><img src=""https://i.stack.imgur.com/sHi9R.png"" alt=""LCS"">
+<br><br>
+Longest Common Subsequence is of <strong>7</strong> characters and it is <strong>A T G T G A T</strong></p>"			0		2013-06-02 20:35:57.933000 UTC		2013-06-02 20:54:26.490000 UTC	2013-06-02 20:54:26.490000 UTC	user2273202		user2273202			5	0		
+17097237		"<p>The Web Audio API specification developed by Google describes a high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to define the overall audio rendering. The actual processing will primarily take place in the underlying implementation (typically optimized Assembly / C / C++ code), but direct JavaScript processing and synthesis is also supported. Google's Chrome browser implements this API since version 14, released in 2011.</p>
+
+<p>Mozilla's Firefox browser implements a similar Audio Data API extension since version 4, implemented in 2010 and released in 2011, but Mozilla warns it is non-standard and deprecated. Some JavaScript audio processing and synthesis libraries such as Audiolet support both APIs.</p>"			0		2013-06-13 21:17:31.463000 UTC		2013-06-13 21:20:59.933000 UTC	2013-06-13 21:20:59.933000 UTC	user1693593		user1693593			5	0		
+17633074		"<p>Registry virtualization is an application compatibility technology that enables registry write operations that have global impact to be redirected to per-user locations. This redirection is transparent to applications reading from or writing to the registry. It is supported starting with Windows Vista.<br>
+This form of virtualization is an interim application compatibility technology; Microsoft intends to remove it from future versions of the Windows operating system as more applications are made compatible with Windows Vista and later versions of Windows.<br>
+Therefore, it is important that your application does not become dependent on the behavior of registry virtualization in the system.<br>
+Virtualization is intended only to provide compatibility for existing applications. Applications designed for Windows Vista and later versions of Windows should not write to sensitive system areas, nor should they rely on virtualization to remedy any problems.<br> When updating existing code to run on Windows Vista and later versions of Windows, developers should ensure that applications only store data in per-user locations or in computer locations within %alluserprofile% that properly use an access control list (ACL).<br>
+Further reference:<br></p>
+
+<ul>
+<li><a href=""http://msdn.microsoft.com/en-us/library/windows/desktop/aa965884%28v=vs.85%29.aspx"" rel=""nofollow"">MSDN Registry Virtualization Page</a></li>
+</ul>"			0		2013-07-13 18:32:24.920000 UTC		2013-07-13 19:58:30.933000 UTC	2013-07-13 19:58:30.933000 UTC	user1419445		user1419445			5	0		
+17720461		"<p>The term ""name collision"" has been used in computer science for more than 3 decades, when referring to names in various classification systems. Most of the time, a name collision must be resolved immediately in some way, whether automatically by an operating system or compiler or manually through user input and decisions. The concept of a namespace sometimes resolves collision issues by creating different logical regions in which items with similar names can co-exist without ambiguity. In certain programming instances, a name collision might not be immediately evident, occasionally leading to hard-to-find program errors that can result from the compiler making certain assumptions about the names of items used.</p>
+
+<p>An example of how a name collision can occur involves two directories full of files. If each directory contains a file named ""DATA"", and the contents of one directory are copied into the other, then the computer's attempts to copy the file named DATA will find that a file with the same name already exists in the target directory. This creates a name collision. In this instance, the user usually will be prompted and allowed to choose from a list of resolutions, including renaming one of the files, not copying the file or overwriting one of the files.</p>
+
+<p>One commonly used solution for a name collision is the implementation of namespaces. A namespace is simply a way to define an area under which object names are contained. In the above example, a directory technically is a namespace, meaning multiple files can all have the same name as long as they are each in different directories.</p>
+
+<p>From a programming perspective, a name collision can occur in situations such as multiple inheritance, overlapping variable scopes, or even with imported libraries in some languages. In general, a compiler will notice a conflict and generate a warning or error, although this might not always be the case. Other than using namespaces, collisions in many programming languages can be avoided by using qualifiers. A qualifier usually is a prefix that can be placed in front of a variable or class name to distinguish it from another variable with the same name.</p>"			0		2013-07-18 10:06:41.810000 UTC		2013-07-18 10:58:21.530000 UTC	2013-07-18 10:58:21.530000 UTC	user2140173		user2140173			5	0		
+17759669		"<p>Posterizing images is a common programming skill taught to computing science students. </p>
+
+<p>This differs from posterization within a software package, such as Photoshop, Illustrator (please add). There could be issues that may cross into the programming area for people using these products, however, I would assume the majority of questions using this tag would involve the writing of code to posterize images.</p>
+
+<p>Here are some definitions of posterization:</p>
+
+<p><a href=""http://en.wikipedia.org/wiki/Posterization"" rel=""nofollow"">Posterization</a> of an image entails conversion of a continuous gradation of tone to several regions of fewer tones, with abrupt changes from one tone to another. This was originally done with photographic processes to create posters. </p>
+
+<p><a href=""http://www.cambridgeincolour.com/tutorials/posterization.htm"" rel=""nofollow"">Posterization</a> occurs when an image's apparent bit depth has been decreased so much that it has a visual impact. The term posterization is used because it can influence your photo similar to how the colors may look in a mass-produced poster, where the print process uses a limited number of color inks. This effect ranges from subtle to quite pronounced, although one's tolerance for posterization may vary.</p>
+
+<p><a href=""http://dictionary.reference.com/browse/posterization"" rel=""nofollow"">post·er·i·za·tion</a>  [poh-ster-uh-zey-shuhn] 
+noun Printing.  </p>
+
+<ol>
+<li>A process for producing a posterlike, high-contrast color
+reproduction from continuous-tone art by using separation negatives
+of various densities.</li>
+<li>Photography . a printing process in which all tone values of a
+negative are reduced to a few and the tonal separation negatives
+produced are printed at different exposure levels on a high-contrast
+film so that a set of flat tones results.</li>
+</ol>"			0		2013-07-20 07:04:09.810000 UTC		2013-07-20 07:49:22.080000 UTC	2013-07-20 07:49:22.080000 UTC	user3956566		user3956566			5	0		
+17865205		"<p>The Warhol effect or Andy Warhol effect, if the process of posterizing or finding the outline of an image.</p>
+
+<p>By determining the luminance or intensity of each pixel and then, using a determined threshold to convert pixels to either black or white. Or by creating a posterized image on a grayscale. This creates the appearance of a sketch.</p>
+
+<p>These black and white pixels can then be selectively replaced with contrasting or striking colors. The picture can also be divided into sections, commonly quadrants, and each section is then colored with a different set of colors.</p>
+
+<p>Colors are frequently coupled, but sometimes a range of striking colors can be used, as would be used in a gray posterized picture. So the varying ranges of luminance would be changed to a bold or set of contrasting and bold colors.</p>
+
+<p>The effect creates a poster like image and catches the eye, often due to the discordant of the color schemes.</p>"			0		2013-07-25 17:47:49.760000 UTC		2013-07-25 18:33:27.753000 UTC	2013-07-25 18:33:27.753000 UTC	user3956566		user3956566			5	0		
+18287219		"<p>The temperature of a device is a <strong>quantitative mesure</strong> which indicates how <strong>hot or cold</strong> the device is, temperature sensitive sensors can be used to make an alarming signal and can be programmed in various programming languages. It is measured by detection of heat radiation by a temperature sensing material.which may be then calibrated in any of various temperature scales, <code>Celsius</code>, <code>Fahrenheit</code>, <code>Kelvin</code>, etc.</p>
+
+<p><strong>Usage of Tag <code>temperature</code></strong></p>
+
+<p>The tag <code>temperature</code> on stackoverflow can be used to ask questions related to programming a device or application, to sense temperature of a room/device. Tag <code>temperature</code> should be only used for questions related to programming, Please do not ask here question related to physics or thermodynamics.</p>"			0		2013-08-17 09:27:08.497000 UTC		2013-08-17 10:34:47.190000 UTC	2013-08-17 10:34:47.190000 UTC	user2273202		user2273202			5	0		
+18380779		<p>Use this tag when asking Excel related questions but asking for C# code.</p>			0		2013-08-22 12:41:36.230000 UTC		2013-08-22 12:59:24.710000 UTC	2013-08-22 12:59:24.710000 UTC	user2140173		user2140173			5	0		
+18385340	collapse	"<p>This tag is deprecated and should not be used. This tag has been deprecated due to lacking discriminating power.<br>
+Instead, use a tag related to the library that the collapse function belongs to.</p>"			0		2013-08-22 15:52:55.240000 UTC		2018-06-29 18:52:48.143000 UTC	2018-06-29 18:52:48.143000 UTC	user9938648		user9938648			5	0	<collapse>	
+18441349		"<p>When a user performs an action event like a click event on a button in any java based application this click is transformed to an <code>ActionEvent</code> that is generated and received by its <code>ActionListener</code> object. ActionListener is a java interface which works as a receiver of action events.</p>
+
+<p>The class that is interested in processing an action event should necessarily implement this interface, and the object created with that class is registered with a component, using the component's <code>addActionListener</code> method. When the action event occurs, that object's <code>actionPerformed</code> method is invoked whenever an action occurs.</p>
+
+<p>The class ActionEvent is a public class which extends <code>AWTEvent</code> class of java.
+The action event like clicking of a button can also be performed using keyboard by pressing the space bar.</p>
+
+<p>Class ActionEvent provides 3 predefined constructors:</p>
+
+<ul>
+<li><p><code>ActionEvent(Object source, int id, String command)</code>
+Constructs an ActionEvent object.</p></li>
+<li><p><code>ActionEvent(Object source, int id, String command, int modifiers)</code>
+Constructs an ActionEvent object with modifier keys.</p></li>
+<li><p><code>ActionEvent(Object source, int id, String command, long when, int
+modifiers)</code>
+Constructs an ActionEvent object with the specified modifier keys and timestamp.</p></li>
+</ul>
+
+<p><strong>Usage:</strong>
+The tag <strong><code>actionevent</code></strong> can be used for programming problems related to GUI applications and event handling based problems in java. This tag should not be used for problems related to event handling in javascript and other languages.</p>
+
+<p>Official documentation for class <code>ActionEvent</code> can be found at <a href=""http://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionEvent.html"" rel=""nofollow"">http://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionEvent.html</a></p>"			0		2013-08-26 09:54:22.893000 UTC		2013-08-26 10:34:23.210000 UTC	2013-08-26 10:34:23.210000 UTC	user2273202		user2273202			5	0		
+18452132		"<p><strong>Sun ONE</strong> was a brand name under which <strong>Sun Microsystems</strong> used to market server software products. Sun ONE stands for Sun Open Net Environment. The Sun ONE brand was primarily used for products that resulted from Sun's alliance with Netscape Communications Corporation. The name was also applied to other Sun software products such as <code>Sun ONE Studio 8</code> and Sun ONE <code>Active Server Pages 4.0</code>.</p>
+
+<p>Sun ONE was introduced on April 15, 2002, to supersede the <strong>iPlanet</strong> brand name, following the end of the Sun-Netscape alliance. Sun ONE itself was superseded on September 16, 2003 by the Sun Java System brand.</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>The tag <a href=""/questions/tagged/sunone"" class=""post-tag"" title=""show questions tagged 'sunone'"" rel=""tag"">sunone</a> can be used for programming related problems of <code>Active Server Pages 4.0</code> and <code>Sun ONE Studio 8</code>. Please do not ask questions related to company profile and other off topic questions.</p>
+
+<p><strong>Source :</strong></p>
+
+<ol>
+<li><a href=""http://en.wikipedia.org/wiki/SunOne"" rel=""nofollow"">http://en.wikipedia.org/wiki/SunOne</a></li>
+<li><a href=""http://www.oracle.com/technetwork/indexes/documentation/index.html"" rel=""nofollow"">http://www.oracle.com/technetwork/indexes/documentation/index.html</a></li>
+</ol>"			0		2013-08-26 20:03:39.227000 UTC		2013-08-28 05:39:05.013000 UTC	2013-08-28 05:39:05.013000 UTC	user2273202		user2273202			5	0		
+18550388		"<p><strong>Wiki:</strong></p>
+
+<p><code>PubMed</code> is a free online database accessing primarily the <code>MEDLINE</code> database of references and abstracts on <strong>life sciences</strong> and <strong>biomedical</strong> topics. The United States National Library of Medicine ( <strong>NLM</strong> ) at the National Institutes of Health ( <strong>NIH</strong> ) maintains the database as part of the <strong><code>Entrez system</code></strong> of information retrieval.</p>
+
+<p>MEDLINE online access to the <strong>MEDLARS</strong> computerized database had been primarily through institutional facilities like medical libraries. <strong><code>PubMed</code></strong>, first ushered in the era of private, free, and home-computerized MEDLINE searching. The PubMed system is offered <strong>free</strong> to the public.</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>The <a href=""/questions/tagged/pubmed"" class=""post-tag"" title=""show questions tagged 'pubmed'"" rel=""tag"">pubmed</a> can be used for web based programming related problems to access data from pubmed databases and other querying problems. Please avoid theoretical questions for usage of pubmed website.</p>
+
+<p><strong>Read more:</strong></p>
+
+<ul>
+<li><a href=""http://www.ncbi.nlm.nih.gov/books/NBK3827/#pubmedhelp.FAQs"" rel=""nofollow"">http://www.ncbi.nlm.nih.gov/books/NBK3827/#pubmedhelp.FAQs</a></li>
+<li><a href=""http://en.wikipedia.org/wiki/PubMed"" rel=""nofollow"">http://en.wikipedia.org/wiki/PubMed</a></li>
+</ul>"			0		2013-08-31 16:41:11.283000 UTC		2013-08-31 16:57:19.023000 UTC	2013-08-31 16:57:19.023000 UTC	user2273202		user2273202			5	0		
+18551004		"<p><strong>Wiki:</strong></p>
+
+<p>ISP stands for Internet service provider ( also called Internet access provider) is an organization that offers users access to the Internet and related services. Most of <strong>ISPs</strong> are telecommunication providers.</p>
+
+<p>An ISP provide <strong>services</strong> such as Internet access, Internet transit, domain name registration and hosting, dial-up access, leased line access and collocation.</p>
+
+<p><strong>Types of ISPs</strong></p>
+
+<ul>
+<li>Access Service provider</li>
+<li>Mailbox Service provider</li>
+<li>Hosting ISP</li>
+<li>Transit ISP</li>
+<li>Virtual ISP</li>
+<li>Free ISP</li>
+</ul>
+
+<p>These ISPs themselves are connected to one another through <strong>Network Access Points</strong> ( NAP ).</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>The tag <a href=""/questions/tagged/isp"" class=""post-tag"" title=""show questions tagged 'isp'"" rel=""tag"">isp</a> can be used for programming problems related to services like Internet, Firewall, Leased line access and others that are provided by ISPs. Usage of tag <a href=""/questions/tagged/isp"" class=""post-tag"" title=""show questions tagged 'isp'"" rel=""tag"">isp</a> should be avoided for subjective and theoretical questions. </p>
+
+<p><strong>Read more:</strong></p>
+
+<ul>
+<li><a href=""http://en.wikipedia.org/wiki/Internet_service_provider"" rel=""nofollow"">http://en.wikipedia.org/wiki/Internet_service_provider</a></li>
+<li><a href=""http://www.webopedia.com/TERM/I/ISP.html"" rel=""nofollow"">http://www.webopedia.com/TERM/I/ISP.html</a></li>
+</ul>"			0		2013-08-31 17:39:46.287000 UTC		2013-08-31 18:20:15.390000 UTC	2013-08-31 18:20:15.390000 UTC	user2273202		user2273202			5	0		
+18559020		"<p><strong>Wiki</strong></p>
+
+<p>AQuery stands for Android Query, which is a small though powerful library for doing <strong>asynchronous tasks</strong> and <strong>manipulating UI elements</strong> in Android.  AQuery is an <strong><code>open source project</code></strong> that contains library files for Android developers that makes doing repetitive tasks easier.</p>
+
+<p>Android Query simplifies attaching event handlers. Rather than building out an interface or anonymous class. When working with different screen sizes Android Query lets you side-step inspection of the visual tree to see which controls were actually created from the <code>axml</code> file before you attempt to manipulate them by using conditional chaining of methods.</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>The tag <a href=""/questions/tagged/aquery"" class=""post-tag"" title=""show questions tagged 'aquery'"" rel=""tag"">aquery</a> can be used for programming related problems of android development using <code>aquery</code> technology. The tag should be avoided for basic android related problems.  </p>
+
+<p><strong>Links:</strong></p>
+
+<ul>
+<li>Github Repository - <a href=""https://github.com/androidquery/androidquery"" rel=""nofollow"">https://github.com/androidquery/androidquery</a></li>
+<li>Official page - <a href=""https://code.google.com/p/android-query/"" rel=""nofollow"">https://code.google.com/p/android-query/</a></li>
+</ul>
+
+<p><strong>Read more:</strong></p>
+
+<ul>
+<li><a href=""http://www.infoq.com/news/2012/04/AQuery"" rel=""nofollow"">http://www.infoq.com/news/2012/04/AQuery</a></li>
+<li><a href=""http://www.sundoginteractive.com/sunblog/posts/aquery-making-it-easy"" rel=""nofollow"">http://www.sundoginteractive.com/sunblog/posts/aquery-making-it-easy</a></li>
+<li><a href=""https://code.google.com/p/android-query/"" rel=""nofollow"">https://code.google.com/p/android-query/</a> </li>
+</ul>"			0		2013-09-01 13:44:24.163000 UTC		2013-09-01 14:32:15.147000 UTC	2013-09-01 14:32:15.147000 UTC	user2273202		user2273202			5	0		
+18578057		"<h2>Wiki</h2>
+
+<p>A friend function in a <strong><code>C++</code></strong> class is defined outside the scope of a class but it has the right to access all <code>private</code> and <code>protected</code> members of the class. Even though the prototypes for friend functions appear in the class definition, friends are not member functions.</p>
+
+<p>To declare a function as a friend of a class, precede the function prototype in the class definition with keyword friend as follows</p>
+
+<h3>Example</h3>
+
+<pre><code>// friend_functions.cpp
+// compile with: /EHsc
+#include &lt;iostream&gt;
+
+using namespace std;
+class Point
+{
+    friend void ChangePrivate( Point &amp; );
+public:
+    Point( void ) : m_i(0) {}
+    void PrintPrivate( void ){cout &lt;&lt; m_i &lt;&lt; endl; }
+
+private:
+    int m_i;
+};
+
+void ChangePrivate ( Point &amp;i ) { i.m_i++; }
+
+int main()
+{
+   Point sPoint;
+   sPoint.PrintPrivate();
+   ChangePrivate(sPoint);
+   sPoint.PrintPrivate();
+}
+</code></pre>
+
+<h2>Tag usage</h2>
+
+<p>The tag <a href=""/questions/tagged/friend-function"" class=""post-tag"" title=""show questions tagged 'friend-function'"" rel=""tag"">friend-function</a> can be used for programming related problems in implementation of friend functions, Theoretical questions such as <strong>""How to use friend functions""</strong> should be avoided </p>
+
+<h2>Read more</h2>
+
+<ul>
+<li><a href=""http://en.wikipedia.org/wiki/Friend_function"" rel=""nofollow"">http://en.wikipedia.org/wiki/Friend_function</a></li>
+<li><a href=""http://www.tutorialspoint.com/cplusplus/cpp_friend_functions.htm"" rel=""nofollow"">http://www.tutorialspoint.com/cplusplus/cpp_friend_functions.htm</a></li>
+<li><a href=""http://msdn.microsoft.com/en-us/library/h2x4fzdz.aspx"" rel=""nofollow"">http://msdn.microsoft.com/en-us/library/h2x4fzdz.aspx</a></li>
+<li><a href=""http://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language"" rel=""nofollow"">http://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language</a></li>
+</ul>"			0		2013-09-02 17:14:21.307000 UTC		2013-09-02 17:42:34.643000 UTC	2013-09-02 17:42:34.643000 UTC	user2273202		user2273202			5	0		
+18595236					0		2013-09-03 14:46:15.567000 UTC		2013-09-03 14:46:15.567000 UTC	2013-09-03 14:46:15.567000 UTC	user1228		user1228			5	0		
+18642239		<p><strong>Spring DBUnit provides integration between the Spring testing framework and the popular DBUnit project.</strong> It allows you to setup and teardown database tables using simple annotations as well as checking expected table contents once a test completes.</p>			0		2013-09-05 17:15:28.663000 UTC		2013-09-05 17:15:28.663000 UTC	2013-09-05 17:15:28.663000 UTC	user1228		user1228			5	0		
+18873561		"<p>Anything related to MS Office development can be tagged with the <a href=""/questions/tagged/officedev"" class=""post-tag"" title=""show questions tagged 'officedev'"" rel=""tag"">officedev</a> tag. </p>
+
+<p>Consider adding the below tags as additional tags to your question or select more appropriate tags to the content of your question.</p>
+
+<ul>
+<li><a href=""/questions/tagged/office-interop"" class=""post-tag"" title=""show questions tagged 'office-interop'"" rel=""tag"">office-interop</a></li>
+<li><a href=""/questions/tagged/office-automation"" class=""post-tag"" title=""show questions tagged 'office-automation'"" rel=""tag"">office-automation</a></li>
+<li><a href=""/questions/tagged/vsto"" class=""post-tag"" title=""show questions tagged 'vsto'"" rel=""tag"">vsto</a></li>
+<li><a href=""/questions/tagged/apps-for-office"" class=""post-tag"" title=""show questions tagged 'apps-for-office'"" rel=""tag"">apps-for-office</a></li>
+</ul>
+
+<p>Additional resources</p>
+
+<ul>
+<li><a href=""http://msdn.microsoft.com/en-us/office/aa905340.aspx"" rel=""nofollow"">Office for Developers</a></li>
+</ul>"			0		2013-09-18 13:28:13.483000 UTC		2013-09-18 14:05:44.007000 UTC	2013-09-18 14:05:44.007000 UTC	user2140173		user2140173			5	0		
+19040122		"<p><strong>Seriously.js</strong> is a real-time, node-based video compositor for the web.</p>
+
+<p>Inspired by professional software such as After Effects and Nuke, Seriously.js renders high-quality video effects, but allows them to be dynamic and interactive.</p>
+
+<h2>Requirements</h2>
+
+<p><strong>WebGL</strong></p>
+
+<p>Seriously.js requires a browser that supports WebGL. Development is targeted to and tested in Firefox (4.0+) and Google Chrome (9+). Safari and Opera are expected to support WebGL in the near future. There are no public plans for Internet Explorer to support WebGL.</p>
+
+<p>Even though a browser may support WebGL, the ability to run it depends on the system's graphics card. Serioulsy.js is heavily optimized, so most modern desktops and notebooks should be sufficient. Older systems may run slower, especially when using high-resolution videos.</p>
+
+<p>Mobile browser support for WebGL is limited. Mobile Firefox has some support, but the Android Browser and Mobile Safari do not.</p>
+
+<p>Seriously.js provides a method to detect browser support and offer descriptive error messages wherever possible.</p>
+
+<p><strong>Cross-Origin Videos and Images</strong></p>
+
+<p>Due to security limitations of WebGL, Seriously.js can only process video or images that are served from the same domain, unless they are served with CORS headers. Firefox 12 and up support CORS for video but other browsers do not, and videos served with CORS are rare. So for now, it is best to host your own video files.</p>
+
+<p><a href=""https://github.com/brianchirls/Seriously.js"" rel=""nofollow"">Source</a></p>"			0		2013-09-26 23:04:50.627000 UTC		2013-09-27 00:03:28.730000 UTC	2013-09-27 00:03:28.730000 UTC	user1693593		user1693593			5	0		
+19473195		"<p>Tulip is an information visualization framework written in C++ that is dedicated to the analysis and visualization of relational data.</p>
+
+<p>Tulip aims to provide developers with a complete library, supporting the design of interactive information visualization applications for relational data that can be tailored to the problems they are addressing.</p>
+
+<p>The framework enables the development of algorithms, visual encodings, interaction techniques, data models, and domain-specific visualizations. </p>
+
+<p>One of the goals of Tulip is to facilitate the reuse of components and allow the developer to focus on programming their application. This development pipeline makes the framework efficient for research prototyping as well as the development of end-user applications.</p>
+
+<hr>
+
+<h2>References:</h2>
+
+<p><a href=""http://tulip.labri.fr/TulipDrupal/"" rel=""nofollow"">http://tulip.labri.fr/TulipDrupal/</a></p>
+
+<p><a href=""http://sourceforge.net/projects/auber/"" rel=""nofollow"">http://sourceforge.net/projects/auber/</a></p>"			0		2013-10-20 02:11:52.327000 UTC		2013-10-20 03:15:44.147000 UTC	2013-10-20 03:15:44.147000 UTC	user2555451		user2555451			5	0		
+19568343		"<p>The function's schematics are as follows:</p>
+
+<pre><code>setattr(object:object, name:str, value:object) -&gt; object
+</code></pre>
+
+<p>where <code>object</code> is the object, <code>name</code> is the named attribute, and <code>value</code> is the value that <code>name</code> will be set to.  Below is an example:</p>
+
+<pre><code>&gt;&gt;&gt; class Test:
+...     def __init__(self):
+...         self.attr = 1
+...
+&gt;&gt;&gt; myTest = Test()
+&gt;&gt;&gt; myTest.attr
+1
+&gt;&gt;&gt; setattr(myTest, 'attr', 2)
+&gt;&gt;&gt; myTest.attr
+2
+&gt;&gt;&gt;
+</code></pre>"			0		2013-10-24 14:09:37.530000 UTC		2013-10-24 14:32:51.407000 UTC	2013-10-24 14:32:51.407000 UTC	user2555451		user2555451			5	0		
+19570555		"<p>The function's schematics are as follows:</p>
+
+<pre><code>getattr(object:object, name:str[, default:object]) -&gt; value
+</code></pre>
+
+<p>where <code>object</code> is the object, <code>name</code> is the named attribute, and <code>default</code>, if supplied, is the default value to return if the attribute can not be found.  If <code>default</code> is not supplied and the object can not be found, an <code>AttributeError</code> is thrown.</p>
+
+<p>Below is a demonstration of the function's features:</p>
+
+<pre><code>&gt;&gt;&gt; class Test:
+...     def __init__(self):
+...         self.attr = 1
+...
+&gt;&gt;&gt; myTest = Test()
+&gt;&gt;&gt; getattr(myTest, 'attr')
+1
+&gt;&gt;&gt; getattr(myTest, 'attr2', 'No attribute by that name')
+'No attribute by that name'
+&gt;&gt;&gt; getattr(myTest, 'attr2')
+Traceback (most recent call last):
+  File ""&lt;stdin&gt;"", line 1, in &lt;module&gt;
+AttributeError: Test instance has no attribute 'attr2'
+&gt;&gt;&gt;
+</code></pre>"			0		2013-10-24 15:44:46.917000 UTC		2013-10-24 17:14:50.890000 UTC	2013-10-24 17:14:50.890000 UTC	user2555451		user2555451			5	0		
+19576507		"<p>For example, the sum of digits for the number <code>12,345</code> would be <code>15</code> because:</p>
+
+<pre><code>1 + 2 + 3 + 4 + 5 = 15
+</code></pre>
+
+<p>The sum of digits for the numbers <code>12,345</code> and <code>67,890</code> together would be <code>45</code> because:</p>
+
+<pre><code>1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 0 = 45
+</code></pre>
+
+<p>Note that a sum of digits will always be an integer.</p>"			0		2013-10-24 20:57:30.127000 UTC		2013-10-24 21:40:53.103000 UTC	2013-10-24 21:40:53.103000 UTC	user2555451		user2555451			5	0		
+19576964		"<p>Note that this tag can often be replaced by the more specific <a href=""/questions/tagged/loops"" class=""post-tag"" title=""show questions tagged 'loops'"" rel=""tag"">loops</a> or <a href=""/questions/tagged/recursion"" class=""post-tag"" title=""show questions tagged 'recursion'"" rel=""tag"">recursion</a> tags.</p>"			0		2013-10-24 21:24:58.720000 UTC		2013-10-25 00:03:55.923000 UTC	2013-10-25 00:03:55.923000 UTC	user2555451		user2555451			5	0		
+19579619		<p>Use this tag for any questions concerning problems created specifically as a result of being unable to remember a password.</p>			0		2013-10-25 01:28:25.090000 UTC		2013-10-25 02:04:36.120000 UTC	2013-10-25 02:04:36.120000 UTC	user2555451		user2555451			5	0		
+19591142		"<p>Note that this tag is not to be confused with the <a href=""/questions/tagged/change-password"" class=""post-tag"" title=""show questions tagged 'change-password'"" rel=""tag"">change-password</a> tag, which is for setting a password to a <em>new</em> value.  Resetting a password changes it back to a <em>previous</em> value.</p>"			0		2013-10-25 13:24:21.443000 UTC		2013-10-25 14:33:28.790000 UTC	2013-10-25 14:33:28.790000 UTC	user2555451		user2555451			5	0		

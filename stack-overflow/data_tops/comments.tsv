@@ -1,0 +1,118 @@
+id	text	creation_date	post_id	user_id	user_display_name	score
+3684095	The right way to do it would be to assign a `class` with the `display: none` property and then to remove the `class` name when done	2010-08-19 14:21:52.900000 UTC	3522675	5818		21
+3684214	"""Clean All Targets"" doesn't fix this error.  You definitely have to follow the steps detailed here to get rid of the error."	2010-08-19 14:32:49.243000 UTC	2774678	14302		13
+3684247	+1 for the first two paragraphs. Why isn't this the accepted answer instead? :-)	2010-08-19 14:35:58.273000 UTC	1900047	385571		6
+3684269	Then compile the project as a Windows Application, not a Console Application	2010-08-19 14:37:51.283000 UTC	836516	98713		5
+3684322	but in practice the login info is kept in a cookie marked with the `httponly` attribute to prevent some xss risks, which means it can only be reset from the server (short of manually clearing the cookie)	2010-08-19 14:41:32.610000 UTC	3521757	105929		29
+3684481	"The MVC pattern is orthogonal to ""pretty"" URLs. MVC is about the correct separation of concerns."	2010-08-19 14:53:59.193000 UTC	3522989	1450		8
+3684482	Yeah I used them in the past, and they will do everything you want from a tree. The only downside I can think of is the length of the names of their respective implementing classes: DefaultTreeModel and DefaultMutableTreeNode. Verbose, but not that its all that important I guess.	2010-08-19 14:54:17.507000 UTC	3522574	421652		5
+3684573	Also, the design pattern predates the invention of the URL by fifteen years.	2010-08-19 15:01:29.377000 UTC	3522989	1450		5
+3684587	That's a tuple of tuples, not a list of tuples.	2010-08-19 15:02:15.023000 UTC	3523048	303783		7
+3684619	@Joa, well, I usually use a tree in some internal code.  SO, that is why I wrote this one the way I did.  Force of habit.  And, I think it is good practice.  I don't feel like you lose anything by having the outer tree structure.  And, it can be easier to understand if you have a concrete tree that you are working with, instead of just nodes.	2010-08-19 15:04:46.267000 UTC	3522481	2598		5
+3684651	I like your variable name for Assembly.	2010-08-19 15:06:39.457000 UTC	1357617	80858		6
+3684707	I like these type of overlooked questions.	2010-08-19 15:11:20.907000 UTC	2922909	118989		88
+3684745	I just watched a guy get a commit toasted because he followed this advice.  When suggesting someone use `rollback` please always include a warning that it permanently removes the latest commit (or pull).  So if you've done a `hg update` (like he had) and that commit is no longer in your working directory then it's gone forever.	2010-08-19 15:14:17.990000 UTC	623087	8992		107
+3684775	@Eric well I can't speak about languages I haven't used, and this question is specifically about Ruby...	2010-08-19 15:16:51.370000 UTC	3517240	92313		13
+3684850	Tip # 1:  Whatever may be wrong with your code, don't shorten names using macros.  `#define p printf` is absolutely not a good idea.	2010-08-19 15:22:50.013000 UTC	3523305	151292		21
+3684904	This is rather an interpreter than just a parser.	2010-08-19 15:27:14.390000 UTC	3523323	53114		7
+3684916	Sure, the basic idea is that x^.5 = sqrt(x), x^.25 = sqrt(sqrt(x)), x^.125 = sqrt(sqrt(sqrt(x))), etc.  With these building blocks, we can say x^.625 = (x^.5)*(x^.125).  We can't express, say, x^.3 exactly, but we can get arbitrarily close.  I implemented this a little differently, but it uses the same concept.	2010-08-19 15:28:17.737000 UTC	3519308	18214		7
+3684978	src= is a simple browser request, it does not come from server side, but from the client. It carries all cookies and comes from the user IP. That is why ad tracking pixels work. Only way to determine such exploit would be to check the referrer.	2010-08-19 15:32:53.200000 UTC	3522013	179104		28
+3684981	Are you sure you are WorkingHard?	2010-08-19 15:33:07.913000 UTC	3523368	375394		7
+3684983	+1 Pointer arithmetic is only defined for pointers to (complete) *object types*. `void` is an *incomplete type* that can never be completed by definition.	2010-08-19 15:33:09.003000 UTC	3523168	251122		19
+3685067	This is a pretty well thought out golf; I'll see about giving it a go with parser combinators after work ;)	2010-08-19 15:39:40.760000 UTC	3523323	22780		7
+3685226	Post what you have	2010-08-19 15:51:18.167000 UTC	3523605	330184		8
+3685414	"If this is Windows and newline is `""\r\n""`, this will in fact `split` between the `\r` and `\n` creating false empty strings."	2010-08-19 16:05:50.423000 UTC	3517108	276101		6
+3685517	I couldn't recognize the subject of a drawing when my daughter was 3. I can't imagine trying to automate code to do it.	2010-08-19 16:15:48.580000 UTC	3523805	250832		20
+3685561	Don't forget that you can run this from your command line, and it will explain the capabilities of `chomp` or any other command: `perldoc -f chomp`.	2010-08-19 16:20:04.743000 UTC	3523790	55857		5
+3685854	+1: very interesting answer from insight, thanks for sharing.	2010-08-19 16:44:10.043000 UTC	2451785	260080		5
+3686072	Just to note that `__version__` is the preferred standard for new code, as recommended by [PEP8](http://www.python.org/dev/peps/pep-0008/). See [Standard way to embed version into Python package?](http://stackoverflow.com/questions/458550/standard-way-to-embed-version-into-python-package)	2010-08-19 17:07:51.403000 UTC	3524247	143804		11
+3686129	The best alternative is to write portable code that will compile anywhere.  Then all you have to worry about is system-specific calls.	2010-08-19 17:13:13.210000 UTC	3524222	14148		5
+3686241	One way to lessen the brittleness of the Release() method is to use another class with IDisposable as a sync handler.  When you acquire the singleton, you get the handler and can put the code requiring the singleton into a using block to handle the release.	2010-08-19 17:23:09.840000 UTC	7105	93221		26
+3686314	it's Microsoft's new VS licensing scheme. you must pay per loop iteration now.	2010-08-19 17:31:15.340000 UTC	3524342	402169		5
+3686336	+1: `COALESCE` is ANSI, supported by Postgres, MySQL...  The only caveat is that it doesn't necessarily perform as fast as native syntax.	2010-08-19 17:33:14.520000 UTC	3524035	135152		9
+3686413	In fact, it's psibolse to raearnrge all but the fsrit and lsat ltteers of a wrod and raiten at lseat smoe snsee. And dha rizn fonetisaizd Ingglish haznt cot on iz dhat it's notoriasly mor difikalt tu rid widhaut dha vizhual kyuz uv dha kurent orthografi.	2010-08-19 17:40:23.883000 UTC	3523947	246886		8
+3686450	You should update your question with this very relevant information.	2010-08-19 17:43:05.173000 UTC	3524222	349130		6
+3686484	Both of those results are correct. I'm not sure where you think the problem is in your example.	2010-08-19 17:45:52.530000 UTC	3524566	52443		5
+3686527	Please show your code as the question is quite incomprehensible.	2010-08-19 17:49:55.127000 UTC	3524636	29407		12
+3686565	"Voters for close... Any suggestions on how I can make it seem more like a ""real question"" to you? Yes, you need to read the whole thing, but this is most definitely a question: Who can write a regex parser/interpreter in the shortest number of keystrokes? Pretty simple, really, even if it's hard to answer. :-)"	2010-08-19 17:52:54.853000 UTC	3523323	129655		10
+3686609	"@phyzome If you find the ""Snails"" cumbersome, you aren't using ANYWHERE NEAR enough comments. They should just be a single line above your method header which should be about as big as your method in most cases (a few lines) to provide decent hover text and javadocs.  I guess I'm saying that the problem is not the Snails, it's your reading habits.  Are all those parentheses in the code bothering you as well?"	2010-08-19 17:56:43.590000 UTC	95490	12943		9
+3686665	"I'm gonna check that out.  Alternatively, you can type ""foreach"", hit Ctrl-Space, and select the ""foreach - iterate over an array or Iterable"" proposal, and it will generate code from the ""foreach"" template, using the last-referenced Iterable or array variable."	2010-08-19 18:01:57.817000 UTC	3523766	196455		6
+3686718	"Psyche:  It's practice on here to mark questions community wiki if you're asking questions where people answer with their opinions.  Questions and answers that are CW can get badges (most of the time) but no reputation.  Some people have gotten really spun up about other users getting a lot of reputation for ""opinion"" type questions.  I personally don't care, because my SO reputation and 64 cents will buy me a cup of coffee.  But I'm not everyone."	2010-08-19 18:06:16.427000 UTC	3524731	13895		5
+3686736	Unfortunately that project is dead.	2010-08-19 18:08:22.217000 UTC	1785647	191201		16
+3686759	While this code will generally work, there are some breaking conditions. For example, if the user has more than one keyboard installed and they switch keyboards using the international keyboard key (which only displays if you have more than one keyboard installed). This will throw a UIKeyboardWillShowNotification, even though the keyboard is already shown. The result will be that your textField will be moved up another keyboard height up the screen. This will occur every time the international keyboard key is pressed.	2010-08-19 18:10:37.423000 UTC	2934339	257550		8
+3686837	But of course such a trivial question will get a dozen of answers.	2010-08-19 18:17:34.700000 UTC	3524881	285587		5
+3686881	@Chad Whitaker: Please accept correct answers to your questions!	2010-08-19 18:21:49.277000 UTC	3524881	352636		5
+3686913	That site seems to be talking about reusing the sort callback parameter names within the function. There is no reason not to use `a[1] - b[1]` here.	2010-08-19 18:23:55.640000 UTC	3524933	92313		5
+3686983	From the C99 standard: (6.5.6.2) *For addition, either both operands shall have arithmetic type, or one operand shall be a pointer to an object type and the other shall have integer type.* (6.2.5.19) *The void type comprises an empty set of values; it is an incomplete type that cannot be completed.* I think that makes it clear that `void*` pointer arithmetic is not allowed. GCC has an [extension](http://gcc.gnu.org/onlinedocs/gcc-4.5.0/gcc/Pointer-Arith.html#Pointer-Arith) that allows to do this.	2010-08-19 18:29:44.713000 UTC	3524270	248066		8
+3687266	If you don't know the first object, you can avoid using `call` by chaining off an empty jQuery object: `$().add(btn).add(h3)`. IMO, this is a much better way to use `$.add`.	2010-08-19 18:58:24.540000 UTC	1881716	139010		11
+3687330	Based on your description, you haven't actually be doing nearly *any* OOP. Putting re-usable code into methods, when everything is all within the same object (MainForm) is just regular procedural programming.	2010-08-19 19:03:22.687000 UTC	3525240	39375		8
+3687347	"Homework, or curiosity? Do you know how to do a for loop? Questions here tend to work a lot better if you try a bit of code yourself and then come show us what you've written and ask ""why doesnt this work"". For example, I'd answer this question but it feels like a homework-y sort of question to me, and I don't want to let you cheat yourself out of learning."	2010-08-19 19:04:17.850000 UTC	3525252	352636		6
+3687383	If you think it's homework, you might want to not post complete code.	2010-08-19 19:07:34.293000 UTC	3525292	198501		8
+3687551	@Stefan: are you serious ? You'd suggest someone, who just needs to make one or two feature detections (which is about 30 bytes?) to use a lib that takes like 2k, 3k, 10k whatever? Don't get me wrong, I like modernizr, but for just one check is overkill. It's like using jQuery to select an element.	2010-08-19 19:22:34.343000 UTC	3524592	1386886		9
+3687589	You should also consider using prepared statements to avoid sql injections and improve performance.	2010-08-19 19:26:24.533000 UTC	3525450	150325		6
+3687593	It is a lot easier to develop programs on Linux that are portable to most platforms than to develop programs on Windows that are portable. (Visual C++ is NOT portable).	2010-08-19 19:26:47.683000 UTC	3525177	205756		5
+3687633	"I agree; while some may say this is too hard for a beginner, it's the *right* way to do it. String concatenation is ""never"" the right way to build SQL queries, and this is just something you should learn from the start."	2010-08-19 19:30:40.250000 UTC	3525474	3474		6
+3687639	"@NullUserException: it makes as much sense to ""sum"" strings as it is to ""sum"" lists."	2010-08-19 19:31:21.977000 UTC	3525359	336455		19
+3687707	pg_proc that's it! Whew I'm glad they saved a few bytes of space by not calling it pg_procedure...geez. :)	2010-08-19 19:36:50.187000 UTC	3525185	425593		5
+3687729	"The string delimiter in SQL Server is `'`, not `""`."	2010-08-19 19:39:10.477000 UTC	3525539	1583		6
+3687734	'Manual' as in the user goes to the Browser settings and chooses the 'Clear cookies' option. Hardly an acceptable way to 'log off' a web site.	2010-08-19 19:39:37.687000 UTC	3521757	105929		6
+3687787	At first I thought you wanted to switch from clojure to java! Almost had a heart attack.	2010-08-19 19:44:37.033000 UTC	3525403	13356		6
+3687798	@Ian - `Note that array_unique() is not intended to work on multi dimensional arrays.`	2010-08-19 19:45:55.520000 UTC	307655	186636		29
+3687849	At that point why bother with the switch?  You could even do `switch (true) { case $var === null: ... }	2010-08-19 19:51:00.653000 UTC	3525645	338665		7
+3687980	"You don't need to have a special file for every namespace. You could use a global ""project documentation"" file that supplies the front page docs for your project, sets up the groups (for use with /ingroup tags), and documents the namespaces all in one place. This allows all the ""overviews"" to be held in one logical place rather than scattered to the winds. You could even put this core documentation in a ""documentaiton"" folder which also contains things like your doxygen configuration files etc."	2010-08-19 20:01:19.600000 UTC	3525680	97385		11
+3688089	One of the obscure things that my in-head Garbage Collection missed in the last cleanup :)	2010-08-19 20:12:29.137000 UTC	2429134	55487		8
+3688162	Is this C or C++?  They aren't the same language, you know.	2010-08-19 20:20:22.080000 UTC	3525853	303783		5
+3688188	What are you trying to do? **Don't** use `Path.GetRandomFileName` for generating random strings!!!	2010-08-19 20:23:11.623000 UTC	3525844	29407		6
+3688341	**More** Expressive?!?!  `all([ v == 0 for v in values ])` is really very, very nice, clear, explicit and expressive.  How much better could it be?	2010-08-19 20:36:55.333000 UTC	3525953	10661		12
+3688576	If it's not working, then it can't be perfectly good.	2010-08-19 20:58:23.487000 UTC	3526155	396458		12
+3688647	This is quite common, so without seeing what the code actually does - there's nothing inherently wrong with this.	2010-08-19 21:05:09.217000 UTC	3526167	126769		23
+3688667	I totally agree. If you feel there is something wrong with his code and are willing to confront him about it, you better have an excellent alternative ready to present.	2010-08-19 21:07:07.870000 UTC	3526225	259273		25
+3688719	I would rather ask him what he was trying to achieve.	2010-08-19 21:12:46.207000 UTC	3526167	14065		11
+3688890	"*""With good ol' M-x butterfly""* **joke**"	2010-08-19 21:27:53.697000 UTC	3526386	116249		5
+3688968	"Sorry, clearly this isn't the most up-to-date answer, but I'm not sure it really deserves to be called a ""monstrosity""."	2010-08-19 21:35:20.887000 UTC	799015	18529		35
+3689032	or even `Regexp.last_match.offset(0).first`	2010-08-19 21:41:50.670000 UTC	3520277	174728		9
+3689066	There's also `M-;` (`comment-dwim`), which comments the region, (except when the region is already a comment: then it uncomments).	2010-08-19 21:45:14.030000 UTC	3526422	387076		9
+3689072	Do not EVER use @@identity in SQl Server. Use scope_identity() or the output clause instead. @@identity will destroy your data integrity when someo addsa trigger that inserts to another table with an identity. Since you can't guarantee this won't happen, it is an unsafe at any speed kind of thing.	2010-08-19 21:45:53.097000 UTC	3526256	9034		5
+3689082	Initial Dropbox account is 2GB	2010-08-19 21:46:43.417000 UTC	3483838	112106		9
+3689087	Not unless you do it by hand. And that's a scary thing to need. Why?	2010-08-19 21:48:07.987000 UTC	3526546	87234		7
+3689108	"Thanks @Rytmis, I just managed to pull this off, but I want to offer a translation for Tortoise users.
+1) Switch your working copy to the branch (if it isn't already)
+2) Right-click working copy, TortoiseSVN > Merge > ""Merge a range of revisions"", click Next
+3) URL to merge from = Trunk, click Next, Merge
+4) Switch working copy to Trunk
+5) Right-click working copy, TortoiseSVN > Merge > ""Merge two different trees"", click Next
+6) From: Trunk (use HEAD revision)
+   To: Branch (use HEAD revision)
+7) Click Next, Merge.
+8) Commit your working copy.
+DONE"	2010-08-19 21:50:55.597000 UTC	1008805	219521		54
+3689163	Be aware that the objectID can and does change, especially when a migration occurs.  Do not rely on that value to be consistent between one launch of the application and the next.	2010-08-19 21:56:56.160000 UTC	3519391	10673		8
+3689169	You haven't provided the basic information necessary for anybody to give a good answer. Why do you want to learn/use Lisp at all? What are you trying to accomplish? That is (most of) what will indicate which to choose.	2010-08-19 21:57:29.430000 UTC	3526497	179910		7
+3689334	I have VS 2010 installed on Windows 7 64-bit and XSD.EXE is located  here: `C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\xsd.exe`	2010-08-19 22:17:10.427000 UTC	1074110	161052		9
+3689481	"@Tomalak: Why, using '>"" instead of `'&gt;'` makes the code so more readable. I even usually reverse  `x &lt; y` to `not(x > y -1)`"	2010-08-19 22:39:03.797000 UTC	3526647	36305		5
+3689645	Hmm, my crystal ball tells me applets are already dead	2010-08-19 23:04:18.783000 UTC	3526931	119159		11
+3689771	I think perhaps you have misunderstood the point of code golf questions.	2010-08-19 23:20:36.410000 UTC	3526968	52738		10
+3689834	@pankaj - That should be fixed on the application site, and cookies for example so the user shares the session across tabs.	2010-08-19 23:30:19.363000 UTC	3527055	13249		21
+3689835	These are great points. I don't consider the 1 request that a sprite requires the drawback though. The primary drawback is having to make them, and remake them if you make edits.	2010-08-19 23:30:33.390000 UTC	3525961	115608		5
+3689949	if it involves gerbils, high heels and a large quantity of strawberry blancmange, it's probably pornography!	2010-08-19 23:52:17.100000 UTC	3527174	16076		7
+3690024	Is that what They say? In my experience, half the time They have no idea what They are talking about. In the absence of evidence, such claims are merely gossip.	2010-08-20 00:04:50.627000 UTC	3527236	282912		6
+3690046	FWIW: while this certainly *could* be a Super User topic, and may even have been intended as somewhat end-user-focused when originally asked, at this point it has been both answered and referenced by programmers and web developers and should probably be left here. SU has several other, more end-user-oriented versions of this already, and doesn't need it...	2010-08-20 00:07:41.307000 UTC	385367	811		11
+3690053	@Duck: The value in `.__data.__owner` is a TID.  When each thread starts you could just have them log their TID (using `tid = syscall(SYS_gettid);`) as well as their `pthread_t` (from `pthread_self()`).	2010-08-20 00:09:15.280000 UTC	3491304	134633		6
+3690086	Just in case this sounds annoying, the major advantage is that you can always get back a previous state. In most editors, undoing several changes and then accidentally typing a character would leave you 'stranded' with no way to redo what you had undone. Emacs makes this trivial.	2010-08-20 00:15:39.123000 UTC	3527182	324105		132
+3690119	Why would it be against? Let's say we have a service that takes 2 seconds to run. If the activity destroys every time, that service keeps running every time while I just need it to run once.	2010-08-20 00:21:55.303000 UTC	3329318	130515		7
+3690150	`MAIN` is not a category; it is an action. More generally, do not include an `<intent-filter>` for an activity in the manifest unless you need one. For simple apps, only the activity that needs an icon in the launcher should have an `<intent-filter>`.	2010-08-20 00:30:00.143000 UTC	3527279	115145		6
+3690240	If you have switched users with su, getlogin will return the original user, something that would be an unpleasant surprise to me as a user; just use getpwuid for posixy systems and Win32::LoginName for windows.	2010-08-20 00:54:14.957000 UTC	3526587	17389		7
+3690262	[Just about the same question has been asked this Monday.](http://stackoverflow.com/questions/3496895/how-to-apply-clojure) (There's more further back -- just look around!) See also [the results of Chas Emerick's State of Clojure, Summer 2010 survey](http://cemerick.com/2010/06/07/results-from-the-state-of-clojure-summer-2010-survey/) for some insight into what people use Clojure for (should have remembered this link in connection with that last question...).	2010-08-20 00:57:50.723000 UTC	3527455	232707		6
+3690403	"-1 `$b = (&$a);` is invalid syntax. I know that's not your point, but `=&` is actually a single operator, and translates to the opcode `ASSIGN_REF`. This is not an irrelevant internals observation. Consider a function `func` that returns by reference `$a = func()`. This function is returning a reference, yet `$a` won't be a reference because the operator `=` breaks the reference set and clears the flag. You have to actually do `$a =& $func()`. `&` means ""make a reference out of this (e.g. `array(&$a)`), but making a reference is not enough to assign by reference."	2010-08-20 01:26:56.920000 UTC	3526643	127724		11
+3690642	Because Smalltalk is the poster boy for object oriented languages?	2010-08-20 02:30:51.930000 UTC	3527753	87206		17
+3690649	"Imagine a loop that reads a file one line at a time.  You create a loop that reads in a string via cin, and then processes it in some way.
+
+
+If you declare the string variable ""as close as possible to where it's used,"" which is inside the loop, it will slow down your program because it will invoke the string's constructor each iteration through the loop.
+
+
+If you declare the string variable at the top of the function, it will only invoke the constructor once, and it will be faster."	2010-08-20 02:32:14.010000 UTC	3506586	104474		5
+3690714	"I'm curious why you use a lambda expression rather than declaring a private method. That is, why ""Action<Exception> logAndEat"" instead of ""private void LogAndEat(Exception ex)""?"	2010-08-20 02:49:41.140000 UTC	426510	11163		6
+3690791	Related:  [Are compilers allowed to eliminate infinite loops?](http://stackoverflow.com/questions/2178115/are-compilers-allowed-to-eliminate-infinite-loops)	2010-08-20 03:09:14.803000 UTC	3527829	151292		5
+3690804	"Guice includes its own AOP support:
+http://code.google.com/p/google-guice/wiki/AOP"	2010-08-20 03:13:32.723000 UTC	3526826	40013		5
