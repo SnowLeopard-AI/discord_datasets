@@ -36,4 +36,4 @@ Explore these public datasets through our Discord server:
 - **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov
 - **[Stack Overflow](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset
 
-Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions: hello@snowleopard.ai
+Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions: [hello@snowleopard.ai](mailto:hello@snowleopard.ai)
