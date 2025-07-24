@@ -28,7 +28,7 @@ Snow Leopard is an AI-powered data platform that allows you to ask questions of,
 2. Go to the `imdb` channel to ask **_@snowy_** about the imdb datasets
 3. Ask a question: `@snowy, what are the highest-rated movies this year?`
 
-## Available Datasets
+## Available Datasets (Beta)
 
 Explore these public datasets through our Discord server:
 
