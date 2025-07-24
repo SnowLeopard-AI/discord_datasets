@@ -6,7 +6,7 @@ This dataset contains comprehensive [Stack Overflow](https://try.stackoverflow.c
 
 This public dataset is hosted in [Google BigQuery](https://cloud.google.com/bigquery) and is updated on a quarterly basis. The dataset is updated to mirror the [Stack Overflow content on the Internet Archive](https://archive.org/download/stackexchange), and is also available through the Stack Exchange Data Explorer.
 
-For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops). You can also query the full dataset directly using [BigQuery's free tier](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow). 
+For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops). You can also query the [full dataset](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) directly using BigQuery's free tier. 
 
 ## Dataset Overview
 
