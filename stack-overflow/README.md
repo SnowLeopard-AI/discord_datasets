@@ -2,9 +2,9 @@
 
 # Stack Overflow Dataset
 
-This dataset contains comprehensive [Stack Overflow](https://try.stackoverflow.co/) content from the world's largest online community for programmers to learn, share their knowledge, and advance their careers. Updated on a quarterly basis, this BigQuery dataset includes an archive of Stack Overflow content, including posts, votes, tags, and badges.
+This dataset contains comprehensive [Stack Overflow](https://try.stackoverflow.co/) content, including an archive of Stack Overflow posts, votes, tags, and badges.
 
-This public dataset is hosted in [Google BigQuery](https://cloud.google.com/bigquery) and is included in BigQuery's 1TB/mo of free tier processing. The dataset is updated to mirror the Stack Overflow content on the Internet Archive, and is also available through the Stack Exchange Data Explorer.
+This public dataset is hosted in [Google BigQuery](https://cloud.google.com/bigquery) and is updated on a quarterly basis. The dataset is updated to mirror the [Stack Overflow content on the Internet Archive](https://archive.org/download/stackexchange), and is also available through the Stack Exchange Data Explorer.
 
 For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops). You can also query the full dataset directly using [BigQuery's free tier](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow). 
 
