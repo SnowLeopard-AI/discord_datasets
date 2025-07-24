@@ -24,16 +24,16 @@ Snow Leopard is an AI-powered data platform that allows you to ask questions of,
 
 ## Getting Started
 
-1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX)
+1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX) (beta)
 2. Go to the `imdb` channel to ask **_@snowy_** about the imdb datasets
 3. Ask a question: `@snowy, what are the highest-rated movies this year?`
 
-## Available Datasets (Beta)
+## Available Datasets
 
 Explore these public datasets through our Discord server:
 
-- **[IMDb](./imdb/)** - Movie and TV show information from the Internet Movie Database
-- **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov
-- **[Stack Overflow](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset
+- **[IMDb](./imdb/)** - Movie and TV show information from the Internet Movie Database (Snow Leopard hosted Postgres database)
+- **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov  (Snow Leopard hosted Postgres database)
+- **[Stack Overflow](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset 
 
 Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions: [hello@snowleopard.ai](mailto:hello@snowleopard.ai)
