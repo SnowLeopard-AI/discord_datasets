@@ -4,7 +4,7 @@
 
 Welcome to [Snow Leopard](https://www.snowleopard.ai/)'s public Discord datasets!
 
-This repository contains information on how to try Snow Leopard using our public [Discord Server](https://discord.gg/WGAyr8NpEX), and the public datasets available on our Discord server.
+This repository contains information on how to try Snow Leopard using our [Discord Server](https://discord.gg/WGAyr8NpEX), and the public datasets available on our Discord Server.
 
 
 ## About Snow Leopard
@@ -22,10 +22,13 @@ Snow Leopard is an AI-powered data platform that allows you to ask questions of,
 - Get fresh, accurate data for critical business decisions without pre-defined pipelines
 - No ETL required - data is fetched on-demand
 
+Head over to our [blog](https://blog.snowleopard.ai/) to learn more!
+
 ## Getting Started
 
 1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX) (beta)
-2. Go to the `imdb` channel to ask **_@snowy_** about the imdb datasets
+2. Pick a channel in the 'Try Snow Leopard' section on the server to start exploring the data!
+    1. Eg: Go to `#imdb` channel to ask **_@snowy_** about the imdb datasets 
 3. Ask a question: `@snowy, what are the highest-rated movies this year?`
 
 ## Available Datasets
@@ -33,7 +36,9 @@ Snow Leopard is an AI-powered data platform that allows you to ask questions of,
 Explore these public datasets through our Discord server:
 
 - **[IMDb](./imdb/)** - Movie and TV show information from the Internet Movie Database (Snow Leopard hosted Postgres database)
-- **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov  (Snow Leopard hosted Postgres database)
 - **[Stack Overflow](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset 
+<!-- - **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov  (Snow Leopard hosted Postgres database) -->
+
+<br>
 
 Ready to try Snow Leopard with your own data? Reach out to learn more about enterprise solutions: [hello@snowleopard.ai](mailto:hello@snowleopard.ai)
