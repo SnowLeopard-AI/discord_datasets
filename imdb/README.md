@@ -14,8 +14,6 @@ The IMDb dataset includes information about:
 - **Movies and TV Shows**: Titles, release dates, genres, ratings, and descriptions
 - **Cast and Crew**: Actors, directors, writers, and other production personnel
 - **Ratings and Reviews**: User ratings, vote counts, and review data
-- **Box Office**: Revenue and budget information where available
-- **Awards and Nominations**: Recognition and achievements
 
 ## Getting Started
 
