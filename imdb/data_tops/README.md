@@ -4,7 +4,7 @@
 
 This directory contains 100 rows of each table in the [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/) to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/WGAyr8NpEX). 
 
-More information about the dataset can be found in the [main IMDb README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb)
+More information about the dataset can be found in the [main IMDb README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb).
 
 ## IMDb Dataset Schemas
 
