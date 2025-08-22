@@ -9,7 +9,7 @@ More information, and the raw data, can be found at [imdb.com/non-commercial-dat
 
 ## IMDb Dataset Schemas
 
-### title.akas
+### [title.akas](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/title.akas.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | titleId | string | A tconst, an alphanumeric unique identifier of the title |
@@ -21,7 +21,7 @@ More information, and the raw data, can be found at [imdb.com/non-commercial-dat
 | attributes | array | Additional terms to describe this alternative title, not enumerated |
 | isOriginalTitle | boolean | 0: not original title; 1: original title |
 
-### title.basics
+### [title.basics](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/title.basics.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | tconst | string | Alphanumeric unique identifier of the title |
@@ -34,14 +34,14 @@ More information, and the raw data, can be found at [imdb.com/non-commercial-dat
 | runtimeMinutes | integer | Primary runtime of the title, in minutes |
 | genres | string array | Includes up to three genres associated with the title |
 
-### title.crew
+### [title.crew](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/title.crew.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | tconst | string | Alphanumeric unique identifier of the title |
 | directors | array of nconsts | Director(s) of the given title |
 | writers | array of nconsts | Writer(s) of the given title |
 
-### title.episode
+### [title.episode](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/title.episode.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | tconst | string | Alphanumeric identifier of episode |
@@ -49,7 +49,7 @@ More information, and the raw data, can be found at [imdb.com/non-commercial-dat
 | seasonNumber | integer | Season number the episode belongs to |
 | episodeNumber | integer | Episode number of the tconst in the TV series |
 
-### title.principals
+### [title.principals](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/title.principals.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | tconst | string | Alphanumeric unique identifier of the title |
@@ -59,14 +59,14 @@ More information, and the raw data, can be found at [imdb.com/non-commercial-dat
 | job | string | The specific job title if applicable, else '\N' |
 | characters | string | The name of the character played if applicable, else '\N' |
 
-### title.ratings
+### [title.ratings](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/title.ratings.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | tconst | string | Alphanumeric unique identifier of the title |
 | averageRating | decimal | Weighted average of all the individual user ratings |
 | numVotes | integer | Number of votes the title has received |
 
-### name.basics
+### [name.basics](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/imdb/data_tops/name.basics.tsv)
 | Field | Type | Description |
 |-------|------|-------------|
 | nconst | string | Alphanumeric unique identifier of the name/person |
