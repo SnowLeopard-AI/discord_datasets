@@ -6,7 +6,7 @@ This dataset is from the Internet Movie Database ([IMDb](https://www.imdb.com/))
 
 The raw data, and more information about the dataset, can be found at [developer.imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/).
 
-This data is served through a Snow-Leopard-managed PosgreSQL database. For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb/data_tops) 
+This data is served through a Snow-Leopard-managed PosgreSQL database. For convenience, we have included the first 100 rows of each table of the dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb/data_tops). 
 
 ## Dataset Overview
 
