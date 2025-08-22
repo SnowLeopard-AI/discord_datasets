@@ -2,9 +2,7 @@
 
 # IMDb Dataset Tops
 
-These are the first 100 rows of each dataset from the IMDb non-commercial-datasets.
-
-More information, and the raw data, can be found at [imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/).
+This directory contains 100 rows of each dataset from the[IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/). This gives users a sense of the schema and what data exists in the datasets, so they can chat with the data more effectively via the [Snow Leopard Discord Chatbot](https://discord.gg/WGAyr8NpEX). 
 
 
 ## IMDb Dataset Schemas
