@@ -39,7 +39,7 @@ More information about the dataset can be found in the [main Stack Overflow READ
 | post_id | INTEGER | NULLABLE | ID of the source post |
 | related_post_id | INTEGER | NULLABLE | ID of the related/linked post |
 
-### [posts_answers](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/stack-overflow/data_tops/post_answers.tsv)
+### [posts_answers](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/stack-overflow/data_tops/posts_answers.tsv)
 | Field | Type | Mode | Description |
 |-------|------|------|-------------|
 | id | INTEGER | NULLABLE | Answer post identifier |
@@ -230,30 +230,6 @@ More information about the dataset can be found in the [main Stack Overflow READ
 | score | INTEGER | NULLABLE | Score/votes for the post |
 | tags | STRING | NULLABLE | Tags associated with the post |
 | view_count | STRING | NULLABLE | Number of views |
-
-### [stackoverflow_posts](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/stack-overflow/data_tops/stackoverflow_posts.tsv)
-| Field | Type | Mode | Description |
-|-------|------|------|-------------|
-| id | INTEGER | REQUIRED | Post identifier (primary key) |
-| title | STRING | NULLABLE | Title of the post |
-| body | STRING | NULLABLE | Content/body of the post |
-| accepted_answer_id | INTEGER | NULLABLE | ID of the accepted answer |
-| answer_count | INTEGER | NULLABLE | Number of answers to the post |
-| comment_count | INTEGER | NULLABLE | Number of comments on the post |
-| community_owned_date | TIMESTAMP | NULLABLE | Date when post became community-owned |
-| creation_date | TIMESTAMP | NULLABLE | Date when the post was created |
-| favorite_count | INTEGER | NULLABLE | Number of times favorited |
-| last_activity_date | TIMESTAMP | NULLABLE | Date of last activity on the post |
-| last_edit_date | TIMESTAMP | NULLABLE | Date of last edit |
-| last_editor_display_name | STRING | NULLABLE | Display name of last editor |
-| last_editor_user_id | INTEGER | NULLABLE | User ID of last editor |
-| owner_display_name | STRING | NULLABLE | Display name of the post owner |
-| owner_user_id | INTEGER | NULLABLE | User ID of the post owner |
-| parent_id | INTEGER | NULLABLE | ID of the parent post |
-| post_type_id | INTEGER | NULLABLE | Type of post (1=question, 2=answer) |
-| score | INTEGER | NULLABLE | Score/votes for the post |
-| tags | STRING | NULLABLE | Tags associated with the post |
-| view_count | INTEGER | NULLABLE | Number of views |
 
 ### [tags](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/stack-overflow/data_tops/tags.tsv)
 | Field | Type | Mode | Description |
