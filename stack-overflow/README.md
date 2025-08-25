@@ -41,20 +41,23 @@ The Stack Overflow dataset includes the following tables:
 ## Getting Started
 
 1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX)
-2. Enter the `stack-overflow` channel to ask snowy about the Stack Overflow datasets
+2. Go to the `stack-overflow` channel to ask _**@snowy**_ about the imdb datasets
 3. Ask your programming and Stack Overflow-related questions!
 
 🤔 Not sure what to ask? Here are a few sample questions.
 
 ### Questions and Answers
 ```
-@snowy, what percentage of questions have been answered over the years?
+@snowy, what percentage of questions asked in 2020 were answered?
 ```
 ```
-@snowy, which day of the week has most questions answered within an hour?
+@snowy, What is the most viewed question on the platform?
 ```
 ```
-@snowy, what are the most popular programming languages discussed on Stack Overflow?
+@snowy, what are the top 3 most popular programming languages discussed on Stack Overflow?
+```
+```
+@snowy, what is the average score of all answers?
 ```
 
 ### Users and Reputation
@@ -62,10 +65,10 @@ The Stack Overflow dataset includes the following tables:
 @snowy, what is the reputation and badge count of users across different tenures on Stack Overflow?
 ```
 ```
-@snowy, who are the top contributors by reputation score?
+@snowy, who are the top 5 contributors by reputation score?
 ```
 ```
-@snowy, how does user activity change over time on Stack Overflow?
+@snowy, which user has the most upvotes on their comments?
 ```
 
 ### Tags and Topics
@@ -73,10 +76,10 @@ The Stack Overflow dataset includes the following tables:
 @snowy, what are the most popular tags on Stack Overflow?
 ```
 ```
-@snowy, how have programming language trends changed over time?
+@snowy, which tags have the highest answer rates? Show me only the top 10 of those. 
 ```
 ```
-@snowy, which tags have the highest answer rates?
+@snowy, which question with the tag 'python' has the most answers and who posted it?
 ```
 
 ### Badges and Achievements
@@ -84,7 +87,7 @@ The Stack Overflow dataset includes the following tables:
 @snowy, what are the 10 "easier" gold badges to earn?
 ```
 ```
-@snowy, which badges are most commonly earned by new users?
+@snowy, what are the different badge types?
 ```
 ```
 @snowy, how long does it take on average to earn different badge types?
