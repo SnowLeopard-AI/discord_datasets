@@ -159,7 +159,7 @@ More information about the dataset can be found in the [main Stack Overflow READ
 | tags | STRING | NULLABLE | Tags associated with the question |
 | view_count | INTEGER | NULLABLE | Number of views |
 
-### [posts_tag_wiki](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/stack-overflow/data_tops/posts_tags_wiki.tsv)
+### [posts_tag_wiki](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/stack-overflow/data_tops/posts_tag_wiki.tsv)
 | Field | Type | Mode | Description |
 |-------|------|------|-------------|
 | id | INTEGER | NULLABLE | Tag wiki post identifier |
