@@ -21,7 +21,7 @@ The Stack Overflow dataset includes the following tables:
 - `posts_tag_wiki` - Tag wiki pages
 - `posts_tag_wiki_excerpt` - Tag wiki excerpts
 - `posts_wiki_placeholder` - Wiki placeholder content
-- `stackoverflow_posts` - Combined posts table
+
 
 ### Post Metadata and Relationships
 - `post_history` - Edit history and revisions of posts
