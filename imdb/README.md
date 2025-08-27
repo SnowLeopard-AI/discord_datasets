@@ -8,13 +8,15 @@ The raw data, and more information about the dataset, can be found at [developer
 
 This data is served through a Snow-Leopard-managed PosgreSQL database. You can see the first 100 rows of each table of the dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb/data_tops). 
 
+
 ## Dataset Overview
 
 The IMDb dataset includes information about:
 - **Movies and TV Shows**: Titles, release dates, genres, ratings, and descriptions
 - **Cast and Crew**: Actors, directors, writers, and other production personnel
 - **Ratings and Reviews**: User ratings, vote counts, and review data
-(see [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) for more details)
+
+See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) for more details.
 
 
 ## Getting Started
