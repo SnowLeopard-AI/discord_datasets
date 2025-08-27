@@ -6,7 +6,8 @@ This dataset is from the Internet Movie Database ([IMDb](https://www.imdb.com/))
 
 The raw data, and more information about the dataset, can be found at [developer.imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/).
 
-This data is served through a Snow-Leopard-managed PosgreSQL database. For convenience, we have included the first 100 rows of each table of the dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb/data_tops). 
+This data is served through a Snow-Leopard-managed PosgreSQL database. You can see the first 100 rows of each table of the dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb/data_tops). 
+
 
 ## Dataset Overview
 
@@ -14,6 +15,9 @@ The IMDb dataset includes information about:
 - **Movies and TV Shows**: Titles, release dates, genres, ratings, and descriptions
 - **Cast and Crew**: Actors, directors, writers, and other production personnel
 - **Ratings and Reviews**: User ratings, vote counts, and review data
+
+See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) for more details.
+
 
 ## Getting Started
 
@@ -23,15 +27,24 @@ The IMDb dataset includes information about:
 
 🤔 Not sure what to ask? Here are a few sample questions.
 
-### Movies and Ratings
+### Movies, TV Shows and Ratings
+```
+@snowy, what is the oldest movie in the database?
+```
+```
+@snowy, what is the rating of the movie Superman (released in 2025)?
+```
+```
+@snowy, what is the rating of the TV series Slow Horses?
+```
 ```
 @snowy, what are the top 10 highest-rated movies of all time?
 ```
 ```
-@snowy, show me the best comedy movies from the 2010s
+@snowy, how many seasons did the TV show Friends have?
 ```
 ```
-@snowy, which movies have a rating above 8.5 and were released after 2020?
+@snowy, what is the runtime of the movie 'The Godfather'
 ```
 
 ### Actors and Directors
@@ -39,7 +52,7 @@ The IMDb dataset includes information about:
 @snowy, who are the most prolific actors in terms of number of movies?
 ```
 ```
-@snowy, what are the highest-grossing movies directed by Christopher Nolan?
+@snowy, what is highest rated movie directed by Martin Scorsese?
 ```
 ```
 @snowy, which actors have appeared in the most movies with Tom Hanks?
@@ -50,19 +63,5 @@ The IMDb dataset includes information about:
 @snowy, how has the average movie rating changed over the decades?
 ```
 ```
-@snowy, what are the most popular movie genres by decade?
-```
-```
-@snowy, show me the longest movies ever made
-```
-
-### Box Office and Revenue
-```
-@snowy, what are the highest-grossing movies of 2023?
-```
-```
-@snowy, which movie genres tend to be most profitable?
-```
-```
-@snowy, compare the box office performance of Marvel vs DC movies
+@snowy, within its genre, rank each movie by rating, showing only the top 3 movies per genre.
 ```

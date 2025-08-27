@@ -6,12 +6,20 @@ This dataset contains comprehensive [Stack Overflow](https://try.stackoverflow.c
 
 This public dataset is hosted in [Google BigQuery](https://cloud.google.com/bigquery) and is updated on a quarterly basis. The dataset is updated to mirror the [Stack Overflow content on the Internet Archive](https://archive.org/download/stackexchange), and is also available through the Stack Exchange Data Explorer.
 
-For convenience, we have included the first 100 rows of each dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops). You can also query the [full dataset](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) directly using BigQuery's free tier. 
+You can see the first 100 rows of each table of the dataset in [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops). 
 
 ## Dataset Overview
 
-The Stack Overflow dataset includes the following tables:
+The Stack Overflow dataset includes information about:
 
+* **Posts and Content**: Question and answer posts, moderation info, post-related tags 
+* **Post Metadata and Relationships**: Post edit history, relationships and links between posts
+* **User Information and Interactions**: User profiles, reputation scores, activity metrics. Comments and upvotes/downvotes on posts
+* **Additional Information**: Topic tags, user achievement badges
+
+See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) for more details.
+
+<!--
 ### Posts and Content
 - `posts_answers` - Answer posts
 - `posts_questions` - Question posts
@@ -22,39 +30,40 @@ The Stack Overflow dataset includes the following tables:
 - `posts_tag_wiki_excerpt` - Tag wiki excerpts
 - `posts_wiki_placeholder` - Wiki placeholder content
 
-
 ### Post Metadata and Relationships
 - `post_history` - Edit history and revisions of posts
 - `post_links` - Relationships and links between posts
 
-### User Interactions
+### User Information and Interactions
+- `users` - User profiles, reputation scores, and activity metrics
 - `comments` - Comments on posts
 - `votes` - Upvotes and downvotes on posts
 
-### Users and Organization
-- `users` - User profiles, reputation scores, and activity metrics
+### Additional Information
 - `tags` - Topic tags associated with questions and their usage statistics
-
-### Additional Tables
 - `badges` - Achievement badges earned by users for various contributions
+-->
 
 ## Getting Started
 
 1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX)
-2. Enter the `stack-overflow` channel to ask snowy about the Stack Overflow datasets
+2. Go to the `stack-overflow` channel to ask _**@snowy**_ about the imdb datasets
 3. Ask your programming and Stack Overflow-related questions!
 
 🤔 Not sure what to ask? Here are a few sample questions.
 
 ### Questions and Answers
 ```
-@snowy, what percentage of questions have been answered over the years?
+@snowy, what percentage of questions asked in 2020 were answered?
 ```
 ```
-@snowy, which day of the week has most questions answered within an hour?
+@snowy, What is the most viewed question on the platform?
 ```
 ```
-@snowy, what are the most popular programming languages discussed on Stack Overflow?
+@snowy, what are the top 3 most popular programming languages discussed on Stack Overflow?
+```
+```
+@snowy, what is the average score of all answers?
 ```
 
 ### Users and Reputation
@@ -62,10 +71,10 @@ The Stack Overflow dataset includes the following tables:
 @snowy, what is the reputation and badge count of users across different tenures on Stack Overflow?
 ```
 ```
-@snowy, who are the top contributors by reputation score?
+@snowy, who are the top 5 contributors by reputation score?
 ```
 ```
-@snowy, how does user activity change over time on Stack Overflow?
+@snowy, which user has the most upvotes on their comments?
 ```
 
 ### Tags and Topics
@@ -73,10 +82,10 @@ The Stack Overflow dataset includes the following tables:
 @snowy, what are the most popular tags on Stack Overflow?
 ```
 ```
-@snowy, how have programming language trends changed over time?
+@snowy, which tags have the highest answer rates? Show me only the top 10 of those. 
 ```
 ```
-@snowy, which tags have the highest answer rates?
+@snowy, which question with the tag 'python' has the most answers and who posted it?
 ```
 
 ### Badges and Achievements
@@ -84,7 +93,7 @@ The Stack Overflow dataset includes the following tables:
 @snowy, what are the 10 "easier" gold badges to earn?
 ```
 ```
-@snowy, which badges are most commonly earned by new users?
+@snowy, what are the different badge types?
 ```
 ```
 @snowy, how long does it take on average to earn different badge types?
