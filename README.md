@@ -9,8 +9,10 @@ This repository contains information on how to try Snow Leopard using our [Disco
 
 ## About Snow Leopard
 
-Snow Leopard is an AI-powered data platform that allows you to ask questions of, and fetch live data directly from, your structured data sources (SQL databases, data warehouses, etc.) in natural language. Here's how it works:
+Snow Leopard is an AI-powered data platform that helps you empower your AI Agents and your business data with real-time data retrieval, directly from structured data sources (SQL databases, data warehouses, etc.) in natural language. 
 
+
+Here's how it works:
 1. **Natural Language Input**: Ask questions about your data in plain English
 2. **Intelligent Routing**: Snow Leopard creates a retrieval plan in real-time for what data is needed to answer your question
 3. **Live Data Retrieval**: Snow Leopard generates and executes the necessary queries on the data source(s)
