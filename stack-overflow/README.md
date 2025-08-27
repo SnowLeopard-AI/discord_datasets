@@ -10,8 +10,16 @@ You can see the first 100 rows of each table of the dataset in [data_tops](https
 
 ## Dataset Overview
 
-The Stack Overflow dataset includes the following tables:
+The Stack Overflow dataset includes information about:
 
+* **Posts and Content**: Question and answer posts, moderation info, post-related tags 
+* **Post Metadata and Relationships**: Post edit history, relationships and links between posts
+* **User Information and Interactions**: User profiles, reputation scores, activity metrics. Comments and upvotes/downvotes on posts
+* **Additional Information**: Topic tags, user achievement badges
+
+See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) for more details.
+
+<!--
 ### Posts and Content
 - `posts_answers` - Answer posts
 - `posts_questions` - Question posts
@@ -22,21 +30,19 @@ The Stack Overflow dataset includes the following tables:
 - `posts_tag_wiki_excerpt` - Tag wiki excerpts
 - `posts_wiki_placeholder` - Wiki placeholder content
 
-
 ### Post Metadata and Relationships
 - `post_history` - Edit history and revisions of posts
 - `post_links` - Relationships and links between posts
 
-### User Interactions
+### User Information and Interactions
+- `users` - User profiles, reputation scores, and activity metrics
 - `comments` - Comments on posts
 - `votes` - Upvotes and downvotes on posts
 
-### Users and Organization
-- `users` - User profiles, reputation scores, and activity metrics
+### Additional Information
 - `tags` - Topic tags associated with questions and their usage statistics
-
-### Additional Tables
 - `badges` - Achievement badges earned by users for various contributions
+-->
 
 ## Getting Started
 
