@@ -14,6 +14,8 @@ The IMDb dataset includes information about:
 - **Movies and TV Shows**: Titles, release dates, genres, ratings, and descriptions
 - **Cast and Crew**: Actors, directors, writers, and other production personnel
 - **Ratings and Reviews**: User ratings, vote counts, and review data
+(see [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow/data_tops) for more details)
+
 
 ## Getting Started
 
