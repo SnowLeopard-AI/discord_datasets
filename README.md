@@ -9,10 +9,10 @@ This repository contains information on how to see **Snow Leopard in action** th
 
 ## About Snow Leopard
 
-Snow Leopard is an AI-powered data platform that helps empower your AI Agents to use your business data directly with real-time data retrieval from structured data sources (SQL databases, data warehouses, etc.) on-demand. No need for ETL and pre-defined data pipelines and workflows. 
+Snow Leopard is an AI-powered data platform that helps you build business-critical AI Agents using your business data directly with real-time data retrieval from structured data sources (SQL databases, data warehouses, etc.) on-demand. No need for ETL and pre-defined data pipelines and workflows. 
 
 
-Here's how it works:
+**Here's how it works:**
 1. **Natural Language Input**: Ask questions about your data in plain English
 2. **Intelligent Routing**: Snow Leopard creates a retrieval plan in real-time for what data is needed to answer your question
 3. **Live Data Retrieval**: Snow Leopard generates and executes the necessary queries on the data source(s)
