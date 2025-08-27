@@ -52,7 +52,7 @@ See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/sta
 @snowy, who are the most prolific actors in terms of number of movies?
 ```
 ```
-@snowy, what is highest rated movie directed by Martin Scrocese?
+@snowy, what is highest rated movie directed by Martin Scorsese?
 ```
 ```
 @snowy, which actors have appeared in the most movies with Tom Hanks?
