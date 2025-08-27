@@ -4,12 +4,12 @@
 
 Welcome to [Snow Leopard](https://www.snowleopard.ai/)'s public Discord datasets!
 
-This repository contains information on how to see Snow Leopard in action through the public datasets available our [Discord Server](https://discord.gg/WGAyr8NpEX).
+This repository contains information on how to see **Snow Leopard in action** through the public datasets available on our [Discord Server](https://discord.gg/WGAyr8NpEX).
 
 
 ## About Snow Leopard
 
-Snow Leopard is an AI-powered data platform that helps you empower your AI Agents and your business data with real-time data retrieval, directly from structured data sources (SQL databases, data warehouses, etc.) in natural language. 
+Snow Leopard is an AI-powered data platform that helps empower your AI Agents to use your business data directly with real-time data retrieval from structured data sources (SQL databases, data warehouses, etc.) on-demand. No need for ETL and pre-defined data pipelines and workflows. 
 
 
 Here's how it works:
