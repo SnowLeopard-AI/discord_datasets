@@ -66,5 +66,5 @@ See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/sta
 @snowy, how has the average movie rating changed over the decades?
 ```
 ```
-@snowy, within its genre, rank each movie by rating, showing only the top 3 movies per genre.
+@snowy, what are the top 10 movie genres with more than 10,000 movies in that genre? List them out in a bullet list.
 ```
