@@ -44,18 +44,21 @@ See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/sta
 @snowy, how many seasons did the TV show Friends have?
 ```
 ```
-@snowy, what is the runtime of the movie 'The Godfather'
+@snowy, what is the runtime of the movie 'The Godfather'?
 ```
 
 ### Actors and Directors
 ```
-@snowy, who are the most prolific actors in terms of number of movies?
+@snowy, how many movies has Tom Hanks worked in as an actor?
 ```
 ```
 @snowy, what is highest rated movie directed by Martin Scorsese?
 ```
 ```
-@snowy, which actors have appeared in the most movies with Tom Hanks?
+@snowy, who are the actors in the movie "Toy Story"? Limit to 5.
+```
+```
+@snowy, how many movies has Christopher Nolan directed?
 ```
 
 ### Genres and Trends
