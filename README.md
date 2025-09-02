@@ -28,7 +28,7 @@ Head over to our [blog](https://blog.snowleopard.ai/) to learn more!
 
 ## Getting Started
 
-1. Join [Snow Leopard's Discord server](https://discord.gg/WGAyr8NpEX) (beta)
+1. Join [Snow Leopard's Discord server](https://discord.gg/2R5FU4Ed) (beta)
 2. Pick a channel in the 'Try Snow Leopard' section on the server to start exploring the data!
     1. Eg: Go to `#imdb` channel to ask **_@snowy_** about the imdb datasets 
 3. Ask a question: `@snowy, what are the highest-rated movies this year?`
