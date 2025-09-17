@@ -1,8 +1,8 @@
-[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
+[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/4uE6uFGyP7)
 
 # IMDb Dataset Tops
 
-This directory contains 100 rows of each table in the [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/) to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/WGAyr8NpEX). 
+This directory contains 100 rows of each table in the [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/) to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
 
 More information about the dataset can be found in the [main IMDb README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/imdb).
 

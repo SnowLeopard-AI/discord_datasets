@@ -1,4 +1,4 @@
-[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
+[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/4uE6uFGyP7)
 
 # IMDb Dataset
 
@@ -21,7 +21,7 @@ See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/sta
 
 ## Getting Started
 
-1. Join [Snow Leopard's Discord server](https://discord.gg/2R5FU4Ed)
+1. Join [Snow Leopard's Discord server](https://discord.gg/4uE6uFGyP7)
 2. Go to the `imdb` channel to ask _**@snowy**_ about the imdb datasets
 3. Ask your tv/movie-related questions!
 

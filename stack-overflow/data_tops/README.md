@@ -1,8 +1,8 @@
-[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
+[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/4uE6uFGyP7)
 
 # Stack Overflow Dataset Tops
 
-This directory contains 100 rows of each table in the [Stack Overflow BigQuery public dataset](https://archive.org/download/stackexchange), to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/WGAyr8NpEX).
+This directory contains 100 rows of each table in the [Stack Overflow BigQuery public dataset](https://archive.org/download/stackexchange), to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
 
 More information about the dataset can be found in the [main Stack Overflow README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/stack-overflow).
 

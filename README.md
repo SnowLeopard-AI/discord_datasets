@@ -1,10 +1,10 @@
-[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/WGAyr8NpEX)
+[![Discord](https://img.shields.io/discord/1379929746875617413?logo=discord&logoColor=white)](https://discord.gg/4uE6uFGyP7)
 
 # Discord Datasets
 
 Welcome to [Snow Leopard](https://www.snowleopard.ai/)'s public Discord datasets!
 
-This repository contains information on how to see **Snow Leopard in action** through the public datasets available on our [Discord Server](https://discord.gg/WGAyr8NpEX).
+This repository contains information on how to see **Snow Leopard in action** through the public datasets available on our [Discord Server](https://discord.gg/4uE6uFGyP7).
 
 
 ## About Snow Leopard
@@ -28,7 +28,7 @@ Head over to our [blog](https://blog.snowleopard.ai/) to learn more!
 
 ## Getting Started
 
-1. Join [Snow Leopard's Discord server](https://discord.gg/2R5FU4Ed) (beta)
+1. Join [Snow Leopard's Discord server](https://discord.gg/4uE6uFGyP7) (beta)
 2. Pick a channel in the 'Try Snow Leopard' section on the server to start exploring the data!
     1. Eg: Go to `#imdb` channel to ask **_@snowy_** about the imdb datasets 
 3. Ask a question: `@snowy, what are the highest-rated movies this year?`
