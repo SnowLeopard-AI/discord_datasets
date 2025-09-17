@@ -4,7 +4,7 @@
 
 Welcome to [Snow Leopard](https://www.snowleopard.ai/)'s public Discord datasets!
 
-This repository contains information on how to see **Snow Leopard in action** through the public datasets available on our [Discord Server](https://discord.gg/2R5FU4Ed).
+This repository contains information on how to see **Snow Leopard in action** through the public datasets available on our [Discord Server](https://discord.gg/WGAyr8NpEX).
 
 
 ## About Snow Leopard
