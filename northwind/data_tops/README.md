@@ -20,7 +20,7 @@ More information about the dataset can be found in the [main Northwind README](h
 
 ### 🤝 [customer_customer_demo](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/customer_customer_demo.tsv)
 
-- Links customers to their demographics (many-to-many relationship).
+- links customers to their demographics (many-to-many relationship).
 
 | Field            | Type         | Description                                                    |
 |------------------|--------------|----------------------------------------------------------------|
@@ -56,7 +56,7 @@ More information about the dataset can be found in the [main Northwind README](h
 
 ### 🗺️ [employee_territories](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/employee_territories.tsv)
 
-- Associates employees with territories (many-to-many relationship).
+- associates employees with territories (many-to-many relationship).
 
 | Field        | Type          | Description                                                   |
 |--------------|---------------|---------------------------------------------------------------|
@@ -90,7 +90,7 @@ More information about the dataset can be found in the [main Northwind README](h
  
 ### 📦 [order_details](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/order_details.tsv)
 
-- Line items within an order, linking products and orders.
+- line items within an order, linking products and orders.
 
 | Field       | Type      | Description                                                       |
 |-------------|-----------|-------------------------------------------------------------------|
@@ -102,7 +102,7 @@ More information about the dataset can be found in the [main Northwind README](h
 
 ### 📑 [orders](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/orders.tsv)
 
-- Customer orders and shipping information.
+- customer orders and shipping information.
 
 | Field            | Type            | Description                                                        |
 |------------------|------------------|--------------------------------------------------------------------|
@@ -123,7 +123,7 @@ More information about the dataset can be found in the [main Northwind README](h
 
 ### 🛒 [products](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/products.tsv)
 
-- Details of items available for sale.
+- details of items available for sale.
 
 | Field             | Type           | Description                                                        |
 |-------------------|----------------|--------------------------------------------------------------------|
@@ -178,7 +178,7 @@ More information about the dataset can be found in the [main Northwind README](h
 
 ### 🗺️ [territories](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/territories.tsv)
 
-Stores geographical sales areas tied to a region.
+- geographical sales areas tied to a region.
 
 | Field                 | Type           | Description                                                        |
 |------------------------|----------------|--------------------------------------------------------------------|

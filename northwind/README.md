@@ -24,7 +24,7 @@ See [data_tops](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/nor
 
 1. Join [Snow Leopard's Discord server](https://discord.gg/4uE6uFGyP7)
 2. Go to the `northwind` channel to ask _**@snowy**_ about the northwind datasets
-3. Ask your tv/movie-related questions!
+3. Ask questions about northwind business/orders/employee performance
 
 🤔 Not sure what to ask? Here are a few sample questions.
 
