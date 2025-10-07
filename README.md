@@ -39,6 +39,7 @@ Explore these public datasets through our Discord server:
 
 - **[IMDb (Postgres)](./imdb/)** - Movie and TV show information from the Internet Movie Database (Snow Leopard hosted Postgres database)
 - **[Stack Overflow (BigQuery)](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset 
+- **[Northwind (Postgres)](https://github.com/pthom/northwind_psql) - models a fictitious company that imports and exports specialty foods from around the world. It contains a variety of tables representing business entities.
 <!-- - **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov  (Snow Leopard hosted Postgres database) -->
 
 <br>
