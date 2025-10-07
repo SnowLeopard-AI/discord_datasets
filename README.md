@@ -37,8 +37,8 @@ Head over to our [blog](https://blog.snowleopard.ai/) to learn more!
 
 Explore these public datasets through our Discord server:
 
-- **[IMDb](./imdb/)** - Movie and TV show information from the Internet Movie Database (Snow Leopard hosted Postgres database)
-- **[Stack Overflow](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset 
+- **[IMDb (Postgres)](./imdb/)** - Movie and TV show information from the Internet Movie Database (Snow Leopard hosted Postgres database)
+- **[Stack Overflow (BigQuery)](./stack-overflow/)** - Programming questions, answers, and community data from Stack Overflow BigQuery dataset 
 <!-- - **[Census](./census/)** - demographic and language information for Census County Divisions from https://data.census.gov  (Snow Leopard hosted Postgres database) -->
 
 <br>
