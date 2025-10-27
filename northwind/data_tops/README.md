@@ -2,7 +2,7 @@
 
 # Northwind Dataset Tops
 
-This directory contains 100 rows of each table in the [Northwind](https://github.com/pthom/northwind_psql) dataset to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
+This directory contains up to 100 rows of each table in the [Northwind](https://github.com/pthom/northwind_psql) dataset to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
 Snow Leopard has modified this table from the publicly available version to omit the `categories.picture` and `employees.photo` binary blob column.
 
 More information about the dataset can be found in the [main Northwind README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/northwind).
@@ -18,6 +18,7 @@ More information about the dataset can be found in the [main Northwind README](h
 | category_id   | SMALLINT    | Unique identifier for each category. Primary Key.          |
 | category_name | VARCHAR(15) | Name of the category. Example: 'Beverages', 'Condiments'.  |
 | description   | TEXT        | Detailed description of the category.                      |
+
 _Notes:_ omitting `BYTEA` column picture
 
 ### 🤝 [customer_customer_demo](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/customer_customer_demo.tsv)
@@ -88,7 +89,8 @@ _Notes:_ omitting `BYTEA` column picture
 | notes              | TEXT         | Additional notes about the employee.                               |
 | reports_to         | SMALLINT     | ID of the manager the employee reports to. FK to employees table. |
 | photo_path         | VARCHAR(255) | Path to the employee's photo file.                                 |
- _Notes:_ omitting `BYTEA` column photo
+ 
+_Notes:_ omitting `BYTEA` column photo
 
 ### 📦 [order_details](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/order_details.tsv)
 
