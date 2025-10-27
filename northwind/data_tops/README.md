@@ -2,10 +2,11 @@
 
 # Northwind Dataset Tops
 
-This directory contains up to 100 rows of each table in the [Northwind](https://github.com/pthom/northwind_psql) dataset to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
-Snow Leopard has modified this table from the publicly available version to omit the `categories.picture` and `employees.photo` binary blob column.
+This directory contains up to 100 rows of each table in the [Northwind](https://github.com/pthom/northwind_psql) dataset to give users a sense of the schema and data in it, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
 
 More information about the dataset can be found in the [main Northwind README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/northwind).
+
+Snow Leopard has modified this dataset from the publicly available version to omit binary blob columns: `categories.picture` and `employees.photo`.
 
 ## Northwind Dataset Schemas
 
