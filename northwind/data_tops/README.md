@@ -2,7 +2,8 @@
 
 # Northwind Dataset Tops
 
-This directory contains 100 rows of each table in the [Northwind](https://github.com/pthom/northwind_psql) to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
+This directory contains 100 rows of each table in the [Northwind](https://github.com/pthom/northwind_psql) dataset to give users a sense of the schema and data in the dataset, so they can _chat with the data more effectively_ in the [Snow Leopard Discord Chatbot](https://discord.gg/4uE6uFGyP7).
+Snow Leopard has modified this table from the publicly available version to omit the `categories.picture` and `employees.photo` binary blob column.
 
 More information about the dataset can be found in the [main Northwind README](https://github.com/SnowLeopard-AI/discord_datasets/tree/main/northwind).
 
@@ -10,13 +11,14 @@ More information about the dataset can be found in the [main Northwind README](h
 
 ### 📦  [categories](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/categories.tsv)
 
-- information about product categories, including their names, descriptions, and associated pictures.
+- information about product categories, including their names, and descriptions
 
 | Field         | Type        | Description                                                 |
 |---------------|-------------|-------------------------------------------------------------|
 | category_id   | SMALLINT    | Unique identifier for each category. Primary Key.          |
 | category_name | VARCHAR(15) | Name of the category. Example: 'Beverages', 'Condiments'.  |
 | description   | TEXT        | Detailed description of the category.                      |
+_Notes:_ omitting `BYTEA` column picture
 
 ### 🤝 [customer_customer_demo](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/customer_customer_demo.tsv)
 
@@ -83,11 +85,11 @@ More information about the dataset can be found in the [main Northwind README](h
 | country            | VARCHAR(15)  | Country where the employee resides.                                |
 | home_phone         | VARCHAR(24)  | Home phone number of the employee.                                 |
 | extension          | VARCHAR(4)   | Phone extension for the employee.                                  |
-| photo              | BYTEA        | Path or reference to the employee's photo.                         |
 | notes              | TEXT         | Additional notes about the employee.                               |
 | reports_to         | SMALLINT     | ID of the manager the employee reports to. FK to employees table. |
 | photo_path         | VARCHAR(255) | Path to the employee's photo file.                                 |
- 
+ _Notes:_ omitting `BYTEA` column photo
+
 ### 📦 [order_details](https://github.com/SnowLeopard-AI/discord_datasets/blob/main/northwind/data_tops/order_details.tsv)
 
 - line items within an order, linking products and orders.
